@@ -1,0 +1,896 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>MustGo</title>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500' rel='stylesheet' type='text/css'>
+</head>
+
+<div class="wrap-top-page">
+    <div class="top-page">
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo"></a>
+                </div>
+                <div class="pull-right">
+                    <ul class="nav user-menu navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle dropdown-link-flag" data-toggle="dropdown" role="button"
+                               aria-haspopup="true" aria-expanded="false"><img src="images/flag/en.png">
+                            </a>
+                            <ul class="dropdown-menu dropdown-flag">
+                                <li><a href="#"><img src="images/flag/en.png"></a></li>
+                                <li><a href="#"><img src="images/flag/ua.png"></a></li>
+                                <li><a href="#"><img src="images/flag/en.png"></a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle " data-toggle="dropdown" role="button"
+                               aria-haspopup="true" aria-expanded="false">$ USD
+                                <div class="arrow"></div>
+                            </a>
+                            <ul class="dropdown-menu dropdown-currency">
+                                <li><a href="#">€ Eur</a></li>
+                                <li><a href="#">$ГРН </a></li>
+                                <li><a href="#">$Руб</a></li>
+                            </ul>
+                        </li>
+                        <!--<li class="sign-in"><a href="#">Вход</a></li>-->
+                        <li class="log-out"><a href="#">Виход</a></li>
+
+                    </ul>
+                    <div class="phone">+38 044 359·05·69</div>
+                    <div class="feedback"><a href="#">Заказать обратный звонок</a></div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container main-form">
+            <ul class="nav nav-tabs nav-menu" role="tablist">
+                <li role="presentation" id="avia-tab" class="active"><a href="#avia-tickets"
+                                                                        aria-controls="avia-tickets" role="tab"
+                                                                        data-toggle="tab" class="avia-tickets">Авиабилеты</a>
+                </li>
+                <li role="presentation" id="train-tab"><a href="#train-tickets" aria-controls="train-tickets" role="tab"
+                                                          data-toggle="tab" class="train-tickets ">Железнодорожные
+                    билеты</a></li>
+                <li role="presentation" id="insurance-tab"><a href="#insurance" aria-controls="insurance" role="tab"
+                                                              data-toggle="tab" class="insurance">Страховки</a></li>
+                <li role="presentation" id="hotel-tab"><a href="#hotel" aria-controls="hotel" role="tab"
+                                                          data-toggle="tab" class="hotel">Отели</a></li>
+            </ul>
+
+            <div class="tab-content ">
+                <div role="tabpanel" class="tab-pane active" id="avia-tickets">
+                    <div class="radio-checked">
+                        <input type="radio" id="one-way" name="radio-box" class="radio-box" value="one-way" checked>
+                        <label for="one-way"><span><span></span></span>В одну сторону</label>
+
+                        <input type="radio" id="go-back" name="radio-box" class="radio-box" value="go-back">
+                        <label for="go-back"><span><span></span></span>Туда и обратно</label>
+
+                        <input type="radio" id="complicated-route" name="radio-box" class="radio-box"
+                               value="complicated-route">
+                        <label for="complicated-route" class="dificul"><span><span></span></span>Сложный маршрут</label>
+                        <a href="#tooltip" data-toggle="modal"><img src="images/icon/q.png" class="question"></a>
+                    </div>
+
+                    <form class="form-inline form-go-back">
+                        <div class="form-group-search">
+                            <div class="form-group">
+                                <label for="departure-date">Дата вылета:</label>
+                                <input type="text" class="form-control date-fly" id="departure-date" placeholder="Дата"
+                                       name="departure-date">
+                                <a href="#" class="input-arrow"></a>
+                            </div>
+                            <div class="form-group fly-returm" id="arrival-date">
+                                <label for="arrival-date">Обратно:</label>
+                                <input type="text" class="form-control date-fly" name="arrival-date" id="arrival-date-2"
+                                       placeholder="Дата">
+                                <a href="#" class="input-arrow"></a>
+
+                            </div>
+                            <div class="form-group">
+                                <label for="from-to-fly">Откуда:</label>
+                                <input type="text" class="form-control to-fly" id="from-to-fly"
+                                       placeholder="Откуда лететь" name="from-to-fly">
+                                <a href="#" class="input-arrow"></a>
+
+                            </div>
+                            <div class="form-group">
+                                <label for="where-to-fly">Куда:</label>
+                                <input type="text" class="form-control to-fly" id="where-to-fly"
+                                       placeholder="Куда лететь" name="where-to-fly">
+                                <a href="#" class="input-arrow"></a>
+
+                            </div>
+                            <div class="form-group">
+                                <label for="number-people">Количество:</label>
+                                <input type="text" class="form-control count-people" id="number-people"
+                                       placeholder="1 взрослый" name="number-people">
+                                <a href="#" class="input-arrow"></a>
+
+                            </div>
+                            <div class="form-group add-flight">
+                                <div class="add-flight-margin"><a href="#" class="add-flight"><img
+                                        src="images/icon/plus-green.png">Добавить перелет</a></div>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-find">Найти</button>
+                            </div>
+                        </div>
+                        <div class="text-center аdvanced-searh"><a href="#" class="open-close search-link-arrow-down">Расширенный
+                            поиск</a></div>
+                        <div class="аdvanced-searh-content">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="checkbox-wrapper">
+                                        <div class="checkbox">
+                                            <input type="checkbox" value="" id="best-price" name="best-price">
+                                            <label for="best-price"><span></span>Лучшая цена</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox" value="" id="ability-return" name="ability-return">
+                                            <label for="ability-return"><span></span>Возможность возврата</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox" value="" id="transfers" name="transfers">
+                                            <label for="transfers"><span></span>Без пересадок</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label for="flight-class">Класс:</label>
+                                        <input type="text" class="form-control flight-class" id="flight-class"
+                                               placeholder="Эконом" name="flight-class">
+                                        <a href="#" class="input-arrow"></a>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="priority-company" class="question-priority-company">Указать приоритетные авиакомпании</label>
+                                        <a href="#" ><img src="images/icon/q.png" class="question"></a>
+                                        <div>
+                                        <input type="text" name="priority-company" class="form-control priority-company"
+                                               id="priority-company" placeholder="Выберите авиакомпанию из списка">
+                                        <a href="#" class="input-arrow"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label for="passengers">Пассажиры</label>
+                                        <input type="text" name="passengers" class="form-control passengers"
+                                               id="passengers" placeholder="Выберите пассажиров из списка">
+                                        <a href="#" class="input-arrow"></a>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-request" data-toggle="modal"
+                                                data-target="#request-for-group-flight">запрос на групповой перелет
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="аdvanced-searh-content-not-authorized">
+                            <div class="row">
+                                <div class="col-sm-2">
+                                    <div class="form-group">
+                                        <label for="flight-class-2">Класс:</label>
+                                        <input type="text" class="form-control flight-class" name="flight-class"
+                                               id="flight-class-2" placeholder="Эконом">
+                                        <a href="#" class="input-arrow"></a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-10">
+                                    <div class="checkbox-wrapper">
+                                        <div class="checkbox">
+                                            <input type="checkbox" value="" id="best-price-not-authorized">
+                                            <label for="best-price-not-authorized"><span></span>Лучшая цена</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox" value="" id="ability-return-not-authorized">
+                                            <label for="ability-return-not-authorized"><span></span>Возможность возврата</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox" value="" id="transfers-not-authorized">
+                                            <label for="transfers-not-authorized"><span></span>Без пересадок</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 text-center text-not-authorized">
+                                    Если вы хотите воспользоваться еще более удобным поиском, <a href="#">
+                                    зарегистрируйтесь</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="train-tickets">
+                    <div class="radio-checked">
+                        <input type="radio" id="one-way-train" name="radio-box-train" class="radio-box-train"
+                               value="one-way-train" checked>
+                        <label for="one-way-train"><span><span></span></span>В одну сторону</label>
+
+                        <input type="radio" id="go-back-train" name="radio-box-train" class="radio-box-train"
+                               value="go-back-train">
+                        <label for="go-back-train"><span><span></span></span>Туда и обратно (cкидка 10%)</label>
+                    </div>
+                    <form class="form-inline form-go-back">
+                        <div class="form-group-search">
+                            <div class="form-group">
+                                <label for="departure-date-train">Дата отправления:</label>
+                                <input type="text" class="form-control date-fly" id="departure-date-train"
+                                       placeholder="Дата" name="departure-date">
+                                <a href="#" class="input-arrow"></a>
+                            </div>
+                            <div class="form-group train-return">
+                                <label for="arrival-date-train">Обратно:</label>
+                                <input type="text" class="form-control date-fly" name="arrival-date"
+                                       id="arrival-date-train" placeholder="Дата">
+                                <a href="#" class="input-arrow"></a>
+
+                            </div>
+                            <div class="form-group">
+                                <label for="from-to-train">Откуда:</label>
+                                <input type="text" class="form-control to-fly" id="from-to-train"
+                                       placeholder="Cтанция отправления" name="from-to-train">
+                                <a href="#" class="input-arrow"></a>
+
+                            </div>
+                            <div class="form-group">
+                                <label for="where-to-train">Куда:</label>
+                                <input type="text" class="form-control to-fly" id="where-to-train"
+                                       placeholder="Станция прибытия" name="where-to-train">
+                                <a href="#" class="input-arrow"></a>
+
+                            </div>
+                            <div class="form-group">
+                                <label>Количество:</label>
+                                <form id='form-quantity' method='POST' action='#'>
+                                    <div class="quantity">
+                                        <input type='button' value='—' class='qtyminus minus' field='quantity'/>
+                                        <input type='text' name='quantity' value='1' class='qty number'/>
+                                        <input type='button' value='+' class='qtyplus plus' field='quantity'/>
+                                    </div>
+                                </form>
+
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-find">Найти</button>
+                            </div>
+                        </div>
+                        <div class="text-center аdvanced-searh-content-not-authorized-train">
+                            <div class="row">
+                                <div class="col-sm-12 text-center text-not-authorized">
+                                    Если вы хотите воспользоваться еще более удобным поиском, <a href="#">
+                                    зарегистрируйтесь</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="insurance">
+                    <form class="form-inline form-go-back">
+                        <div class="form-group-search">
+                            <div class="form-group">
+                                <label for="departure-date-insurance">Дата отъезда:</label>
+                                <input type="text" class="form-control date-fly" id="departure-date-insurance"
+                                       placeholder="Дата" name="departure-date-insurance">
+                                <a href="#" class="input-arrow"></a>
+                            </div>
+                            <div class="form-group">
+                                <label for="arrival-date-insurance">Дата возвращения:</label>
+                                <input type="text" class="form-control date-fly" name="arrival-date-insurance"
+                                       id="arrival-date-insurance" placeholder="Дата">
+                                <a href="#" class="input-arrow"></a>
+
+                            </div>
+                            <div class="form-group">
+                                <label for="from-to-insurance">Выберите страну:</label>
+                                <input type="text" class="form-control to-country" id="from-to-insurance"
+                                       placeholder="Cтанция отправления" name="from-to-insurance">
+                                <a href="#" class="input-arrow"></a>
+
+                            </div>
+                            <div class="form-group">
+                                <label for="where-to-insurance">Страховая сумма:</label>
+                                <input type="text" class="form-control sum-insured" id="where-to-insurance"
+                                       placeholder="Сумма" name="where-to-insurance">
+                                <a href="#" class="input-arrow"></a>
+
+                            </div>
+                            <div class="form-group">
+                                <label>Количество:</label>
+                                <form id='form-quantity-insurance' method='POST' action='#'>
+                                    <div class="quantity">
+                                        <input type='button' value='—' class='minus minus-insurance' field='quantity'/>
+                                        <input type='text' name='quantity' value='1' max="9"
+                                               class='number number-insurance'/>
+                                        <input type='button' value='+' class='plus plus-insurance' field='quantity'/>
+                                    </div>
+                                </form>
+
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-find">Найти</button>
+                            </div>
+                            <div class="text-insurance">Специальные опции страховки:</div>
+                            <div class="checkbox-wrapper-insurance">
+                                <div class="checkbox">
+                                    <input type="checkbox" value="" id="for-sports" name="for-sports">
+                                    <label for="for-sports"><span></span>Занятия спортом (кроме горнолыжного)</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" value="" id="skiing" name="skiing">
+                                    <label for="skiing"><span></span>Горнолыжный спорт</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" value="" id="employment" name="employment">
+                                    <label for="employment"><span></span>Работа по найму</label>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </form>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="hotel">...</div>
+            </div>
+
+        </div>
+
+        <a href="#proposition" class="arrow-down"><img src="images/down-page.png" alt="arrow-down"> </a>
+    </div>
+    <div class="container" id="proposition">
+        <div class="row">
+            <div class="col-sm-12 text-center name-section">Интересные предложения</div>
+            <div class="col-sm-4">
+                <div class="panel panel-default panel-blue">
+                    <div class="panel-heading">Акция<img src="images/icon/plane.png" alt="plane"></div>
+                    <div class="panel-body">
+                        <div class="panel-text-bold">Киев-Стамбул<span class="price-discont-blue">от 1700 UAH</span>
+                        </div>
+                        <div>скидки от Turkish airlines<span class="price-discont-blue">40%</span></div>
+                        <div class="panel-text-bold">в январе</div>
+                        <a href="#"><img src="images/aviacompany/TK.png" alt="logo-company"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-default panel-green">
+                    <div class="panel-heading">Отели<img src="images/icon/hotel.png" alt="hotel"></div>
+                    <div class="panel-body">
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" src="images/aviacompany/hotel.png" alt="hotel">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <div class="panel-text-bold">Отель в г.Ужгород</div>
+                                <div><span class="price-discont-green">300 UAH/ночь</span></div>
+                                <div>скидка<span class="price-discont-green">17%</span></div>
+                                <div class="panel-text-bold">сегодня</div>
+                                <a href="#" class="link-details-hotel">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-default panel-green-light">
+                    <div class="panel-heading">Направления<img src="images/icon/way.png" alt="hotel"></div>
+                    <div class="panel-body">
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" src="images/aviacompany/eg.png" alt="hotel">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <div class="panel-text-bold">Что посмотреть в Египте?</div>
+                                <div>Топ-10 лучших нетуристических мест</div>
+
+                                <a href="#" class="link-details-hotel">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="panel panel-default panel-blue">
+                    <div class="panel-heading">Акция<img src="images/icon/plane.png" alt="plane"></div>
+                    <div class="panel-body">
+                        <div class="panel-text-bold">Киев-Стамбул<span class="price-discont-blue">от 1700 UAH</span>
+                        </div>
+                        <div>скидки от Turkish airlines<span class="price-discont-blue">40%</span></div>
+                        <div class="panel-text-bold">в январе</div>
+                        <a href="#"><img src="images/aviacompany/TK.png" alt="logo-company"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-default panel-green">
+                    <div class="panel-heading">Отели<img src="images/icon/hotel.png" alt="hotel"></div>
+                    <div class="panel-body">
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" src="images/aviacompany/hotel.png" alt="hotel">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <div class="panel-text-bold">Отель в г.Ужгород</div>
+                                <div><span class="price-discont-green">300 UAH/ночь</span></div>
+                                <div>скидка<span class="price-discont-green">17%</span></div>
+                                <div class="panel-text-bold">сегодня</div>
+                                <a href="#" class="link-details-hotel">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-default panel-green">
+                    <div class="panel-heading">Отели<img src="images/icon/hotel.png" alt="hotel"></div>
+                    <div class="panel-body">
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" src="images/aviacompany/hotel2.png" alt="hotel">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <div class="panel-text-bold">Отель в<span class="price-discont-green"> г .Милан</span>
+                                </div>
+                                <div><span class="price-discont-green">80 EUR/ночь</span></div>
+                                <div>действительно</div>
+                                <div class="panel-text-bold">с 23.11 по 25.11</div>
+                                <a href="#" class="link-details-hotel">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 text-center link-action"><a href="#">Смотреть все акции</a></div>
+        </div>
+    </div>
+    <div class="section-information">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="info-heading"><h2><img src="images/aviacompany/th.png">Частые вопросы</h2></div>
+                    <div class="panel-group" id="accordion">
+                        <div class="accordion">
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"
+                                   href="#collapseOne">
+                                    Какие авиабилеты можно купить на MustGo?
+                                </a>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse">
+                                <div class="accordion-body">
+                                    На нашем сайте можно приобрести авиабилеты более 800 авиакомпаний с вылетом
+                                    практически из любых точек мира. Мы стараемся предложить пользователю
+                                    максимальное количество вариантов рейсов на запрашиваемые даты и направления.
+                                    Эти варианты отличаются по времени в пути, количеству пересадок, ценам и
+                                    условиям возврата.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"
+                                   href="#collapseTwo">
+                                    Промо-код MustGo
+                                </a>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse">
+                                <div class="accordion-body">
+                                    На нашем сайте можно приобрести авиабилеты более 800 авиакомпаний с вылетом
+                                    практически из любых точек мира. Мы стараемся предложить пользователю
+                                    максимальное количество вариантов рейсов на запрашиваемые даты и направления.
+                                    Эти варианты отличаются по времени в пути, количеству пересадок, ценам и
+                                    условиям возврата.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"
+                                   href="#collapseThree">
+                                    Промо-код MustGo
+                                </a>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse">
+                                <div class="accordion-body">
+                                    На нашем сайте можно приобрести авиабилеты более 800 авиакомпаний с вылетом
+                                    практически из любых точек мира. Мы стараемся предложить пользователю
+                                    максимальное количество вариантов рейсов на запрашиваемые даты и направления.
+                                    Эти варианты отличаются по времени в пути, количеству пересадок, ценам и
+                                    условиям возврата.
+                                </div>
+                            </div>
+                            <div class="link-details"><a href="#">Смотреть все вопросы</a></div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="info-heading"><h2><img src="images/aviacompany/comp.png">Статьи</h2></div>
+                    <div class="article">
+                        <div class="date-article">21.04.15</div>
+                        <a href="#">Аэропорт Борисполь - крупнейшая воздушная гавань Украины</a>
+                    </div>
+                    <div class="article">
+                        <div class="date-article">16.03.15</div>
+                        <a href="#">Чешские авиалинии - один из старейших европейских авиаперевозчиков</a>
+                    </div>
+                    <div class="article">
+                        <div class="date-article">4.02.15</div>
+                        <a href="#">Расписание самолетов всех авиакомпаний</a>
+                    </div>
+                    <div class="article">
+                        <div class="date-article">2.02.15</div>
+                        <a href="#">Расписание самолетов всех авиакомпаний Украины</a>
+                    </div>
+                    <div class="article">
+                        <div class="date-article">21.04.15</div>
+                        <a href="#">Аэропорт Борисполь - крупнейшая воздушная гавань Украины</a>
+                    </div>
+                    <div class="link-details"><a href="#">Читать все статьи</a></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container section-timetables">
+        <div class="row">
+            <div class="col-sm-12 text-center name-section">Табло аэропортов</div>
+            <div class="col-sm-6">
+                <ul class="timetables">
+                    <li><a href="#">Расписание рейсов аэропорта<span class="name-city-bold">Борисполь</span></a></li>
+                    <li><a href="#">Расписание рейсов аэропорта<span class="name-city-bold">Киев</span></a></li>
+                    <li><a href="#">Расписание рейсов аэропорта<span class="name-city-bold">Львов</span></a></li>
+                    <li><a href="#">Расписание рейсов аэропорта<span class="name-city-bold">Париж</span></a></li>
+                    <li><a href="#">Расписание рейсов аэропорта<span class="name-city-bold">Минск</span></a></li>
+                    <li><a href="#">Расписание рейсов аэропорта<span class="name-city-bold">Борисполь</span></a></li>
+                    <li><a href="#">Расписание рейсов аэропорта<span class="name-city-bold">Париж</span></a></li>
+                    <li><a href="#">Расписание рейсов аэропорта<span class="name-city-bold">Львов</span></a></li>
+                </ul>
+            </div>
+            <div class="col-sm-6">
+                <ul class="timetables">
+                    <li><a href="#">Расписание рейсов аэропорта<span class="name-city-bold">Борисполь</span></a></li>
+                    <li><a href="#">Расписание рейсов аэропорта<span class="name-city-bold">Киев</span></a></li>
+                    <li><a href="#">Расписание рейсов аэропорта<span class="name-city-bold">Львов</span></a></li>
+                    <li><a href="#">Расписание рейсов аэропорта<span class="name-city-bold">Париж</span></a></li>
+                    <li><a href="#">Расписание рейсов аэропорта<span class="name-city-bold">Минск</span></a></li>
+                    <li><a href="#">Расписание рейсов аэропорта<span class="name-city-bold">Борисполь</span></a></li>
+                    <li><a href="#">Расписание рейсов аэропорта<span class="name-city-bold">Париж</span></a></li>
+                    <li><a href="#">Расписание рейсов аэропорта<span class="name-city-bold">Львов</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="section-article">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 "><h2>Заказ авиа билетов на сайте www.mustgo.aero</h2></div>
+                <div class="col-sm-12">
+                    <p>Бронирование авиабилетов на сайте www.mustgo.aero производится в режиме реального времени
+                        (on-line). Вы
+                        можете дистанционно, находясь у себя в офисе или дома, забронировать авиаперелет, оплатить его
+                        любым
+                        удобным для Вас способом - картой на нашем сайте, наличным или безналичным расчетом , после чего
+                        электронный билет будет отправлен Вам по электронной почте.</p>
+
+                    <p>Фактом приобретения электронного билета и осуществления оплаты является маршрутная квитанция
+                        (itinerary
+                        receipt)
+                        Маршрутная квитанция является подтверждением оформления Электронного билета и удостоверяет
+                        договор
+                        воздушной перевозки, заключённый между пассажиром и авиакомпанией.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <div class="footer-info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <ul class="">
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Путешествия</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <ul class="">
+                            <li><a href="#">Политика конфиденциальности</a></li>
+                            <li><a href="#">Договор оферты</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <ul class="address">
+                            <li id="phone"><a href="#">+38 044 3590569,</a></li>
+                            <li><a href="#"> +7 495 7397922</a></li>
+                            <li id="mail"><a href="#">mustgoaero@gmail.com</a></li>
+                            <li id="skype"><a href="#">mustgoaero</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <img src="images/logo.png">
+                        <p>Мы в соцсетях:</p>
+                        <ul class="social">
+                            <li><a href="#">
+                                <div id="vk"></div>
+                            </a></li>
+                            <li><a href="#">
+                                <div id="facebook"></div>
+                            </a></li>
+                            <li><a href="#">
+                                <div id="twit"></div>
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="support_payments">
+                <img src="images/payments/qiwi-logo.png">
+                <img src="images/payments/yandex.png">
+                <img src="images/payments/wmlogo_vector_blue.png">
+                <img src="images/payments/okpay_logo.png">
+                <img src="images/payments/Visa_Inc.svg">
+                <img src="images/payments/logo-mastercard.png">
+                <img src="images/payments/300px-Libert.svg">
+                <img src="images/payments/logo-perfect-money.png">
+                <img src="images/payments/liqpay_logo.png">
+                <img src="images/payments/privat24.png">
+                <img src="images/payments/RBKmoney.png">
+                <img src="images/payments/paypallogo.png">
+            </div>
+        </div>
+    </footer>
+</div>
+
+<div class="modal" id="request-for-group-flight" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content modal-request-for-group">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="images/close.png"
+                                                                                                 alt="close"></button>
+                <h4 class="modal-title" id="myModalLabel">Запрос на групповой перелет</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-inline form-go-back">
+                    <div class="form-group-search">
+                        <div class="form-group">
+                            <label for="departure-date-group-flight">Дата вылета:</label>
+                            <input type="text" class="form-control date-fly" id="departure-date-group-flight"
+                                   placeholder="Дата"
+                                   name="departure-date-group-flight">
+                            <a href="#" class="input-arrow"></a>
+                        </div>
+                        <div class="form-group ">
+                            <label for="arrival-date-group-flight">Обратно:</label>
+                            <input type="text" class="form-control date-fly" name="arrival-date"
+                                   id="arrival-date-group-flight"
+                                   placeholder="Дата">
+                            <a href="#" class="input-arrow"></a>
+
+                        </div>
+                        <div class="form-group">
+                            <label for="from-to-fly-group-flight">Откуда:</label>
+                            <input type="text" class="form-control to-fly" id="from-to-fly-group-flight"
+                                   placeholder="Откуда лететь" name="from-to-fly-group-flight">
+                            <a href="#" class="input-arrow"></a>
+
+                        </div>
+                        <div class="form-group">
+                            <label for="where-to-fly-group-flight">Куда:</label>
+                            <input type="text" class="form-control to-fly" id="where-to-fly-group-flight"
+                                   placeholder="Куда лететь" name="where-to-fly-group-flight">
+                            <a href="#" class="input-arrow"></a>
+
+                        </div>
+                        <div class="form-group">
+                            <label for="number-people-group-flight">Количество:</label>
+                            <input type="text" class="form-control count-people" id="number-people-group-flight"
+                                   placeholder="1 взрослый" name="number-people-group-flight">
+                            <a href="#" class="input-arrow"></a>
+                        </div>
+                        <div class="personal-information">
+                        <div class="form-group">
+                            <label for="name">Ваше имя:</label>
+                            <input type="text" class="form-control to-fly" id="name"
+                                   placeholder="Ваше имя" name="name">
+                            <a href="#" class="input-arrow"></a>
+                        </div>
+                        <div class="form-group">
+                            <label for="e-mail">Ваш e-mail:</label>
+                            <input type="text" name="e-mail" class="form-control to-fly"
+                                   id="e-mail" placeholder="Ваш e-mail">
+                            <a href="#" class="input-arrow"></a>
+                        </div>
+                        <div class="form-group">
+                            <label for="telephone">Ваш номер телефона:</label>
+                            <input type="text" name="telephone" class="form-control to-fly"
+                                   id="telephone" placeholder="Ваш номер телефона">
+                            <a href="#" class="input-arrow"></a>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-request-group" >Отправить запрос на перелет</button>
+                        </div>
+                         </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="tooltip" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-tooltip">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="images/close.png"
+                                                                                                 alt="close"></button>
+            </div>
+            <div class="modal-body">
+                Сложный маршрут предполагает несколько смен городов/аэропортов по датам, например вылет 15 октября из Киева в Рим,
+                20 октября из Рима в Париж, 24 из Парижа в Варшаву, 26 из Варшавы в Киев. Замыкание маршрута (Киев-Киев) необязательно.
+            </div>
+
+        </div>
+    </div>
+</div>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-typeahead.js"></script>
+<script>
+    $(document).ready(function () {
+
+        $('#avia-tab').click(function () {
+            $('.tab-content').css({"border": "4px solid #257ee1"});
+        });
+        $('#train-tab').click(function () {
+            $('.tab-content').css({"border": "4px solid #296992"});
+        });
+        $('#insurance-tab').click(function () {
+            $('.tab-content').css({"border": "4px solid #1b8da5"});
+        });
+        $('#hotel-tab').click(function () {
+            $('.tab-content').css({"border": "4px solid #35a69a"});
+        });
+
+        $('.open-close').click(function () {
+            if ($('.аdvanced-searh-content').is(':visible')) {
+                $(this).text('Расширенный поиск');
+                $(this).addClass("search-link-arrow-down");
+                $(this).removeClass("search-link-arrow-up");
+            }
+            else {
+                $(this).text('Свернуть дополнительные параметры');
+                $(this).addClass("search-link-arrow-up");
+                $(this).removeClass("search-link-arrow-down");
+
+            }
+            $('.аdvanced-searh-content').slideToggle();
+            return false;
+        });
+
+        $("[name=radio-box]").click(function () {
+            if ($(this).attr("value") == "one-way") {
+                $('.open-close').text('Расширенный поиск');
+                $('.open-close').addClass("search-link-arrow-down");
+                $('.open-close').removeClass("search-link-arrow-up");
+                $('.аdvanced-searh-content').hide();
+
+//                $(".box").not(".one-way").hide();
+
+                $(".fly-returm").css({"display": "none"});
+                $(".add-flight").css({"display": "none"});
+            }
+            if ($(this).attr("value") == "go-back") {
+                $('.open-close').text('Расширенный поиск');
+                $('.open-close').addClass("search-link-arrow-down");
+                $('.open-close').removeClass("search-link-arrow-up");
+                $('.аdvanced-searh-content').hide();
+//                $(".box").not(".go-back").hide();
+//                $(".form-go-back-show").show();
+
+                $(".fly-returm").css({"display": "inline-block"});
+                $(".add-flight").css({"display": "none"});
+            }
+            if ($(this).attr("value") == "complicated-route") {
+                $('.open-close').text('Расширенный поиск');
+                $('.open-close').addClass("search-link-arrow-down");
+                $('.open-close').removeClass("search-link-arrow-up");
+                $('.аdvanced-searh-content').hide();
+
+//                $(".box").not(".complicated-route").hide();
+//                $(".form-complicated-route").show();
+                $(".fly-returm").css({"display": "none"});
+                $(".add-flight").css({"display": "inline-block"});
+
+            }
+        });
+
+        $("[name=radio-box-train]").click(function () {
+            if ($(this).attr("value") == "one-way-train") {
+                $('.open-close').text('Расширенный поиск');
+                $('.open-close').addClass("search-link-arrow-down");
+                $('.open-close').removeClass("search-link-arrow-up");
+                $('.аdvanced-searh-content').hide();
+                $(".train-return").css({"display": "none"});
+            }
+            if ($(this).attr("value") == "go-back-train") {
+                $('.open-close').text('Расширенный поиск');
+                $('.open-close').addClass("search-link-arrow-down");
+                $('.open-close').removeClass("search-link-arrow-up");
+                $('.аdvanced-searh-content').hide();
+                $(".train-return").css({"display": "inline-block"});
+            }
+        });
+
+        $('.qtyplus').click(function (e) {
+            e.preventDefault();
+            fieldName = $(this).attr('field');
+            var currentVal = parseInt($('input[name=' + fieldName + ']').val());
+            if (!isNaN(currentVal)) {
+                $('input[name=' + fieldName + ']').val(currentVal + 1);
+            } else {
+                $('input[name=' + fieldName + ']').val(0);
+            }
+        });
+        $(".qtyminus").click(function (e) {
+            e.preventDefault();
+            fieldName = $(this).attr('field');
+            var currentVal = parseInt($('input[name=' + fieldName + ']').val());
+            if (!isNaN(currentVal) && currentVal > 0) {
+                $('input[name=' + fieldName + ']').val(currentVal - 1);
+            } else {
+                $('input[name=' + fieldName + ']').val(0);
+            }
+        });
+
+//        $('.plus-insurance').click(function(e){
+//            e.preventDefault();
+//            fieldName = $(this).attr('field');
+//            var currentVal = parseInt($('input[name='+fieldName+']').val());
+//            if (!isNaN(currentVal)) {
+//                $('input[name='+fieldName+']').val(currentVal + 1);
+//            } else {
+//                $('input[name='+fieldName+']').val(0);
+//            }
+//        });
+//        $(".minus-insurance").click(function(e) {
+//            e.preventDefault();
+//            fieldName = $(this).attr('field');
+//            var currentVal = parseInt($('input[name='+fieldName+']').val());
+//            if (!isNaN(currentVal) && currentVal > 0) {
+//                $('input[name='+fieldName+']').val(currentVal - 1);
+//            } else {
+//                $('input[name='+fieldName+']').val(0);
+//            }
+//        });
+    });
+</script>
+
+</body>
+</html>
