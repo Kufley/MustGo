@@ -36,33 +36,19 @@ $(document).ready(function () {
     });
 
     $('.open-close').click(function () {
-        if($("[value=one-way]").is(':checked')){
-            if ($('.аdvanced-searh-content-not-authorized').is(':visible')) {
-                $('.аdvanced-searh-content').hide();
-                $(this).find('a').text('Расширенный поиск');
-                $(this).addClass("search-link-arrow-down");
-                $(this).removeClass("search-link-arrow-up");
-            } else {
-                $(this).find('a').text('Свернуть дополнительные параметры');
-                $(this).addClass("search-link-arrow-up");
-                $(this).removeClass("search-link-arrow-down");
-            }
-            $('.аdvanced-searh-content-not-authorized').slideToggle();
-        } else {
-            if ($('.аdvanced-searh-content').is(':visible')) {
-                $('.аdvanced-searh-content-not-authorized').hide();
-                $(this).find('a').text('Расширенный поиск');
-                $(this).addClass("search-link-arrow-down");
-                $(this).removeClass("search-link-arrow-up");
-            } else {
-                $(this).find('a').text('Свернуть дополнительные параметры');
-                $(this).addClass("search-link-arrow-up");
-                $(this).removeClass("search-link-arrow-down");
-            }
-            $('.аdvanced-searh-content').slideToggle();
-        }
+                  if ($('.аdvanced-searh-content').is(':visible')) {
+                      $(this).find('span').text('Расширенный поиск');
+                      $(this).addClass("search-link-arrow-down");
+                      $(this).removeClass("search-link-arrow-up");
+                  }
+                  else {
+                           $(this).find('span').text('Свернуть дополнительные параметры');
+                           $(this).addClass("search-link-arrow-up");
+                           $(this).removeClass("search-link-arrow-down");
+                           }
+                  $('.аdvanced-searh-content').slideToggle();
         return false;
-    });
+                });
 
     $("input").blur(function() {
         if ($(this).val() == "") {
@@ -71,8 +57,8 @@ $(document).ready(function () {
     });
     $("[name=radio-box]").click(function () {
         if ($(this).attr("value") == "one-way") {
-            $('.open-close').find('a').text('Расширенный поиск');
-            $('.open-close').addClass("search-link-arrow-down");
+            $('.open-close span').text('Расширенный поиск');
+            $('.open-close ').addClass("search-link-arrow-down");
             $('.open-close').removeClass("search-link-arrow-up");
             $('.аdvanced-searh-content').hide();
 
@@ -83,9 +69,9 @@ $(document).ready(function () {
             $(".wrap-add-fly").hide();
         }
         if ($(this).attr("value") == "go-back") {
-            $('.open-close').find('a').text('Расширенный поиск');
-            $('.open-close').removeClass("search-link-arrow-up");
+            $('.open-close span').text('Расширенный поиск');
             $('.open-close').addClass("search-link-arrow-down");
+            $('.open-close').removeClass("search-link-arrow-up");
             $('.аdvanced-searh-content').hide();
 
             $('.аdvanced-searh-content-not-authorized').hide();
@@ -94,9 +80,9 @@ $(document).ready(function () {
             $(".wrap-add-fly").hide();
         }
         if ($(this).attr("value") == "complicated-route") {
-            $('.open-close').find('a').text('Расширенный поиск');
-            $('.open-close').removeClass("search-link-arrow-up");
+            $('.open-close span').text('Расширенный поиск');
             $('.open-close').addClass("search-link-arrow-down");
+            $('.open-close').removeClass("search-link-arrow-up");
             $('.аdvanced-searh-content').hide();
 
             $('.аdvanced-searh-content-not-authorized').hide();
@@ -109,14 +95,14 @@ $(document).ready(function () {
 
     $("[name=radio-box-train]").click(function () {
         if ($(this).attr("value") == "one-way-train") {
-            $('.open-close').text('Расширенный поиск');
+            $('.open-close span').text('Расширенный поиск');
             $('.open-close').addClass("search-link-arrow-down");
             $('.open-close').removeClass("search-link-arrow-up");
             $('.аdvanced-searh-content').hide();
             $(".train-return").css({"display": "none"});
         }
         if ($(this).attr("value") == "go-back-train") {
-            $('.open-close').text('Расширенный поиск');
+            $('.open-close span').text('Расширенный поиск');
             $('.open-close').addClass("search-link-arrow-down");
             $('.open-close').removeClass("search-link-arrow-up");
             $('.аdvanced-searh-content').hide();
@@ -128,8 +114,8 @@ $(document).ready(function () {
     function  plus(id_plus) {
             var fieldName = $(id_plus).attr('field');
             var currentVal = parseInt($('input[name=' + fieldName + ']').val());
-            var val = parseInt($("[name^=quantity]").val());
-            if (val < 9) {
+
+            if (currentVal < 9) {
                 if (!isNaN(currentVal)) {
                     $('input[name=' + fieldName + ']').val(currentVal + 1);
                 } else {
@@ -141,8 +127,7 @@ $(document).ready(function () {
     function  minus(id_minus) {
         var fieldName = $(id_minus).attr('field');
         var currentVal = parseInt($('input[name=' + fieldName + ']').val());
-        var val = parseInt($("[name^=quantity]").val());
-        if (val > 1) {
+        if (currentVal > 1) {
             if (!isNaN(currentVal) && currentVal > 0) {
                 $('input[name=' + fieldName + ']').val(currentVal - 1);
             } else {
@@ -152,11 +137,11 @@ $(document).ready(function () {
     }
 
 
-    $('.qtyplus, .child-plus, .plus-insurance, .adult-plus, .child-plus').click(function(e) {
+    $('.qtyplus, .child-plus, .plus-insurance, .adult-plus, .child2-plus').click(function(e) {
         plus(this);
     });
 
-    $('.qtyminus, .child-minus, .minus-insurance, .adult-minus, .child-minus').click(function() {
+    $('.qtyminus, .child-minus, .minus-insurance, .adult-minus, .child2-minus').click(function() {
         minus(this);
     });
 
