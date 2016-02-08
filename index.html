@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500' rel='stylesheet' type='text/css'>
+    <!--<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500' rel='stylesheet' type='text/css'>-->
 </head>
 
 <div class="wrap-top-page">
@@ -42,8 +42,8 @@
                                 <li><a href="#">$Руб</a></li>
                             </ul>
                         </li>
-                        <!--<li class="sign-in"><a href="#">Вход</a></li>-->
-                        <li class="log-out"><a href="#">Виход</a></li>
+                        <li class="sign-in"><a href="#">Вход</a></li>
+                        <!--<li class="log-out"><a href="#">Виход</a></li>-->
 
                     </ul>
                     <div class="phone">+38 044 359·05·69</div>
@@ -67,7 +67,7 @@
                                                           data-toggle="tab" class="hotel">Отели</a></li>
             </ul>
 
-            <div class="tab-content ">
+            <div class="tab-content tab-content-main">
                 <div role="tabpanel" class="tab-pane active" id="avia-tickets">
                     <div class="radio-checked">
                         <input type="radio" id="one-way" name="radio-box" class="radio-box" value="one-way" checked>
@@ -88,45 +88,394 @@
                                 <label for="departure-date">Дата вылета:</label>
                                 <input type="text" class="form-control date-fly" id="departure-date" placeholder="Дата"
                                        name="departure-date">
-                                <a href="#" class="input-arrow"></a>
-                            </div>
-                            <div class="form-group fly-returm" id="arrival-date">
-                                <label for="arrival-date">Обратно:</label>
-                                <input type="text" class="form-control date-fly" name="arrival-date" id="arrival-date-2"
-                                       placeholder="Дата">
-                                <a href="#" class="input-arrow"></a>
+                                <a href="#" class="input-arrow" id="link-open-calendar-three-day"></a>
+                                <div class="autocomplete-wrap autocomplete-calendar" id="open-calendar-three-day" >
+                                    <div class="calendar-month clearfix">
+                                        <div class="pull-left">
+                                            <a href="#" class="navigation-arrow-left"></a><span>Ноябрь</span>
+                                        </div>
+                                        <div class="pull-right">
+                                            <span>Декабрь</span><a href="#" class="navigation-arrow-right"></a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
 
+                                        <div class="col-sm-6">
+                                            <div class="weekdays">
+                                                <span>Пн</span>
+                                                <span>Вт</span>
+                                                <span>Ср</span>
+                                                <span>Чт</span>
+                                                <span>Пт</span>
+                                                <span>Сб</span>
+                                                <span>Нд</span>
+                                            </div>
+                                            <div class="day">
+                                                <a href="#">1</a>
+                                                <a href="#">2</a>
+                                                <a href="#">3</a>
+                                                <a href="#" class="three-day-check round-left">4</a>
+                                                <a href="#" class="three-day-check">5</a>
+                                                <a href="#" class="three-day-check ">6</a>
+                                                <a href="#" class="three-day-check select-date round-right">7</a>
+                                                <a href="#" class="three-day-check round-left">8</a>
+                                                <a href="#" class="three-day-check">9</a>
+                                                <a href="#" class="three-day-check round-right">10</a>
+                                                <a href="#">12</a>
+                                                <a href="#">13</a>
+                                                <a href="#">14</a>
+                                                <a href="#">15</a>
+                                                <a href="#">16</a>
+                                                <a href="#">17</a>
+                                                <a href="#">18</a>
+                                                <a href="#">19</a>
+                                                <a href="#">20</a>
+                                                <a href="#">21</a>
+                                                <a href="#">21</a>
+                                                <a href="#">23</a>
+                                                <a href="#">24</a>
+                                                <a href="#">25</a>
+                                                <a href="#">26</a>
+                                                <a href="#">27</a>
+                                                <a href="#">28</a>
+                                                <a href="#">29</a>
+                                                <a href="#">30</a>
+                                                <a href="#">31</a>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="weekdays">
+                                                <span>Пн</span>
+                                                <span>Вт</span>
+                                                <span>Ср</span>
+                                                <span>Чт</span>
+                                                <span>Пт</span>
+                                                <span>Сб</span>
+                                                <span>Нд</span>
+                                            </div>
+                                            <div class="day">
+                                                <a href="#">1</a>
+                                                <a href="#">2</a>
+                                                <a href="#">3</a>
+                                                <a href="#">4</a>
+                                                <a href="#">5</a>
+                                                <a href="#">6</a>
+                                                <a href="#">7</a>
+                                                <a href="#">8</a>
+                                                <a href="#">9</a>
+                                                <a href="#">10</a>
+                                                <a href="#">12</a>
+                                                <a href="#">13</a>
+                                                <a href="#">14</a>
+                                                <a href="#">15</a>
+                                                <a href="#">16</a>
+                                                <a href="#">17</a>
+                                                <a href="#">18</a>
+                                                <a href="#">19</a>
+                                                <a href="#">20</a>
+                                                <a href="#">21</a>
+                                                <a href="#">21</a>
+                                                <a href="#">23</a>
+                                                <a href="#">24</a>
+                                                <a href="#">25</a>
+                                                <a href="#">26</a>
+                                                <a href="#">27</a>
+                                                <a href="#">28</a>
+                                                <a href="#">29</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="radio-checked-calendar">
+                                        <input type="radio" id="exact-date" name="radio-box-date-check" class="radio-box"
+                                               value="exact-date" checked>
+                                        <label for="exact-date"><span><span></span></span>Точная дата</label>
+
+                                        <input type="radio" id="approximate-date" name="radio-box-date-check" class="radio-box"
+                                               value="approximate-date">
+                                        <label for="approximate-date"><span><span></span></span>+/- 3 дня</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group fly-returm">
+                                <label for="arrival-date-fly">Обратно:</label>
+                                <input type="text" class="form-control date-fly" name="arrival-date-fly" id="arrival-date-fly"
+                                       placeholder="Дата">
+                                <a href="#" class="input-arrow" id="arrival-date-open-calendar"></a>
+                                <div class="autocomplete-wrap autocomplete-calendar" id="open-calendar" >
+                                    <div class="calendar-month clearfix">
+                                        <div class="pull-left">
+                                            <a href="#" class="navigation-arrow-left"></a><span>Ноябрь</span>
+                                        </div>
+                                        <div class="pull-right">
+                                            <span>Декабрь</span><a href="#" class="navigation-arrow-right"></a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+
+                                        <div class="col-sm-6">
+                                            <div class="weekdays">
+                                                <span>Пн</span>
+                                                <span>Вт</span>
+                                                <span>Ср</span>
+                                                <span>Чт</span>
+                                                <span>Пт</span>
+                                                <span>Сб</span>
+                                                <span>Нд</span>
+                                            </div>
+                                            <div class="day">
+                                                <a href="#">1</a>
+                                                <a href="#">2</a>
+                                                <a href="#">3</a>
+                                                <a href="#" class="day-check">4</a>
+                                                <a href="#">5</a>
+                                                <a href="#">6</a>
+                                                <a href="#">7</a>
+                                                <a href="#">8</a>
+                                                <a href="#">9</a>
+                                                <a href="#">10</a>
+                                                <a href="#">12</a>
+                                                <a href="#">13</a>
+                                                <a href="#">14</a>
+                                                <a href="#">15</a>
+                                                <a href="#">16</a>
+                                                <a href="#">17</a>
+                                                <a href="#">18</a>
+                                                <a href="#">19</a>
+                                                <a href="#">20</a>
+                                                <a href="#">21</a>
+                                                <a href="#">21</a>
+                                                <a href="#" class="day-check">23</a>
+                                                <a href="#">24</a>
+                                                <a href="#">25</a>
+                                                <a href="#">26</a>
+                                                <a href="#">27</a>
+                                                <a href="#" class="day-check">28</a>
+                                                <a href="#">29</a>
+                                                <a href="#">30</a>
+                                                <a href="#">31</a>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="weekdays">
+                                                <span>Пн</span>
+                                                <span>Вт</span>
+                                                <span>Ср</span>
+                                                <span>Чт</span>
+                                                <span>Пт</span>
+                                                <span>Сб</span>
+                                                <span>Нд</span>
+                                            </div>
+                                            <div class="day">
+                                                <a href="#">1</a>
+                                                <a href="#">2</a>
+                                                <a href="#">3</a>
+                                                <a href="#" class="day-check">4</a>
+                                                <a href="#">5</a>
+                                                <a href="#">6</a>
+                                                <a href="#">7</a>
+                                                <a href="#">8</a>
+                                                <a href="#">9</a>
+                                                <a href="#">10</a>
+                                                <a href="#">12</a>
+                                                <a href="#">13</a>
+                                                <a href="#">14</a>
+                                                <a href="#">15</a>
+                                                <a href="#">16</a>
+                                                <a href="#">17</a>
+                                                <a href="#">18</a>
+                                                <a href="#">19</a>
+                                                <a href="#">20</a>
+                                                <a href="#">21</a>
+                                                <a href="#">21</a>
+                                                <a href="#" class="day-check">23</a>
+                                                <a href="#">24</a>
+                                                <a href="#">25</a>
+                                                <a href="#">26</a>
+                                                <a href="#">27</a>
+                                                <a href="#" class="day-check">28</a>
+                                                <a href="#">29</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="radio-checked-calendar">
+                                        <input type="radio" id="exact-date-2" name="radio-box-date-check" class="radio-box"
+                                               value="exact-date" checked>
+                                        <label for="exact-date-2"><span><span></span></span>Точная дата</label>
+
+                                        <input type="radio" id="approximate-date-2" name="radio-box-date-check" class="radio-box"
+                                               value="approximate-date">
+                                        <label for="approximate-date-2"><span><span></span></span>+/- 3 дня</label>
+                                    </div>
+                                </div>
                             </div>
                             <div class="form-group">
                                 <label for="from-to-fly">Откуда:</label>
                                 <input type="text" class="form-control to-fly" id="from-to-fly"
                                        placeholder="Откуда лететь" name="from-to-fly">
-                                <a href="#" class="input-arrow"></a>
+                                <a href="#" class="input-arrow" id="link-open-autocomplete-where-to-fly"></a>
+                                <div class="autocomplete-wrap autocomplete-where-to-fly" id="open-autocomplete-where-to-fly">
+                                    <div>
+                                        <!-- Nav tabs -->
+                                        <ul class="nav nav-tabs " role="tablist">
+                                            <li role="presentation" class="active anywhere"><a href="#anywhere" aria-controls="anywhere"
+                                                                                               role="tab"
+                                                                                               data-toggle="tab">Куда угодно</a>
+                                                <img class="link1" src="images/icon/arrow_down.png">
+                                            </li>
+                                            <li role="presentation" class="cities-and-airports"><a href="#cities-and-airports"
+                                                                                                   aria-controls="cities-and-airports"
+                                                                                                   role="tab" data-toggle="tab">Города и
+                                                аэропорты</a>
+                                                <img class="link2" src="images/icon/arrow_down.png">
+                                            </li>
+                                            <li role="presentation" class="country"><a href="#country" aria-controls="country" role="tab"
+                                                                                       data-toggle="tab">Страны</a>
+                                                <img class="link3" src="images/icon/arrow_down.png">
+                                            </li>
+                                        </ul>
 
+                                        <!-- Tab panes -->
+                                        <div class="tab-content">
+                                            <div role="tabpanel" class="tab-pane active" id="anywhere">
+                                                <ul class="list-all-aeroport list-unstyled">
+                                                    <li>
+                                                        <div class="active-link list-all-link"><span class="aqua-letters">Нью</span>-Йорк,
+                                                            США, все
+                                                            аэропорты<span class="location-code ">NYC</span></div>
+                                                        <ul class="sub-list list-unstyled">
+                                                            <li class="clearfix"><a href="#"><span class="aqua-letters">Нью</span>-Йорк,
+                                                                Ньюарк
+                                                                Либерти
+                                                                <span class=" location-code">EWR</span></a></li>
+                                                            <li class="clearfix"><a href="#"><span class="aqua-letters">Нью</span>Нью-Йорк,
+                                                                Джон
+                                                                Ф. Кеннеди<span class="location-code">JFK</span></a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <div class="list-all-link"><span class="all-aeroport-link">Петропавловск-Камчатский, Россия, все аэропорты</span><span
+                                                                class=" location-code">LGA</span></div>
+                                                    </li>
+                                                </ul>
+                                                <div class="checkbox autocomplete-checkbox">
+                                                    <input type="checkbox" value="" id="radius-from-where" name="radius-from-where">
+                                                    <label for="radius-from-where"><span></span>В радиусе</label>
+                                                    <input type="text" id="radius-where-km" name="radius-where-km">
+                                                    <label for="radius-where-km">км</label>
+                                                </div>
+                                                <div class="location">
+                                                    <img src="images/icon/locatin.png"> <a href="#">Показать на карте</a>
+                                                </div>
+                                            </div>
+                                            <div role="tabpanel" class="tab-pane" id="cities-and-airports">...</div>
+                                            <div role="tabpanel" class="tab-pane" id="country">...</div>
+                                        </div>
+
+                                    </div>
+                                </div>
                             </div>
                             <div class="form-group">
                                 <label for="where-to-fly">Куда:</label>
                                 <input type="text" class="form-control to-fly" id="where-to-fly"
                                        placeholder="Куда лететь" name="where-to-fly">
-                                <a href="#" class="input-arrow"></a>
+                                <a href="#" class="input-arrow" id="link-autocomplete-from-where-fly"></a>
+                                <div class="autocomplete-wrap autocomplete-from-where-fly" id="open-autocomplete-from-where-fly">
 
+                                    <ul class="list-all-aeroport list-unstyled">
+                                        <li>
+                                            <div class="active-link"><span class="all-aeroport-link"><span class="aqua-letters">Нью</span>-Бедфорт, США</span><span
+                                                    class=" location-code">LGA</span></div>
+                                        </li>
+                                        <li>
+                                            <div class="list-all-link"><span class="all-aeroport-link"><span class="aqua-letters">Нью</span>-Берн, США</span><span
+                                                    class=" location-code">LGA</span></div>
+                                        </li>
+                                        <li>
+                                            <div class="list-all-link"><span class="aqua-letters">Нью</span>-Бедфорт, США, <span
+                                                    class="text-all-aeroport">все аэропорты</span><span
+                                                    class="location-code ">NYC</span></div>
+                                            <ul class="sub-list list-unstyled">
+                                                <li class="clearfix"><a href="#"><span class="aqua-letters">Нью</span>-Берн, США
+                                                    <span class=" location-code">EWR</span></a></li>
+                                                <li class="clearfix"><a href="#"><span class="aqua-letters">Нью</span>Нью-Йорк, США<span
+                                                        class="location-code">JFK</span></a>
+                                                </li>
+                                                <li class="clearfix"><a href="#"><span class="aqua-letters">Нью</span>Нью-Йорк, США<span
+                                                        class="location-code">JFK</span></a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <div class="list-all-link"><span class="all-aeroport-link"><span class="aqua-letters">Нью</span>касл(-апон-Тайн), Великобритания</span><span
+                                                    class=" location-code">LGA</span></div>
+                                        </li>
+                                    </ul>
+                                    <div class="checkbox  autocomplete-checkbox">
+                                        <input type="checkbox" value="" id="radius-anywhere" name="radius-anywhere">
+                                        <label for="radius-anywhere"><span></span>В радиусе</label>
+                                        <input type="text">
+                                        <label>км</label>
+                                    </div>
+                                    <div class="location">
+                                        <img src="images/icon/locatin.png"> <a href="#">Показать на карте</a>
+                                    </div>
+                                </div>
                             </div>
+
                             <div class="form-group">
                                 <label for="number-people">Количество:</label>
                                 <input type="text" class="form-control count-people" id="number-people"
                                        placeholder="1 взрослый" name="number-people">
-                                <a href="#" class="input-arrow"></a>
+                                <a href="#" class="input-arrow" id="link-autocomplete-passengers"></a>
+                                <div class="autocomplete-wrap autocomplete-passengers" id="open-autocomplete-passengers">
+
+                                    <div class="clearfix">
+                                        <span class="custom-text-autocomplete">Взрослые</span>
+                                        <div class="pull-right">
+                                            <input type="button" value="—" i onclick="minus()" class="minus-passengers">
+                                            <input type="text" size="25" value="1" id="counter-1" class="counter-passengers">
+                                            <input type="button" value="+" onclick="plus()" class="plus-passengers">
+                                        </div>
+                                    </div>
+
+                                    <div class="clearfix">
+                                        <span class="custom-text-autocomplete">Дети 0-2 лет</span>
+                                        <div class="pull-right">
+                                            <input type="button" value="—" i onclick="minus()" class="minus-passengers">
+                                            <input type="text" size="25" value="1" id="counter-2" class="counter-passengers">
+                                            <input type="button" value="+" onclick="plus()" class="plus-passengers">
+                                        </div>
+                                    </div>
+
+                                    <div class="clearfix">
+                                        <span class="custom-text-autocomplete">Дети старше 2 лет</span>
+                                        <div class="pull-right">
+                                            <input type="button" value="—" i onclick="minus()" class="minus-passengers">
+                                            <input type="text" size="25" value="1" id="counter-3" class="counter-passengers">
+                                            <input type="button" value="+" onclick="plus()" class="plus-passengers">
+                                        </div>
+                                    </div>
+
+                                </div>
 
                             </div>
                             <div class="form-group add-flight">
-                                <div class="add-flight-margin"><a href="#" class="add-flight"><img
+                                <div class="add-flight-margin"><a href="#" id="add-flight" class="add-flight"><img
                                         src="images/icon/plus-green.png">Добавить перелет</a></div>
                             </div>
-                            <div class="form-group">
-                                <button type="submit" class="btn btn-find">Найти</button>
+                            <div class="form-group button-center">
+                                <button type="submit" class="btn btn-find" id="search">Найти</button>
                             </div>
+
+
                         </div>
-                        <div class="text-center аdvanced-searh"><a href="#" class="open-close search-link-arrow-down">Расширенный
+                        <div class="text-center open-close  аdvanced-searh search-link-arrow-down"><a href="#">Расширенный
                             поиск</a></div>
                         <div class="аdvanced-searh-content">
                             <div class="row">
@@ -146,12 +495,22 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-4">
+                                <div class="col-sm-3">
                                     <div class="form-group">
                                         <label for="flight-class">Класс:</label>
                                         <input type="text" class="form-control flight-class" id="flight-class"
                                                placeholder="Эконом" name="flight-class">
-                                        <a href="#" class="input-arrow"></a>
+                                        <a href="#" class="input-arrow" id="link-autocomplete-class-fly"> </a>
+                                        <div class="autocomplete-wrap autocomplete-class-fly " id="open-autocomplete-class-fly">
+                                            <ul class="autocomplete-checkbox list-unstyled">
+                                                <li><input type="checkbox" value="" id="economy-class" name="economy-class">
+                                                    <label for="economy-class"><span></span>Эконом</label></li>
+                                                <li><input type="checkbox" value="" id="business-class" name="business-class">
+                                                    <label for="business-class"><span></span>Бизнес</label></li>
+                                                <li><input type="checkbox" value="" id="luxury-class" name="luxury-class">
+                                                    <label for="luxury-class"><span></span>Первый</label></li>
+                                            </ul>
+                                        </div>
                                     </div>
                                     <div class="form-group">
                                         <label for="priority-company" class="question-priority-company">Указать приоритетные авиакомпании</label>
@@ -159,21 +518,41 @@
                                         <div>
                                         <input type="text" name="priority-company" class="form-control priority-company"
                                                id="priority-company" placeholder="Выберите авиакомпанию из списка">
-                                        <a href="#" class="input-arrow"></a>
+                                        <a href="#" class="input-arrow" id="link-autocomplete-priority-company"></a>
+                                            <div class="autocomplete-wrap autocomplete-priority-company" id="open-autocomplete-priority-company">
+                                                <div class="scroll-owerflow" id="filter_options">
+                                                    <ul class="autocomplete-checkbox list-unstyled" >
+                                                        <li><input type="checkbox" value=""  name="" id="id-company-1"><label for="id-company-1"><span></span>UMAir</label></li>
+                                                        <li><input type="checkbox" value=""  name="" id="id-company-2"><label for="id-company-2"><span></span>Windrose Airlines</label></li>
+                                                        <li><input type="checkbox" value=""  name="" id="id-company-3"><label for="id-company-3"><span></span>Wizz Air</label></li>
+                                                        <li><input type="checkbox" value=""  name="" id="id-company-4"><label for="id-company-4"><span></span>Аэростар</label></li>
+                                                        <li><input type="checkbox" value=""  name="" id="id-company-5"><label for="id-company-5"><span></span>Днеправиа</label></li>
+                                                        <li><input type="checkbox" value=""  name="" id="id-company-6"><label for="id-company-6"><span></span>Международные авиалинии Украины</label></li>
+                                                        <li><input type="checkbox" value=""  name="" id="id-company-7"><label for="id-company-7"><span></span>Мотор Сич</label></li>
+                                                        <li><input type="checkbox" value=""  name="" id="id-company-8"><label for="id-company-8"><span></span>Мотор Сич</label></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-4">
+                                <div class="col-sm-offset-2 col-sm-3">
                                     <div class="form-group">
                                         <label for="passengers">Пассажиры</label>
                                         <input type="text" name="passengers" class="form-control passengers"
                                                id="passengers" placeholder="Выберите пассажиров из списка">
-                                        <a href="#" class="input-arrow"></a>
+                                        <a href="#" class="input-arrow" id="link-autocomplete-check-passengers"></a>
+                                        <div class="autocomplete-wrap autocomplete-check-passengers " id="open-autocomplete-check-passengers">
+                                            <ul class="autocomplete-checkbox list-unstyled">
+                                                <li><input type="checkbox" value=""  name="" id="id-user-1"><label for="id-user-1"><span></span>Веточкин Никита Иванович</label></li>
+                                                <li><input type="checkbox" value=""  name="" id="id-user-2"><label for="id-user-2"><span></span>Самсонов Анатолий Геннадьевич</label></li>
+                                                <li><input type="checkbox" value=""  name="" id="id-user-3"><label for="id-user-3"><span></span>Луценко Андрей Константинович</label></li>
+                                                <li><input type="checkbox" value=""  name="" id="id-user-4"><label for="id-user-4"><span></span>Глухарева Алевтина Александровна</label></li>
+                                            </ul>
+                                        </div>
                                     </div>
                                     <div class="form-group">
-                                        <button type="submit" class="btn btn-request" data-toggle="modal"
-                                                data-target="#request-for-group-flight">запрос на групповой перелет
-                                        </button>
+                                        <button type="submit" class="btn btn-request" data-toggle="modal" data-target="#request-for-group-flight">запрос на групповой перелет</button>
                                     </div>
                                 </div>
                             </div>
@@ -229,12 +608,230 @@
                                 <input type="text" class="form-control date-fly" id="departure-date-train"
                                        placeholder="Дата" name="departure-date">
                                 <a href="#" class="input-arrow"></a>
+                                <div class="autocomplete-wrap autocomplete-calendar" id="open-calendar-train">
+                                    <div class="calendar-month clearfix">
+                                        <div class="pull-left">
+                                            <a href="#" class="navigation-arrow-left"></a><span>Ноябрь</span>
+                                        </div>
+                                        <div class="pull-right">
+                                            <span>Декабрь</span><a href="#" class="navigation-arrow-right"></a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+
+                                        <div class="col-sm-6">
+                                            <div class="weekdays">
+                                                <span>Пн</span>
+                                                <span>Вт</span>
+                                                <span>Ср</span>
+                                                <span>Чт</span>
+                                                <span>Пт</span>
+                                                <span>Сб</span>
+                                                <span>Нд</span>
+                                            </div>
+                                            <div class="day">
+                                                <a href="#">1</a>
+                                                <a href="#">2</a>
+                                                <a href="#">3</a>
+                                                <a href="#" class="three-day-check round-left">4</a>
+                                                <a href="#" class="three-day-check">5</a>
+                                                <a href="#" class="three-day-check ">6</a>
+                                                <a href="#" class="three-day-check select-date round-right">7</a>
+                                                <a href="#" class="three-day-check round-left">8</a>
+                                                <a href="#" class="three-day-check">9</a>
+                                                <a href="#" class="three-day-check round-right">10</a>
+                                                <a href="#">12</a>
+                                                <a href="#">13</a>
+                                                <a href="#">14</a>
+                                                <a href="#">15</a>
+                                                <a href="#">16</a>
+                                                <a href="#">17</a>
+                                                <a href="#">18</a>
+                                                <a href="#">19</a>
+                                                <a href="#">20</a>
+                                                <a href="#">21</a>
+                                                <a href="#">21</a>
+                                                <a href="#">23</a>
+                                                <a href="#">24</a>
+                                                <a href="#">25</a>
+                                                <a href="#">26</a>
+                                                <a href="#">27</a>
+                                                <a href="#">28</a>
+                                                <a href="#">29</a>
+                                                <a href="#">30</a>
+                                                <a href="#">31</a>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="weekdays">
+                                                <span>Пн</span>
+                                                <span>Вт</span>
+                                                <span>Ср</span>
+                                                <span>Чт</span>
+                                                <span>Пт</span>
+                                                <span>Сб</span>
+                                                <span>Нд</span>
+                                            </div>
+                                            <div class="day">
+                                                <a href="#">1</a>
+                                                <a href="#">2</a>
+                                                <a href="#">3</a>
+                                                <a href="#">4</a>
+                                                <a href="#">5</a>
+                                                <a href="#">6</a>
+                                                <a href="#">7</a>
+                                                <a href="#">8</a>
+                                                <a href="#">9</a>
+                                                <a href="#">10</a>
+                                                <a href="#">12</a>
+                                                <a href="#">13</a>
+                                                <a href="#">14</a>
+                                                <a href="#">15</a>
+                                                <a href="#">16</a>
+                                                <a href="#">17</a>
+                                                <a href="#">18</a>
+                                                <a href="#">19</a>
+                                                <a href="#">20</a>
+                                                <a href="#">21</a>
+                                                <a href="#">21</a>
+                                                <a href="#">23</a>
+                                                <a href="#">24</a>
+                                                <a href="#">25</a>
+                                                <a href="#">26</a>
+                                                <a href="#">27</a>
+                                                <a href="#">28</a>
+                                                <a href="#">29</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="radio-checked-calendar">
+                                        <input type="radio" id="exact-date" name="radio-box-date-check" class="radio-box"
+                                               value="exact-date" checked>
+                                        <label for="exact-date"><span><span></span></span>Точная дата</label>
+
+                                        <input type="radio" id="approximate-date" name="radio-box-date-check" class="radio-box"
+                                               value="approximate-date">
+                                        <label for="approximate-date"><span><span></span></span>+/- 3 дня</label>
+                                    </div>
+                                </div>
                             </div>
                             <div class="form-group train-return">
                                 <label for="arrival-date-train">Обратно:</label>
                                 <input type="text" class="form-control date-fly" name="arrival-date"
                                        id="arrival-date-train" placeholder="Дата">
                                 <a href="#" class="input-arrow"></a>
+                                <div class="autocomplete-wrap autocomplete-calendar" id="open-calendar-three-day-train">
+                                    <div class="calendar-month clearfix">
+                                        <div class="pull-left">
+                                            <a href="#" class="navigation-arrow-left"></a><span>Ноябрь</span>
+                                        </div>
+                                        <div class="pull-right">
+                                            <span>Декабрь</span><a href="#" class="navigation-arrow-right"></a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+
+                                        <div class="col-sm-6">
+                                            <div class="weekdays">
+                                                <span>Пн</span>
+                                                <span>Вт</span>
+                                                <span>Ср</span>
+                                                <span>Чт</span>
+                                                <span>Пт</span>
+                                                <span>Сб</span>
+                                                <span>Нд</span>
+                                            </div>
+                                            <div class="day">
+                                                <a href="#">1</a>
+                                                <a href="#">2</a>
+                                                <a href="#">3</a>
+                                                <a href="#" class="day-check">4</a>
+                                                <a href="#">5</a>
+                                                <a href="#">6</a>
+                                                <a href="#">7</a>
+                                                <a href="#">8</a>
+                                                <a href="#">9</a>
+                                                <a href="#">10</a>
+                                                <a href="#">12</a>
+                                                <a href="#">13</a>
+                                                <a href="#">14</a>
+                                                <a href="#">15</a>
+                                                <a href="#">16</a>
+                                                <a href="#">17</a>
+                                                <a href="#">18</a>
+                                                <a href="#">19</a>
+                                                <a href="#">20</a>
+                                                <a href="#">21</a>
+                                                <a href="#">21</a>
+                                                <a href="#" class="day-check">23</a>
+                                                <a href="#">24</a>
+                                                <a href="#">25</a>
+                                                <a href="#">26</a>
+                                                <a href="#">27</a>
+                                                <a href="#" class="day-check">28</a>
+                                                <a href="#">29</a>
+                                                <a href="#">30</a>
+                                                <a href="#">31</a>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="weekdays">
+                                                <span>Пн</span>
+                                                <span>Вт</span>
+                                                <span>Ср</span>
+                                                <span>Чт</span>
+                                                <span>Пт</span>
+                                                <span>Сб</span>
+                                                <span>Нд</span>
+                                            </div>
+                                            <div class="day">
+                                                <a href="#">1</a>
+                                                <a href="#">2</a>
+                                                <a href="#">3</a>
+                                                <a href="#" class="day-check">4</a>
+                                                <a href="#">5</a>
+                                                <a href="#">6</a>
+                                                <a href="#">7</a>
+                                                <a href="#">8</a>
+                                                <a href="#">9</a>
+                                                <a href="#">10</a>
+                                                <a href="#">12</a>
+                                                <a href="#">13</a>
+                                                <a href="#">14</a>
+                                                <a href="#">15</a>
+                                                <a href="#">16</a>
+                                                <a href="#">17</a>
+                                                <a href="#">18</a>
+                                                <a href="#">19</a>
+                                                <a href="#">20</a>
+                                                <a href="#">21</a>
+                                                <a href="#">21</a>
+                                                <a href="#" class="day-check">23</a>
+                                                <a href="#">24</a>
+                                                <a href="#">25</a>
+                                                <a href="#">26</a>
+                                                <a href="#">27</a>
+                                                <a href="#" class="day-check">28</a>
+                                                <a href="#">29</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="radio-checked-calendar">
+                                        <input type="radio" id="exact-date" name="radio-box-date-check" class="radio-box"
+                                               value="exact-date" checked>
+                                        <label for="exact-date"><span><span></span></span>Точная дата</label>
+
+                                        <input type="radio" id="approximate-date" name="radio-box-date-check" class="radio-box"
+                                               value="approximate-date">
+                                        <label for="approximate-date"><span><span></span></span>+/- 3 дня</label>
+                                    </div>
+                                </div>
 
                             </div>
                             <div class="form-group">
@@ -242,6 +839,33 @@
                                 <input type="text" class="form-control to-fly" id="from-to-train"
                                        placeholder="Cтанция отправления" name="from-to-train">
                                 <a href="#" class="input-arrow"></a>
+                                <div class="autocomplete-wrap autocomplete-from-where-train" id="open-autocomplete-from-where-train">
+
+                                    <ul class="list-all-aeroport list-unstyled">
+                                        <li>
+                                            <div class="list-all-link active-link"><span class="all-aeroport-link"><span
+                                                    class="aqua-letters">Оде</span>сса</span></div>
+                                        </li>
+                                        <li>
+                                            <div class="list-all-link"><span class="all-aeroport-link"><span class="aqua-letters">Оде</span>сса-Главная</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="list-all-link"><span class="all-aeroport-link"><span class="aqua-letters">Оде</span>сса-Восточная</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="list-all-link"><span class="all-aeroport-link"><span class="aqua-letters">Оде</span>сса-Сортировочная</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="list-all-link"><span class="all-aeroport-link"><span class="aqua-letters">Оде</span>сса-Застава1</span>
+                                            </div>
+                                        </li>
+                                        <li>
+
+                                    </ul>
+                                </div>
 
                             </div>
                             <div class="form-group">
@@ -249,6 +873,33 @@
                                 <input type="text" class="form-control to-fly" id="where-to-train"
                                        placeholder="Станция прибытия" name="where-to-train">
                                 <a href="#" class="input-arrow"></a>
+                                <div class="autocomplete-wrap autocomplete-from-where-train" id="open-autocomplete-where-train">
+
+                                    <ul class="list-all-aeroport list-unstyled">
+                                        <li>
+                                            <div class="list-all-link active-link"><span class="all-aeroport-link"><span
+                                                    class="aqua-letters">Оде</span>сса</span></div>
+                                        </li>
+                                        <li>
+                                            <div class="list-all-link"><span class="all-aeroport-link"><span class="aqua-letters">Оде</span>сса-Главная</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="list-all-link"><span class="all-aeroport-link"><span class="aqua-letters">Оде</span>сса-Восточная</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="list-all-link"><span class="all-aeroport-link"><span class="aqua-letters">Оде</span>сса-Сортировочная</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="list-all-link"><span class="all-aeroport-link"><span class="aqua-letters">Оде</span>сса-Застава1</span>
+                                            </div>
+                                        </li>
+                                        <li>
+
+                                    </ul>
+                                </div>
 
                             </div>
                             <div class="form-group">
@@ -262,7 +913,7 @@
                                 </form>
 
                             </div>
-                            <div class="form-group">
+                            <div class="form-group button-center">
                                 <button type="submit" class="btn btn-find">Найти</button>
                             </div>
                         </div>
@@ -285,41 +936,275 @@
                                 <input type="text" class="form-control date-fly" id="departure-date-insurance"
                                        placeholder="Дата" name="departure-date-insurance">
                                 <a href="#" class="input-arrow"></a>
+                                <div class="autocomplete-wrap autocomplete-calendar" id="open-autocomplete-calendar">
+                                    <div class="calendar-month clearfix">
+                                        <div class="pull-left">
+                                            <a href="#" class="navigation-arrow-left"></a><span>Ноябрь</span>
+                                        </div>
+                                        <div class="pull-right">
+                                            <span>Декабрь</span><a href="#" class="navigation-arrow-right"></a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+
+                                        <div class="col-sm-6">
+                                            <div class="weekdays">
+                                                <span>Пн</span>
+                                                <span>Вт</span>
+                                                <span>Ср</span>
+                                                <span>Чт</span>
+                                                <span>Пт</span>
+                                                <span>Сб</span>
+                                                <span>Нд</span>
+                                            </div>
+                                            <div class="day">
+                                                <a href="#">1</a>
+                                                <a href="#">2</a>
+                                                <a href="#">3</a>
+                                                <a href="#" class="three-day-check round-left">4</a>
+                                                <a href="#" class="three-day-check">5</a>
+                                                <a href="#" class="three-day-check ">6</a>
+                                                <a href="#" class="three-day-check select-date round-right">7</a>
+                                                <a href="#" class="three-day-check round-left">8</a>
+                                                <a href="#" class="three-day-check">9</a>
+                                                <a href="#" class="three-day-check round-right">10</a>
+                                                <a href="#">12</a>
+                                                <a href="#">13</a>
+                                                <a href="#">14</a>
+                                                <a href="#">15</a>
+                                                <a href="#">16</a>
+                                                <a href="#">17</a>
+                                                <a href="#">18</a>
+                                                <a href="#">19</a>
+                                                <a href="#">20</a>
+                                                <a href="#">21</a>
+                                                <a href="#">21</a>
+                                                <a href="#">23</a>
+                                                <a href="#">24</a>
+                                                <a href="#">25</a>
+                                                <a href="#">26</a>
+                                                <a href="#">27</a>
+                                                <a href="#">28</a>
+                                                <a href="#">29</a>
+                                                <a href="#">30</a>
+                                                <a href="#">31</a>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="weekdays">
+                                                <span>Пн</span>
+                                                <span>Вт</span>
+                                                <span>Ср</span>
+                                                <span>Чт</span>
+                                                <span>Пт</span>
+                                                <span>Сб</span>
+                                                <span>Нд</span>
+                                            </div>
+                                            <div class="day">
+                                                <a href="#">1</a>
+                                                <a href="#">2</a>
+                                                <a href="#">3</a>
+                                                <a href="#">4</a>
+                                                <a href="#">5</a>
+                                                <a href="#">6</a>
+                                                <a href="#">7</a>
+                                                <a href="#">8</a>
+                                                <a href="#">9</a>
+                                                <a href="#">10</a>
+                                                <a href="#">12</a>
+                                                <a href="#">13</a>
+                                                <a href="#">14</a>
+                                                <a href="#">15</a>
+                                                <a href="#">16</a>
+                                                <a href="#">17</a>
+                                                <a href="#">18</a>
+                                                <a href="#">19</a>
+                                                <a href="#">20</a>
+                                                <a href="#">21</a>
+                                                <a href="#">21</a>
+                                                <a href="#">23</a>
+                                                <a href="#">24</a>
+                                                <a href="#">25</a>
+                                                <a href="#">26</a>
+                                                <a href="#">27</a>
+                                                <a href="#">28</a>
+                                                <a href="#">29</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="radio-checked-calendar">
+                                        <input type="radio" id="exact-date" name="radio-box-date-check" class="radio-box"
+                                               value="exact-date" checked>
+                                        <label for="exact-date"><span><span></span></span>Точная дата</label>
+
+                                        <input type="radio" id="approximate-date" name="radio-box-date-check" class="radio-box"
+                                               value="approximate-date">
+                                        <label for="approximate-date"><span><span></span></span>+/- 3 дня</label>
+                                    </div>
+                                </div>
                             </div>
                             <div class="form-group">
                                 <label for="arrival-date-insurance">Дата возвращения:</label>
                                 <input type="text" class="form-control date-fly" name="arrival-date-insurance"
                                        id="arrival-date-insurance" placeholder="Дата">
                                 <a href="#" class="input-arrow"></a>
+                                <div class="autocomplete-wrap autocomplete-calendar" id="open-autocomplete-calendar-insurance">
+                                    <div class="calendar-month clearfix">
+                                        <div class="pull-left">
+                                            <a href="#" class="navigation-arrow-left"></a><span>Ноябрь</span>
+                                        </div>
+                                        <div class="pull-right">
+                                            <span>Декабрь</span><a href="#" class="navigation-arrow-right"></a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+
+                                        <div class="col-sm-6">
+                                            <div class="weekdays">
+                                                <span>Пн</span>
+                                                <span>Вт</span>
+                                                <span>Ср</span>
+                                                <span>Чт</span>
+                                                <span>Пт</span>
+                                                <span>Сб</span>
+                                                <span>Нд</span>
+                                            </div>
+                                            <div class="day">
+                                                <a href="#">1</a>
+                                                <a href="#">2</a>
+                                                <a href="#">3</a>
+                                                <a href="#" class="day-check">4</a>
+                                                <a href="#">5</a>
+                                                <a href="#">6</a>
+                                                <a href="#">7</a>
+                                                <a href="#">8</a>
+                                                <a href="#">9</a>
+                                                <a href="#">10</a>
+                                                <a href="#">12</a>
+                                                <a href="#">13</a>
+                                                <a href="#">14</a>
+                                                <a href="#">15</a>
+                                                <a href="#">16</a>
+                                                <a href="#">17</a>
+                                                <a href="#">18</a>
+                                                <a href="#">19</a>
+                                                <a href="#">20</a>
+                                                <a href="#">21</a>
+                                                <a href="#">21</a>
+                                                <a href="#" class="day-check">23</a>
+                                                <a href="#">24</a>
+                                                <a href="#">25</a>
+                                                <a href="#">26</a>
+                                                <a href="#">27</a>
+                                                <a href="#" class="day-check">28</a>
+                                                <a href="#">29</a>
+                                                <a href="#">30</a>
+                                                <a href="#">31</a>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="weekdays">
+                                                <span>Пн</span>
+                                                <span>Вт</span>
+                                                <span>Ср</span>
+                                                <span>Чт</span>
+                                                <span>Пт</span>
+                                                <span>Сб</span>
+                                                <span>Нд</span>
+                                            </div>
+                                            <div class="day">
+                                                <a href="#">1</a>
+                                                <a href="#">2</a>
+                                                <a href="#">3</a>
+                                                <a href="#" class="day-check">4</a>
+                                                <a href="#">5</a>
+                                                <a href="#">6</a>
+                                                <a href="#">7</a>
+                                                <a href="#">8</a>
+                                                <a href="#">9</a>
+                                                <a href="#">10</a>
+                                                <a href="#">12</a>
+                                                <a href="#">13</a>
+                                                <a href="#">14</a>
+                                                <a href="#">15</a>
+                                                <a href="#">16</a>
+                                                <a href="#">17</a>
+                                                <a href="#">18</a>
+                                                <a href="#">19</a>
+                                                <a href="#">20</a>
+                                                <a href="#">21</a>
+                                                <a href="#">21</a>
+                                                <a href="#" class="day-check">23</a>
+                                                <a href="#">24</a>
+                                                <a href="#">25</a>
+                                                <a href="#">26</a>
+                                                <a href="#">27</a>
+                                                <a href="#" class="day-check">28</a>
+                                                <a href="#">29</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="radio-checked-calendar">
+                                        <input type="radio" id="exact-date" name="radio-box-date-check" class="radio-box"
+                                               value="exact-date" checked>
+                                        <label for="exact-date"><span><span></span></span>Точная дата</label>
+
+                                        <input type="radio" id="approximate-date" name="radio-box-date-check" class="radio-box"
+                                               value="approximate-date">
+                                        <label for="approximate-date"><span><span></span></span>+/- 3 дня</label>
+                                    </div>
+                                </div >
 
                             </div>
                             <div class="form-group">
                                 <label for="from-to-insurance">Выберите страну:</label>
-                                <input type="text" class="form-control to-country" id="from-to-insurance"
-                                       placeholder="Cтанция отправления" name="from-to-insurance">
+                                <input type="text" class="form-control to-country" id="from-to-insurance" value="Страны Северной и Южной Америки (включая Кубу), Австралия"
+                                       placeholder="Cтрана" name="from-to-insurance">
                                 <a href="#" class="input-arrow"></a>
-
+                                <div class="autocomplete-wrap autocomplete-select-country" id="open-autocomplete-select-country">
+                                    <ul class="list-all-aeroport list-unstyled">
+                                        <li class="list-all-link active-link">Европа (страны Шенгенской зоны)</li>
+                                        <li class="list-all-link">Европа (страны, не входящие в Шенгенскую зону)</li>
+                                        <li class="list-all-link"> Египет, Алжир, Марокко, Тунис, Турция, Израиль, РФ)</li>
+                                        <li class="list-all-link"> Страны Азии</li>
+                                        <li class="list-all-link"> Африка, исключая Египет, Алжир, Марокко, Тунис</li>
+                                        <li class="list-all-link"> Страны Северной и Южной Америки (включая Кубу), Австралия</li>
+                                    </ul>
+                                </div>
                             </div>
                             <div class="form-group">
                                 <label for="where-to-insurance">Страховая сумма:</label>
                                 <input type="text" class="form-control sum-insured" id="where-to-insurance"
                                        placeholder="Сумма" name="where-to-insurance">
                                 <a href="#" class="input-arrow"></a>
-
+                                <div class="autocomplete-wrap autocomplete-insurance" id="open-autocomplete-insurance">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">5 000 USD</a></li>
+                                        <li><a href="#">10 000 USD</a></li>
+                                        <li><a href="#">15 000 USD</a></li>
+                                        <li><a href="#">30 000 USD</a></li>
+                                    </ul>
+                                </div>
                             </div>
                             <div class="form-group">
                                 <label>Количество:</label>
                                 <form id='form-quantity-insurance' method='POST' action='#'>
                                     <div class="quantity">
-                                        <input type='button' value='—' class='minus minus-insurance' field='quantity'/>
-                                        <input type='text' name='quantity' value='1' max="9"
+                                        <input type='button' value='—' class='minus minus-insurance' field='quantity-insurance'/>
+                                        <input type='text' name='quantity-insurance' value='1' max="9"
                                                class='number number-insurance'/>
-                                        <input type='button' value='+' class='plus plus-insurance' field='quantity'/>
+                                        <input type='button' value='+' class='plus plus-insurance' field='quantity-insurance'/>
                                     </div>
                                 </form>
 
                             </div>
-                            <div class="form-group">
+                            <div class="form-group button-center">
                                 <button type="submit" class="btn btn-find">Найти</button>
                             </div>
                             <div class="text-insurance">Специальные опции страховки:</div>
@@ -352,19 +1237,19 @@
     <div class="container" id="proposition">
         <div class="row">
             <div class="col-sm-12 text-center name-section">Интересные предложения</div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 col-action-block">
                 <div class="panel panel-default panel-blue">
                     <div class="panel-heading">Акция<img src="images/icon/plane.png" alt="plane"></div>
                     <div class="panel-body">
-                        <div class="panel-text-bold">Киев-Стамбул<span class="price-discont-blue">от 1700 UAH</span>
+                        <div class="panel-text-bold-action">Киев-Стамбул<span class="price-discont-blue">от 1700 UAH</span>
                         </div>
-                        <div>скидки от Turkish airlines<span class="price-discont-blue">40%</span></div>
-                        <div class="panel-text-bold">в январе</div>
+                        <div class="panel-text-light">скидки от Turkish airlines<span class="price-discont-blue">40%</span></div>
+                        <div class="panel-text-bold-action">в январе</div>
                         <a href="#"><img src="images/aviacompany/TK.png" alt="logo-company"></a>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 col-action-block">
                 <div class="panel panel-default panel-green">
                     <div class="panel-heading">Отели<img src="images/icon/hotel.png" alt="hotel"></div>
                     <div class="panel-body">
@@ -377,7 +1262,7 @@
                             <div class="media-body">
                                 <div class="panel-text-bold">Отель в г.Ужгород</div>
                                 <div><span class="price-discont-green">300 UAH/ночь</span></div>
-                                <div>скидка<span class="price-discont-green">17%</span></div>
+                                <div class="panel-text-light">скидка<span class="price-discont-green">17%</span></div>
                                 <div class="panel-text-bold">сегодня</div>
                                 <a href="#" class="link-details-hotel">Подробнее</a>
                             </div>
@@ -385,7 +1270,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 col-action-block">
                 <div class="panel panel-default panel-green-light">
                     <div class="panel-heading">Направления<img src="images/icon/way.png" alt="hotel"></div>
                     <div class="panel-body">
@@ -397,7 +1282,7 @@
                             </div>
                             <div class="media-body">
                                 <div class="panel-text-bold">Что посмотреть в Египте?</div>
-                                <div>Топ-10 лучших нетуристических мест</div>
+                                <div class="panel-text-light">Топ-10 лучших нетуристических мест</div>
 
                                 <a href="#" class="link-details-hotel">Подробнее</a>
                             </div>
@@ -405,21 +1290,19 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4">
+            <div class="col-sm-4 col-action-block">
                 <div class="panel panel-default panel-blue">
                     <div class="panel-heading">Акция<img src="images/icon/plane.png" alt="plane"></div>
                     <div class="panel-body">
-                        <div class="panel-text-bold">Киев-Стамбул<span class="price-discont-blue">от 1700 UAH</span>
+                        <div class="panel-text-bold-action">Киев-Стамбул<span class="price-discont-blue">от 1700 UAH</span>
                         </div>
-                        <div>скидки от Turkish airlines<span class="price-discont-blue">40%</span></div>
-                        <div class="panel-text-bold">в январе</div>
+                        <div class="panel-text-light">скидки от Turkish airlines<span class="price-discont-blue">40%</span></div>
+                        <div class="panel-text-bold-action">в январе</div>
                         <a href="#"><img src="images/aviacompany/TK.png" alt="logo-company"></a>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 col-action-block">
                 <div class="panel panel-default panel-green">
                     <div class="panel-heading">Отели<img src="images/icon/hotel.png" alt="hotel"></div>
                     <div class="panel-body">
@@ -432,7 +1315,7 @@
                             <div class="media-body">
                                 <div class="panel-text-bold">Отель в г.Ужгород</div>
                                 <div><span class="price-discont-green">300 UAH/ночь</span></div>
-                                <div>скидка<span class="price-discont-green">17%</span></div>
+                                <div class="panel-text-light">скидка<span class="price-discont-green">17%</span></div>
                                 <div class="panel-text-bold">сегодня</div>
                                 <a href="#" class="link-details-hotel">Подробнее</a>
                             </div>
@@ -440,7 +1323,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 col-action-block">
                 <div class="panel panel-default panel-green">
                     <div class="panel-heading">Отели<img src="images/icon/hotel.png" alt="hotel"></div>
                     <div class="panel-body">
@@ -454,7 +1337,7 @@
                                 <div class="panel-text-bold">Отель в<span class="price-discont-green"> г .Милан</span>
                                 </div>
                                 <div><span class="price-discont-green">80 EUR/ночь</span></div>
-                                <div>действительно</div>
+                                <div class="panel-text-light">действительно</div>
                                 <div class="panel-text-bold">с 23.11 по 25.11</div>
                                 <a href="#" class="link-details-hotel">Подробнее</a>
                             </div>
@@ -587,7 +1470,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 "><h2>Заказ авиа билетов на сайте www.mustgo.aero</h2></div>
-                <div class="col-sm-12">
+                <div class="col-sm-12 ">
                     <p>Бронирование авиабилетов на сайте www.mustgo.aero производится в режиме реального времени
                         (on-line). Вы
                         можете дистанционно, находясь у себя в офисе или дома, забронировать авиаперелет, оплатить его
@@ -596,8 +1479,7 @@
                         электронный билет будет отправлен Вам по электронной почте.</p>
 
                     <p>Фактом приобретения электронного билета и осуществления оплаты является маршрутная квитанция
-                        (itinerary
-                        receipt)
+                        (itinerary receipt)<br/>
                         Маршрутная квитанция является подтверждением оформления Электронного билета и удостоверяет
                         договор
                         воздушной перевозки, заключённый между пассажиром и авиакомпанией.</p>
@@ -667,7 +1549,6 @@
         </div>
     </footer>
 </div>
-
 <div class="modal" id="request-for-group-flight" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content modal-request-for-group">
@@ -719,19 +1600,17 @@
                             <label for="name">Ваше имя:</label>
                             <input type="text" class="form-control to-fly" id="name"
                                    placeholder="Ваше имя" name="name">
-                            <a href="#" class="input-arrow"></a>
                         </div>
                         <div class="form-group">
                             <label for="e-mail">Ваш e-mail:</label>
                             <input type="text" name="e-mail" class="form-control to-fly"
                                    id="e-mail" placeholder="Ваш e-mail">
-                            <a href="#" class="input-arrow"></a>
+
                         </div>
                         <div class="form-group">
                             <label for="telephone">Ваш номер телефона:</label>
                             <input type="text" name="telephone" class="form-control to-fly"
                                    id="telephone" placeholder="Ваш номер телефона">
-                            <a href="#" class="input-arrow"></a>
                         </div>
                         <div class="form-group">
                             <button type="submit" class="btn btn-request-group" >Отправить запрос на перелет</button>
@@ -761,135 +1640,9 @@
 </div>
 <script src="js/jquery-1.10.2.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/bootstrap-typeahead.js"></script>
+<script src="js/script.js"></script>
 <script>
-    $(document).ready(function () {
 
-        $('#avia-tab').click(function () {
-            $('.tab-content').css({"border": "4px solid #257ee1"});
-        });
-        $('#train-tab').click(function () {
-            $('.tab-content').css({"border": "4px solid #296992"});
-        });
-        $('#insurance-tab').click(function () {
-            $('.tab-content').css({"border": "4px solid #1b8da5"});
-        });
-        $('#hotel-tab').click(function () {
-            $('.tab-content').css({"border": "4px solid #35a69a"});
-        });
-
-        $('.open-close').click(function () {
-            if ($('.аdvanced-searh-content').is(':visible')) {
-                $(this).text('Расширенный поиск');
-                $(this).addClass("search-link-arrow-down");
-                $(this).removeClass("search-link-arrow-up");
-            }
-            else {
-                $(this).text('Свернуть дополнительные параметры');
-                $(this).addClass("search-link-arrow-up");
-                $(this).removeClass("search-link-arrow-down");
-
-            }
-            $('.аdvanced-searh-content').slideToggle();
-            return false;
-        });
-
-        $("[name=radio-box]").click(function () {
-            if ($(this).attr("value") == "one-way") {
-                $('.open-close').text('Расширенный поиск');
-                $('.open-close').addClass("search-link-arrow-down");
-                $('.open-close').removeClass("search-link-arrow-up");
-                $('.аdvanced-searh-content').hide();
-
-//                $(".box").not(".one-way").hide();
-
-                $(".fly-returm").css({"display": "none"});
-                $(".add-flight").css({"display": "none"});
-            }
-            if ($(this).attr("value") == "go-back") {
-                $('.open-close').text('Расширенный поиск');
-                $('.open-close').addClass("search-link-arrow-down");
-                $('.open-close').removeClass("search-link-arrow-up");
-                $('.аdvanced-searh-content').hide();
-//                $(".box").not(".go-back").hide();
-//                $(".form-go-back-show").show();
-
-                $(".fly-returm").css({"display": "inline-block"});
-                $(".add-flight").css({"display": "none"});
-            }
-            if ($(this).attr("value") == "complicated-route") {
-                $('.open-close').text('Расширенный поиск');
-                $('.open-close').addClass("search-link-arrow-down");
-                $('.open-close').removeClass("search-link-arrow-up");
-                $('.аdvanced-searh-content').hide();
-
-//                $(".box").not(".complicated-route").hide();
-//                $(".form-complicated-route").show();
-                $(".fly-returm").css({"display": "none"});
-                $(".add-flight").css({"display": "inline-block"});
-
-            }
-        });
-
-        $("[name=radio-box-train]").click(function () {
-            if ($(this).attr("value") == "one-way-train") {
-                $('.open-close').text('Расширенный поиск');
-                $('.open-close').addClass("search-link-arrow-down");
-                $('.open-close').removeClass("search-link-arrow-up");
-                $('.аdvanced-searh-content').hide();
-                $(".train-return").css({"display": "none"});
-            }
-            if ($(this).attr("value") == "go-back-train") {
-                $('.open-close').text('Расширенный поиск');
-                $('.open-close').addClass("search-link-arrow-down");
-                $('.open-close').removeClass("search-link-arrow-up");
-                $('.аdvanced-searh-content').hide();
-                $(".train-return").css({"display": "inline-block"});
-            }
-        });
-
-        $('.qtyplus').click(function (e) {
-            e.preventDefault();
-            fieldName = $(this).attr('field');
-            var currentVal = parseInt($('input[name=' + fieldName + ']').val());
-            if (!isNaN(currentVal)) {
-                $('input[name=' + fieldName + ']').val(currentVal + 1);
-            } else {
-                $('input[name=' + fieldName + ']').val(0);
-            }
-        });
-        $(".qtyminus").click(function (e) {
-            e.preventDefault();
-            fieldName = $(this).attr('field');
-            var currentVal = parseInt($('input[name=' + fieldName + ']').val());
-            if (!isNaN(currentVal) && currentVal > 0) {
-                $('input[name=' + fieldName + ']').val(currentVal - 1);
-            } else {
-                $('input[name=' + fieldName + ']').val(0);
-            }
-        });
-
-//        $('.plus-insurance').click(function(e){
-//            e.preventDefault();
-//            fieldName = $(this).attr('field');
-//            var currentVal = parseInt($('input[name='+fieldName+']').val());
-//            if (!isNaN(currentVal)) {
-//                $('input[name='+fieldName+']').val(currentVal + 1);
-//            } else {
-//                $('input[name='+fieldName+']').val(0);
-//            }
-//        });
-//        $(".minus-insurance").click(function(e) {
-//            e.preventDefault();
-//            fieldName = $(this).attr('field');
-//            var currentVal = parseInt($('input[name='+fieldName+']').val());
-//            if (!isNaN(currentVal) && currentVal > 0) {
-//                $('input[name='+fieldName+']').val(currentVal - 1);
-//            } else {
-//                $('input[name='+fieldName+']').val(0);
-//            }
-//        });
-    });
 </script>
 
 </body>
