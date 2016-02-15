@@ -17,7 +17,7 @@
                 <div class="navbar-header pull-left">
                     <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo"></a>
                 </div>
-                 <div class="navbar-right pull-right">
+                 <div class="pull-right">
                     <ul class="nav user-menu navbar-nav">
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle dropdown-link-flag" data-toggle="dropdown" role="button"
@@ -45,10 +45,9 @@
                     <div class="phone">+38 044 359·05·69</div>
                     <div class="feedback"><a href="#">Заказать обратный звонок</a></div>
                 </div>
-                </div>
+            </div>
         </nav>
-
-        <div class="container main-form">
+        <div class="container main-content">
             <ul class="nav nav-tabs nav-menu nav-" role="tablist">
                 <li role="presentation" id="avia-tab" class="active"><a href="#avia-tickets"
                                                                         aria-controls="avia-tickets" role="tab"
@@ -78,7 +77,7 @@
                         <a href="#tooltip" data-toggle="modal"><img src="images/icon/q.png" class="question"></a>
                     </div>
 
-                    <form class="form-inline form-go-back">
+                    <form class="form-inline form-search">
                         <div class="form-group-search">
                             <div class="form-group">
                                 <label for="departure-date">Дата вылета:</label>
@@ -462,7 +461,7 @@
 
                             </div>
                             <div class="form-group add-flight">
-                                <div class="add-flight-margin"><a href="" id="add-flight" class="add-flight"><img
+                                <div class="margin-top"><a href="#avia-tab" id="add-flight" class="add-flight"><img
                                         src="images/icon/plus-green.png">Добавить перелет</a></div>
                             </div>
                             <div class="form-group button-center">
@@ -474,8 +473,7 @@
                         <div class="text-center аdvanced-searh"><a href="#" class="open-close search-link-arrow-down"><span>Расширенный поиск</span></a></div>
                         <div class="аdvanced-searh-content">
                             <div class="row">
-                                <div class="col-sm-4">
-                                    <div class="checkbox-wrapper">
+                                <div class="col-lg-4 col-md-12">
                                         <div class="checkbox">
                                             <input type="checkbox" value="" id="best-price" name="best-price">
                                             <label for="best-price"><span></span>Лучшая цена</label>
@@ -489,8 +487,7 @@
                                             <label for="transfers"><span></span>Без пересадок</label>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-sm-3">
+                                <div class="col-lg-3 col-md-6">
                                     <div class="form-group">
                                         <label for="flight-class">Класс:</label>
                                         <input type="text" class="form-control flight-class" id="flight-class"
@@ -531,7 +528,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-offset-2 col-sm-3">
+                                <div class="lg-offset col-lg-3 col-md-6">
                                     <div class="form-group">
                                         <label for="passengers">Пассажиры</label>
                                         <input type="text" name="passengers" class="form-control passengers"
@@ -596,7 +593,7 @@
                                value="go-back-train">
                         <label for="go-back-train"><span><span></span></span>Туда и обратно (cкидка 10%)</label>
                     </div>
-                    <form class="form-inline form-go-back">
+                    <form class="form-inline form-search">
                         <div class="form-group-search">
                             <div class="form-group">
                                 <label for="departure-date-train">Дата отправления:</label>
@@ -924,7 +921,7 @@
                     </form>
                 </div>
                 <div role="tabpanel" class="tab-pane" id="insurance">
-                    <form class="form-inline form-go-back">
+                    <form class="form-inline form-search">
                         <div class="form-group-search">
                             <div class="form-group">
                                 <label for="departure-date-insurance">Дата отъезда:</label>
@@ -1200,7 +1197,7 @@
 
                             </div>
                             <div class="form-group button-center">
-                                <button type="submit" class="btn btn-find">Найти</button>
+                                <button type="submit" class="btn btn-find">Применить фильтры</button>
                             </div>
                             <div class="text-insurance">Специальные опции страховки:</div>
                             <div class="checkbox-wrapper-insurance">
@@ -1226,10 +1223,9 @@
             </div>
 
         </div>
-
         <a href="#proposition" class="arrow-down"><img src="images/down-page.png" alt="arrow-down"> </a>
     </div>
-    <div class="container" id="proposition">
+    <div class="container interesting-proposition" id="proposition">
         <div class="row">
             <div class="col-sm-12 text-center name-section">Интересные предложения</div>
             <div class="col-lg-4 col-md-6 col-sm-12 col-action-block">
@@ -1604,7 +1600,7 @@
                 <h4 class="modal-title" id="myModalLabel">Запрос на групповой перелет</h4>
             </div>
             <div class="modal-body">
-                <form class="form-inline form-go-back">
+                <form class="form-inline form-search">
                     <div class="form-group-search">
                         <div class="form-group">
                             <label for="departure-date-group-flight">Дата вылета:</label>

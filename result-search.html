@@ -1,0 +1,720 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>MustGo</title>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500' rel='stylesheet' type='text/css'>
+    <link href="css/nouislider.min.css" rel="stylesheet">
+</head>
+<div class="top-page-result-search">
+    <nav class="navbar">
+        <div class="container clearfix">
+            <div class="navbar-header pull-left">
+                <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo"></a>
+            </div>
+            <div class="pull-right">
+                <ul class="nav user-menu navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle dropdown-link-flag" data-toggle="dropdown" role="button"
+                           aria-haspopup="true" aria-expanded="false"><img src="images/flag/en.png">
+                        </a>
+                        <ul class="dropdown-menu dropdown-flag">
+                            <li><a href="#"><img src="images/flag/en.png"></a></li>
+                            <li><a href="#"><img src="images/flag/ua.png"></a></li>
+                            <li><a href="#"><img src="images/flag/en.png"></a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle arrow" data-toggle="dropdown" role="button"
+                           aria-haspopup="true" aria-expanded="false">$ USD</a>
+                        <ul class="dropdown-menu dropdown-currency">
+                            <li><a href="#">€ Eur</a></li>
+                            <li><a href="#">$ГРН </a></li>
+                            <li><a href="#">$Руб</a></li>
+                        </ul>
+                    </li>
+                    <li class="sign-in"><a href="#">Вход</a></li>
+                    <!--<li class="log-out"><a href="#">Виход</a></li>-->
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <div class="container form-result-search">
+        <div>
+            <form class="form-inline form-search">
+                <div class="form-group-search-result">
+                    <div class="form-group">
+                        <div class="margin-top searched">Вы искали:</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="from-to-fly">Откуда:</label>
+                        <input type="text" class="form-control to-fly-search-result" id="from-to-fly" value="Одесса"
+                               placeholder="Откуда лететь" name="from-to-fly">
+                        <a href="#" class="input-arrow" id="link-open-autocomplete-where-to-fly"></a>
+                        <div class="autocomplete-wrap autocomplete-where-to-fly" id="open-autocomplete-where-to-fly">
+                            <div>
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs " role="tablist">
+                                    <li role="presentation" class="active anywhere"><a href="#anywhere"
+                                                                                       aria-controls="anywhere"
+                                                                                       role="tab"
+                                                                                       data-toggle="tab">Куда угодно</a>
+                                        <img class="link1" src="images/icon/arrow_down.png">
+                                    </li>
+                                    <li role="presentation" class="cities-and-airports"><a href="#cities-and-airports"
+                                                                                           aria-controls="cities-and-airports"
+                                                                                           role="tab" data-toggle="tab">Города
+                                        и
+                                        аэропорты</a>
+                                        <img class="link2" src="images/icon/arrow_down.png">
+                                    </li>
+                                    <li role="presentation" class="country"><a href="#country" aria-controls="country"
+                                                                               role="tab"
+                                                                               data-toggle="tab">Страны</a>
+                                        <img class="link3" src="images/icon/arrow_down.png">
+                                    </li>
+                                </ul>
+
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane active" id="anywhere">
+                                        <ul class="list-all-aeroport list-unstyled">
+                                            <li>
+                                                <div class="active-link list-all-link"><span
+                                                        class="aqua-letters">Нью</span>-Йорк,
+                                                    США, все
+                                                    аэропорты<span class="location-code ">NYC</span></div>
+                                                <ul class="sub-list list-unstyled">
+                                                    <li class="clearfix"><a href="#"><span
+                                                            class="aqua-letters">Нью</span>-Йорк,
+                                                        Ньюарк
+                                                        Либерти
+                                                        <span class=" location-code">EWR</span></a></li>
+                                                    <li class="clearfix"><a href="#"><span
+                                                            class="aqua-letters">Нью</span>Нью-Йорк,
+                                                        Джон
+                                                        Ф. Кеннеди<span class="location-code">JFK</span></a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <div class="list-all-link"><span class="all-aeroport-link">Петропавловск-Камчатский, Россия, все аэропорты</span><span
+                                                        class=" location-code">LGA</span></div>
+                                            </li>
+                                        </ul>
+                                        <div class="checkbox autocomplete-checkbox">
+                                            <input type="checkbox" value="" id="radius-from-where"
+                                                   name="radius-from-where">
+                                            <label for="radius-from-where"><span></span>В радиусе</label>
+                                            <input type="text" id="radius-where-km" name="radius-where-km">
+                                            <label for="radius-where-km">км</label>
+                                        </div>
+                                        <div class="location">
+                                            <img src="images/icon/locatin.png"> <a href="#">Показать на карте</a>
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="cities-and-airports">...</div>
+                                    <div role="tabpanel" class="tab-pane" id="country">...</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="where-to-fly">Куда:</label>
+                        <input type="text" class="form-control to-fly-search-result" id="where-to-fly" value="Стамбул"
+                               placeholder="Куда лететь" name="where-to-fly">
+                        <a href="#" class="input-arrow" id="link-autocomplete-from-where-fly"></a>
+                        <div class="autocomplete-wrap autocomplete-from-where-fly"
+                             id="open-autocomplete-from-where-fly">
+
+                            <ul class="list-all-aeroport list-unstyled">
+                                <li>
+                                    <div class="active-link"><span class="all-aeroport-link"><span class="aqua-letters">Нью</span>-Бедфорт, США</span><span
+                                            class=" location-code">LGA</span></div>
+                                </li>
+                                <li>
+                                    <div class="list-all-link"><span class="all-aeroport-link"><span
+                                            class="aqua-letters">Нью</span>-Берн, США</span><span
+                                            class=" location-code">LGA</span></div>
+                                </li>
+                                <li>
+                                    <div class="list-all-link"><span class="aqua-letters">Нью</span>-Бедфорт, США, <span
+                                            class="text-all-aeroport">все аэропорты</span><span
+                                            class="location-code ">NYC</span></div>
+                                    <ul class="sub-list list-unstyled">
+                                        <li class="clearfix"><a href="#"><span class="aqua-letters">Нью</span>-Берн, США
+                                            <span class=" location-code">EWR</span></a></li>
+                                        <li class="clearfix"><a href="#"><span class="aqua-letters">Нью</span>Нью-Йорк,
+                                            США<span
+                                                    class="location-code">JFK</span></a>
+                                        </li>
+                                        <li class="clearfix"><a href="#"><span class="aqua-letters">Нью</span>Нью-Йорк,
+                                            США<span
+                                                    class="location-code">JFK</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="list-all-link"><span class="all-aeroport-link"><span
+                                            class="aqua-letters">Нью</span>касл(-апон-Тайн), Великобритания</span><span
+                                            class=" location-code">LGA</span></div>
+                                </li>
+                            </ul>
+                            <div class="checkbox  autocomplete-checkbox">
+                                <input type="checkbox" value="" id="radius-anywhere" name="radius-anywhere">
+                                <label for="radius-anywhere"><span></span>В радиусе</label>
+                                <input type="text">
+                                <label>км</label>
+                            </div>
+                            <div class="location">
+                                <img src="images/icon/locatin.png"> <a href="#">Показать на карте</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="departure-date">Дата вылета:</label>
+                        <input type="text" class="form-control date-fly-search-result" id="departure-date"
+                               placeholder="Дата"
+                               value="16.12.2015"
+                               name="departure-date">
+                        <a href="#" class="input-arrow" id="link-open-calendar-three-day"></a>
+                        <div class="autocomplete-wrap autocomplete-calendar" id="open-calendar-three-day">
+                            <div class="calendar-month clearfix">
+                                <div class="pull-left">
+                                    <a href="#" class="navigation-arrow-left"></a><span>Ноябрь</span>
+                                </div>
+                                <div class="pull-right">
+                                    <span>Декабрь</span><a href="#" class="navigation-arrow-right"></a>
+                                </div>
+                            </div>
+                            <div class="row">
+
+                                <div class="col-sm-6">
+                                    <div class="weekdays">
+                                        <span>Пн</span>
+                                        <span>Вт</span>
+                                        <span>Ср</span>
+                                        <span>Чт</span>
+                                        <span>Пт</span>
+                                        <span>Сб</span>
+                                        <span>Нд</span>
+                                    </div>
+                                    <div class="day">
+                                        <a href="#">1</a>
+                                        <a href="#">2</a>
+                                        <a href="#">3</a>
+                                        <a href="#" class="three-day-check round-left">4</a>
+                                        <a href="#" class="three-day-check">5</a>
+                                        <a href="#" class="three-day-check ">6</a>
+                                        <a href="#" class="three-day-check select-date round-right">7</a>
+                                        <a href="#" class="three-day-check round-left">8</a>
+                                        <a href="#" class="three-day-check">9</a>
+                                        <a href="#" class="three-day-check round-right">10</a>
+                                        <a href="#">12</a>
+                                        <a href="#">13</a>
+                                        <a href="#">14</a>
+                                        <a href="#">15</a>
+                                        <a href="#">16</a>
+                                        <a href="#">17</a>
+                                        <a href="#">18</a>
+                                        <a href="#">19</a>
+                                        <a href="#">20</a>
+                                        <a href="#">21</a>
+                                        <a href="#">21</a>
+                                        <a href="#">23</a>
+                                        <a href="#">24</a>
+                                        <a href="#">25</a>
+                                        <a href="#">26</a>
+                                        <a href="#">27</a>
+                                        <a href="#">28</a>
+                                        <a href="#">29</a>
+                                        <a href="#">30</a>
+                                        <a href="#">31</a>
+
+                                    </div>
+
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="weekdays">
+                                        <span>Пн</span>
+                                        <span>Вт</span>
+                                        <span>Ср</span>
+                                        <span>Чт</span>
+                                        <span>Пт</span>
+                                        <span>Сб</span>
+                                        <span>Нд</span>
+                                    </div>
+                                    <div class="day">
+                                        <a href="#">1</a>
+                                        <a href="#">2</a>
+                                        <a href="#">3</a>
+                                        <a href="#">4</a>
+                                        <a href="#">5</a>
+                                        <a href="#">6</a>
+                                        <a href="#">7</a>
+                                        <a href="#">8</a>
+                                        <a href="#">9</a>
+                                        <a href="#">10</a>
+                                        <a href="#">12</a>
+                                        <a href="#">13</a>
+                                        <a href="#">14</a>
+                                        <a href="#">15</a>
+                                        <a href="#">16</a>
+                                        <a href="#">17</a>
+                                        <a href="#">18</a>
+                                        <a href="#">19</a>
+                                        <a href="#">20</a>
+                                        <a href="#">21</a>
+                                        <a href="#">21</a>
+                                        <a href="#">23</a>
+                                        <a href="#">24</a>
+                                        <a href="#">25</a>
+                                        <a href="#">26</a>
+                                        <a href="#">27</a>
+                                        <a href="#">28</a>
+                                        <a href="#">29</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="radio-checked-calendar">
+                                <input type="radio" id="exact-date" name="radio-box-date-check" class="radio-box"
+                                       value="exact-date" checked>
+                                <label for="exact-date"><span><span></span></span>Точная дата</label>
+
+                                <input type="radio" id="approximate-date" name="radio-box-date-check" class="radio-box"
+                                       value="approximate-date">
+                                <label for="approximate-date"><span><span></span></span>+/- 3 дня</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="arrival-date-fly">Обратно:</label>
+                        <input type="text" class="form-control date-fly-search-result" name="arrival-date-fly"
+                               id="arrival-date-fly"
+                               value="29.12.2015"
+                               placeholder="Дата">
+                        <a href="#" class="input-arrow" id="arrival-date-open-calendar"></a>
+                        <div class="autocomplete-wrap autocomplete-calendar" id="open-calendar">
+                            <div class="calendar-month clearfix">
+                                <div class="pull-left">
+                                    <a href="#" class="navigation-arrow-left"></a><span>Ноябрь</span>
+                                </div>
+                                <div class="pull-right">
+                                    <span>Декабрь</span><a href="#" class="navigation-arrow-right"></a>
+                                </div>
+                            </div>
+                            <div class="row">
+
+                                <div class="col-sm-6">
+                                    <div class="weekdays">
+                                        <span>Пн</span>
+                                        <span>Вт</span>
+                                        <span>Ср</span>
+                                        <span>Чт</span>
+                                        <span>Пт</span>
+                                        <span>Сб</span>
+                                        <span>Нд</span>
+                                    </div>
+                                    <div class="day">
+                                        <a href="#">1</a>
+                                        <a href="#">2</a>
+                                        <a href="#">3</a>
+                                        <a href="#" class="day-check">4</a>
+                                        <a href="#">5</a>
+                                        <a href="#">6</a>
+                                        <a href="#">7</a>
+                                        <a href="#">8</a>
+                                        <a href="#">9</a>
+                                        <a href="#">10</a>
+                                        <a href="#">12</a>
+                                        <a href="#">13</a>
+                                        <a href="#">14</a>
+                                        <a href="#">15</a>
+                                        <a href="#">16</a>
+                                        <a href="#">17</a>
+                                        <a href="#">18</a>
+                                        <a href="#">19</a>
+                                        <a href="#">20</a>
+                                        <a href="#">21</a>
+                                        <a href="#">21</a>
+                                        <a href="#" class="day-check">23</a>
+                                        <a href="#">24</a>
+                                        <a href="#">25</a>
+                                        <a href="#">26</a>
+                                        <a href="#">27</a>
+                                        <a href="#" class="day-check">28</a>
+                                        <a href="#">29</a>
+                                        <a href="#">30</a>
+                                        <a href="#">31</a>
+
+                                    </div>
+
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="weekdays">
+                                        <span>Пн</span>
+                                        <span>Вт</span>
+                                        <span>Ср</span>
+                                        <span>Чт</span>
+                                        <span>Пт</span>
+                                        <span>Сб</span>
+                                        <span>Нд</span>
+                                    </div>
+                                    <div class="day">
+                                        <a href="#">1</a>
+                                        <a href="#">2</a>
+                                        <a href="#">3</a>
+                                        <a href="#" class="day-check">4</a>
+                                        <a href="#">5</a>
+                                        <a href="#">6</a>
+                                        <a href="#">7</a>
+                                        <a href="#">8</a>
+                                        <a href="#">9</a>
+                                        <a href="#">10</a>
+                                        <a href="#">12</a>
+                                        <a href="#">13</a>
+                                        <a href="#">14</a>
+                                        <a href="#">15</a>
+                                        <a href="#">16</a>
+                                        <a href="#">17</a>
+                                        <a href="#">18</a>
+                                        <a href="#">19</a>
+                                        <a href="#">20</a>
+                                        <a href="#">21</a>
+                                        <a href="#">21</a>
+                                        <a href="#" class="day-check">23</a>
+                                        <a href="#">24</a>
+                                        <a href="#">25</a>
+                                        <a href="#">26</a>
+                                        <a href="#">27</a>
+                                        <a href="#" class="day-check">28</a>
+                                        <a href="#">29</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="radio-checked-calendar">
+                                <input type="radio" id="exact-date-2" name="radio-box-date-check" class="radio-box"
+                                       value="exact-date" checked>
+                                <label for="exact-date-2"><span><span></span></span>Точная дата</label>
+
+                                <input type="radio" id="approximate-date-2" name="radio-box-date-check"
+                                       class="radio-box"
+                                       value="approximate-date">
+                                <label for="approximate-date-2"><span><span></span></span>+/- 3 дня</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="count-tickets" id="count-tickets">3 билета</div>
+                    </div>
+                    <div class="form-group button-center">
+                        <button type="submit" class="btn btn-find" id="update">Обновить</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="text-center">
+            <a href="#" class="link-return-to-search-form">Вернуться к основной форме поиска</a>
+        </div>
+    </div>
+</div>
+
+<div class="container content-result-search">
+    <div class="col-lg-2 filter-wrap">
+        <div class="sorting clearfix">
+            <div class="sorting-title">Сортировка</div>
+            <a class="price-sort arrow-sort-up"><span>Цена</span></a>
+            <a class="time-sort arrow-sort-up"><span>Время в пути</span></a>
+        </div>
+
+        <div class="filter">
+            <div class="sorting-title">Фильтры</div>
+            <div class="filter-accordion">
+                <div class="filter-accordion-heading">
+                    <a class="filter-accordion-toggle collapsed" data-toggle="collapse" data-parent="#count-transship"
+                       href="#count-transship">Количество пересадок</a>
+                </div>
+                <div id="count-transship" class="panel-collapse collapse">
+                    <div class="accordion-body">
+                        <div class="checkbox-wrapper">
+                            <div class="checkbox">
+                                <input type="checkbox" value="" id="filter-no-transfers" name="filter-no-transfers">
+                                <label for="filter-no-transfers"><span></span>Без пересадок</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" value="" id="filter-one-transfers" name="filter-one-transfers">
+                                <label for="filter-one-transfers"><span></span>1 пересадка</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" value="" id="filter-two-transfers" name="filter-two-transfers">
+                                <label for="filter-two-transfers"><span></span>2+ пересадки</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-accordion">
+                <div class="filter-accordion-heading">
+                    <a class="filter-accordion-toggle collapsed" data-toggle="collapse" data-parent="#filter-time"
+                       href="#filter-time">Время</a>
+                </div>
+                <div id="filter-time" class="panel-collapse collapse">
+                    <div class="accordion-body">
+                        <div id="slider-range">
+                            <span id="lower-offset">TEST</span>
+                            <span class="example-val" id="lower-value"></span>
+                            <span id="upper-offset">TEST2</span>
+                            <span class="example-val" id="upper-value"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-accordion">
+                <div class="filter-name">Класс</div>
+                <div class="filter-accordion-heading">
+                        <div class="checkbox-wrapper checkbox">
+                            <input type="checkbox" value="" id="filter-show-all-class" name="filter-show-all-class">
+                            <label for="filter-show-all-class"><span></span></label>
+                            <a class="filter-accordion-toggle show-all collapsed" data-toggle="collapse" data-parent="#filter-class"
+                               href="#filter-class">Показать все</a>
+                        </div>
+                </div>
+                <div id="filter-class" class="panel-collapse collapse">
+                    <div class="accordion-body">
+                        <div class="checkbox-wrapper">
+                            <div class="checkbox">
+                                <input type="checkbox" value="" id="filter-business-class" name="filter-business-class">
+                                <label for="filter-business-class"><span></span>Бизнес</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" value="" id="filter-first-class" name="filter-first-class">
+                                <label for="filter-first-class"><span></span>1 класс</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" value="" id="filter-economy-class" name="filter-economy-class">
+                                <label for="filter-economy-class"><span></span>Эконом</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" value="" id="filter-economy-plus-class" name="filter-economy-plus-class">
+                                <label for="filter-economy-plus-class"><span></span>Эконом+</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-accordion">
+                <div class="filter-name">Аэропорт вылета</div>
+                <div class="filter-accordion-heading">
+                    <div class="checkbox-wrapper checkbox">
+                        <input type="checkbox" value="" id="filter-show-all-departure-airport" name="filter-show-all-departure-airport">
+                        <label for="filter-show-all-departure-airport"><span></span></label>
+                        <a class="filter-accordion-toggle show-all collapsed" data-toggle="collapse" data-parent="#filter-departure-airport"
+                           href="#filter-departure-airport">Показать все</a>
+                    </div>
+                </div>
+                <div id="filter-departure-airport" class="panel-collapse collapse">
+                    <div class="accordion-body">
+                        <div class="checkbox-wrapper">
+                            <div class="checkbox">
+                                <input type="checkbox" value="" id="filter-id-airoport-1" name="filter-id-airoport-1">
+                                <label for="filter-id-airoport-1"><span></span>Борисполь</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" value="" id="filter-id-airoport-2" name="filter-id-airoport-2">
+                                <label for="filter-id-airoport-2"><span></span>Жуляны</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-accordion">
+                <div class="filter-name">Аэропорт прилета</div>
+                <div class="filter-accordion-heading">
+                    <div class="checkbox-wrapper checkbox">
+                        <input type="checkbox" value="" id="filter-show-all-airport-arrival" name="filter-show-all-airport-arrival">
+                        <label for="filter-show-all-airport-arrival"><span></span></label>
+                        <a class="filter-accordion-toggle show-all collapsed" data-toggle="collapse" data-parent="#filter-airport-arrival"
+                           href="#filter-airport-arrival">Показать все</a>
+                    </div>
+                </div>
+                <div id="filter-airport-arrival" class="panel-collapse collapse">
+                    <div class="accordion-body">
+                            <div class="checkbox-wrapper">
+                                <div class="checkbox">
+                                    <input type="checkbox" value="" id="filter-id-airoport-3" name="filter-id-airoport-1">
+                                    <label for="filter-id-airoport-3"><span></span>Гатвик</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" value="" id="filter-id-airoport-4" name="filter-id-airoport-4">
+                                    <label for="filter-id-airoport-4"><span></span>Хитроу</label>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-accordion">
+                <div class="filter-name">Авиакомпания</div>
+                <div class="filter-accordion-heading">
+                    <div class="checkbox-wrapper checkbox last-link">
+                        <input type="checkbox" value="" id="filter-show-all-airline" name="filter-show-all-airline">
+                        <label for="filter-show-all-airline"><span></span></label>
+                        <a class="filter-accordion-toggle show-all collapsed " data-toggle="collapse" data-parent="#filter-airline"
+                           href="#filter-airline">Показать все</a>
+                    </div>
+                </div>
+                <div id="filter-airline" class="panel-collapse collapse">
+                    <div class="accordion-body">
+                        <div class="checkbox-wrapper">
+                            <div class="checkbox">
+                                <input type="checkbox" value="" id="filter-id-airline-1" name="filter-id-airline-1">
+                                <label for="filter-id-airline-1"><span></span>Ukraine International Airlines</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" value="" id="filter-id-airline-2" name="filter-id-airline-2">
+                                <label for="filter-id-airline-2"><span></span>Turkish Airlines</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" value="" id="filter-id-airline-3" name="filter-id-airline-3">
+                                <label for="filter-id-airline-3"><span></span>Onur Air</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" value="" id="filter-id-airline-4" name="filter-id-airline-4">
+                                <label for="filter-id-airline-4"><span></span>Austrian Airlines</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" value="" id="filter-id-airline-5" name="filter-id-airline-5">
+                                <label for="filter-id-airline-5"><span></span>LOT Polish Airlines</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-filter">Применить фильтры</button>
+        </div>
+
+    </div>
+    <div class="col-lg-10"></div>
+</div>
+
+<footer>
+    <div class="footer-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <ul class="">
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Путешествия</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 hidden-md hidden-sm hidden-xs">
+                    <ul class="">
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">Договор оферты</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <ul class="address">
+                        <li id="phone"><a href="#">+38 044 3590569,</a></li>
+                        <li><a href="#"> +7 495 7397922</a></li>
+                        <li id="mail"><a href="#">mustgoaero@gmail.com</a></li>
+                        <li id="skype"><a href="#">mustgoaero</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 hidden-lg">
+                    <ul class="">
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">Договор оферты</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <img src="images/logo.png">
+                    <p>Мы в соцсетях:</p>
+                    <ul class="social">
+                        <li><a href="#">
+                            <div id="vk"></div>
+                        </a></li>
+                        <li><a href="#">
+                            <div id="facebook"></div>
+                        </a></li>
+                        <li><a href="#">
+                            <div id="twit"></div>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="support_payments">
+            <img src="images/payments/qiwi-logo.png">
+            <img src="images/payments/yandex.png">
+            <img src="images/payments/wmlogo_vector_blue.png">
+            <img src="images/payments/okpay_logo.png">
+            <img src="images/payments/Visa_Inc.svg">
+            <img src="images/payments/logo-mastercard.png">
+            <img src="images/payments/300px-Libert.svg">
+            <img src="images/payments/logo-perfect-money.png">
+            <img src="images/payments/liqpay_logo.png">
+            <img src="images/payments/privat24.png">
+            <img src="images/payments/RBKmoney.png">
+            <img src="images/payments/paypallogo.png">
+        </div>
+    </div>
+</footer>
+
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/nouislider.min.js"></script>
+<script>
+    var rangeSlider = document.getElementById('slider-range');
+
+    noUiSlider.create(rangeSlider, {
+        connect: true,
+        behaviour: 'tap',
+        start: [ 500, 4000 ],
+        range: {
+            // Starting at 500, step the value by 500,
+            // until 4000 is reached. From there, step by 1000.
+            'min': [ 0 ],
+            '10%': [ 500, 500 ],
+            '50%': [ 4000, 1000 ],
+            'max': [ 10000 ]
+        }
+    });
+    // Write the CSS 'left' value to a span.
+    function leftValue ( handle ) {
+        return handle.parentElement.style.left;
+    }
+
+    var lowerValue = document.getElementById('lower-value'),
+            lowerOffset = document.getElementById('lower-offset'),
+            upperValue = document.getElementById('upper-value'),
+            upperOffset = document.getElementById('upper-offset'),
+            handles = rangeSlider.getElementsByClassName('noUi-handle');
+
+    // Display the slider value and how far the handle moved
+    // from the left edge of the slider.
+    rangeSlider.noUiSlider.on('update', function ( values, handle ) {
+        if ( !handle ) {
+            lowerValue.innerHTML = values[handle];
+        } else {
+            upperValue.innerHTML = values[handle];
+        }
+    });
+</script>
+
+</body>
+</html>

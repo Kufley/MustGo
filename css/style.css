@@ -1,8 +1,9 @@
 body{font-family: 'Roboto', sans-serif; min-width: 768px;}
 input:focus, input:active, button:active, button:focus,a:focus, .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {outline-style: none}
 
-.wrap-top-page{height: 100%; width: 100%; margin: 0; position: absolute;}
 .top-page{background: url("../images/bg/bg-plane.png") no-repeat center center; height:1200px; min-width: 100%;  -webkit-background-size: cover;  -moz-background-size: cover;  -o-background-size: cover;  background-size: cover;  position: relative;  }
+.top-page-result-search{background: url("../images/bg/bg-search.png") no-repeat center center; min-height:226px; min-width: 100%;  -webkit-background-size: cover;  -moz-background-size: cover;  -o-background-size: cover;  background-size: cover;  position: relative;  }
+.top-page-result-search .navbar{margin-bottom: 7px}
 
 .navbar{border: 0;}
 .user-menu{background-color:  #46607d; margin-bottom: 10px; margin-top:0; position: relative;}
@@ -20,10 +21,9 @@ input:focus, input:active, button:active, button:focus,a:focus, .btn.active.focu
 .dropdown-menu>li>a:visited,.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{background-color: #46607d;}
 
 .user-menu>li>a.arrow{background: url("../images/flag/dropdown-arrow.png") no-repeat 80% 50%;padding-right: 38px;}
-.dropdown-menu.dropdown-currency{margin: 0;font-size: 20px;background-color: #46607d;border: 0;  border-radius: 0;  -webkit-box-shadow: none;  box-shadow: none; }
-.dropdown-menu.dropdown-flag{margin: 0;font-size: 20px;background-color: #46607d;border: 0;  border-radius: 0;  -webkit-box-shadow: none;  box-shadow: none; }
+.dropdown-menu.dropdown-currency{margin: 0;font-size: 20px;background-color: #46607d;border: 0; left: 0;  border-radius: 0;  -webkit-box-shadow: none;  box-shadow: none; }
+.dropdown-menu.dropdown-flag{margin: 0;font-size: 20px;background-color: #46607d;border: 0; left: 0; border-radius: 0;  -webkit-box-shadow: none;  box-shadow: none; }
 .dropdown-currency.dropdown-menu>li>a, .dropdown-menu.dropdown-flag>li>a{padding: 3px 15px;}
-/*.navbar-nav>li>.dropdown-link-flag{padding-bottom: 13px;}*/
 
 .phone{color:#fff;font-size: 30px;font-weight: 500}
 .arrow-down{bottom: 40px;position: absolute;left: 49%;}
@@ -37,15 +37,15 @@ input:focus, input:active, button:active, button:focus,a:focus, .btn.active.focu
 footer .col-sm-3 {padding-right: 55px;}
 
 .name-section{color:#000;font-size: 36px;font-weight: 700;line-height: 30px; margin-top: 90px; margin-bottom:50px; }
-.panel{margin-bottom: 40px;}
-.panel-default .panel-heading{padding:20px 25px 15px; box-shadow: 0 2px 4px 0 rgba(8, 10, 12, 0.3);border: 0;color:  #ffffff; font-size: 24px;  font-weight: 400;  line-height: 30px; text-transform: uppercase;position: relative; z-index: 1}
-.panel-default .panel-heading img{margin-left: 25px;}
-.panel-blue .panel-heading{background-color:  #257ee1;}
-.panel-green .panel-heading{background-color:  #35a69a;}
-.panel-green-light .panel-heading{background-color:  #13be68;}
-.panel-default .media-left{padding-right: 20px;}
+.interesting-proposition .panel{margin-bottom: 40px;}
+.interesting-proposition .panel-default .panel-heading{padding:20px 25px 15px; box-shadow: 0 2px 4px 0 rgba(8, 10, 12, 0.3);border: 0;color:  #ffffff; font-size: 24px;  font-weight: 400;  line-height: 30px; text-transform: uppercase;position: relative; z-index: 1}
+.interesting-proposition .panel-default .panel-heading img{margin-left: 25px;}
+.interesting-proposition .panel-blue .panel-heading{background-color:  #257ee1;}
+.interesting-proposition .panel-green .panel-heading{background-color:  #35a69a;}
+.interesting-proposition .panel-green-light .panel-heading{background-color:  #13be68;}
+.interesting-proposition .panel-default .media-left{padding-right: 20px;}
 
-.panel-body{padding: 34px 25px 20px 25px;background-color:#f2f2f2;box-shadow: 0 2px 4px 0 rgba(8, 10, 12, 0.5);min-height: 175px;}
+.interesting-proposition .panel-body{padding: 34px 25px 20px 25px;background-color:#f2f2f2;box-shadow: 0 2px 4px 0 rgba(8, 10, 12, 0.5);min-height: 175px;}
 .panel-text-bold{color:  #010101;font-size: 18px;font-weight: 700; line-height: 16px;padding-bottom: 10px;}
 .panel-text-light{color:  #010101;font-size: 18px;font-weight: 400;padding-bottom: 9px}
 .panel-text-bold-action{color:  #010101;font-size: 18px;font-weight: 700; line-height: 14px;}
@@ -103,11 +103,12 @@ footer p{padding: 48px 0 28px}
 
 .btn-request-group:hover,.btn-request:hover{background-color: #257ee1; color: #fff;}
 .btn-find:hover{color:#fff;}
+.btn-filter{margin-top: 20px;border-radius: 4px;background-color:  #3cc7ef;box-shadow: 0 2px 4px 0 rgba(3, 4, 5, 0.5); width: 258px; height: 56px; text-transform: uppercase; color: #fff; font-weight: 700; font-size: 20px; line-height: 30px}
 
-.container.main-form{padding: 0; margin-top: 295px; position: relative; z-index: 10;}
-
-.nav-tabs.nav-menu {border-bottom:0}
-.nav-tabs.nav.nav-menu>li> a{ color: #fff;font-size: 18px;font-weight: 400;line-height: 30px;}
+.container.form-result-search{padding: 0;}
+.container.main-content{padding: 0; margin-top: 295px; position: relative; z-index: 10;max-width: 1424px;}
+.container.main-content .nav-tabs.nav-menu {border-bottom:0}
+.container.main-content .nav-tabs.nav.nav-menu>li> a{ color: #fff;font-size: 18px;font-weight: 400;line-height: 30px;}
 .nav>li>.avia-tickets:focus, .nav>li>.avia-tickets:hover,.nav-tabs>li.active>.avia-tickets, .nav-tabs>li.active>.avia-tickets:focus, .nav-tabs>li.active>.avia-tickets:hover {color: #fff;background-color: #257ee1;border: 1px solid #257ee1;height: 62px;  margin-top: -10px; padding-top: 15px;}
 .nav-tabs .avia-tickets{background-color:#257ee1;}
 .nav-tabs.nav.nav-menu>li.active>.avia-tickets{font-weight: 700;}
@@ -124,6 +125,7 @@ footer p{padding: 48px 0 28px}
 .nav-tabs .hotel{background-color:#35a69a;padding: 10px 45px}
 .nav-tabs.nav.nav-menu>li.active>.hotel{font-weight: 700; }
 
+.container.form-result-search .form-search label{color:#fff;font-size: 16px;font-weight: 400;line-height: 30px;}
 label{color:#000;font-size: 16px;line-height: 30px;font-weight: 400;padding-left: 8px; cursor: pointer;}
 input[type="radio"] {opacity: 0;position: absolute;}
 input[type="radio"] + label > span {position: relative;border-radius: 12px; width: 14px; height: 14px; background-color: #FFFFFF;  border: 1px solid  #939393;  margin: 0 10px 0 0;  display: inline-block;  vertical-align: middle;  }
@@ -132,8 +134,8 @@ input::-webkit-input-placeholder{color:#828282;font-size: 16px;font-weight: 400;
 input::-moz-placeholder{color:#828282;font-size: 16px;font-weight: 400;}
 
 input[type="checkbox"] {display:none;}
-input[type="checkbox"] + label span {display:inline-block;width:19px;height:19px;margin: -7px 9px 0 0px; vertical-align:middle;background:url("../images/icon/uncheck.png") center no-repeat;  cursor:pointer;  }
-input[type="checkbox"]:checked + label span {background:url("../images/icon/check.png") center no-repeat;  }
+input[type="checkbox"] + label span {display:inline-block; margin: -3px 9px 0 0; vertical-align:middle; background: url("../images/icon/uncheck.png") center no-repeat;  cursor:pointer; width:18px; height: 18px}
+input[type="checkbox"]:checked + label span {background:url("../images/icon/check.png") center no-repeat; width:18px; height: 18px }
 .input-arrow{background: url("../images/aviacompany/accord-down.png") no-repeat; width: 16px; height: 7px;position: absolute;right: 12px;bottom: 21px;}
 
 
@@ -144,12 +146,17 @@ input[type="checkbox"]:checked + label span {background:url("../images/icon/chec
 .radio-checked .dificul{margin-right:0}
 
 .wrap-add-fly{max-width: 1080px; margin-top: 20px;}
-.form-go-back .wrap-add-fly-group.form-group{margin-right: 8px;}
+.form-search .wrap-add-fly-group.form-group{margin-right: 8px;}
 .form-group-search{padding: 0 35px 50px;}
-.form-go-back label{display: block}
-.form-go-back .form-group{position: relative;margin-right: 5px;}
-.form-go-back .checkbox{margin-bottom: 20px; display: block;}
-.form-inline .form-control {box-shadow: 0 2px 0 0 rgba(8, 10, 12, 0.5);border-top-color: transparent;height: 52px;font-size: 16px;color: #000;  text-overflow: ellipsis;  padding: 6px 30px 6px 12px; line-height: 17px;}
+.form-search label{display: block}
+.form-search .form-group{position: relative;margin-right: 5px;}
+.form-search .checkbox{margin-bottom: 20px; display: block;}
+.form-search .question-priority-company{display:inline}
+.form-search.form-inline .form-control {box-shadow: 0 2px 0 0 rgba(8, 10, 12, 0.5);border-top-color: transparent;height: 52px;font-size: 16px;color: #000;  text-overflow: ellipsis;  padding: 6px 30px 6px 12px; line-height: 17px;}
+.form-search.form-inline .searched{color:  #ffffff;font-size: 18px;font-weight: 700;line-height: 30px; margin-right: 20px}
+.count-tickets{color:#fff; font-size: 18px;font-weight: 400;line-height: 30px; margin: 35px 18px 0;}
+.link-return-to-search-form{color:#fff;font-size: 16px;font-weight: 400;line-height: 70px;  text-decoration: underline;  text-align: center;}
+.link-return-to-search-form:hover{color: #fff;}
 
 
 .form-control.date-fly{width:172px;}
@@ -160,6 +167,8 @@ input[type="checkbox"]:checked + label span {background:url("../images/icon/chec
 .form-control.flight-class{width: 152px;}
 .form-control.sum-insured{width: 174px;}
 .form-control.to-country{width: 500px;}
+.form-control.to-fly-search-result{width: 320px}
+.form-control.date-fly-search-result{width: 200px}
 
 .аdvanced-searh{background-color:  #e5e5e5;padding: 25px 0;}
 .аdvanced-searh-content{background-color:  #e5e5e5;padding: 0 35px 30px; display: none}
@@ -168,7 +177,7 @@ input[type="checkbox"]:checked + label span {background:url("../images/icon/chec
 .аdvanced-searh a{color:#000; font-size: 18px;font-weight: 400;line-height: 30px;padding: 25px;}
 .аdvanced-searh a span{border-bottom: 2px dotted #000;}
 .аdvanced-searh a:hover, .аdvanced-searh a:active, .аdvanced-searh a:visited, .аdvanced-searh a:focus{text-decoration: none;}
-.аdvanced-searh-content .col-sm-offset-2 {margin-left: 13.666667%;  }
+.аdvanced-searh-content .lg-offset {margin-left: 13.733333%;  }
 .аdvanced-searh-content-not-authorized{background-color:  #e5e5e5;padding: 0 35px 50px; display: none}
 .аdvanced-searh-content-not-authorized-train{background-color:#e5e5e5;padding: 25px;}
 .аdvanced-searh-content-not-authorized{padding: 0 35px 30px;}
@@ -176,18 +185,14 @@ input[type="checkbox"]:checked + label span {background:url("../images/icon/chec
 .аdvanced-searh-content-not-authorized .checkbox{display: inline-block; margin-right: 30px;}
 .checkbox-wrapper-insurance .checkbox{display: inline-block; margin-right: 30px;margin-bottom: 0;}
 
-.form-go-back .question-priority-company{display:inline}
 .checkbox-wrapper{margin-top: 30px;} .checkbox-wrapper-insurance{margin-top: 18px;margin-bottom: -20px;}
 .text-not-authorized{color:#000;font-size: 16px;font-weight: 400;line-height: 30px;}
 .text-insurance{color:#000;font-size: 16px;font-weight: 400;line-height: 30px; margin-top: 20px;}
 .text-not-authorized a{color:#000;text-decoration: underline}
 .add-flight{color:#000;font-size: 14px;font-weight: 400;line-height: 30px;margin-right: 7px; margin-left: 5px}
 .add-flight img{margin-right: 10px;}
-.add-flight-margin{margin-top: 35px}
-.main-form .tab-content.tab-content-main{border: 4px solid #257ee1;background-color:  #f2f2f2;}
-
-/*.search-link-arrow-down{background:#e5e5e5 url("../images/icon/arrow-down-b.png") no-repeat 58% 52%;}*/
-/*.search-link-arrow-up{background:#e5e5e5 url("../images/icon/arrow-up-b.png") no-repeat 63% 52%;}*/
+.margin-top{margin-top: 35px}
+.main-content .tab-content.tab-content-main{border: 4px solid #257ee1;background-color:  #f2f2f2;}
 
 .search-link-arrow-down{background: url("../images/icon/arrow-down-b.png") no-repeat 100% 52%; width: 16px; height: 7px;}
 .search-link-arrow-up{background: url("../images/icon/arrow-up-b.png") no-repeat 100% 52%; width: 16px; height: 7px;}
@@ -216,6 +221,13 @@ a.accordion-toggle:after{background: url("../images/aviacompany/accord-up.png");
 a.accordion-toggle.collapsed:after{content:" ";  background: url("../images/aviacompany/accord-down.png"); width: 16px; height: 7px;  }
 a.accordion-toggle.collapsed{border-bottom: 3px dotted #0b55a8;}
 a.accordion-toggle{color:#0b55a8;font-size: 24px;  font-weight: 400;  line-height: 50px;  text-decoration:none;  border-bottom: 0;}
+
+a.filter-accordion-toggle:after{background: url("../images/icon/filter-up.png"); width: 14px; height: 6px;  overflow: no-display;  content:" ";  text-decoration: none;  position: absolute;  margin-top: 13px;  margin-left: 10px;  }
+a.filter-accordion-toggle.collapsed:after{content:" ";  background: url("../images/icon/filter-down.png"); width: 14px; height: 6px;  }
+a.filter-accordion-toggle{color:#000;font-size: 16px;font-weight: 700;line-height: 30px;text-decoration:none;border-bottom: 2px dotted #000;}
+a.filter-accordion-toggle.show-all.collapsed,a.filter-accordion-toggle.show-all {color: #010101;font-size: 16px;font-weight: 400; line-height: 30px;}
+.filter-name{color:#000;font-size: 16px;font-weight: 700;line-height: 30px;text-decoration:none;}
+
 
 .form-inline .form-group.fly-returm,.form-inline .form-group.add-flight{display: none}
 
@@ -316,6 +328,23 @@ a.three-day-check.round-right{border-bottom-right-radius: 15px;border-top-right-
 #filter_options > b:first-child b { background: #35e0ff; cursor: pointer; }
 .clear{width: 100%; clear: both;}
 
+#open-calendar,#open-calendar-three-day,#open-autocomplete-where-to-fly,#open-autocomplete-from-where-fly,
+#open-autocomplete-passengers,#open-autocomplete-class-fly,#open-autocomplete-priority-company,
+#open-autocomplete-check-passengers,#open-calendar-train, #open-calendar-three-day-train,#open-autocomplete-from-where-train,
+#open-autocomplete-where-train, #open-autocomplete-calendar,#open-autocomplete-calendar-insurance,#open-autocomplete-select-country,
+#open-autocomplete-insurance{position: absolute; top:110px; display: none;  }
+
+
+#arrival-date-fly:focus ~ #open-calendar, #departure-date:focus ~ #open-calendar-three-day,
+#from-to-fly:focus ~ #open-autocomplete-where-to-fly, #where-to-fly:focus ~ #open-autocomplete-from-where-fly,
+#number-people:focus ~ #open-autocomplete-passengers, #flight-class:focus ~ #open-autocomplete-class-fly,
+#priority-company:focus ~ #open-autocomplete-priority-company, #passengers:focus ~ #open-autocomplete-check-passengers,
+#departure-date-train:focus ~ #open-calendar-train, #arrival-date-train:focus ~ #open-calendar-three-day-train,
+#from-to-train:focus ~ #open-autocomplete-from-where-train, #where-to-train:focus ~ #open-autocomplete-where-train,
+#departure-date-insurance:focus ~ #open-autocomplete-calendar, #arrival-date-insurance:focus ~ #open-autocomplete-calendar-insurance,
+#from-to-insurance:focus ~ #open-autocomplete-select-country, #where-to-insurance:focus ~ #open-autocomplete-insurance{display: block; z-index: 1}
+/***************************************************************/
+
 .form-registation{background-color:#0b2038;}
 .form-registation .form-group input{height: 52px;}
 .form-registation .form-group label, .form-registation p{ color:#fff;font-size: 16px;font-weight: 400;line-height: 15px;}
@@ -338,50 +367,52 @@ a.three-day-check.round-right{border-bottom-right-radius: 15px;border-top-right-
 .modal-content .form-registation input[type="checkbox"] + label span {display:inline-block;width:19px;height:19px;margin: -7px 9px -3px 0; vertical-align:middle;background:url("../images/icon/form-reg-check.png") center no-repeat;  cursor:pointer;  }
 .modal-content .form-registation input[type="checkbox"]:checked + label span {background:url("../images/icon/form-reg-uncheck.png") center no-repeat;  }
 
-#open-calendar,#open-calendar-three-day,#open-autocomplete-where-to-fly,#open-autocomplete-from-where-fly,
-#open-autocomplete-passengers,#open-autocomplete-class-fly,#open-autocomplete-priority-company,
-#open-autocomplete-check-passengers,#open-calendar-train, #open-calendar-three-day-train,#open-autocomplete-from-where-train,
-#open-autocomplete-where-train, #open-autocomplete-calendar,#open-autocomplete-calendar-insurance,#open-autocomplete-select-country,
-#open-autocomplete-insurance{position: absolute; top:110px; display: none;  }
+/********************************FILTER********************************************************************************/
+.content-result-search{margin-top: 40px;}
+
+.filter-wrap{padding: 0;width: 20.13333%;}
+.filter{border-radius: 4px; background-color:#f2f2f2; box-shadow: 0 2px 4px 0 rgba(3, 4, 5, 0.5);padding: 35px 22px;}
+
+.sorting{margin-bottom: 34px;}
+.sorting-title{color:  #0054ac;font-size: 24px;font-weight: 700;line-height: 30px; text-transform: uppercase; text-align: center; margin-bottom: 25px}
+.sorting .price-sort span, .sorting .time-sort span{cursor: pointer; color:  #0054ac;font-size: 18px;font-weight: 400;  line-height: 19px; text-decoration: none; border-bottom: 2px dotted #0054ac; display: inline-block}
+.arrow-sort-up{background: url("../images/icon/arrow-sort.png") no-repeat 100% 50%; padding:0 20px;}
+.arrow-sort-down{background: url("../images/icon/arrow-sort-down.png") no-repeat 100% 50%;}
+.price-sort{float: left;} .time-sort{float: right}
+.filter-accordion .checkbox-wrapper{margin-top: 0; margin-bottom: 0;}
+.filter-accordion .checkbox-wrapper label{padding-left: 0}
+.filter-accordion .accordion-body{margin-top:10px}
+.filter-accordion .checkbox-wrapper.checkbox{margin-bottom: -7px;}
 
 
-#arrival-date-fly:focus ~ #open-calendar, #departure-date:focus ~ #open-calendar-three-day,
-#from-to-fly:focus ~ #open-autocomplete-where-to-fly, #where-to-fly:focus ~ #open-autocomplete-from-where-fly,
-#number-people:focus ~ #open-autocomplete-passengers, #flight-class:focus ~ #open-autocomplete-class-fly,
-#priority-company:focus ~ #open-autocomplete-priority-company, #passengers:focus ~ #open-autocomplete-check-passengers,
-#departure-date-train:focus ~ #open-calendar-train, #arrival-date-train:focus ~ #open-calendar-three-day-train,
-#from-to-train:focus ~ #open-autocomplete-from-where-train, #where-to-train:focus ~ #open-autocomplete-where-train,
-#departure-date-insurance:focus ~ #open-autocomplete-calendar, #arrival-date-insurance:focus ~ #open-autocomplete-calendar-insurance,
-#from-to-insurance:focus ~ #open-autocomplete-select-country, #where-to-insurance:focus ~ #open-autocomplete-insurance{display: block; z-index: 1}
 
-
-/***************************************************************/
-
-@media (min-width: 1455px) {
-    .container{width: 1424px;}
-    .form-go-back .form-group.button-center{margin: 0 auto;text-align: center;display: inline-block;}
+@media (min-width: 1525px) {
+    .container{width: 1494px; padding: 0}
+    .form-search .form-group.button-center{margin: 0 auto;text-align: center;display: inline-block;}
     .timetables{padding-left: 100px;}
 }
 
 @media (min-width: 1200px ) and (max-width: 1455px){
-    .container{width: 1170px;}
-    .form-go-back .form-group.button-center{margin: 0 auto;text-align: center;display: block;}
+    .container{width: 1170px; padding-left: 15px; padding-right: 15px}
+    .form-search .form-group.button-center{margin: 0 auto;text-align: center;display: block;}
     .form-control.to-fly {width: 230px;}
     .form-control.count-people {width: 245px;}
     .form-control.to-country {width: 430px;}
-    .аdvanced-searh-content .col-sm-4{width:26.666%}
-    #request-for-group-flight .modal-dialog {width: 1135px;}
+    .аdvanced-searh-content .col-lg-4{width:26.666%}
+    #request-for-group-flight .modal-dialog{width: 1135px;}
     #proposition .col-action-block {padding-right: 15px;padding-left: 15px; min-height: 290px;}
     .timetables{padding-left: 20px;}
     .panel-default .media-left {padding-right: 15px;}
-    /*#proposition .col-sm-4.col-action-block{width: 50%; min-height: 295px;}*/
 }
-@media (min-width: 992px ) and (max-width: 1200px){
+@media (max-width: 1200px){
     .section-information .padding-left-q {padding-left: 60px;}
     .timetables {padding-left: 210px}
+    #request-for-group-flight .modal-dialog{width: 95%;}
     footer ul {padding-bottom: 25px;}
+    .аdvanced-searh-content .lg-offset{margin-left: 0}
+    .form-search .аdvanced-searh-content .checkbox {display: inline-block; margin-right: 25px}
 }
-@media (min-width: 768px ) and (max-width: 992px){
+@media  (max-width: 992px){
     #proposition .col-action-block {padding-right: 155px;padding-left: 155px;}
     .section-information .padding-left-q {padding-left: 80px;}
     .timetables {padding-left: 100px}
@@ -390,8 +421,5 @@ a.three-day-check.round-right{border-bottom-right-radius: 15px;border-top-right-
 @media (max-width: 768px){
     .nav.user-menu.navbar-nav li{display: inline-block}
     .section-information .padding-left-q {padding-left: 80px;}
-    .form-go-back .form-group {display: inline-block;}
-    #proposition .col-action-block {padding-right: 155px;padding-left: 155px;}
-
-
+    .form-search .form-group {display: inline-block;}
 }
