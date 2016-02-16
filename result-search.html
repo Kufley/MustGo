@@ -470,12 +470,18 @@
                 </div>
                 <div id="filter-time" class="panel-collapse collapse">
                     <div class="accordion-body">
-                        <div id="slider-range">
-                            <span id="lower-offset">TEST</span>
-                            <span class="example-val" id="lower-value"></span>
-                            <span id="upper-offset">TEST2</span>
-                            <span class="example-val" id="upper-value"></span>
+                        <div class="clearfix filter-time">
+                            <p>Время вылета</p>
+                            <span class="pull-left">0.00</span>
+                            <span class="pull-right">23:59</span>
                         </div>
+                        <div id="slider-range-sortie"></div>
+                        <div class="clearfix filter-time">
+                            <p>Время прилета</p>
+                            <span class="pull-left">0.00</span>
+                            <span class="pull-right">23:59</span>
+                        </div>
+                        <div id="slider-range-arrival"></div>
                     </div>
                 </div>
             </div>
@@ -604,7 +610,29 @@
         </div>
 
     </div>
-    <div class="col-lg-10"></div>
+    <div class="col-lg-10 tabs-result-search">
+        <div>
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="active"><a href="#search-go-back" aria-controls="search-go-back" role="tab" data-toggle="tab">Туда-Обратно<span>23</span></a></li>
+                <li><a href="#search-there" aria-controls="search-there" role="tab" data-toggle="tab">туда<span>12</span></a></li>
+                <li><a href="#search-back" aria-controls="search-back" role="tab" data-toggle="tab">обратно<span>11</span></a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content tab-content-result-search">
+                <div class="tab-pane active" id="search-go-back">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Panel Heading</div>
+                        <div class="panel-body">Panel Content</div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="search-there">...</div>
+                <div class="tab-pane" id="search-back">...</div>
+            </div>
+
+        </div>
+    </div>
 </div>
 
 <footer>
@@ -678,42 +706,80 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/script.js"></script>
 <script src="js/nouislider.min.js"></script>
+<script src="js/wNumb.js"></script>
 <script>
-    var rangeSlider = document.getElementById('slider-range');
-
-    noUiSlider.create(rangeSlider, {
-        connect: true,
-        behaviour: 'tap',
-        start: [ 500, 4000 ],
-        range: {
-            // Starting at 500, step the value by 500,
-            // until 4000 is reached. From there, step by 1000.
-            'min': [ 0 ],
-            '10%': [ 500, 500 ],
-            '50%': [ 4000, 1000 ],
-            'max': [ 10000 ]
+    function getSliderVal(value)
+    {
+        var i = 0,
+            time = [];
+        for(i; i < value.length; i++){
+            var h = value[i] / 60 ^ 0;
+            if (h) {
+                var m = value[i] % 60;
+                if (m < 10) m = '0' + m;
+                time[i] = h + ':' + m;
+            } else {
+                if(value[i] < 10){
+                    time[i] = '0:0' + parseInt(value[i]);
+                } else {
+                    time[i] = '0:' + parseInt(value[i]);
+                }
+            }
         }
-    });
-    // Write the CSS 'left' value to a span.
-    function leftValue ( handle ) {
-        return handle.parentElement.style.left;
+        return time;
     }
 
-    var lowerValue = document.getElementById('lower-value'),
-            lowerOffset = document.getElementById('lower-offset'),
-            upperValue = document.getElementById('upper-value'),
-            upperOffset = document.getElementById('upper-offset'),
-            handles = rangeSlider.getElementsByClassName('noUi-handle');
 
-    // Display the slider value and how far the handle moved
-    // from the left edge of the slider.
-    rangeSlider.noUiSlider.on('update', function ( values, handle ) {
-        if ( !handle ) {
-            lowerValue.innerHTML = values[handle];
-        } else {
-            upperValue.innerHTML = values[handle];
+    var rangeSlider = document.getElementById('slider-range-sortie');
+
+    noUiSlider.create(rangeSlider, {
+        step: 5,
+        margin: 50,
+        connect: true,
+        behaviour: 'tap',
+        start: [ 0, 1440 ],
+        tooltips: [ wNumb({ decimals: 2, mark: ':' }), wNumb({ decimals: 2, mark: ':' }) ],
+        range: {
+            'min': [ 0 ],
+            'max': [ 1440 ]
         }
     });
+
+    rangeSlider.noUiSlider.on('change', function(){
+        var value = rangeSlider.noUiSlider.get(),
+        time = getSliderVal(value);
+        $('#slider-range-sortie .noUi-handle-lower .noUi-tooltip').text(time[0]);
+        $('#slider-range-sortie .noUi-handle-upper .noUi-tooltip').text(time[1]);
+    });
+
+    rangeSlider.noUiSlider.on('start', function(){
+        var value = rangeSlider.noUiSlider.get(),
+                time = getSliderVal(value);
+        $('#slider-range-sortie .noUi-handle-lower .noUi-tooltip').text(time[0]);
+        $('#slider-range-sortie .noUi-handle-upper .noUi-tooltip').text(time[1]);
+    });
+
+    rangeSlider.noUiSlider.on('update', function(){
+        var value = rangeSlider.noUiSlider.get(),
+                time = getSliderVal(value);
+        $('#slider-range-sortie .noUi-handle-lower .noUi-tooltip').text(time[0]);
+        $('#slider-range-sortie .noUi-handle-upper .noUi-tooltip').text(time[1]);
+    });
+
+    var rangeSliderarrival = document.getElementById('slider-range-arrival');
+
+    noUiSlider.create(rangeSliderarrival, {
+        step: 0.05,
+        connect: true,
+        behaviour: 'tap',
+        start: [ 0, 24 ],
+        tooltips: [ wNumb({ decimals: 2, mark: ':' }), wNumb({ decimals: 2, mark: ':' }) ],
+        range: {
+            'min': [ 0 ],
+            'max': [ 24 ]
+        }
+    });
+
 </script>
 
 </body>

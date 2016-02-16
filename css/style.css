@@ -381,11 +381,47 @@ a.three-day-check.round-right{border-bottom-right-radius: 15px;border-top-right-
 .price-sort{float: left;} .time-sort{float: right}
 .filter-accordion .checkbox-wrapper{margin-top: 0; margin-bottom: 0;}
 .filter-accordion .checkbox-wrapper label{padding-left: 0}
-.filter-accordion .accordion-body{margin-top:10px}
-.filter-accordion .checkbox-wrapper.checkbox{margin-bottom: -7px;}
+.filter-accordion .accordion-body{margin-top:-7px}
+/*.filter-accordion .checkbox-wrapper.checkbox{margin-bottom: -7px;}*/
+.filter-time p{margin-top: 12px}
+.filter-time span{font-size: 12px;font-weight: 400;line-height: 5px;}
+#slider-range-sortie, #slider-range-arrival{margin-bottom: 25px;}
 
+/*********************TABS RESULT SEARCH*************************************************************************************************/
+.tabs-result-search{width: 79.66666%;padding-right: 0; padding-left: 53px}
 
-
+.tabs-result-search .nav-tabs {
+    border-bottom: 2px solid #007fe5; margin-bottom: 45px;
+}
+.tabs-result-search .nav-tabs>li {
+    float: left;
+    margin-bottom: -2px;
+}
+.tabs-result-search .nav-tabs>li.active>a, .tabs-result-search .nav-tabs>li.active>a:focus, .tabs-result-search .nav-tabs>li.active>a:hover{
+    color: #007fe5;
+    cursor: default;
+    background-color: #fff;
+    border: 2px solid #007fe5;
+    border-bottom-color: transparent;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+    padding: 15px 25px;
+}
+.tabs-result-search .nav-tabs>li>a span, .tabs-result-search .nav-tabs>li.active>a span{ font-weight: 300; margin-left: 15px}
+.tabs-result-search .nav-tabs>li>a {
+    margin-right: 10px;
+    color:  #787878;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+    padding: 15px 25px 13px;
+    border: 2px solid #dedede;;
+    border-radius: 4px 4px 0 0;
+    border-bottom-color: transparent;
+}
 @media (min-width: 1525px) {
     .container{width: 1494px; padding: 0}
     .form-search .form-group.button-center{margin: 0 auto;text-align: center;display: inline-block;}
