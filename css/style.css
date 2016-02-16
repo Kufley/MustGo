@@ -34,7 +34,6 @@ input:focus, input:active, button:active, button:focus,a:focus, .btn.active.focu
 .section-information .padding-left-a{padding-left: 80px;}
 .section-information .padding-left-q{padding-left: 37px;}
 
-footer .col-sm-3 {padding-right: 55px;}
 
 .name-section{color:#000;font-size: 36px;font-weight: 700;line-height: 30px; margin-top: 90px; margin-bottom:50px; }
 .interesting-proposition .panel{margin-bottom: 40px;}
@@ -81,17 +80,21 @@ footer ul{list-style: none; padding: 0}
 footer ul li a{color:#fff;font-size: 18px;line-height: 36px;}
 footer ul li a:hover{color:#fff;}
 footer p{padding: 48px 0 28px}
+footer .col-sm-3 {padding-right: 55px;}
 .address li{ margin-bottom: 10px}
 .address li a{padding-left: 30px; line-height: 10px; }
 #phone{background: url("../images/icon/phone-y.png") 0 5px no-repeat;}
 #mail{background: url("../images/icon/mail-y.png") 0 5px no-repeat}
 #skype{background: url("../images/icon/skupe-y.png") 0 5px no-repeat}
 
-
 .social li{display: inline-block; margin-right: 15px}
 #vk{background: url("../images/icon/vk.png") no-repeat; width: 32px; height: 33px}
 #facebook{background: url("../images/icon/fc.png") no-repeat; width: 31px; height: 32px}
 #twit{background: url("../images/icon/tw.png") no-repeat; width: 32px; height: 33px}
+
+.padding-0{padding: 0}
+.margin-0{margin: 0}
+.margin-bottom-15{margin-bottom: 15px}
 
 .support_payments{padding: 30px 0; margin: 0 auto; text-align: center;}
 .support_payments img{margin-right: 20px}
@@ -104,7 +107,7 @@ footer p{padding: 48px 0 28px}
 .btn-request-group:hover,.btn-request:hover{background-color: #257ee1; color: #fff;}
 .btn-find:hover{color:#fff;}
 .btn-filter{margin-top: 20px;border-radius: 4px;background-color:  #3cc7ef;box-shadow: 0 2px 4px 0 rgba(3, 4, 5, 0.5); width: 258px; height: 56px; text-transform: uppercase; color: #fff; font-weight: 700; font-size: 20px; line-height: 30px}
-
+.btn-buy{border-radius: 4px;background-color:  #007fe5;box-shadow: 0 2px 0 0 rgba(3, 4, 5, 0.5);width: 142px; height: 48px;color:#fff;font-size: 24px;  font-weight: 700;  line-height: 35px; text-transform: uppercase}
 .container.form-result-search{padding: 0;}
 .container.main-content{padding: 0; margin-top: 295px; position: relative; z-index: 10;max-width: 1424px;}
 .container.main-content .nav-tabs.nav-menu {border-bottom:0}
@@ -228,10 +231,13 @@ a.filter-accordion-toggle{color:#000;font-size: 16px;font-weight: 700;line-heigh
 a.filter-accordion-toggle.show-all.collapsed,a.filter-accordion-toggle.show-all {color: #010101;font-size: 16px;font-weight: 400; line-height: 30px;}
 .filter-name{color:#000;font-size: 16px;font-weight: 700;line-height: 30px;text-decoration:none;}
 
+a.search-more-accordion-toggle:after{background: url("../images/icon/arrow-up-search.png"); width: 16px; height: 7px;  overflow: no-display;  content:" ";  text-decoration: none;  position: absolute;  margin-top: 13px;  margin-left: 10px;  }
+a.search-more-accordion-toggle.collapsed:after{content:" ";  background: url("../images/icon/arrow-down-search.png"); width: 16px; height: 7px;  }
+a.search-more-accordion-toggle{color:#007fe5;font-size: 14px;font-weight: 400;line-height: 30px;text-decoration:none;border-bottom: 2px dotted #007fe5;}
 
 .form-inline .form-group.fly-returm,.form-inline .form-group.add-flight{display: none}
 
-/********************   autocomplete   *************************/
+/**********************AUTOCOMPLIT*************************************************************************************/
 .row-ui{padding-top: 50px}
 .autocomplete-wrap{position: relative;background:#0b2038;border-radius: 5px;}
 .autocomplete-wrap:after {bottom: 100%;left: 20px;border: solid transparent;  content: " ";  height: 0;  width: 0;  position: absolute;  pointer-events: none;  border-color: rgba(136, 183, 213, 0);  border-bottom-color: #0b2038;  border-width: 15px;  }
@@ -343,7 +349,8 @@ a.three-day-check.round-right{border-bottom-right-radius: 15px;border-top-right-
 #from-to-train:focus ~ #open-autocomplete-from-where-train, #where-to-train:focus ~ #open-autocomplete-where-train,
 #departure-date-insurance:focus ~ #open-autocomplete-calendar, #arrival-date-insurance:focus ~ #open-autocomplete-calendar-insurance,
 #from-to-insurance:focus ~ #open-autocomplete-select-country, #where-to-insurance:focus ~ #open-autocomplete-insurance{display: block; z-index: 1}
-/***************************************************************/
+
+/*******************FORM REGISTRATION**********************************************************************************/
 
 .form-registation{background-color:#0b2038;}
 .form-registation .form-group input{height: 52px;}
@@ -367,7 +374,7 @@ a.three-day-check.round-right{border-bottom-right-radius: 15px;border-top-right-
 .modal-content .form-registation input[type="checkbox"] + label span {display:inline-block;width:19px;height:19px;margin: -7px 9px -3px 0; vertical-align:middle;background:url("../images/icon/form-reg-check.png") center no-repeat;  cursor:pointer;  }
 .modal-content .form-registation input[type="checkbox"]:checked + label span {background:url("../images/icon/form-reg-uncheck.png") center no-repeat;  }
 
-/********************************FILTER********************************************************************************/
+/*********************FILTER*******************************************************************************************/
 .content-result-search{margin-top: 40px;}
 
 .filter-wrap{padding: 0;width: 20.13333%;}
@@ -382,46 +389,59 @@ a.three-day-check.round-right{border-bottom-right-radius: 15px;border-top-right-
 .filter-accordion .checkbox-wrapper{margin-top: 0; margin-bottom: 0;}
 .filter-accordion .checkbox-wrapper label{padding-left: 0}
 .filter-accordion .accordion-body{margin-top:-7px}
-/*.filter-accordion .checkbox-wrapper.checkbox{margin-bottom: -7px;}*/
 .filter-time p{margin-top: 12px}
 .filter-time span{font-size: 12px;font-weight: 400;line-height: 5px;}
 #slider-range-sortie, #slider-range-arrival{margin-bottom: 25px;}
 
-/*********************TABS RESULT SEARCH*************************************************************************************************/
+/*********************TABS RESULT SEARCH*******************************************************************************/
 .tabs-result-search{width: 79.66666%;padding-right: 0; padding-left: 53px}
-
-.tabs-result-search .nav-tabs {
-    border-bottom: 2px solid #007fe5; margin-bottom: 45px;
-}
-.tabs-result-search .nav-tabs>li {
-    float: left;
-    margin-bottom: -2px;
-}
-.tabs-result-search .nav-tabs>li.active>a, .tabs-result-search .nav-tabs>li.active>a:focus, .tabs-result-search .nav-tabs>li.active>a:hover{
-    color: #007fe5;
-    cursor: default;
-    background-color: #fff;
-    border: 2px solid #007fe5;
-    border-bottom-color: transparent;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 30px;
-    text-transform: uppercase;
-    padding: 15px 25px;
-}
+.tabs-result-search .nav-tabs {border-bottom: 2px solid #007fe5; margin-bottom: 45px;}
+.tabs-result-search .nav-tabs>li {float: left;margin-bottom: -2px;}
+.tabs-result-search .nav-tabs>li.active>a, .tabs-result-search .nav-tabs>li.active>a:focus, .tabs-result-search .nav-tabs>li.active>a:hover{  color: #007fe5;  cursor: default;  background-color: #fff;  border: 2px solid #007fe5;  border-bottom-color: transparent;  font-size: 20px;  font-weight: 400;  line-height: 30px;  text-transform: uppercase;  padding: 15px 25px;}
 .tabs-result-search .nav-tabs>li>a span, .tabs-result-search .nav-tabs>li.active>a span{ font-weight: 300; margin-left: 15px}
-.tabs-result-search .nav-tabs>li>a {
-    margin-right: 10px;
-    color:  #787878;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 30px;
-    text-transform: uppercase;
-    padding: 15px 25px 13px;
-    border: 2px solid #dedede;;
-    border-radius: 4px 4px 0 0;
-    border-bottom-color: transparent;
-}
+.tabs-result-search .nav-tabs>li>a {margin-right: 10px;color:  #787878; font-size: 20px;  font-weight: 400;  line-height: 30px;  text-transform: uppercase;  padding: 15px 25px 13px;  border: 2px solid #dedede;;  border-radius: 4px 4px 0 0;  border-bottom-color: transparent;}
+
+/********************CONTENT SEARCH RESULT*****************************************************************************/
+.tab-content-result-search .panel-default{border-color:  #c2c2c2;box-shadow: 0 2px 0 0 rgba(3, 4, 5, 0.5); min-height:166px; background-color: #f2f2f2;}
+.tab-content-result-search .panel-default .panel-heading{background-color: #fff;border-color:transparent; padding: 10px 10px 10px 20px;}
+.tab-content-result-search .panel-default .panel-heading a {color:#000; font-size: 14px;font-weight: 400;line-height: 30px;text-decoration: underline;}
+.tab-content-result-search .panel-default .panel-body{background-color:  #f2f2f2; padding: 15px 20px; color:  #000;font-size: 16px;  font-weight: 400;  line-height: 18px;}
+
+.label-list{margin-bottom: 0}
+.label-list li{margin: 0 3px;display: inline-block; font-size: 12px;font-weight: 400; text-transform:uppercase;line-height: 10px;border-radius: 4px;padding: 10px}
+li.label-green{border: 1px solid #aedf2a; color:#aedf2a;}
+li.label-orange{border: 1px solid #ffb400; color:#ffb400;}
+li.label-pink{border: 1px solid #f60462; color: #f60462;}
+li.label-blue{border: 1px solid #0051bb; color: #0051bb;}
+.time{color:#003175;font-size: 18px;font-weight:700;}
+.search-date{color:#6e6e6e; font-size: 14px;font-weight: 400; }
+.search-transship-text{color:  #6e6e6e; font-size: 12px;font-weight: 400;text-align: center}
+
+.col-search-fly, .col-line-fly, .col-flight-time,.col-search-time-fly,.col-search-country-fly, .col-search-model-plane, .col-flight-aviacompany{float: left;position: relative; min-height: 1px;}
+.col-line-fly{width: 18.7777%;margin-right: 25px;}
+.col-search-fly{width: 15.1%; margin-right: 15px;}
+.col-flight-time{width: 16.2%;margin-left: 30px;}
+.col-search-country-fly{width: 17.8%; margin-right: 15px; margin-top: 29px;}
+.col-search-time-fly{width: 8%; margin-right: 15px;}
+.col-search-model-plane{width: 16%;margin-left: 50px;margin-top: 29px;}
+.col-flight-aviacompany{margin-left: 30px;margin-top: 29px;}
+.col-flight-aviacompany img{margin-right: 15px}
+
+.line-fly{border-bottom: 2px solid #aedf2a; position: relative; margin: 20px 0 10px;}
+.line-fly .circle{border-radius: 50%; border:2px solid #9cd900;background-color:#f2f2f2;width: 12px;height: 12px; position: absolute; top:-5px}
+.circle.start-line{left: 0;}
+.circle.end-line{right: 0}
+
+.flight-time, .search-more-collapse{color:#000;font-size: 14px;font-weight: 400;line-height: 30px;}
+.flight-time img{margin-right: 15px;}
+
+.flight-price{color:#000;font-size: 24px;font-weight: 700; line-height: 30px; text-align: center}
+.flight-price span{font-size: 18px;font-weight: 400;padding-left: 10px}
+
+.search-more-collapse {border-radius: 5px; background-color:  rgba(255, 255, 255, 0.8);box-shadow: 0 1px 2px 0 rgba(3, 4, 5, 0.25);padding: 0px 12px; margin:10px auto 20px -10px;}
+.model-plane{color: #434343;font-size: 14px;  font-weight: 400;  line-height: 18px;}
+.flight-country{color:#6e6e6e; line-height: 18px}
+.text-blue{color:  #007fe5;}
 @media (min-width: 1525px) {
     .container{width: 1494px; padding: 0}
     .form-search .form-group.button-center{margin: 0 auto;text-align: center;display: inline-block;}
@@ -429,7 +449,8 @@ a.three-day-check.round-right{border-bottom-right-radius: 15px;border-top-right-
 }
 
 @media (min-width: 1200px ) and (max-width: 1455px){
-    .container{width: 1170px; padding-left: 15px; padding-right: 15px}
+    .container.content-result-search{width:100%}
+    .col-search-model-plane{width: 10%;margin-left: 10px;margin-top: 29px;}
     .form-search .form-group.button-center{margin: 0 auto;text-align: center;display: block;}
     .form-control.to-fly {width: 230px;}
     .form-control.count-people {width: 245px;}
@@ -439,8 +460,16 @@ a.three-day-check.round-right{border-bottom-right-radius: 15px;border-top-right-
     #proposition .col-action-block {padding-right: 15px;padding-left: 15px; min-height: 290px;}
     .timetables{padding-left: 20px;}
     .panel-default .media-left {padding-right: 15px;}
+
+
+}
+@media (max-width: 1525px) {
+    .container.content-result-search{width:100%}
+    .col-search-model-plane{width: 12%;margin-left: 10px;margin-top: 29px;}
+    .btn-filter {width: 100%;font-size: 14px;}
 }
 @media (max-width: 1200px){
+    .container.content-result-search{width:100%}
     .section-information .padding-left-q {padding-left: 60px;}
     .timetables {padding-left: 210px}
     #request-for-group-flight .modal-dialog{width: 95%;}

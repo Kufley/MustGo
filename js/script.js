@@ -106,6 +106,19 @@ $(document).ready(function () {
         return false;
     });
 
+
+    //$(".search-more-accordion-toggle").click(function () {
+    //          text("Расширенный поиск");
+    //    } else {
+    //        $this
+    //            .addClass("search-link-arrow-up")
+    //            .removeClass("search-link-arrow-down")
+    //            .find("span").text("Свернуть дополнительные параметры");
+    //    }
+    //    $searchContent.slideToggle();
+    //    return false;
+    //});
+
     /*Sort*/
 
     $(".price-sort, .time-sort").click(function () {
