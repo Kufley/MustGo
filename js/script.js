@@ -106,18 +106,14 @@ $(document).ready(function () {
         return false;
     });
 
-
-    //$(".search-more-accordion-toggle").click(function () {
-    //          text("Расширенный поиск");
-    //    } else {
-    //        $this
-    //            .addClass("search-link-arrow-up")
-    //            .removeClass("search-link-arrow-down")
-    //            .find("span").text("Свернуть дополнительные параметры");
-    //    }
-    //    $searchContent.slideToggle();
-    //    return false;
-    //});
+    $('.search-more-accordion-toggle').click(function(){
+        var $this = $(this);
+        if($this.hasClass('collapsed')){
+            $this.text('Скрыть');
+        } else {
+            $this.text('Подробнее');
+        }
+    });
 
     /*Sort*/
 

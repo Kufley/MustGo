@@ -1,4 +1,4 @@
-body{font-family: 'Roboto', sans-serif; min-width: 768px;}
+body{font-family: 'Roboto', sans-serif; min-width: 768px;  cursor: default;}
 input:focus, input:active, button:active, button:focus,a:focus, .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {outline-style: none}
 
 .top-page{background: url("../images/bg/bg-plane.png") no-repeat center center; height:1200px; min-width: 100%;  -webkit-background-size: cover;  -moz-background-size: cover;  -o-background-size: cover;  background-size: cover;  position: relative;  }
@@ -94,12 +94,12 @@ footer .col-sm-3 {padding-right: 55px;}
 
 .padding-0{padding: 0}
 .margin-0{margin: 0}
-.margin-bottom-15{margin-bottom: 15px}
+.margin-bottom-15{margin-bottom: 5px}
 
 .support_payments{padding: 30px 0; margin: 0 auto; text-align: center;}
 .support_payments img{margin-right: 20px}
 
-.btn-find{border-radius: 4px;margin-top: 35px;background-color:  #afd820;box-shadow: 0px 2px 4px 0px rgba(8, 10, 12, 0.5);text-transform: uppercase;width: 162px;height: 52px;color:  #ffffff;  font-size: 24px;  font-weight: 700;  line-height: 30px;}
+.btn-find{border-radius: 4px;margin-top: 35px;background-color:  #afd820; box-shadow: 0 2px 4px 0 rgba(3, 4, 5, 0.5);text-transform: uppercase;width: 162px;height: 52px;color:  #ffffff;  font-size: 24px;  font-weight: 700;  line-height: 30px;}
 .btn-request{width: 352px;height: 52px;margin-top: 35px; border: 1px solid #257ee1; color: #257ee1; background: transparent; text-transform: uppercase;font-size: 18px;font-weight: 400;  line-height: 35px;}
 .btn-request-group{width: 358px;height: 52px;margin-top: 35px; border: 1px solid #257ee1; color: #257ee1; background: transparent; text-transform: uppercase;font-size: 18px;font-weight: 400;  line-height: 35px;}
 .btn-log-in{border-radius: 4px;background-color:#1dd7ff;margin-top: 10px; box-shadow: 0 2px 2px 0 rgba(8, 10, 12, 0.5);width: 262px; height: 52px;color:#fff;font-size: 18px;font-weight: 400;line-height: 30px;text-transform:uppercase;}
@@ -107,7 +107,7 @@ footer .col-sm-3 {padding-right: 55px;}
 .btn-request-group:hover,.btn-request:hover{background-color: #257ee1; color: #fff;}
 .btn-find:hover{color:#fff;}
 .btn-filter{margin-top: 20px;border-radius: 4px;background-color:  #3cc7ef;box-shadow: 0 2px 4px 0 rgba(3, 4, 5, 0.5); width: 258px; height: 56px; text-transform: uppercase; color: #fff; font-weight: 700; font-size: 20px; line-height: 30px}
-.btn-buy{border-radius: 4px;background-color:  #007fe5;box-shadow: 0 2px 0 0 rgba(3, 4, 5, 0.5);width: 142px; height: 48px;color:#fff;font-size: 24px;  font-weight: 700;  line-height: 35px; text-transform: uppercase}
+.btn-buy{border-radius: 4px;background-color:#007fe5; box-shadow: 0 2px 4px 0 rgba(3, 4, 5, 0.5);width: 142px; margin-top: 10px; height: 48px;color:#fff;font-size: 24px;  font-weight: 700;  line-height: 35px; text-transform: uppercase}
 .container.form-result-search{padding: 0;}
 .container.main-content{padding: 0; margin-top: 295px; position: relative; z-index: 10;max-width: 1424px;}
 .container.main-content .nav-tabs.nav-menu {border-bottom:0}
@@ -150,9 +150,10 @@ input[type="checkbox"]:checked + label span {background:url("../images/icon/chec
 
 .wrap-add-fly{max-width: 1080px; margin-top: 20px;}
 .form-search .wrap-add-fly-group.form-group{margin-right: 8px;}
+/*.form-group-responsive{display: inline-block}*/
 .form-group-search{padding: 0 35px 50px;}
 .form-search label{display: block}
-.form-search .form-group{position: relative;margin-right: 5px;}
+.form-search .form-group{position: relative;margin-right: 7px;}
 .form-search .checkbox{margin-bottom: 20px; display: block;}
 .form-search .question-priority-company{display:inline}
 .form-search.form-inline .form-control {box-shadow: 0 2px 0 0 rgba(8, 10, 12, 0.5);border-top-color: transparent;height: 52px;font-size: 16px;color: #000;  text-overflow: ellipsis;  padding: 6px 30px 6px 12px; line-height: 17px;}
@@ -339,7 +340,7 @@ a.three-day-check.round-right{border-bottom-right-radius: 15px;border-top-right-
 #open-autocomplete-check-passengers,#open-calendar-train, #open-calendar-three-day-train,#open-autocomplete-from-where-train,
 #open-autocomplete-where-train, #open-autocomplete-calendar,#open-autocomplete-calendar-insurance,#open-autocomplete-select-country,
 #open-autocomplete-insurance{position: absolute; top:110px; display: none;  }
-
+#arrive-next-day{position: absolute; top:110px; display: none;left: -26px;width: 195px; height: 56px;color:#fff;  font-size: 12px;  font-weight: 400;  line-height: 55px; text-align: center }
 
 #arrival-date-fly:focus ~ #open-calendar, #departure-date:focus ~ #open-calendar-three-day,
 #from-to-fly:focus ~ #open-autocomplete-where-to-fly, #where-to-fly:focus ~ #open-autocomplete-from-where-fly,
@@ -348,7 +349,7 @@ a.three-day-check.round-right{border-bottom-right-radius: 15px;border-top-right-
 #departure-date-train:focus ~ #open-calendar-train, #arrival-date-train:focus ~ #open-calendar-three-day-train,
 #from-to-train:focus ~ #open-autocomplete-from-where-train, #where-to-train:focus ~ #open-autocomplete-where-train,
 #departure-date-insurance:focus ~ #open-autocomplete-calendar, #arrival-date-insurance:focus ~ #open-autocomplete-calendar-insurance,
-#from-to-insurance:focus ~ #open-autocomplete-select-country, #where-to-insurance:focus ~ #open-autocomplete-insurance{display: block; z-index: 1}
+#from-to-insurance:focus ~ #open-autocomplete-select-country, #where-to-insurance:focus ~ #open-autocomplete-insurance, .next-day:hover ~ #arrive-next-day{display: block; z-index: 1}
 
 /*******************FORM REGISTRATION**********************************************************************************/
 
@@ -396,16 +397,16 @@ a.three-day-check.round-right{border-bottom-right-radius: 15px;border-top-right-
 /*********************TABS RESULT SEARCH*******************************************************************************/
 .tabs-result-search{width: 79.66666%;padding-right: 0; padding-left: 53px}
 .tabs-result-search .nav-tabs {border-bottom: 2px solid #007fe5; margin-bottom: 45px;}
-.tabs-result-search .nav-tabs>li {float: left;margin-bottom: -2px;}
+.tabs-result-search .nav-tabs>li {float: left;margin-bottom: -2px;width: 283px;text-align: center;}
 .tabs-result-search .nav-tabs>li.active>a, .tabs-result-search .nav-tabs>li.active>a:focus, .tabs-result-search .nav-tabs>li.active>a:hover{  color: #007fe5;  cursor: default;  background-color: #fff;  border: 2px solid #007fe5;  border-bottom-color: transparent;  font-size: 20px;  font-weight: 400;  line-height: 30px;  text-transform: uppercase;  padding: 15px 25px;}
 .tabs-result-search .nav-tabs>li>a span, .tabs-result-search .nav-tabs>li.active>a span{ font-weight: 300; margin-left: 15px}
 .tabs-result-search .nav-tabs>li>a {margin-right: 10px;color:  #787878; font-size: 20px;  font-weight: 400;  line-height: 30px;  text-transform: uppercase;  padding: 15px 25px 13px;  border: 2px solid #dedede;;  border-radius: 4px 4px 0 0;  border-bottom-color: transparent;}
 
 /********************CONTENT SEARCH RESULT*****************************************************************************/
-.tab-content-result-search .panel-default{border-color:  #c2c2c2;box-shadow: 0 2px 0 0 rgba(3, 4, 5, 0.5); min-height:166px; background-color: #f2f2f2;}
+.tab-content-result-search .panel-default{border-color:  #c2c2c2;box-shadow: 0 2px 4px 0 rgba(3, 4, 5, 0.5); min-height:166px; background-color: #f2f2f2;}
 .tab-content-result-search .panel-default .panel-heading{background-color: #fff;border-color:transparent; padding: 10px 10px 10px 20px;}
-.tab-content-result-search .panel-default .panel-heading a {color:#000; font-size: 14px;font-weight: 400;line-height: 30px;text-decoration: underline;}
-.tab-content-result-search .panel-default .panel-body{background-color:  #f2f2f2; padding: 15px 20px; color:  #000;font-size: 16px;  font-weight: 400;  line-height: 18px;}
+.tab-content-result-search .panel-default .panel-heading a {margin-left: 10px; color:#000; font-size: 14px;font-weight: 400;line-height: 30px;text-decoration: underline;}
+.tab-content-result-search .panel-default .panel-body{background-color:  #f2f2f2; padding: 15px 20px; color:  #000;font-size: 16px;  font-weight: 400;  line-height: 20px;}
 
 .label-list{margin-bottom: 0}
 .label-list li{margin: 0 3px;display: inline-block; font-size: 12px;font-weight: 400; text-transform:uppercase;line-height: 10px;border-radius: 4px;padding: 10px}
@@ -413,41 +414,69 @@ li.label-green{border: 1px solid #aedf2a; color:#aedf2a;}
 li.label-orange{border: 1px solid #ffb400; color:#ffb400;}
 li.label-pink{border: 1px solid #f60462; color: #f60462;}
 li.label-blue{border: 1px solid #0051bb; color: #0051bb;}
-.time{color:#003175;font-size: 18px;font-weight:700;}
-.search-date{color:#6e6e6e; font-size: 14px;font-weight: 400; }
+.time{color:#003175;font-size: 18px;font-weight:700;display: inline;}
+.search-date{color:#6e6e6e; font-size: 14px;font-weight: 400;line-height: 13px;margin-top:10px}
 .search-transship-text{color:  #6e6e6e; font-size: 12px;font-weight: 400;text-align: center}
+.search-more-collapse .row{margin-bottom: 10px}
 
-.col-search-fly, .col-line-fly, .col-flight-time,.col-search-time-fly,.col-search-country-fly, .col-search-model-plane, .col-flight-aviacompany{float: left;position: relative; min-height: 1px;}
+.col-search-fly,.col-search-time-fly-arrive, .col-line-fly, .col-flight-time,.col-search-time-fly,.col-search-country-fly, .col-search-model-plane, .col-flight-aviacompany{float: left;position: relative; min-height: 1px;}
 .col-line-fly{width: 18.7777%;margin-right: 25px;}
-.col-search-fly{width: 15.1%; margin-right: 15px;}
+.col-search-fly{width: 11.1%; margin:0 15px 10px 10px;}
 .col-flight-time{width: 16.2%;margin-left: 30px;}
-.col-search-country-fly{width: 17.8%; margin-right: 15px; margin-top: 29px;}
+.col-search-country-fly{width: 13.8%; margin-right: 15px; margin-top: 29px;}
 .col-search-time-fly{width: 8%; margin-right: 15px;}
-.col-search-model-plane{width: 16%;margin-left: 50px;margin-top: 29px;}
-.col-flight-aviacompany{margin-left: 30px;margin-top: 29px;}
+.col-search-time-fly-arrive{width: 10%; margin-right: 15px;}
+.col-search-model-plane{width: 10%;margin-left: 5px;margin-top: 29px;}
+.col-flight-aviacompany{margin-left: 70px;margin-top: 29px;}
 .col-flight-aviacompany img{margin-right: 15px}
 
-.line-fly{border-bottom: 2px solid #aedf2a; position: relative; margin: 20px 0 10px;}
+.line-fly{border-bottom: 2px solid #aedf2a; position: relative; margin: 10px 0 13px;}
 .line-fly .circle{border-radius: 50%; border:2px solid #9cd900;background-color:#f2f2f2;width: 12px;height: 12px; position: absolute; top:-5px}
 .circle.start-line{left: 0;}
 .circle.end-line{right: 0}
+.circle.middle-line{left: 46.6%;}
+.circle.one-line{left: 30.3%;}
+.circle.two-line{left: 63.9%;}
 
-.flight-time, .search-more-collapse{color:#000;font-size: 14px;font-weight: 400;line-height: 30px;}
+.flight-time, .search-more-collapse{color:#000;font-size: 14px;font-weight: 400;line-height: 20px;}
 .flight-time img{margin-right: 15px;}
 
 .flight-price{color:#000;font-size: 24px;font-weight: 700; line-height: 30px; text-align: center}
 .flight-price span{font-size: 18px;font-weight: 400;padding-left: 10px}
 
-.search-more-collapse {border-radius: 5px; background-color:  rgba(255, 255, 255, 0.8);box-shadow: 0 1px 2px 0 rgba(3, 4, 5, 0.25);padding: 0px 12px; margin:10px auto 20px -10px;}
+.search-more-collapse {border-radius: 5px; background-color:  rgba(255, 255, 255, 0.8);box-shadow: 0 1px 2px 0 rgba(3, 4, 5, 0.25);    padding: 0 12px 0; margin:10px 0 20px;}
 .model-plane{color: #434343;font-size: 14px;  font-weight: 400;  line-height: 18px;}
-.flight-country{color:#6e6e6e; line-height: 18px}
+.more-time{color:#c1c1c1; line-height: 30px; font-size: 16px}
+.flight-country{color:#6e6e6e; line-height: 10px}
 .text-blue{color:  #007fe5;}
-@media (min-width: 1525px) {
+.hide-long-text{overflow: hidden;text-overflow: ellipsis; white-space: nowrap; }
+
+.arrive-next-day{margin-left: -15px;margin-right: 5px; vertical-align: baseline;}
+
+.plane-there-back{font-weight: 700; margin-bottom: 5px;    margin-left: 10px;}
+.plane-there-back img{margin-left: -35px;margin-right: 15px; }
+
+.line-gray{background-color:#898989; height: 1px;margin-bottom: 10px; margin-left: 17.66666667%;}
+.radio-result-flight{display: inline;margin-left: -38px;}
+.radio-result-flight label{width: 16px; height: 7px;margin-right: 17px;}
+
+@media (min-width: 1526px) {
     .container{width: 1494px; padding: 0}
     .form-search .form-group.button-center{margin: 0 auto;text-align: center;display: inline-block;}
     .timetables{padding-left: 100px;}
 }
 
+@media (max-width: 1525px) {
+    .form-control.to-fly-search-result {width: 284px;}
+    .top-page-result-search .container, .container.content-result-search, .container.form-result-search{width: 100%; padding: 0 15px}
+    .col-search-model-plane{width: 12%;margin-left: 10px;margin-top: 29px;}
+    .btn-filter {width: 100%;font-size: 14px;}
+}
+@media (max-width: 1450px) {
+    .link-return-ticket{margin-right: 20px; margin-bottom: 10px}
+    .label-list {float: left !important;}
+    .tab-content-result-search .panel-default .col-lg-10{padding-left: 45px}
+}
 @media (min-width: 1200px ) and (max-width: 1455px){
     .container.content-result-search{width:100%}
     .col-search-model-plane{width: 10%;margin-left: 10px;margin-top: 29px;}
@@ -460,14 +489,11 @@ li.label-blue{border: 1px solid #0051bb; color: #0051bb;}
     #proposition .col-action-block {padding-right: 15px;padding-left: 15px; min-height: 290px;}
     .timetables{padding-left: 20px;}
     .panel-default .media-left {padding-right: 15px;}
+    .form-control.to-fly-search-result {width: 240px;}
 
 
 }
-@media (max-width: 1525px) {
-    .container.content-result-search{width:100%}
-    .col-search-model-plane{width: 12%;margin-left: 10px;margin-top: 29px;}
-    .btn-filter {width: 100%;font-size: 14px;}
-}
+
 @media (max-width: 1200px){
     .container.content-result-search{width:100%}
     .section-information .padding-left-q {padding-left: 60px;}
@@ -476,6 +502,9 @@ li.label-blue{border: 1px solid #0051bb; color: #0051bb;}
     footer ul {padding-bottom: 25px;}
     .аdvanced-searh-content .lg-offset{margin-left: 0}
     .form-search .аdvanced-searh-content .checkbox {display: inline-block; margin-right: 25px}
+    .tabs-result-search {width: 100%;padding-right: 0;padding-left: 0;}
+    .filter-wrap {padding-bottom: 20px;}
+    .filter-wrap {width: 25.13333%;}
 }
 @media  (max-width: 992px){
     #proposition .col-action-block {padding-right: 155px;padding-left: 155px;}
