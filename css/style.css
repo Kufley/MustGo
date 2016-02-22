@@ -6,9 +6,11 @@ input:focus, input:active, button:active, button:focus,a:focus, .btn.active.focu
 .top-page-result-search .navbar{margin-bottom: 7px}
 
 .navbar{border: 0;}
-.user-menu{background-color:  #46607d; margin-bottom: 10px; margin-top:0; position: relative;}
+.user-menu{background-color:  #46607d; margin-bottom: 10px; margin-top:0; position: relative; min-width: 265px}
 
-.dropdown-menu.dropdown-currency>li>a {color:#fbd91c; font-size:20px; }
+
+.dropdown-menu.dropdown-top>ul{display: inline-block}
+.dropdown-menu.dropdown-top>ul>li>a {color:#ffb400; font-size:20px; }
 .user-menu>li>a{color:#ffb400;font-size: 20px;font-weight: 400;}
 .user-menu>.sign-in{background: url("../images/flag/login.png") 90% 50% no-repeat; float: right;}
 .user-menu>.sign-in>a{color:#fff; font-size: 16px;font-weight: 400;padding: 15px 40px 15px 10px;}
@@ -20,10 +22,9 @@ input:focus, input:active, button:active, button:focus,a:focus, .btn.active.focu
 .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {background-color: transparent; border-color: #337ab7;}
 .dropdown-menu>li>a:visited,.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{background-color: #46607d;}
 
-.user-menu>li>a.arrow{background: url("../images/flag/dropdown-arrow.png") no-repeat 80% 50%;padding-right: 38px;}
-.dropdown-menu.dropdown-currency{margin: 0;font-size: 20px;background-color: #46607d;border: 0; left: 0;  border-radius: 0;  -webkit-box-shadow: none;  box-shadow: none; }
-.dropdown-menu.dropdown-flag{margin: 0;font-size: 20px;background-color: #46607d;border: 0; left: 0; border-radius: 0;  -webkit-box-shadow: none;  box-shadow: none; }
-.dropdown-currency.dropdown-menu>li>a, .dropdown-menu.dropdown-flag>li>a{padding: 3px 15px;}
+.user-menu>li>a.arrow{background: url("../images/flag/dropdown-arrow.png") no-repeat 90% 50%;padding-right: 38px;}
+.dropdown-menu.dropdown-top{margin: 0;font-size: 20px;background-color: #46607d;border: 0; left: 0;  border-radius: 0;  -webkit-box-shadow: none;  box-shadow: none; }
+.dropdown-top.dropdown-menu>li>a{padding: 3px 15px;}
 
 .phone{color:#fff;font-size: 30px;font-weight: 500}
 .arrow-down{bottom: 40px;position: absolute;left: 49%;}
@@ -109,24 +110,24 @@ footer .col-sm-3 {padding-right: 55px;}
 .btn-filter{margin-top: 20px;border-radius: 4px;background-color:  #3cc7ef;box-shadow: 0 2px 4px 0 rgba(3, 4, 5, 0.5); width: 258px; height: 56px; text-transform: uppercase; color: #fff; font-weight: 700; font-size: 20px; line-height: 30px}
 .btn-buy{border-radius: 4px;background-color:#007fe5; box-shadow: 0 2px 4px 0 rgba(3, 4, 5, 0.5);width: 142px; margin-top: 10px; height: 48px;color:#fff;font-size: 24px;  font-weight: 700;  line-height: 35px; text-transform: uppercase}
 .container.form-result-search{padding: 0;}
-.container.main-content{padding: 0; margin-top: 295px; position: relative; z-index: 10;max-width: 1424px;}
+.container.main-content{padding: 0; margin-top: 295px; position: relative; z-index: 10;}
 .container.main-content .nav-tabs.nav-menu {border-bottom:0}
 .container.main-content .nav-tabs.nav.nav-menu>li> a{ color: #fff;font-size: 18px;font-weight: 400;line-height: 30px;}
 .nav>li>.avia-tickets:focus, .nav>li>.avia-tickets:hover,.nav-tabs>li.active>.avia-tickets, .nav-tabs>li.active>.avia-tickets:focus, .nav-tabs>li.active>.avia-tickets:hover {color: #fff;background-color: #257ee1;border: 1px solid #257ee1;height: 62px;  margin-top: -10px; padding-top: 15px;}
 .nav-tabs .avia-tickets{background-color:#257ee1;}
-.nav-tabs.nav.nav-menu>li.active>.avia-tickets{font-weight: 700;}
+.container.main-content .nav-tabs.nav.nav-menu>li.active>.avia-tickets{font-weight: 700;}
 
 .nav>li>.train-tickets:focus, .nav>li>.train-tickets:hover,.nav-tabs>li.active>.train-tickets, .nav-tabs>li.active>.train-tickets:focus, .nav-tabs>li.active>.train-tickets:hover {color: #fff;background-color: #296992;border: 1px solid #296992; height: 62px;  margin-top: -10px; padding-top: 15px;}
 .nav-tabs .train-tickets{background-color:#296992;}
-.nav-tabs.nav.nav-menu>li.active>.train-tickets{font-weight: 700; }
+.container.main-content .nav-tabs.nav.nav-menu>li.active>.train-tickets{font-weight: 700; }
 
 .nav>li>.insurance:focus, .nav>li>.insurance:hover,.nav-tabs>li.active>.insurance, .nav-tabs>li.active>.insurance:focus, .nav-tabs>li.active>.insurance:hover {color: #fff;background-color: #1b8da5;border: 1px solid #1b8da5; height: 62px;  margin-top: -10px; padding-top: 15px;}
 .nav-tabs .insurance{background-color:#1b8da5; padding: 10px 40px}
-.nav-tabs.nav.nav-menu>li.active>.insurance{font-weight: 700; }
+.container.main-content .nav-tabs.nav.nav-menu>li.active>.insurance{font-weight: 700; }
 
 .nav>li>.hotel:focus, .nav>li>.hotel:hover,.nav-tabs>li.active>.hotel, .nav-tabs>li.active>.hotel:focus, .nav-tabs>li.active>.hotel:hover {color: #fff;background-color: #35a69a; border: 1px solid #35a69a;height: 62px;  margin-top: -10px; padding-top: 15px;}
 .nav-tabs .hotel{background-color:#35a69a;padding: 10px 45px}
-.nav-tabs.nav.nav-menu>li.active>.hotel{font-weight: 700; }
+.container.main-content .nav-tabs.nav.nav-menu>li.active>.hotel{font-weight: 700; }
 
 .container.form-result-search .form-search label{color:#fff;font-size: 16px;font-weight: 400;line-height: 30px;}
 label{color:#000;font-size: 16px;line-height: 30px;font-weight: 400;padding-left: 8px; cursor: pointer;}
@@ -201,8 +202,8 @@ input[type="checkbox"]:checked + label span {background:url("../images/icon/chec
 .search-link-arrow-down{background: url("../images/icon/arrow-down-b.png") no-repeat 100% 52%; width: 16px; height: 7px;}
 .search-link-arrow-up{background: url("../images/icon/arrow-up-b.png") no-repeat 100% 52%; width: 16px; height: 7px;}
 
-.qtyminus{width: 60px; text-align: right} .minus-insurance{width: 30px; text-align: right}
-.qtyplus{width: 60px; text-align: left}  .plus-insurance{width: 30px; text-align: left}
+.qtyminus{width: 60px; text-align: right} .minus-insurance{width: 32px; text-align: right}
+.qtyplus{width: 60px; text-align: left}  .plus-insurance{width: 32px; text-align: left}
 .number{width: 42px;} .number-insurance{width: 42px;}
 .minus, .plus{font-weight:bold;border:0;border-radius: 4px; height: 51px; background: #fff; color: #257ee1; font-size: 18px;}
 .plus:active, .plus:focus, .plus:visited,.minus:active, .minus:focus, .minus:visited{outline-style: none}
@@ -230,7 +231,7 @@ a.filter-accordion-toggle:after{background: url("../images/icon/filter-up.png");
 a.filter-accordion-toggle.collapsed:after{content:" ";  background: url("../images/icon/filter-down.png"); width: 14px; height: 6px;  }
 a.filter-accordion-toggle{color:#000;font-size: 16px;font-weight: 700;line-height: 30px;text-decoration:none;border-bottom: 2px dotted #000;}
 a.filter-accordion-toggle.show-all.collapsed,a.filter-accordion-toggle.show-all {color: #010101;font-size: 16px;font-weight: 400; line-height: 30px;}
-.filter-name{color:#000;font-size: 16px;font-weight: 700;line-height: 30px;text-decoration:none;}
+.filter-name{color:#000;font-size: 16px;font-weight: 700;line-height: 35px;text-decoration:none;}
 
 a.search-more-accordion-toggle:after{background: url("../images/icon/arrow-up-search.png"); width: 16px; height: 7px;  overflow: no-display;  content:" ";  text-decoration: none;  position: absolute;  margin-top: 13px;  margin-left: 10px;  }
 a.search-more-accordion-toggle.collapsed:after{content:" ";  background: url("../images/icon/arrow-down-search.png"); width: 16px; height: 7px;  }
@@ -242,7 +243,7 @@ a.search-more-accordion-toggle{color:#007fe5;font-size: 14px;font-weight: 400;li
 .row-ui{padding-top: 50px}
 .autocomplete-wrap{position: relative;background:#0b2038;border-radius: 5px;}
 .autocomplete-wrap:after {bottom: 100%;left: 20px;border: solid transparent;  content: " ";  height: 0;  width: 0;  position: absolute;  pointer-events: none;  border-color: rgba(136, 183, 213, 0);  border-bottom-color: #0b2038;  border-width: 15px;  }
-.autocomplete-where-to-fly{width: 450px;}
+.autocomplete-where-to-fly{width: 457px;}
 .autocomplete-where-to-fly .nav-tabs>li.active>a,
 .autocomplete-where-to-fly .nav-tabs>li.active>a:focus,
 .autocomplete-where-to-fly .nav-tabs>li.active>a:hover {color: #1dd7ff;cursor: default;background-color: transparent;  border: 1px solid transparent;  }
@@ -340,10 +341,10 @@ a.three-day-check.round-right{border-bottom-right-radius: 15px;border-top-right-
 #open-autocomplete-check-passengers,#open-calendar-train, #open-calendar-three-day-train,#open-autocomplete-from-where-train,
 #open-autocomplete-where-train, #open-autocomplete-calendar,#open-autocomplete-calendar-insurance,#open-autocomplete-select-country,
 #open-autocomplete-insurance{position: absolute; top:110px; display: none;  }
-#arrive-next-day{position: absolute; top:110px; display: none;left: -26px;width: 195px; height: 56px;color:#fff;  font-size: 12px;  font-weight: 400;  line-height: 55px; text-align: center }
+#arrive-next-day{position: absolute; top:110px; display: none;left: -26px;width: 195px; height: 56px;color:#fff;  font-size: 12px;  font-weight: 400;  line-height: 55px; border: 0;text-align: center }
 
 #arrival-date-fly:focus ~ #open-calendar, #departure-date:focus ~ #open-calendar-three-day,
-#from-to-fly:focus ~ #open-autocomplete-where-to-fly, #where-to-fly:focus ~ #open-autocomplete-from-where-fly,
+#from-to-fly:focus ~ #open-autocomplete-from-where-fly, #where-to-fly:focus ~ #open-autocomplete-where-to-fly,
 #number-people:focus ~ #open-autocomplete-passengers, #flight-class:focus ~ #open-autocomplete-class-fly,
 #priority-company:focus ~ #open-autocomplete-priority-company, #passengers:focus ~ #open-autocomplete-check-passengers,
 #departure-date-train:focus ~ #open-calendar-train, #arrival-date-train:focus ~ #open-calendar-three-day-train,
@@ -379,7 +380,7 @@ a.three-day-check.round-right{border-bottom-right-radius: 15px;border-top-right-
 .content-result-search{margin-top: 40px;}
 
 .filter-wrap{padding: 0;width: 20.13333%;}
-.filter{border-radius: 4px; background-color:#f2f2f2; box-shadow: 0 2px 4px 0 rgba(3, 4, 5, 0.5);padding: 35px 22px;}
+.filter{border-radius: 4px; background-color:#f2f2f2; box-shadow: 0 2px 4px 0 rgba(3, 4, 5, 0.5);padding: 35px 22px 20px;}
 
 .sorting{margin-bottom: 34px;}
 .sorting-title{color:  #0054ac;font-size: 24px;font-weight: 700;line-height: 30px; text-transform: uppercase; text-align: center; margin-bottom: 25px}
@@ -391,8 +392,9 @@ a.three-day-check.round-right{border-bottom-right-radius: 15px;border-top-right-
 .filter-accordion .checkbox-wrapper label{padding-left: 0}
 .filter-accordion .accordion-body{margin-top:-7px}
 .filter-time p{margin-top: 12px}
-.filter-time span{font-size: 12px;font-weight: 400;line-height: 5px;}
-#slider-range-sortie, #slider-range-arrival{margin-bottom: 25px;}
+.filter-time span{font-size: 12px;font-weight: 400;line-height: 5px; color: #787878}
+#slider-range-sortie{margin-bottom: 25px;}
+#slider-range-arrival{margin-bottom: 35px;}
 
 /*********************TABS RESULT SEARCH*******************************************************************************/
 .tabs-result-search{width: 79.66666%;padding-right: 0; padding-left: 53px}
@@ -403,7 +405,7 @@ a.three-day-check.round-right{border-bottom-right-radius: 15px;border-top-right-
 .tabs-result-search .nav-tabs>li>a {margin-right: 10px;color:  #787878; font-size: 20px;  font-weight: 400;  line-height: 30px;  text-transform: uppercase;  padding: 15px 25px 13px;  border: 2px solid #dedede;;  border-radius: 4px 4px 0 0;  border-bottom-color: transparent;}
 
 /********************CONTENT SEARCH RESULT*****************************************************************************/
-.tab-content-result-search .panel-default{border-color:  #c2c2c2;box-shadow: 0 2px 4px 0 rgba(3, 4, 5, 0.5); min-height:166px; background-color: #f2f2f2;}
+.tab-content-result-search .panel-default{border-color:  #c2c2c2;box-shadow: 0 2px 4px 0 rgba(3, 4, 5, 0.5); min-height:166px; background-color: #f2f2f2; margin-bottom: 15px;}
 .tab-content-result-search .panel-default .panel-heading{background-color: #fff;border-color:transparent; padding: 10px 10px 10px 20px;}
 .tab-content-result-search .panel-default .panel-heading a {margin-left: 10px; color:#000; font-size: 14px;font-weight: 400;line-height: 30px;text-decoration: underline;}
 .tab-content-result-search .panel-default .panel-body{background-color:  #f2f2f2; padding: 15px 20px; color:  #000;font-size: 16px;  font-weight: 400;  line-height: 20px;}
@@ -424,11 +426,12 @@ li.label-blue{border: 1px solid #0051bb; color: #0051bb;}
 .col-search-fly{width: 11.1%; margin:0 15px 10px 10px;}
 .col-flight-time{width: 16.2%;margin-left: 30px;}
 .col-search-country-fly{width: 13.8%; margin-right: 15px; margin-top: 29px;}
-.col-search-time-fly{width: 8%; margin-right: 15px;}
-.col-search-time-fly-arrive{width: 10%; margin-right: 15px;}
+.col-search-time-fly{width: 8%; margin-right: 15px;margin-top: 10px;}
+.col-search-time-fly-arrive{width: 10%; margin-right: 15px;margin-top: 10px;}
 .col-search-model-plane{width: 10%;margin-left: 5px;margin-top: 29px;}
 .col-flight-aviacompany{margin-left: 70px;margin-top: 29px;}
 .col-flight-aviacompany img{margin-right: 15px}
+.col-flight-price{margin-top: 27px;}
 
 .line-fly{border-bottom: 2px solid #aedf2a; position: relative; margin: 10px 0 13px;}
 .line-fly .circle{border-radius: 50%; border:2px solid #9cd900;background-color:#f2f2f2;width: 12px;height: 12px; position: absolute; top:-5px}
@@ -446,8 +449,8 @@ li.label-blue{border: 1px solid #0051bb; color: #0051bb;}
 
 .search-more-collapse {border-radius: 5px; background-color:  rgba(255, 255, 255, 0.8);box-shadow: 0 1px 2px 0 rgba(3, 4, 5, 0.25);    padding: 0 12px 0; margin:10px 0 20px;}
 .model-plane{color: #434343;font-size: 14px;  font-weight: 400;  line-height: 18px;}
-.more-time{color:#c1c1c1; line-height: 30px; font-size: 16px}
-.flight-country{color:#6e6e6e; line-height: 10px}
+.more-time{color:#c1c1c1; line-height: 20px; font-size: 16px}
+.flight-country{color:#6e6e6e; line-height: 15px}
 .text-blue{color:  #007fe5;}
 .hide-long-text{overflow: hidden;text-overflow: ellipsis; white-space: nowrap; }
 
@@ -468,7 +471,7 @@ li.label-blue{border: 1px solid #0051bb; color: #0051bb;}
 
 @media (max-width: 1525px) {
     .form-control.to-fly-search-result {width: 284px;}
-    .top-page-result-search .container, .container.content-result-search, .container.form-result-search{width: 100%; padding: 0 15px}
+    .top-page-result-search .container, .container.content-result-search, .container.form-result-search,.container.main-content{width: 100%; padding: 0 15px}
     .col-search-model-plane{width: 12%;margin-left: 10px;margin-top: 29px;}
     .btn-filter {width: 100%;font-size: 14px;}
 }
@@ -477,12 +480,12 @@ li.label-blue{border: 1px solid #0051bb; color: #0051bb;}
     .label-list {float: left !important;}
     .tab-content-result-search .panel-default .col-lg-10{padding-left: 45px}
 }
-@media (min-width: 1200px ) and (max-width: 1455px){
+@media (min-width: 1200px ) and (max-width: 1465px){
     .container.content-result-search{width:100%}
     .col-search-model-plane{width: 10%;margin-left: 10px;margin-top: 29px;}
     .form-search .form-group.button-center{margin: 0 auto;text-align: center;display: block;}
     .form-control.to-fly {width: 230px;}
-    .form-control.count-people {width: 245px;}
+    .form-control.count-people {width: 239px;}
     .form-control.to-country {width: 430px;}
     .аdvanced-searh-content .col-lg-4{width:26.666%}
     #request-for-group-flight .modal-dialog{width: 1135px;}

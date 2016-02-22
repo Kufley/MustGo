@@ -18,30 +18,49 @@
                     <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo"></a>
                 </div>
                  <div class="pull-right">
-                    <ul class="nav user-menu navbar-nav">
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle dropdown-link-flag" data-toggle="dropdown" role="button"
-                               aria-haspopup="true" aria-expanded="false"><img src="images/flag/en.png">
-                            </a>
-                            <ul class="dropdown-menu dropdown-flag">
-                                <li><a href="#"><img src="images/flag/en.png"></a></li>
-                                <li><a href="#"><img src="images/flag/ua.png"></a></li>
-                                <li><a href="#"><img src="images/flag/en.png"></a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle arrow" data-toggle="dropdown" role="button"
-                               aria-haspopup="true" aria-expanded="false">$ USD</a>
-                            <ul class="dropdown-menu dropdown-currency">
-                                <li><a href="#">€ Eur</a></li>
-                                <li><a href="#">$ГРН </a></li>
-                                <li><a href="#">$Руб</a></li>
-                            </ul>
-                        </li>
-                        <li class="sign-in"><a href="#">Вход</a></li>
-                        <!--<li class="log-out"><a href="#">Виход</a></li>-->
+                     <ul class="nav user-menu navbar-nav">
+                         <li class="dropdown">
+                             <a href="#" class="dropdown-toggle arrow" data-toggle="dropdown" role="button"
+                                aria-haspopup="true" aria-expanded="false">Русский, USD</a>
+                             <div class="dropdown-menu dropdown-top">
+                                 <ul class="list-unstyled">
+                                     <li>
+                                         <input type="radio" id="lang-ua" name="radio-lang" class="radio-box"  checked>
+                                         <label for="lang-ua"><span><span></span></span>Українська</label>
+                                     </li>
+                                     <li>
+                                         <input type="radio" id="lang-rus" name="radio-lang" class="radio-box"  checked>
+                                         <label for="lang-rus"><span><span></span></span>Русский</label>
+                                     </li>
+                                     <li>
+                                         <input type="radio" id="lang-en" name="radio-lang" class="radio-box"  checked>
+                                         <label for="lang-en"><span><span></span></span>English</label>
+                                     </li>
+                                 </ul>
+                                 <ul class="list-unstyled">
+                                     <li>
+                                         <input type="radio" id="currency-usd" name="radio-currency" class="radio-box" checked>
+                                         <label for="currency-usd"><span><span></span></span>USD Доллар США</label>
+                                     </li>
+                                     <li>
+                                         <input type="radio" id="currency-eur" name="radio-currency" class="radio-box" checked>
+                                         <label for="currency-eur"><span><span></span></span>Eur Евро</label>
+                                     </li>
+                                     <li>
+                                         <input type="radio" id="currency-uan" name="radio-currency" class="radio-box" checked>
+                                         <label for="currency-uan"><span><span></span></span>UAH Украинская гривна</label>
+                                     </li>
+                                     <li>
+                                         <input type="radio" id="currency-rub" name="radio-currency" class="radio-box" checked>
+                                         <label for="currency-rub"><span><span></span></span>Rub Российский рубль</label>
+                                     </li>
+                                 </ul>
+                             </div>
+                         </li>
+                         <li class="sign-in"><a href="#">Вход</a></li>
+                         <!--<li class="log-out"><a href="#">Виход</a></li>-->
 
-                    </ul>
+                     </ul>
                     <div class="phone">+38 044 359·05·69</div>
                     <div class="feedback"><a href="#">Заказать обратный звонок</a></div>
                 </div>
@@ -314,6 +333,53 @@
                                 <input type="text" class="form-control to-fly" id="from-to-fly"
                                        placeholder="Откуда лететь" name="from-to-fly">
                                 <a href="#" class="input-arrow" id="link-open-autocomplete-where-to-fly"></a>
+                                <div class="autocomplete-wrap autocomplete-from-where-fly" id="open-autocomplete-from-where-fly">
+
+                                    <ul class="list-all-aeroport list-unstyled">
+                                        <li>
+                                            <div class="active-link"><span class="all-aeroport-link"><span class="aqua-letters">Нью</span>-Бедфорт, США</span><span
+                                                    class=" location-code">LGA</span></div>
+                                        </li>
+                                        <li>
+                                            <div class="list-all-link"><span class="all-aeroport-link"><span class="aqua-letters">Нью</span>-Берн, США</span><span
+                                                    class=" location-code">LGA</span></div>
+                                        </li>
+                                        <li>
+                                            <div class="list-all-link"><span class="aqua-letters">Нью</span>-Бедфорт, США, <span
+                                                    class="text-all-aeroport">все аэропорты</span><span
+                                                    class="location-code ">NYC</span></div>
+                                            <ul class="sub-list list-unstyled">
+                                                <li class="clearfix"><a href="#"><span class="aqua-letters">Нью</span>-Берн, США
+                                                    <span class=" location-code">EWR</span></a></li>
+                                                <li class="clearfix"><a href="#"><span class="aqua-letters">Нью</span>Нью-Йорк, США<span
+                                                        class="location-code">JFK</span></a>
+                                                </li>
+                                                <li class="clearfix"><a href="#"><span class="aqua-letters">Нью</span>Нью-Йорк, США<span
+                                                        class="location-code">JFK</span></a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <div class="list-all-link"><span class="all-aeroport-link"><span class="aqua-letters">Нью</span>касл(-апон-Тайн), Великобритания</span><span
+                                                    class=" location-code">LGA</span></div>
+                                        </li>
+                                    </ul>
+                                    <div class="checkbox  autocomplete-checkbox">
+                                        <input type="checkbox" value="" id="radius-anywhere" name="radius-anywhere">
+                                        <label for="radius-anywhere"><span></span>В радиусе</label>
+                                        <input type="text">
+                                        <label>км</label>
+                                    </div>
+                                    <div class="location">
+                                        <img src="images/icon/locatin.png"> <a href="#">Показать на карте</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="where-to-fly">Куда:</label>
+                                <input type="text" class="form-control to-fly" id="where-to-fly"
+                                       placeholder="Куда лететь" name="where-to-fly">
+                                <a href="#" class="input-arrow" id="link-autocomplete-from-where-fly"></a>
                                 <div class="autocomplete-wrap autocomplete-where-to-fly" id="open-autocomplete-where-to-fly">
                                     <div>
                                         <!-- Nav tabs -->
@@ -374,53 +440,7 @@
 
                                     </div>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="where-to-fly">Куда:</label>
-                                <input type="text" class="form-control to-fly" id="where-to-fly"
-                                       placeholder="Куда лететь" name="where-to-fly">
-                                <a href="#" class="input-arrow" id="link-autocomplete-from-where-fly"></a>
-                                <div class="autocomplete-wrap autocomplete-from-where-fly" id="open-autocomplete-from-where-fly">
 
-                                    <ul class="list-all-aeroport list-unstyled">
-                                        <li>
-                                            <div class="active-link"><span class="all-aeroport-link"><span class="aqua-letters">Нью</span>-Бедфорт, США</span><span
-                                                    class=" location-code">LGA</span></div>
-                                        </li>
-                                        <li>
-                                            <div class="list-all-link"><span class="all-aeroport-link"><span class="aqua-letters">Нью</span>-Берн, США</span><span
-                                                    class=" location-code">LGA</span></div>
-                                        </li>
-                                        <li>
-                                            <div class="list-all-link"><span class="aqua-letters">Нью</span>-Бедфорт, США, <span
-                                                    class="text-all-aeroport">все аэропорты</span><span
-                                                    class="location-code ">NYC</span></div>
-                                            <ul class="sub-list list-unstyled">
-                                                <li class="clearfix"><a href="#"><span class="aqua-letters">Нью</span>-Берн, США
-                                                    <span class=" location-code">EWR</span></a></li>
-                                                <li class="clearfix"><a href="#"><span class="aqua-letters">Нью</span>Нью-Йорк, США<span
-                                                        class="location-code">JFK</span></a>
-                                                </li>
-                                                <li class="clearfix"><a href="#"><span class="aqua-letters">Нью</span>Нью-Йорк, США<span
-                                                        class="location-code">JFK</span></a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <div class="list-all-link"><span class="all-aeroport-link"><span class="aqua-letters">Нью</span>касл(-апон-Тайн), Великобритания</span><span
-                                                    class=" location-code">LGA</span></div>
-                                        </li>
-                                    </ul>
-                                    <div class="checkbox  autocomplete-checkbox">
-                                        <input type="checkbox" value="" id="radius-anywhere" name="radius-anywhere">
-                                        <label for="radius-anywhere"><span></span>В радиусе</label>
-                                        <input type="text">
-                                        <label>км</label>
-                                    </div>
-                                    <div class="location">
-                                        <img src="images/icon/locatin.png"> <a href="#">Показать на карте</a>
-                                    </div>
-                                </div>
                             </div>
 
                             <div class="form-group">
@@ -460,11 +480,11 @@
                                 </div>
 
                             </div>
-                            <div class="form-group add-flight">
+                            <div class="form-group add-flight" id="wrap-add-flight">
                                 <div class="margin-top"><a href="#avia-tab" id="add-flight" class="add-flight"><img
                                         src="images/icon/plus-green.png">Добавить перелет</a></div>
                             </div>
-                            <div class="form-group button-center">
+                            <div class="form-group button-center" id="wrap-button-search">
                                 <button type="submit" class="btn btn-find" id="search">Найти</button>
                             </div>
 
@@ -506,7 +526,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="priority-company" class="question-priority-company">Указать приоритетные авиакомпании</label>
-                                        <a href="#" ><img src="images/icon/q.png" class="question"></a>
+                                        <a href="#tooltip2" data-toggle="modal"><img src="images/icon/q.png" class="question"></a>
                                         <div>
                                         <input type="text" name="priority-company" class="form-control priority-company"
                                                id="priority-company" placeholder="Выберите авиакомпанию из списка">
@@ -1197,7 +1217,7 @@
 
                             </div>
                             <div class="form-group button-center">
-                                <button type="submit" class="btn btn-find">Применить фильтры</button>
+                                <button type="submit" class="btn btn-find">Найти</button>
                             </div>
                             <div class="text-insurance">Специальные опции страховки:</div>
                             <div class="checkbox-wrapper-insurance">
@@ -1430,7 +1450,7 @@
     </div>
     <div class="container section-timetables">
         <div class="row">
-            <div class="col-sm-12 text-center name-section">Табло аэропортов</div>
+            <div class="col-sm-12 text-center name-section">Расписание железнодорожных станций</div>
             <div class="col-lg-6 col-md-12 col-sm-12">
                 <ul class="timetables">
                     <li><a href="#">Расписание рейсов аэропорта<span class="name-city-bold">Борисполь</span></a></li>
@@ -1680,6 +1700,21 @@
         </div>
     </div>
 </div>
+<div class="modal fade" id="tooltip2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-tooltip">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="images/close.png"
+                                                                                                 alt="close"></button>
+            </div>
+            <div class="modal-body">
+                Указать приоритетные авиакомпании
+            </div>
+
+        </div>
+    </div>
+</div>
+
 <script src="js/jquery-1.10.2.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/script.js"></script>

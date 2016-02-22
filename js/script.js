@@ -38,17 +38,29 @@ $(document).ready(function () {
     function addFlight($this)
     {
         var $form = $(".form-group-search");
+        $('#new-wrap-button-search').removeAttr("id");
+        $('.new-wrap-add-fly').removeClass('new-wrap-add-fly');
         if ($("[value=complicated-route]").is(":checked")) {
-            $(document).find("#search").remove();
-            $this.remove();
+            //$this.remove();
             $form.append('<div class="wrap-add-fly"></div>');
             $('.wrap-add-fly').each(function () {
                 if($(this).is(':empty')) {
-                    $('<div class="form-group wrap-add-fly-group"><label for="departure-date">Дата вылета:</label><input type="text" class="form-control date-fly" id="departure-date" placeholder="Дата"name="departure-date"> <a href="#" class="input-arrow" id="link-open-calendar-three-day"></a> </div>').appendTo(this);
-                    $('<div class="form-group wrap-add-fly-group"> <label for="from-to-fly">Откуда:</label> <input type="text" class="form-control to-fly" id="from-to-fly"placeholder="Откуда лететь" name="from-to-fly"> <a href="#" class="input-arrow" id="link-open-autocomplete-where-to-fly"></a> </div>').appendTo(this);
-                    $('<div class="form-group wrap-add-fly-group"> <label for="where-to-fly">Куда:</label> <input type="text" class="form-control to-fly" id="where-to-fly"placeholder="Куда лететь" name="where-to-fly"> <a href="#" class="input-arrow" id="link-autocomplete-from-where-fly"></a> </div>').appendTo(this);
-                    $('<div class="form-group add-flight"><div class="add-flight-margin"><a href="#avia-tab" id="add-flight" class="add-flight"><img src="images/icon/plus-green.png">Добавить перелет</a></div> </div>').appendTo(this);
-                    $('<div class="form-group"><button type="submit" id="search" class="btn btn-find">Найти</button></div>').appendTo(this);
+                    $('<div class="form-group wrap-add-fly-group"><label for="departure-date">Дата вылета:</label><input type="text" class="form-control date-fly" id="departure-date" placeholder="Дата"name="departure-date"><a href="#" class="input-arrow" id="link-open-calendar-three-day"></a></div>').appendTo(this);
+                    $('<div class="form-group wrap-add-fly-group"><label for="from-to-fly">Откуда:</label> <input type="text" class="form-control to-fly" id="from-to-fly"placeholder="Откуда лететь" name="from-to-fly"><a href="#" class="input-arrow" id="link-open-autocomplete-where-to-fly"></a></div>').appendTo(this);
+                    $('<div class="form-group wrap-add-fly-group"><label for="where-to-fly">Куда:</label> <input type="text" class="form-control to-fly" id="where-to-fly"placeholder="Куда лететь" name="where-to-fly"><a href="#" class="input-arrow" id="link-autocomplete-from-where-fly"></a></div>').appendTo(this);
+                    $('<div class="form-group "><div class="margin-top new-wrap-add-fly"></div></div>').appendTo(this);
+                    $('<div class="form-group " id="new-wrap-button-search"></div>').appendTo(this);
+                    if($('#wrap-button-search #search').length){
+                        $(document).find('#wrap-button-search #search').detach().prependTo('#new-wrap-button-search');
+                    } else {
+                        $(document).find('.form-group #search').detach().prependTo('#new-wrap-button-search');
+                    }
+                    if($('#wrap-add-flight #add-flight').length){
+                        $(document).find('#wrap-add-flight #add-flight').detach().prependTo('.new-wrap-add-fly');
+                    } else {
+                        $(document).find('#add-flight').detach().prependTo('.new-wrap-add-fly');
+
+                    }
                     $('.add-flight').css('display', 'inline-block');
                 }
             });
@@ -59,7 +71,7 @@ $(document).ready(function () {
 
     $("#avia-tab").click(function () {
         $(".tab-content.tab-content-main").css({"border": "4px solid #257ee1"});
-        $(".top-page").css({"background": "url('images/bg/bg-plane.png')", "background-repeat": "no-repeat"});
+        $(".top-page").css({"background": "url('images/bg/bg-plane.png')", "background-repeat": "no-repeat",  "-webkit-background-size": "cover", "background-position": "center"});
     });
     $("#train-tab").click(function () {
         $(".tab-content.tab-content-main").css({"border": "4px solid #296992"});
@@ -73,7 +85,7 @@ $(document).ready(function () {
     });
     $("#insurance-tab").click(function () {
         $(".tab-content.tab-content-main").css({"border": "4px solid #1b8da5"});
-        $(".top-page").css({"background": "url('images/bg/bg-ins.png')", "background-repeat": "no-repeat"});
+        $(".top-page").css({"background": "url('images/bg/bg-ins.png')", "background-repeat": "no-repeat",  "-webkit-background-size": "cover", "background-position": "center"});
     });
     $("#hotel-tab").click(function () {
         $(".tab-content.tab-content-main").css({"border": "4px solid #35a69a"});
@@ -109,9 +121,11 @@ $(document).ready(function () {
     $('.search-more-accordion-toggle').click(function(){
         var $this = $(this);
         if($this.hasClass('collapsed')){
+            $('.line-gray').hide();
             $this.text('Скрыть');
         } else {
             $this.text('Подробнее');
+            $('.line-gray').show();
         }
     });
 
@@ -138,6 +152,10 @@ $(document).ready(function () {
             $searchContent = $(".аdvanced-searh-content-not-authorized");
 
         if ($this.attr("value") == "one-way") {
+            if($('#wrap-button-search #search').length == 0){
+                $(document).find('#new-wrap-button-search #search').detach().prependTo('#wrap-button-search');
+            }
+
             hideAdvancedSearch();
             $flyReturn.css({"display": "none"});
             $addFlight.css({"display": "none"});
@@ -145,6 +163,9 @@ $(document).ready(function () {
         }
 
         if ($this.attr("value") == "go-back") {
+            if($('#wrap-button-search #search').length == 0){
+                $(document).find('#new-wrap-button-search #search').detach().prependTo('#wrap-button-search');
+            }
             hideAdvancedSearch();
             $searchContent.hide();
             $flyReturn.css({"display": "inline-block"});
@@ -153,6 +174,10 @@ $(document).ready(function () {
         }
 
         if ($this.attr("value") == "complicated-route") {
+            if($('#new-wrap-button-search').length){
+                $(document).find('#wrap-button-search #search').detach().prependTo('#new-wrap-button-search');
+            }
+
             hideAdvancedSearch();
             $searchContent.hide();
             $flyReturn.css({"display": "none"});
