@@ -72,6 +72,9 @@ $(document).ready(function () {
     $("#avia-tab").click(function () {
         $(".tab-content.tab-content-main").css({"border": "4px solid #257ee1"});
         $(".top-page").css({"background": "url('images/bg/bg-plane.png')", "background-repeat": "no-repeat",  "-webkit-background-size": "cover", "background-position": "center"});
+        $("#section-timetables-train").hide();
+        $("#section-timetables-avia").show();
+
     });
     $("#train-tab").click(function () {
         $(".tab-content.tab-content-main").css({"border": "4px solid #296992"});
@@ -82,6 +85,8 @@ $(document).ready(function () {
             "background-position": "center"
         });
         $(".wrap-add-fly").hide();
+        $("#section-timetables-train").show();
+        $("#section-timetables-avia").hide();
     });
     $("#insurance-tab").click(function () {
         $(".tab-content.tab-content-main").css({"border": "4px solid #1b8da5"});
@@ -118,6 +123,25 @@ $(document).ready(function () {
         return false;
     });
 
+
+
+    $('.btn-buy-train-collapse').click(function(){
+        var $this = $(this);
+        if($this.hasClass('collapsed')){
+            $this
+                .text('Отменить')
+                .addClass("btn-buy-train-active")
+                .removeClass("btn-buy-train");
+            $('.line-gray-train').hide();
+        } else {
+            $this.text('Выбрать')
+                 .addClass("btn-buy-train")
+                 .removeClass("btn-buy-train-active");
+            $('.line-gray-train').show();
+        }
+    });
+
+
     $('.search-more-accordion-toggle').click(function(){
         var $this = $(this);
         if($this.hasClass('collapsed')){
@@ -129,6 +153,19 @@ $(document).ready(function () {
         }
     });
 
+    $('.dropdown-arrow').click(function(){
+        var $this = $(this);
+        if($this.hasClass('collapsed')){
+            $('.user-menu').css({"background-color":"#46607d"});
+        } else {
+            $('.user-menu').css({"background-color":"rgba(11, 85, 168, 0.35)"});
+        }
+    });
+
+
+    $('.close-book').click(function(){
+        $('#info-booking').hide();
+    });
     /*Sort*/
 
     $(".price-sort, .time-sort").click(function () {
@@ -136,12 +173,12 @@ $(document).ready(function () {
     });
     /*Validation*/
 
-    $("input").blur(function () {
-        if ($(this).val() == "") {
-            $(this).css({"border-color": "red"});
-        }
-    });
-
+    //$("input").blur(function () {
+    //    if ($(this).val() == "") {
+    //        $(this).css({"border-color": "red"});
+    //    }
+    //});
+    //$('.form-registation').validator();
     /* Event for checkbox*/
 
     $("[name=radio-box]").click(function () {
@@ -216,6 +253,29 @@ $(document).ready(function () {
         addFlight(this);
     });
 
+
+
+    function enable() {
+        if (this.checked) {
+            $(this).parents('.col-lg-12').find("input.enable").removeAttr("disabled");
+            $(this).parents('.col-lg-12').find('label.label-disable').removeClass("text-gray");
+
+        } else {
+            $(this).parents('.col-lg-12').find("input.enable").attr("disabled", true).prop( "checked", false );
+            $(this).parents('.col-lg-12').find('label.label-disable').addClass("text-gray");
+        }
+    }
+
+    $(function() {
+        $("#additional-baggage").click(enable);
+        $("#additional-baggage-1").click(enable);
+    });
+    //if ($("#additional-baggage").attr( "checked", true )) {
+    //    $("input:checkbox").prop("disabled", true);
+    //} else{
+    //    $("input:checkbox").prop("disabled", false);
+    //}
+
     $("#filter-show-all-class").change(function () {
         $("#filter-class").find("input:checkbox").prop('checked', $(this).prop("checked"));
     });
@@ -232,6 +292,9 @@ $(document).ready(function () {
         $("#filter-airline").find("input:checkbox").prop('checked', $(this).prop("checked"));
     });
 
+    $("#filter-show-type-wagon").change(function () {
+        $("#filter-type-wagon").find("input:checkbox").prop('checked', $(this).prop("checked"));
+    });
 });
 customScroll = function () {
     var sEl = document.querySelector("#filter_options > ul"),

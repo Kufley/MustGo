@@ -1,0 +1,463 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>MustGo</title>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500' rel='stylesheet' type='text/css'>
+    <link href="css/nouislider.min.css" rel="stylesheet">
+</head>
+<div class="top-page-result-search">
+    <nav class="navbar">
+        <div class="container clearfix">
+            <div class="navbar-header pull-left">
+                <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo"></a>
+            </div>
+            <div class="pull-right menu-right">
+
+                <div class="user-menu">
+                    <a class="dropdown-arrow collapsed" data-toggle="collapse" data-parent="#user-menu"
+                       href="#user-menu">Русский, USD</a>
+                    <div class="pull-right sign-in"><a href="#">Вход</a></div>
+                    <!--<div class="pull-right log-out"><a href="#">Виход</a></div>-->
+                </div>
+                <div id="user-menu" class="collapse">
+                    <div class="user-menu-list">
+                        <ul class="list-unstyled">
+                            <li>
+                                <input type="radio" id="lang-ua" name="radio-lang" class="radio-box" checked>
+                                <label for="lang-ua"><span><span></span></span>Українська</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="lang-rus" name="radio-lang" class="radio-box" checked>
+                                <label for="lang-rus"><span><span></span></span>Русский</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="lang-en" name="radio-lang" class="radio-box" checked>
+                                <label for="lang-en"><span><span></span></span>English</label>
+                            </li>
+                        </ul>
+                        <ul class="list-unstyled">
+                            <li>
+                                <input type="radio" id="currency-usd" name="radio-currency" class="radio-box" checked>
+                                <label for="currency-usd"><span><span></span></span>USD Доллар США</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="currency-eur" name="radio-currency" class="radio-box" checked>
+                                <label for="currency-eur"><span><span></span></span>Eur Евро</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="currency-uan" name="radio-currency" class="radio-box" checked>
+                                <label for="currency-uan"><span><span></span></span>UAH Украинская гривна</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="currency-rub" name="radio-currency" class="radio-box" checked>
+                                <label for="currency-rub"><span><span></span></span>Rub Российский рубль</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div class="container content-result-search">
+        <div class="text-center">
+            <p class="heading-payment">Подтверждение оплаты</p>
+            <p class="heading-order text-uppercase">Заказ №4278</p>
+            <p class="heading-order">Спасибо! Оплата прошла успешно. Мы вышлем электронные билеты на ваш e-mail <span>client@gmail.com</span></p>
+            <p class="details-payment">Подробная информация о заказе:</p>
+        </div>
+        <div class="tab-content-result-search">
+            <div class="panel panel-default panel-train panel-order">
+                <div class="panel-heading ">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 padding-left-0">
+                            <div class="route-ticket">Маршрутная квитанция</div>
+                            <img src="images/logo-payment.png" class="logo-payment">
+                            <div class="address-company">Киев, бул. Ивана Лепсе, 4, оф. 513</div>
+                            <div class="address-company">+38 044 3590569</div>
+                            <div><a href="#" class="link-payment">Правила обмена/возврата</a></div>
+                        </div>
+                        <div class="col-lg-9 col-md-9 padding-right-0 clearfix content-ticket">
+
+                            <div class="col-receipt-left col-search">
+                                <div class="buyer ">Покупатель: <span>Grishko Anatoliy</span></div>
+                            </div>
+                            <div class="col-receipt-right col-search ">
+                                <ul class="list-unstyled option-receipt">
+                                    <li><a href="#" id="print-receipt">Печать</a></li>
+                                    <li><a href="#" id="send-mail-receipt">Отправить</a></li>
+                                    <li><a href="#" id="back-receipt">Отправить</a></li>
+                                    <li><a href="#" id="return-receipt">Вернуть</a></li>
+                                    <li><a href="#" id="cancel-receipt">Отменить</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12 status-order">
+                                    Статус заказа: Manual mode
+                                    <a href="#tooltip" data-toggle="modal"><img
+                                            src="images/icon/q.png" class="question"></a>
+                                </div>
+                            </div>
+                            <div class="row margin-0">
+                                <div class="col-receipt-left col-search">
+                                    <div class="name-reservation">
+                                        <div class="code-order">Код бронирования:</div>
+                                        <div class="address">Номер брони в системе перевозчика:</div>
+                                    </div>
+                                    <div class="code-reservation">
+                                        <div class="code-order">7MLZ0A</div>
+                                        <div class="code-order">INZKZ6</div>
+                                    </div>
+                                </div>
+                                <div class="col-receipt-right col-search">
+                                    <div>
+                                        <div class="address">Статус билетов:</div>
+                                        <div class="address">Дата бронирования:</div>
+                                    </div>
+                                    <div class="code-reservation">
+                                        <div class="code-order">Оплачены</div>
+                                        <div class="code-order">1.03.2016</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row ">
+                                <div class="col-lg-12 display-flex">
+                                    <div>
+                                        <div class="address">Пассажиры и номера билетов:</div>
+                                    </div>
+
+                                    <div class="code-order buyer-name">
+                                        <div>Grishko Anatoliy Aleksandrovich</div>
+                                        <div>Antonov Nickolay Mihaylovich</div>
+                                        <div>Antonova Anna Nickolaevna</div>
+                                    </div>
+                                    <div class="code-order code-reservation">
+                                        <div>284 6395710573</div>
+                                        <div>284 6395710573</div>
+                                        <div>284 6395710573</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 padding-left-0">
+                            <div class="margin-bottom-15">24 дек 2015, Cp</div>
+                            <a class="search-more-accordion-toggle collapsed" data-toggle="collapse"
+                               data-parent="#result-search-flight-with-one-transship"
+                               href="#result-search-flight-with-one-transship">Подробнее</a>
+                        </div>
+                        <div class="col-lg-9 col-md-9 padding-right-0">
+                            <div class="col-search-fly col-search">
+                                <div class="time">12:00</div>
+                                <div class="hide-long-text" title="Одесса">Одесса</div>
+                                <div>ОDS</div>
+                                <div class="hide-long-text" title="Украина">Украина</div>
+                                <div class="search-date">24 дек, Ср</div>
+                            </div>
+                            <div class="col-line-fly col-search">
+                                <div class="search-transship-text">пересадка 1 ч 20 мин</div>
+                                <div class="line-fly">
+                                    <div class="circle start-line"></div>
+                                    <div class="circle middle-line"></div>
+                                    <div class="circle end-line"></div>
+                                </div>
+                                <div class="text-center">WAW</div>
+                            </div>
+                            <div class="col-search-fly col-search">
+                                <div class="time">12:00</div>
+                                <div class="hide-long-text" title="Стамбул">Стамбул</div>
+                                <div>IST</div>
+                                <div class="hide-long-text" title="Турция">Турция</div>
+                                <div class="search-date">24 дек, Ср</div>
+                            </div>
+                            <div class="col-flight-time col-search">
+                                <div class="flight-time"><img src="images/icon/clock-search.png">6 ч 30 мин
+                                </div>
+                            </div>
+
+
+                            <div id="result-search-flight-with-one-transship"
+                                 class="search-more-collapse collapse padding-right-0 col-sm-11">
+                                <div class="row margin-0">
+                                    <div class="col-search-time-fly col-search">
+                                        <div>Вылет:</div>
+                                        <div class="time">12:00</div>
+                                    </div>
+                                    <div class="col-search-country-fly col-search">
+                                        <div class="hide-long-text" title="Одесса">Одесса</div>
+                                        <div>ОDS, A</div>
+                                        <p class="flight-country" title="Украина">Украина</p>
+                                    </div>
+                                    <div class="col-search-time-fly-arrive col-search">
+                                        <div>Прибытие:</div>
+                                        <div class="time">14:00</div>
+                                    </div>
+                                    <div class="col-search-country-fly col-search">
+                                        <div class="hide-long-text" title="Варшава">Варшава</div>
+                                        <div>WAW, С</div>
+                                        <p class="flight-country" title="Польша">Польша</p>
+                                    </div>
+                                    <div class="col-search-model-plane col-search">
+                                        <div class="more-time">2ч</div>
+                                        <div class="model-plane  hide-long-text" title="Boeing 737-800">Boeing 737-800
+                                        </div>
+                                        <div class="model-plane">PS-56</div>
+                                        <div>бизнес С</div>
+                                    </div>
+                                    <div class="col-flight-aviacompany col-search">
+                                        <div class="model-plane"><img src="images/logo-aviacompany/logo-tk-small.png">Turkish
+                                            airlines
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-blue">пересадка в Варшаве 1ч 20мин</div>
+                                <div class="row margin-0">
+                                    <div class="col-search-time-fly col-search">
+                                        <div>Вылет:</div>
+                                        <div class="time">12:00</div>
+                                    </div>
+                                    <div class="col-search-country-fly col-search">
+                                        <div class="hide-long-text" title="Одесса">Одесса</div>
+                                        <div>ОDS, A</div>
+                                        <p class="flight-country" title="Украина">Украина</p>
+                                    </div>
+                                    <div class="col-search-time-fly-arrive col-search">
+                                        <div>Прибытие:</div>
+                                        <div class="time">14:00</div>
+                                    </div>
+                                    <div class="col-search-country-fly col-search">
+                                        <div class="hide-long-text" title="Варшава">Варшава</div>
+                                        <div>WAW, С</div>
+                                        <p class="flight-country" title="Польша">Польша</p>
+                                    </div>
+                                    <div class="col-search-model-plane col-search">
+                                        <div class="more-time">2ч</div>
+                                        <div class="model-plane  hide-long-text" title="Boeing 737-800">Boeing 737-800
+                                        </div>
+                                        <div class="model-plane">PS-56</div>
+                                        <div>бизнес С</div>
+                                    </div>
+                                    <div class="col-flight-aviacompany col-search">
+                                        <div class="model-plane"><img src="images/logo-aviacompany/logo-tk-small.png">Turkish
+                                            airlines
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="row margin-bottom-75">
+            <div class="col-lg-6 buyer">
+                <div  class="route-ticket">Важно!</div>
+                Для регистрации на внутренний авиарейс пассажиру достаточно иметь при себе документ на который был оформлен
+                билет ( внутренний паспорт или загранпаспорт для совершеннолетних, свидетельство о рождении для несовершеннолетних,
+                военный билет для военнослужащих ).<br>
+                Для регистрации на международный рейс совершеннолетние пассажиры должны иметь при себе загранпаспорт и визу страны
+                назначения. Срок действия загранпаспорта и визы не должен истекать ранее даты обратного вылета. Если полет проходит
+                с пересадками, могут понадобиться транзитные визы.
+                Дети должны быть вписаны в паспорт одного из родителей или иметь собственный загранпаспорт.
+            </div>
+            <div class="col-lg-6">
+                <div class="panel info-order buyer">
+                        <div>Информация об оплате по заказу №9462803861</div>
+                        <div class="clearfix">
+                            <div class="pull-left">
+                                <div>Стоимость:</div>
+                                <div>Комиссия платежной системы:</div>
+                                <div class="result-price">Итого:</div>
+                            </div>
+                            <div class="pull-right text-right">
+                                <div>3 799 UAH</div>
+                                <div>219 UAH</div>
+                                <div class="result-price"><span>4 001</span> UAH</div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <ul class="">
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Путешествия</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 hidden-md hidden-sm hidden-xs">
+                    <ul class="">
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">Договор оферты</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <ul class="address">
+                        <li id="phone"><a href="#">+38 044 3590569,</a></li>
+                        <li><a href="#"> +7 495 7397922</a></li>
+                        <li id="mail"><a href="#">mustgoaero@gmail.com</a></li>
+                        <li id="skype"><a href="#">mustgoaero</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 hidden-lg">
+                    <ul class="">
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">Договор оферты</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <img src="images/logo.png">
+                    <p>Мы в соцсетях:</p>
+                    <ul class="social">
+                        <li><a href="#">
+                            <div id="vk"></div>
+                        </a></li>
+                        <li><a href="#">
+                            <div id="facebook"></div>
+                        </a></li>
+                        <li><a href="#">
+                            <div id="twit"></div>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="support_payments">
+            <img src="images/payments/qiwi-logo.png">
+            <img src="images/payments/yandex.png">
+            <img src="images/payments/wmlogo_vector_blue.png">
+            <img src="images/payments/okpay_logo.png">
+            <img src="images/payments/Visa_Inc.svg">
+            <img src="images/payments/logo-mastercard.png">
+            <img src="images/payments/300px-Libert.svg">
+            <img src="images/payments/logo-perfect-money.png">
+            <img src="images/payments/liqpay_logo.png">
+            <img src="images/payments/privat24.png">
+            <img src="images/payments/RBKmoney.png">
+            <img src="images/payments/paypallogo.png">
+        </div>
+    </div>
+</footer>
+
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/nouislider.min.js"></script>
+<script src="js/wNumb.js"></script>
+<script>
+    function getSliderVal(value) {
+        var i = 0,
+                time = [];
+        for (i; i < value.length; i++) {
+            var h = value[i] / 60 ^ 0;
+            if (h) {
+                var m = value[i] % 60;
+                if (m < 10) m = '0' + m;
+                time[i] = h + ':' + m;
+            } else {
+                if (value[i] < 10) {
+                    time[i] = '0:0' + parseInt(value[i]);
+                } else {
+                    time[i] = '0:' + parseInt(value[i]);
+                }
+            }
+        }
+        return time;
+    }
+    var rangeSliderarrival = document.getElementById('slider-range-arrival');
+
+    noUiSlider.create(rangeSliderarrival, {
+        step: 15,
+        margin: 50,
+        connect: true,
+        behaviour: 'tap',
+        start: [0, 1440],
+        tooltips: [wNumb({decimals: 2, mark: ':'}), wNumb({decimals: 2, mark: ':'})],
+        range: {
+            'min': [0],
+            'max': [1440]
+        }
+    });
+
+    var rangeSlider = document.getElementById('slider-range-sortie');
+
+    noUiSlider.create(rangeSlider, {
+        step: 15,
+        margin: 50,
+        connect: true,
+        behaviour: 'tap',
+        start: [0, 1440],
+        tooltips: [wNumb({decimals: 2, mark: ':'}), wNumb({decimals: 2, mark: ':'})],
+        range: {
+            'min': [0],
+            'max': [1440]
+        }
+    });
+
+    rangeSlider.noUiSlider.on('change', function () {
+        var value = rangeSlider.noUiSlider.get(),
+                time = getSliderVal(value);
+        $('#slider-range-sortie .noUi-handle-lower .noUi-tooltip').text(time[0]);
+        $('#slider-range-sortie .noUi-handle-upper .noUi-tooltip').text(time[1]);
+    });
+
+    rangeSlider.noUiSlider.on('start', function () {
+        var value = rangeSlider.noUiSlider.get(),
+                time = getSliderVal(value);
+        $('#slider-range-sortie .noUi-handle-lower .noUi-tooltip').text(time[0]);
+        $('#slider-range-sortie .noUi-handle-upper .noUi-tooltip').text(time[1]);
+    });
+
+    rangeSlider.noUiSlider.on('update', function () {
+        var value = rangeSlider.noUiSlider.get(),
+                time = getSliderVal(value);
+        $('#slider-range-sortie .noUi-handle-lower .noUi-tooltip').text(time[0]);
+        $('#slider-range-sortie .noUi-handle-upper .noUi-tooltip').text(time[1]);
+    });
+
+    rangeSliderarrival.noUiSlider.on('change', function () {
+        var value = rangeSliderarrival.noUiSlider.get(),
+                time = getSliderVal(value);
+        $('#slider-range-arrival .noUi-handle-lower .noUi-tooltip').text(time[0]);
+        $('#slider-range-arrival .noUi-handle-upper .noUi-tooltip').text(time[1]);
+    });
+
+    rangeSliderarrival.noUiSlider.on('start', function () {
+        var value = rangeSliderarrival.noUiSlider.get(),
+                time = getSliderVal(value);
+        $('#slider-range-arrival .noUi-handle-lower .noUi-tooltip').text(time[0]);
+        $('#slider-range-arrival .noUi-handle-upper .noUi-tooltip').text(time[1]);
+    });
+
+    rangeSliderarrival.noUiSlider.on('update', function () {
+        var value = rangeSliderarrival.noUiSlider.get(),
+                time = getSliderVal(value);
+        $('#slider-range-arrival .noUi-handle-lower .noUi-tooltip').text(time[0]);
+        $('#slider-range-arrival .noUi-handle-upper .noUi-tooltip').text(time[1]);
+    });
+
+
+</script>
+
+</body>
+</html>

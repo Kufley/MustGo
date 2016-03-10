@@ -1,40 +1,41 @@
-body{font-family: 'Roboto', sans-serif; min-width: 768px;  cursor: default;}
+body{font-family: 'Roboto', sans-serif; min-width: 768px;  cursor: default;color: #000;}
 input:focus, input:active, button:active, button:focus,a:focus, .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {outline-style: none}
 
 .top-page{background: url("../images/bg/bg-plane.png") no-repeat center center; height:1200px; min-width: 100%;  -webkit-background-size: cover;  -moz-background-size: cover;  -o-background-size: cover;  background-size: cover;  position: relative;  }
-.top-page-result-search{background: url("../images/bg/bg-search.png") no-repeat center center; min-height:226px; min-width: 100%;  -webkit-background-size: cover;  -moz-background-size: cover;  -o-background-size: cover;  background-size: cover;  position: relative;  }
-.top-page-result-search .navbar{margin-bottom: 7px}
+.top-page-result-search{background: url("../images/bg/bg-search.png") no-repeat center center; min-height:100px; min-width: 100%;  -webkit-background-size: cover;  -moz-background-size: cover;  -o-background-size: cover;  background-size: cover;  position: relative;  }
+.top-page-result-search-train{background: url("../images/bg/bg-search-train.png") no-repeat center center; min-height:226px; min-width: 100%;  -webkit-background-size: cover;  -moz-background-size: cover;  -o-background-size: cover;  background-size: cover;  position: relative;  }
+.top-page-result-search .navbar, .top-page-result-search-train .navbar{margin-bottom: 7px}
 
 .navbar{border: 0;}
-.user-menu{background-color:  #46607d; margin-bottom: 10px; margin-top:0; position: relative; min-width: 265px}
+.menu-right{position: relative}
+
+.user-menu{background-color:  rgba(11, 85, 168, 0.35);margin-top:0; position: relative; min-width: 265px; min-height:50px;padding: 12px 10px;}
+
+#user-menu{position: absolute; right: 0;z-index: 1;}
+.user-menu-list{background-color:  #46607d; display: flex; width: 410px}
+.user-menu-list ul{margin: 6px 15px 3px 0;}
+.user-menu-list ul label{color:#ffb400; font-size: 18px}
 
 
-.dropdown-menu.dropdown-top>ul{display: inline-block}
-.dropdown-menu.dropdown-top>ul>li>a {color:#ffb400; font-size:20px; }
-.user-menu>li>a{color:#ffb400;font-size: 20px;font-weight: 400;}
-.user-menu>.sign-in{background: url("../images/flag/login.png") 90% 50% no-repeat; float: right;}
-.user-menu>.sign-in>a{color:#fff; font-size: 16px;font-weight: 400;padding: 15px 40px 15px 10px;}
 
-.user-menu>.log-out{background: url("../images/flag/logout.png") 90% 50% no-repeat; float: right;}
-.user-menu>.log-out>a{color:#fff; font-size: 16px;font-weight: 400;padding: 15px 40px 15px 10px;}
+.user-menu>.sign-in>a, .user-menu>.log-out>a{color:#fff; font-size: 16px;font-weight: 400;}
 
-.nav>li>a:focus, .nav>li>a:hover {text-decoration: none;  background-color: transparent;}
-.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {background-color: transparent; border-color: #337ab7;}
-.dropdown-menu>li>a:visited,.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{background-color: #46607d;}
+.user-menu>.sign-in{background: url("../images/flag/login.png") 90% 50% no-repeat;padding: 3px 40px 3px 10px;}
+.user-menu>.log-out{background: url("../images/flag/logout.png") 90% 50% no-repeat;padding: 3px 40px 3px 10px;}
 
-.user-menu>li>a.arrow{background: url("../images/flag/dropdown-arrow.png") no-repeat 90% 50%;padding-right: 38px;}
-.dropdown-menu.dropdown-top{margin: 0;font-size: 20px;background-color: #46607d;border: 0; left: 0;  border-radius: 0;  -webkit-box-shadow: none;  box-shadow: none; }
-.dropdown-top.dropdown-menu>li>a{padding: 3px 15px;}
-
-.phone{color:#fff;font-size: 30px;font-weight: 500}
-.arrow-down{bottom: 40px;position: absolute;left: 49%;}
+.phone{color:#fff;font-size: 30px;font-weight: 500; margin-top: 17px;}
 .feedback{text-align: center;}
 .feedback a{color:#ffb400;font-size: 19px;font-weight: 400; border-bottom: 1px dashed #ffb400;}
-.feedback a:hover, .feedback a:focus, .feedback a:active{text-decoration: none}
+a.dropdown-arrow:hover, a.dropdown-arrow:focus, a.dropdown-arrow:active,.feedback a:hover, .feedback a:focus, .feedback a:active{text-decoration: none}
 
 .section-information .padding-left-a{padding-left: 80px;}
 .section-information .padding-left-q{padding-left: 37px;}
 
+a.dropdown-arrow:after{background: url("../images/icon/dropdown-up.png"); width: 12px; height: 5px;  overflow: no-display;  content:" ";  text-decoration: none;  position: absolute;  margin-top: 11px;  margin-left: 10px;  }
+a.dropdown-arrow.collapsed:after{content:" ";  background: url("../images/flag/dropdown-arrow.png"); width: 12px; height: 5px; }
+a.dropdown-arrow{color:#ffb400;font-size: 20px;font-weight: 400;}
+
+.arrow-down{position: absolute;left: 49%;bottom: 100px;}
 
 .name-section{color:#000;font-size: 36px;font-weight: 700;line-height: 30px; margin-top: 90px; margin-bottom:50px; }
 .interesting-proposition .panel{margin-bottom: 40px;}
@@ -62,12 +63,13 @@ input:focus, input:active, button:active, button:focus,a:focus, .btn.active.focu
 
 #proposition .col-action-block{padding-right: 37px;padding-left: 37px;min-height: 290px;}
 .date-article{color:#898989;font-size: 16px;font-weight: 400;line-height: 30px; margin-top: 20px;}
+.info-heading.heading-for-article{margin-left: -77px}
 .article a{color:  #0b55a8;  font-size: 24px;  font-weight: 400;  line-height: 30px;  text-decoration: underline;}
 
 .accordion-body{color:#000;font-size: 18px;font-weight: 400; line-height: 30px; margin-top: 20px; margin-bottom: 5px;}
 .link-details{color:#4773b5;font-size: 24px;font-weight: 700;line-height: 30px;text-decoration: underline; margin-top: 35px;}
 
-.section-timetables{padding-bottom: 95px;}
+.container.section-timetables{padding-bottom: 95px;}
 .section-article{background-color:  #f2f2f2;box-shadow: 0 2px 4px 0 rgba(8, 10, 12, 0.5); padding: 50px 0 25px;}
 
 .section-article h2{color:#000;font-size: 36px;font-weight: 400;line-height: 42px; margin-bottom: 40px;}
@@ -75,6 +77,7 @@ input:focus, input:active, button:active, button:focus,a:focus, .btn.active.focu
 .timetables{list-style-image: url("../images/icon/arrow-left.png");}
 .timetables a{color:#000;font-size: 24px;font-weight: 400;line-height: 48px;margin-left: 10px;}
 .timetables span{color:#000;font-size: 24px;font-weight: 900;line-height: 48px;margin-left: 5px;}
+#section-timetables-train{display: none;}
 
 .footer-info{background:url("../images/bg/bg-f.png") no-repeat; background-size: cover; color:#fff;font-size: 18px; padding: 57px 0 30px}
 footer ul{list-style: none; padding: 0}
@@ -83,7 +86,7 @@ footer ul li a:hover{color:#fff;}
 footer p{padding: 48px 0 28px}
 footer .col-sm-3 {padding-right: 55px;}
 .address li{ margin-bottom: 10px}
-.address li a{padding-left: 30px; line-height: 10px; }
+.address li a{padding-left: 30px;}
 #phone{background: url("../images/icon/phone-y.png") 0 5px no-repeat;}
 #mail{background: url("../images/icon/mail-y.png") 0 5px no-repeat}
 #skype{background: url("../images/icon/skupe-y.png") 0 5px no-repeat}
@@ -94,8 +97,11 @@ footer .col-sm-3 {padding-right: 55px;}
 #twit{background: url("../images/icon/tw.png") no-repeat; width: 32px; height: 33px}
 
 .padding-0{padding: 0}
+.padding-left-0{padding-right: 0}
+.padding-right-0{padding-left: 0}
 .margin-0{margin: 0}
 .margin-bottom-15{margin-bottom: 5px}
+.margin-bottom-75{margin-bottom: 75px}
 
 .support_payments{padding: 30px 0; margin: 0 auto; text-align: center;}
 .support_payments img{margin-right: 20px}
@@ -108,7 +114,13 @@ footer .col-sm-3 {padding-right: 55px;}
 .btn-request-group:hover,.btn-request:hover{background-color: #257ee1; color: #fff;}
 .btn-find:hover{color:#fff;}
 .btn-filter{margin-top: 20px;border-radius: 4px;background-color:  #3cc7ef;box-shadow: 0 2px 4px 0 rgba(3, 4, 5, 0.5); width: 258px; height: 56px; text-transform: uppercase; color: #fff; font-weight: 700; font-size: 20px; line-height: 30px}
-.btn-buy{border-radius: 4px;background-color:#007fe5; box-shadow: 0 2px 4px 0 rgba(3, 4, 5, 0.5);width: 142px; margin-top: 10px; height: 48px;color:#fff;font-size: 24px;  font-weight: 700;  line-height: 35px; text-transform: uppercase}
+.btn-filter.btn-filter-train{background-color:  #79c6ed;}
+.btn-buy{border-radius: 4px;background-color:#007fe5; box-shadow: 0 2px 4px 0 rgba(3, 4, 5, 0.5);padding: 6px 0; width: 142px; margin-top: 10px; height: 48px;color:#fff;font-size: 24px;  font-weight: 700;  line-height: 35px; text-transform: uppercase}
+.btn-buy-train{background-color:  #477ee1; margin-top: 0;}
+.btn-buy-train-active{margin-top: 0;background-color:  #cbcbcb;}
+.btn-buy-train-active:active, .btn-buy-train-active:hover, .btn-buy-train-active:focus, .btn-buy-train-active:visited,
+.btn-buy-train:active, .btn-buy-train:hover, .btn-buy-train:focus, .btn-buy-train:visited{color: #fff;}
+
 .container.form-result-search{padding: 0;}
 .container.main-content{padding: 0; margin-top: 295px; position: relative; z-index: 10;}
 .container.main-content .nav-tabs.nav-menu {border-bottom:0}
@@ -174,6 +186,9 @@ input[type="checkbox"]:checked + label span {background:url("../images/icon/chec
 .form-control.to-country{width: 500px;}
 .form-control.to-fly-search-result{width: 320px}
 .form-control.date-fly-search-result{width: 200px}
+.form-control.series-passport{width: 75px}
+.form-control.number-passport{width: 100px}
+.form-control.date-birth{width: 75px}
 
 .аdvanced-searh{background-color:  #e5e5e5;padding: 25px 0;}
 .аdvanced-searh-content{background-color:  #e5e5e5;padding: 0 35px 30px; display: none}
@@ -195,7 +210,7 @@ input[type="checkbox"]:checked + label span {background:url("../images/icon/chec
 .text-insurance{color:#000;font-size: 16px;font-weight: 400;line-height: 30px; margin-top: 20px;}
 .text-not-authorized a{color:#000;text-decoration: underline}
 .add-flight{color:#000;font-size: 14px;font-weight: 400;line-height: 30px;margin-right: 7px; margin-left: 5px}
-.add-flight img{margin-right: 10px;}
+.add-flight img, .train-there-back img{margin-right: 10px;}
 .margin-top{margin-top: 35px}
 .main-content .tab-content.tab-content-main{border: 4px solid #257ee1;background-color:  #f2f2f2;}
 
@@ -218,7 +233,7 @@ input[type="checkbox"]:checked + label span {background:url("../images/icon/chec
 .modal-dialog.modal-tooltip{width: 360px; margin-top: 10%;}
 .modal-dialog.modal-tooltip .modal-header{padding: 8px 8px 0;}
 .modal-dialog.modal-tooltip .modal-body{padding:0 30px 30px;color:rgba(0, 0, 0, 0.6);font-size: 14px;font-weight: 400; line-height: 24px;}
-.modal-body .form-group-search {padding: 0px 0 35px;}
+.modal-body .form-group-search {padding: 0 0 35px;}
 .modal-body  .personal-information{margin-top: 40px}
 .modal-request-for-group.modal-content:after{bottom: 100%;left:30px;border: solid transparent;content: " "; height: 0;  width: 0;  position: absolute;  pointer-events: none;  border-color: rgba(248, 248, 248, 0);  border-bottom-color: #f8f8f8;  border-width: 13px;  margin-left: -13px;}
 
@@ -240,7 +255,7 @@ a.search-more-accordion-toggle{color:#007fe5;font-size: 14px;font-weight: 400;li
 .form-inline .form-group.fly-returm,.form-inline .form-group.add-flight{display: none}
 
 /**********************AUTOCOMPLIT*************************************************************************************/
-.row-ui{padding-top: 50px}
+.row-ui{margin: 50px 0}
 .autocomplete-wrap{position: relative;background:#0b2038;border-radius: 5px;}
 .autocomplete-wrap:after {bottom: 100%;left: 20px;border: solid transparent;  content: " ";  height: 0;  width: 0;  position: absolute;  pointer-events: none;  border-color: rgba(136, 183, 213, 0);  border-bottom-color: #0b2038;  border-width: 15px;  }
 .autocomplete-where-to-fly{width: 457px;}
@@ -251,7 +266,7 @@ a.search-more-accordion-toggle{color:#007fe5;font-size: 14px;font-weight: 400;li
 .autocomplete-where-to-fly .nav-tabs>li>a{color: #fff; font-size: 16px; font-weight: 400;  line-height: 30px;  padding: 0;  }
 .autocomplete-where-to-fly .nav-tabs>li{padding:0 47px 0 0}
 .autocomplete-where-to-fly .nav-tabs>li:last-child{padding:0}
-.autocomplete-where-to-fly .nav-tabs>li>a:hover {border-color: transparent;}
+.autocomplete-where-to-fly .nav-tabs>li>a:hover {border-color: transparent;background-color: transparent}
 .autocomplete-where-to-fly .nav-tabs>li img{display: none;}
 .autocomplete-where-to-fly .nav-tabs>.anywhere.active .link1{display: block; position: absolute;left: 18%;  bottom: -18px;}
 .autocomplete-where-to-fly .nav-tabs>.cities-and-airports.active .link2{display: block; position: absolute;left: 27%;  bottom: -18px;}
@@ -263,8 +278,8 @@ a.search-more-accordion-toggle{color:#007fe5;font-size: 14px;font-weight: 400;li
 .sub-list li:hover, .list-all-link:hover, .list-all-link.active-link,.scroll-owerflow .autocomplete-checkbox li:hover{background-color:  rgba(255, 255, 255, 0.2);}
 .list-all-link {padding: 6px 50px 6px 30px;}
 .all-aeroport-link{width: 330px;display: inline-block;}
-.sub-list li a{color:#ffffff;font-size: 16px;font-weight: 400; line-height: 36px}
-.autocomplete-insurance ul li a, .plus-link{color:#ffffff;font-size: 16px;font-weight: 400; line-height: 30px}
+.sub-list li a{color:#fff;font-size: 16px;font-weight: 400; line-height: 36px}
+.autocomplete-insurance ul li a, .plus-link, .info-booking{color:#fff;font-size: 16px;font-weight: 400; line-height: 30px}
 
 .list-all-aeroport li{color:#ffffff;font-size: 16px;font-weight: 400;line-height: 25px}
 .list-all-aeroport li .aqua-letters{color:#1dd7ff;}
@@ -335,13 +350,15 @@ a.three-day-check.round-right{border-bottom-right-radius: 15px;border-top-right-
 #filter_options > b:first-child { position: absolute; margin-left: 437px; height: 250px;}
 #filter_options > b:first-child b { background: #35e0ff; cursor: pointer; }
 .clear{width: 100%; clear: both;}
+.position-relative{position: relative}
 
 #open-calendar,#open-calendar-three-day,#open-autocomplete-where-to-fly,#open-autocomplete-from-where-fly,
 #open-autocomplete-passengers,#open-autocomplete-class-fly,#open-autocomplete-priority-company,
 #open-autocomplete-check-passengers,#open-calendar-train, #open-calendar-three-day-train,#open-autocomplete-from-where-train,
 #open-autocomplete-where-train, #open-autocomplete-calendar,#open-autocomplete-calendar-insurance,#open-autocomplete-select-country,
 #open-autocomplete-insurance{position: absolute; top:110px; display: none;  }
-#arrive-next-day{position: absolute; top:110px; display: none;left: -26px;width: 195px; height: 56px;color:#fff;  font-size: 12px;  font-weight: 400;  line-height: 55px; border: 0;text-align: center }
+.tooltip-arrive-next-day{position: absolute; top:120px; display: none;left: -26px;width: 195px; height: 56px;color:#fff;  font-size: 12px;  font-weight: 400;  line-height: 55px; border: 0;text-align: center }
+.tooltip-arrive-next-day.tooltip-arrive-next-day-train{top:83px;}
 
 #arrival-date-fly:focus ~ #open-calendar, #departure-date:focus ~ #open-calendar-three-day,
 #from-to-fly:focus ~ #open-autocomplete-from-where-fly, #where-to-fly:focus ~ #open-autocomplete-where-to-fly,
@@ -356,20 +373,36 @@ a.three-day-check.round-right{border-bottom-right-radius: 15px;border-top-right-
 
 .form-registation{background-color:#0b2038;}
 .form-registation .form-group input{height: 52px;}
-.form-registation .form-group label, .form-registation p{ color:#fff;font-size: 16px;font-weight: 400;line-height: 15px;}
-.form-registation a{ color:#fff;font-size: 16px;font-weight: 400;line-height: 20px; text-decoration: underline}
+.form-registation .form-group label, .form-registation p{color:#fff;font-size: 16px;font-weight: 400;line-height: 15px;}
+.form-registation a{color:#fff;font-size: 16px;font-weight: 400;line-height: 20px; text-decoration: underline}
 .form-registation a img{margin-right: 15px;}
 .form-registation .form-group{width: 262px; margin: 0 auto 20px;position: relative}
 .form-registation p{text-align: center;margin-bottom: 5px;}
 .forgot-pass{margin: 25px 0}
+.form-registation .pass-instruction{padding: 0 35px;line-height: 24px;margin-bottom: 20px;}
+.instruction-info{color:#fff;font-size: 18px;font-weight: 400;line-height: 24px; margin: 0 20px 50px;text-align: center;}
+.select-wagon{color:#fff;font-size: 18px;font-weight: 400;line-height: 24px;text-align: center;}
 
 .form-group.form-reg-corporate-entity{margin-bottom: 10px}
 .form-reg-name-organization{display: none;}
+.link-reservation{margin-top: 20px}
+.cancel-reservation{box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.15); border: 1px solid #e8e8e8;width: 360px; padding: 35px 20px;font-size: 16px;font-weight: 400; line-height: 20px}
+.cancel-reservation a{color:#257ee1;font-size:14px;font-weight: 400; line-height: 20px; text-transform: uppercase;margin-left: 15px;}
 
+.help-block{display: none}
+.has-error label{display: none}
+.has-error .help-block{padding-left:8px; margin-bottom: 5px}
+.has-error .help-block, .has-error.form-control, .form-group.has-error input{border-color:#fb2d2d; color:#fb2d2d; display: block;font-size: 16px;  font-weight: 400;  line-height: 15px;}
+.form-registation input:-webkit-autofill{background-color: #fff !important;}
+
+.modal-content.modal-info{border-radius: 5px;  background-color:#0b2038;box-shadow: 0 2px 4px 0 rgba(8, 10, 12, 0.5); margin: 0 auto; }
 .modal-backdrop.in {opacity: .6;}
-.modal-content.form-log-in{width: 420px;border-radius: 5px;  background-color:#0b2038;box-shadow: 0px 2px 4px 0px rgba(8, 10, 12, 0.5); margin: 0 auto;}
-.modal-content.form-log-in .modal-header h1{color:#35e0ff;font-size:18px;font-weight:400;line-height:26px; text-transform: uppercase}
-.modal-content.form-log-in .modal-header .close{opacity: 1}
+.modal-content.modal-select-wagon{width: 303px;}
+.modal-content.info-pass{width: 530px}
+.modal-content.form-log-in{width: 420px;}
+.modal-select-wagon .modal-header{padding-bottom: 0;} .modal-select-wagon .modal-body{padding: 10px 0 30px;}
+.modal-content.form-log-in .modal-header h1{color:#35e0ff;font-size:18px;font-weight:400;line-height:26px; text-transform: uppercase;padding: 0 25px;}
+.modal-content .modal-header .close{opacity: 1}
 .modal-content.form-log-in .modal-header{padding-bottom: 0;margin-bottom: -15px;}
 
 .modal-content .form-registation input[type="checkbox"] {display:none;}
@@ -393,8 +426,12 @@ a.three-day-check.round-right{border-bottom-right-radius: 15px;border-top-right-
 .filter-accordion .accordion-body{margin-top:-7px}
 .filter-time p{margin-top: 12px}
 .filter-time span{font-size: 12px;font-weight: 400;line-height: 5px; color: #787878}
-#slider-range-sortie{margin-bottom: 25px;}
-#slider-range-arrival{margin-bottom: 35px;}
+#slider-range-sortie, #slider-range-sortie-train{margin-bottom: 25px;}
+#slider-range-arrival, #slider-range-arrival-train{margin-bottom: 35px;}
+
+.filter-wrap-train .sorting-title{color:  #3055a8;}
+.filter-wrap-train .sorting .price-sort span, .filter-wrap-train .sorting .time-sort span{color:  #3055a8; border-bottom: 2px dotted #3055a8;}
+
 
 /*********************TABS RESULT SEARCH*******************************************************************************/
 .tabs-result-search{width: 79.66666%;padding-right: 0; padding-left: 53px}
@@ -404,10 +441,13 @@ a.three-day-check.round-right{border-bottom-right-radius: 15px;border-top-right-
 .tabs-result-search .nav-tabs>li>a span, .tabs-result-search .nav-tabs>li.active>a span{ font-weight: 300; margin-left: 15px}
 .tabs-result-search .nav-tabs>li>a {margin-right: 10px;color:  #787878; font-size: 20px;  font-weight: 400;  line-height: 30px;  text-transform: uppercase;  padding: 15px 25px 13px;  border: 2px solid #dedede;;  border-radius: 4px 4px 0 0;  border-bottom-color: transparent;}
 
+.tabs-result-search-train.tabs-result-search .nav-tabs {border-bottom: 2px solid #477ee1; margin-bottom: 30px;}
+.tabs-result-search-train.tabs-result-search .nav-tabs>li.active>a, .tabs-result-search-train.tabs-result-search .nav-tabs>li.active>a:focus, .tabs-result-search-train.tabs-result-search .nav-tabs>li.active>a:hover{  color: #477ee1;  cursor: default;  background-color: #fff;  border: 2px solid #477ee1;  border-bottom-color: transparent;  font-size: 20px;  font-weight: 400;  line-height: 30px;  text-transform: uppercase;  padding: 15px 25px;}
+
 /********************CONTENT SEARCH RESULT*****************************************************************************/
-.tab-content-result-search .panel-default{border-color:  #c2c2c2;box-shadow: 0 2px 4px 0 rgba(3, 4, 5, 0.5); min-height:166px; background-color: #f2f2f2; margin-bottom: 15px;}
+.tab-content-result-search .panel-default{border-color:  #c2c2c2;box-shadow: 0 2px 4px 0 rgba(3, 4, 5, 0.5);background-color: #f2f2f2; margin-bottom: 15px;}
 .tab-content-result-search .panel-default .panel-heading{background-color: #fff;border-color:transparent; padding: 10px 10px 10px 20px;}
-.tab-content-result-search .panel-default .panel-heading a {margin-left: 10px; color:#000; font-size: 14px;font-weight: 400;line-height: 30px;text-decoration: underline;}
+.link-return-ticket a {margin-left: 10px; color:#000; font-size: 14px;font-weight: 400;line-height: 30px;text-decoration: underline;}
 .tab-content-result-search .panel-default .panel-body{background-color:  #f2f2f2; padding: 15px 20px; color:  #000;font-size: 16px;  font-weight: 400;  line-height: 20px;}
 
 .label-list{margin-bottom: 0}
@@ -417,11 +457,21 @@ li.label-orange{border: 1px solid #ffb400; color:#ffb400;}
 li.label-pink{border: 1px solid #f60462; color: #f60462;}
 li.label-blue{border: 1px solid #0051bb; color: #0051bb;}
 .time{color:#003175;font-size: 18px;font-weight:700;display: inline;}
+.train-trip .time{margin-right: 7px}
 .search-date{color:#6e6e6e; font-size: 14px;font-weight: 400;line-height: 13px;margin-top:10px}
 .search-transship-text{color:  #6e6e6e; font-size: 12px;font-weight: 400;text-align: center}
 .search-more-collapse .row{margin-bottom: 10px}
 
-.col-search-fly,.col-search-time-fly-arrive, .col-line-fly, .col-flight-time,.col-search-time-fly,.col-search-country-fly, .col-search-model-plane, .col-flight-aviacompany{float: left;position: relative; min-height: 1px;}
+.col-search{float: left;position: relative; min-height: 1px;}
+
+.col-search-info-train-wagon{display: flex; justify-content: flex-start;}
+.col-search-date-train{display: flex; justify-content: space-between;}
+.col-search-info-train{display: flex; justify-content: space-between; align-items: center; align-content: flex-start}
+.marking-places{display: flex; margin: 20px 0 30px}
+.display-flex{display: flex;}
+.display-flex-end{display: flex; align-items: flex-end}
+
+
 .col-line-fly{width: 18.7777%;margin-right: 25px;}
 .col-search-fly{width: 11.1%; margin:0 15px 10px 10px;}
 .col-flight-time{width: 16.2%;margin-left: 30px;}
@@ -430,22 +480,31 @@ li.label-blue{border: 1px solid #0051bb; color: #0051bb;}
 .col-search-time-fly-arrive{width: 10%; margin-right: 15px;margin-top: 10px;}
 .col-search-model-plane{width: 10%;margin-left: 5px;margin-top: 29px;}
 .col-flight-aviacompany{margin-left: 70px;margin-top: 29px;}
-.col-flight-aviacompany img{margin-right: 15px}
+.col-flight-aviacompany img, .info-booking img{margin-right: 15px}
 .col-flight-price{margin-top: 27px;}
 
+
 .line-fly{border-bottom: 2px solid #aedf2a; position: relative; margin: 10px 0 13px;}
+.line-train.line-fly{width: 55px;margin: 10px 20px 13px;}
+.line-fly.line-train .circle{top:0;background-color: #fff;}
+
 .line-fly .circle{border-radius: 50%; border:2px solid #9cd900;background-color:#f2f2f2;width: 12px;height: 12px; position: absolute; top:-5px}
 .circle.start-line{left: 0;}
 .circle.end-line{right: 0}
 .circle.middle-line{left: 46.6%;}
 .circle.one-line{left: 30.3%;}
 .circle.two-line{left: 63.9%;}
+.time-train{display: inline-block}
+.clock-for-train{vertical-align: top; margin-right: 10px; margin-top: 2px}
 
-.flight-time, .search-more-collapse{color:#000;font-size: 14px;font-weight: 400;line-height: 20px;}
+.flight-time, .search-more-collapse{color:#000;font-size: 14px;font-weight: 400;line-height: 25px;}
 .flight-time img{margin-right: 15px;}
 
 .flight-price{color:#000;font-size: 24px;font-weight: 700; line-height: 30px; text-align: center}
 .flight-price span{font-size: 18px;font-weight: 400;padding-left: 10px}
+
+.train-price{color:#000;font-size: 14px;font-weight: 400;line-height: 30px;}
+.train-price span{font-size: 16px;font-weight: 700;}
 
 .search-more-collapse {border-radius: 5px; background-color:  rgba(255, 255, 255, 0.8);box-shadow: 0 1px 2px 0 rgba(3, 4, 5, 0.25);    padding: 0 12px 0; margin:10px 0 20px;}
 .model-plane{color: #434343;font-size: 14px;  font-weight: 400;  line-height: 18px;}
@@ -460,8 +519,82 @@ li.label-blue{border: 1px solid #0051bb; color: #0051bb;}
 .plane-there-back img{margin-left: -35px;margin-right: 15px; }
 
 .line-gray{background-color:#898989; height: 1px;margin-bottom: 10px; margin-left: 17.66666667%;}
+.line-gray-train{background-color:#898989; height: 1px;margin-bottom: 10px;}
+
 .radio-result-flight{display: inline;margin-left: -38px;}
 .radio-result-flight label{width: 16px; height: 7px;margin-right: 17px;}
+
+/*****************************************SEARCH TRAIN*****************************************************************/
+.search-more-collapse-train {border-radius: 5px;background-color: rgba(255, 255, 255, 0.8);box-shadow: 0 1px 2px 0 rgba(3, 4, 5, 0.25);padding: 18px 12px 0;  margin: 10px 0 20px;}
+
+.calendar-train{display: flex;justify-content: space-between;}
+.timesheet-day{color: #000;font-size: 12px;font-weight: 400;line-height: 18px;text-align: center;flex: 1 1 auto;padding: 10px 0;}
+.timesheet-day p{margin-bottom: 0}
+.count-train{font-weight: 700;}
+.tab-content-result-search .panel-default.panel-calendar .panel-heading{padding: 2px 2px 1px}
+.timesheet-day.active{border-radius: 5px;background-color:  #afd833; color: #fff; font-weight: 700}
+.panel-train label{line-height: 20px; display: flex; padding-left: 0}
+.panel-train input[type="radio"] + label > span{margin: 2px 10px 0 0;}
+.cont-place p{margin-bottom: 5px; color: #545454; font-size: 14px}
+.type-train{font-size: 14px;line-height:40px; color: #545454;}
+.bold-text{color:#000;font-size: 16px;font-weight: 700;line-height: 30px;}
+
+.info-train-wagon{margin-right: 25px}
+.info-train-wagon label{font-size: 14px}
+.train-trip{color:#000;font-size: 16px;font-weight: 400;line-height: 30px;display: flex; float: left}
+
+.list-check-place{margin: 0 50px 0 40px}
+.list-check-place li{display: inline-block; position: relative;margin-right: 35px}
+
+.available{border-radius: 50%;background-color:  #79c6ed;width: 18px;height: 18px;display: inline-block; margin-bottom: -4px; margin-right: 10px}
+.check-place{border-radius: 50%;background-color:  #126893;width: 18px;height: 18px;display: inline-block; margin-bottom: -4px; margin-right: 10px}
+.unavailable{border-radius: 50%;background-color: #dadada;width: 17px;height: 17px;display: inline-block; border: 1px solid #a8a8a8;margin-bottom: -4px; margin-right: 10px}
+
+.allocation-places{border-bottom: 1px dotted #545454; margin: 0 10px}
+.delete-pass{color:#000;font-size: 16px;font-weight: 400;line-height: 30px;} .delete-pass img{margin-right: 12px;}
+.wrap-date-birth{position: relative;display: inline;margin-right: 23px;}
+.form-reservation{margin-top: 20px}
+.form-reservation.form-search.form-inline .form-group .wrap-date-birth .input-arrow{bottom:4px}
+.form-reservation.form-search.form-inline .form-group .input-arrow{bottom:18px}
+.form-reservation.form-search.form-inline .form-group label, .checkbox-for-question label{padding-left: 0}
+.form-reservation.form-search.form-inline .form-group{margin-bottom: 23px; margin-right: 23px;}
+.form-reservation.form-search.form-inline .form-control{height: 42px; border-top-color: #ccc}
+
+.more-services{margin-right: 20px; margin-top: 20px}
+.checkbox-for-question{display:inline-flex;margin-bottom: 15px;}
+.train-there-back{margin-bottom: 10px}
+.text-gray{color: #898989;}
+.info-booking{background-color:  #0b2038; padding: 20px 0; margin-top: 40px}
+.close-book{float: right; margin-top: -15px}
+
+/**********************************Confirmation Payment****************************************************************/
+.route-ticket{font-size: 16px;font-weight: 500;line-height: 30px;}
+.content-ticket{color:#000}
+.address-company{font-size: 14px;font-weight: 300;line-height: 20px;}
+.link-payment{color:  #155baa;font-size: 14px;font-weight: 400;line-height: 40px;}
+.logo-payment{ margin: 15px 0}
+.buyer{font-size: 16px;font-weight: 400;line-height: 25px;} .buyer span{text-transform: uppercase}
+.option-receipt li{display: inline-block; margin-right: 25px}
+.option-receipt li a{color:  #000;font-size: 14px;font-weight: 400;line-height: 40px; padding: 4px 10px 4px 33px}
+#print-receipt{background: url("../images/print.png") no-repeat; }
+#send-mail-receipt{background: url("../images/mail.png") no-repeat;}
+#back-receipt{background: url("../images/back.png") no-repeat;}
+#return-receipt{background: url("../images/return.png") no-repeat; padding-left: 25px}
+#cancel-receipt{background: url("../images/cancel.png") no-repeat; padding-left: 25px}
+.status-order{font-size: 16px;font-weight: 500;line-height: 36px; text-transform: uppercase}
+.code-order{font-size: 14px;font-weight: 500;line-height: 20px; text-transform: uppercase}
+.col-receipt-left{width: 35.3333%; display: flex; margin-bottom: 20px}
+.col-receipt-right{width: 64.6666%; display: flex}
+.code-reservation{margin-left: 30px;}
+.buyer-name{margin-left: 6.777%;}
+.heading-payment{font-size: 32px;font-weight: 700;line-height: 30px;margin: 30px 0 25px;}
+.heading-order{font-size: 18px;font-weight: 400; line-height: 30px;} .result-price span, .heading-order span{font-weight: 700}
+.details-payment{font-size: 18px;font-weight: 700; line-height: 30px;margin-bottom: 25px}
+.text-uppercase{text-transform: uppercase;}
+.info-order{border-color: #c2c2c2;box-shadow: 0 2px 4px 0 rgba(3, 4, 5, 0.5); padding: 25px 15px 20px}
+.info-order .pull-left{font-weight: 300}
+.result-price{font-size: 20px;font-weight: 400;line-height: 30px; text-transform: uppercase}
+.panel-default.panel-order{margin-bottom: 35px}
 
 @media (min-width: 1526px) {
     .container{width: 1494px; padding: 0}
@@ -471,7 +604,7 @@ li.label-blue{border: 1px solid #0051bb; color: #0051bb;}
 
 @media (max-width: 1525px) {
     .form-control.to-fly-search-result {width: 284px;}
-    .top-page-result-search .container, .container.content-result-search, .container.form-result-search,.container.main-content{width: 100%; padding: 0 15px}
+    .container,.top-page-result-search .container, .container.content-result-search, .container.form-result-search,.container.main-content{width: 100%; padding: 0 15px}
     .col-search-model-plane{width: 12%;margin-left: 10px;margin-top: 29px;}
     .btn-filter {width: 100%;font-size: 14px;}
 }

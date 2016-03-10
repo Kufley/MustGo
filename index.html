@@ -17,12 +17,16 @@
                 <div class="navbar-header pull-left">
                     <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo"></a>
                 </div>
-                 <div class="pull-right">
-                     <ul class="nav user-menu navbar-nav">
-                         <li class="dropdown">
-                             <a href="#" class="dropdown-toggle arrow" data-toggle="dropdown" role="button"
-                                aria-haspopup="true" aria-expanded="false">Русский, USD</a>
-                             <div class="dropdown-menu dropdown-top">
+                 <div class="pull-right menu-right">
+
+                         <div class="user-menu">
+                             <a class="dropdown-arrow collapsed" data-toggle="collapse" data-parent="#user-menu"
+                                href="#user-menu">Русский, USD</a>
+                             <div class="pull-right sign-in"><a href="#">Вход</a></div>
+                             <!--<div class="pull-right log-out"><a href="#">Виход</a></div>-->
+                         </div>
+                         <div id="user-menu" class="collapse">
+                             <div class="user-menu-list">
                                  <ul class="list-unstyled">
                                      <li>
                                          <input type="radio" id="lang-ua" name="radio-lang" class="radio-box"  checked>
@@ -56,11 +60,7 @@
                                      </li>
                                  </ul>
                              </div>
-                         </li>
-                         <li class="sign-in"><a href="#">Вход</a></li>
-                         <!--<li class="log-out"><a href="#">Виход</a></li>-->
-
-                     </ul>
+                         </div>
                     <div class="phone">+38 044 359·05·69</div>
                     <div class="feedback"><a href="#">Заказать обратный звонок</a></div>
                 </div>
@@ -1421,7 +1421,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 padding-left-a">
-                    <div class="info-heading"><h2><img src="images/aviacompany/comp.png">Статьи</h2></div>
+                    <div class="info-heading heading-for-article"><h2><img src="images/aviacompany/comp.png">Статьи</h2></div>
                     <div class="article">
                         <div class="date-article">21.04.15</div>
                         <a href="#">Аэропорт Борисполь - крупнейшая воздушная гавань Украины</a>
@@ -1448,9 +1448,9 @@
         </div>
 
     </div>
-    <div class="container section-timetables">
+    <div class="container section-timetables" id="section-timetables-avia">
         <div class="row">
-            <div class="col-sm-12 text-center name-section">Расписание железнодорожных станций</div>
+            <div class="col-sm-12 text-center name-section">Табло аэропортов</div>
             <div class="col-lg-6 col-md-12 col-sm-12">
                 <ul class="timetables">
                     <li><a href="#">Расписание рейсов аэропорта<span class="name-city-bold">Борисполь</span></a></li>
@@ -1477,6 +1477,36 @@
             </div>
         </div>
     </div>
+    <div class="container section-timetables" id="section-timetables-train">
+    <div class="row">
+        <div class="col-sm-12 text-center name-section">Расписание железнодорожных станций</div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <ul class="timetables">
+                <li><a href="#">Железнодорожный вокзал<span class="name-city-bold">Борисполь</span></a></li>
+                <li><a href="#">Железнодорожный вокзал<span class="name-city-bold">Киев</span></a></li>
+                <li><a href="#">Железнодорожный вокзал<span class="name-city-bold">Львов</span></a></li>
+                <li><a href="#">Железнодорожный вокзал<span class="name-city-bold">Париж</span></a></li>
+                <li><a href="#">Железнодорожный вокзал<span class="name-city-bold">Минск</span></a></li>
+                <li><a href="#">Железнодорожный вокзал<span class="name-city-bold">Борисполь</span></a></li>
+                <li><a href="#">Железнодорожный вокзал<span class="name-city-bold">Париж</span></a></li>
+                <li><a href="#">Железнодорожный вокзал<span class="name-city-bold">Львов</span></a></li>
+            </ul>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <ul class="timetables">
+                <li><a href="#">Железнодорожный вокзал<span class="name-city-bold">Борисполь</span></a></li>
+                <li><a href="#">Железнодорожный вокзал<span class="name-city-bold">Киев</span></a></li>
+                <li><a href="#">Железнодорожный вокзал<span class="name-city-bold">Львов</span></a></li>
+                <li><a href="#">Железнодорожный вокзал<span class="name-city-bold">Париж</span></a></li>
+                <li><a href="#">Железнодорожный вокзал<span class="name-city-bold">Минск</span></a></li>
+                <li><a href="#">Железнодорожный вокзал<span class="name-city-bold">Борисполь</span></a></li>
+                <li><a href="#">Железнодорожный вокзал<span class="name-city-bold">Париж</span></a></li>
+                <li><a href="#">Железнодорожный вокзал<span class="name-city-bold">Львов</span></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
     <div class="section-article">
         <div class="container">
             <div class="row">

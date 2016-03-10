@@ -14,6 +14,56 @@
 
 <body>
 <div class="container">
+    <nav class="navbar">
+        <div class="container">
+            <div class="pull-right menu-right">
+
+                <div class="user-menu">
+                    <a class="dropdown-arrow collapsed" data-toggle="collapse" data-parent="#user-menu"
+                       href="#user-menu">Русский, USD</a>
+                    <div class="pull-right sign-in"><a href="#">Вход</a></div>
+                    <!--<div class="pull-right log-out"><a href="#">Виход</a></div>-->
+                </div>
+                <div id="user-menu" class="collapse">
+                    <div class="user-menu-list">
+                        <ul class="list-unstyled">
+                            <li>
+                                <input type="radio" id="lang-ua" name="radio-lang" class="radio-box"  checked>
+                                <label for="lang-ua"><span><span></span></span>Українська</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="lang-rus" name="radio-lang" class="radio-box"  checked>
+                                <label for="lang-rus"><span><span></span></span>Русский</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="lang-en" name="radio-lang" class="radio-box"  checked>
+                                <label for="lang-en"><span><span></span></span>English</label>
+                            </li>
+                        </ul>
+                        <ul class="list-unstyled">
+                            <li>
+                                <input type="radio" id="currency-usd" name="radio-currency" class="radio-box" checked>
+                                <label for="currency-usd"><span><span></span></span>USD Доллар США</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="currency-eur" name="radio-currency" class="radio-box" checked>
+                                <label for="currency-eur"><span><span></span></span>Eur Евро</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="currency-uan" name="radio-currency" class="radio-box" checked>
+                                <label for="currency-uan"><span><span></span></span>UAH Украинская гривна</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="currency-rub" name="radio-currency" class="radio-box" checked>
+                                <label for="currency-rub"><span><span></span></span>Rub Российский рубль</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </nav>
     <div class="row row-ui">
         <div class="col-sm-6">
             <div class="autocomplete-wrap autocomplete-where-to-fly">
@@ -223,13 +273,13 @@
 
                 </div>
                 <div class="radio-checked-calendar">
-                    <input type="radio" id="exact-date" name="radio-box-date-check" class="radio-box"
-                           value="exact-date" checked>
-                    <label for="exact-date"><span><span></span></span>Точная дата</label>
+                    <input type="radio" id="exact-date-1" name="radio-box-date-check" class="radio-box"
+                           value="exact-date-1" checked>
+                    <label for="exact-date-1"><span><span></span></span>Точная дата</label>
 
-                    <input type="radio" id="approximate-date" name="radio-box-date-check" class="radio-box"
-                           value="approximate-date">
-                    <label for="approximate-date"><span><span></span></span>+/- 3 дня</label>
+                    <input type="radio" id="approximate-date-1" name="radio-box-date-check" class="radio-box"
+                           value="approximate-date-1">
+                    <label for="approximate-date-1"><span><span></span></span>+/- 3 дня</label>
                 </div>
             </div>
         </div>
@@ -486,31 +536,137 @@
         </div>
     </div>
     <div class="row row-ui">
-
+        <div class="col-lg-3">
             <p><a data-toggle="modal" data-target="#form-log-in" href="#form-log-in">ВХОД НА САЙТ</a></p>
             <p><a href="#form-registration" data-toggle="modal" data-target="#form-registration">Регистрация</a></p>
-            <p><a href="#"></a></p>
-        </form>
+            <p><a href="#form-help" data-toggle="modal" data-target="#form-help">Оставьте ваш номер телефона</a></p>
+            <p><a href="#form-forgot-pass" data-toggle="modal" data-target="#form-forgot-pass">Восстановление пароля</a></p>
+            <p><a href="#modal-instruction" data-toggle="modal" data-target="#modal-instruction">Инструкция по восстановлению пароля</a></p>
+            <p><a href="#modal-select-wagon" data-toggle="modal" data-target="#modal-select-wagon">Выберите место в вагоне</a></p>
+        </div>
+        <div class="col-lg-9">
+            <div class="cancel-reservation clearfix ">
+                <p>У вас уже заполнены данные для места 11, вагон 7, купе, поезда Киев-Одесса “Черноморец”</p>
+                <p>Отменить бронь на данное место?</p>
+                <div class="pull-right link-reservation">
+                    <a href="#">ОТМЕНИТЬ бронь</a>
+                    <a href="#">не ОТМЕНяТЬ</a>
+                </div>
+            </div>
+        </div>
     </div>
 
 </div>
+<div class="modal fade " id="modal-select-wagon" tabindex="-1" role="dialog"  aria-hidden="true">
+    <div class="modal-dialog ">
+        <div class="modal-content modal-info modal-select-wagon">
+            <div class="modal-header clearfix">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="images/icon/close-aqua.png" alt="close"></button>
+            </div>
+            <div class="modal-body">
+                    <p class="select-wagon">
+                        Выберите место в вагоне
+                    </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade " id="modal-instruction" tabindex="-1" role="dialog"  aria-hidden="true">
+    <div class="modal-dialog ">
+        <div class="modal-content modal-info info-pass">
+            <div class="modal-header clearfix">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="images/icon/close-aqua.png" alt="close"></button>
+            </div>
+            <div class="modal-body">
+                    <p class="instruction-info">
+                        Инструкция по восстановлению пароля была
+                        выслана на указанный e-mail
+                    </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade " id="form-forgot-pass" tabindex="-1" role="dialog"  aria-hidden="true">
+    <div class="modal-dialog ">
+        <div class="modal-content modal-info form-log-in">
+            <div class="modal-header clearfix">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="images/icon/close-aqua.png" alt="close"></button>
+
+                <h1>Восстановление пароля</h1>
+            </div>
+            <div class="modal-body">
+                <form role="form" class="form-registation" data-toggle="validator">
+                    <p class="pass-instruction">
+                        На ваш электронный адрес будет
+                        выслана инструкция по восстановлению пароля
+                    </p>
+                    <div class="form-group">
+                        <span class="help-block">Неверный email</span>
+                        <label for="your-email">Ваш e-mail:</label>
+                        <input type="email" class="form-control" name="your-tel" id="your-email">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-log-in">Отправить</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade " id="form-help" tabindex="-1" role="dialog"  aria-hidden="true">
+    <div class="modal-dialog ">
+        <div class="modal-content modal-info form-log-in">
+            <div class="modal-header clearfix">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="images/icon/close-aqua.png" alt="close"></button>
+
+                <h1 >Оставьте ваш номер телефона, мы вам перезвоним</h1>
+            </div>
+            <div class="modal-body">
+                <form role="form" class="form-registation" data-toggle="validator">
+                    <div class="form-group">
+                        <span class="help-block">Невернoe имя</span>
+                        <label for="your-name">Как вас зовут?</label>
+                        <input type="text" data-minlength="3" class="form-control" name="your-name" id="your-name">
+                    </div>
+                    <div class="form-group">
+                        <span class="help-block">Неверный телефон</span>
+                        <label for="your-tel">Ваш номер телефона:</label>
+                        <input type="tel" data-minlength="10" class="form-control" name="your-tel" id="your-tel">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-log-in">Заказать звонок</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
 <div class="modal fade " id="form-log-in" tabindex="-1" role="dialog"  aria-hidden="true">
     <div class="modal-dialog ">
-        <div class="modal-content form-log-in">
+        <div class="modal-content modal-info form-log-in">
             <div class="modal-header clearfix">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="images/icon/close-aqua.png" alt="close"></button>
 
                 <h1>Вход на сайт</h1>
             </div>
             <div class="modal-body">
-                    <form role="form" class="form-registation">
+                    <form role="form" class="form-registation" data-toggle="validator">
                         <div class="form-group">
+                            <span class="help-block">Неверный email</span>
                             <label for="user-email">Ваш е-mail:</label>
-                            <input type="email" class="form-control" name="user-email" id="user-email">
+                            <input type="email" class="form-control" name="user-email" id="user-email" data-error="Bruh, that email address is invalid">
+
                         </div>
                         <div class="form-group">
+                            <span class="help-block">Неверный пароль</span>
                             <label for="user-password">Ваш пароль:</label>
-                            <input type="password" class="form-control" name="user-password" id="user-password">
+                            <input type="password" data-minlength="6" class="form-control" name="user-password" id="user-password">
+
                         </div>
                         <div class="form-group">
                             <button type="submit" class="btn btn-log-in">Вход</button>
@@ -527,17 +683,17 @@
 </div>
 <div class="modal fade " id="form-registration" tabindex="-1" role="dialog"  aria-hidden="true">
     <div class="modal-dialog ">
-        <div class="modal-content form-log-in">
+        <div class="modal-content modal-info form-log-in">
             <div class="modal-header clearfix">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="images/icon/close-aqua.png" alt="close"></button>
 
                 <h1>Регистрация</h1>
             </div>
             <div class="modal-body">
-                <form role="form" class="form-registation">
+                <form role="form" class="form-registation"  data-toggle="validator">
                     <div class="form-group">
                         <label for="user-name">Ваше имя:</label>
-                        <input type="email" class="form-control" name="user-name" id="user-name">
+                        <input type="text" class="form-control" name="user-name" id="user-name">
                     </div>
                     <div class="form-group form-reg-corporate-entity">
                         <input type="checkbox" value="corporation"  name="corporate-entity-registation" id="corporate-entity-registation">
@@ -549,17 +705,20 @@
                         <a href="#" class="input-arrow"></a>
                     </div>
                     <div class="form-group">
+                        <span class="help-block">Неверный email</span>
                         <label for="user-email-registation">Ваш е-mail:</label>
                         <input type="email" class="form-control" name="user-email-registation" id="user-email-registation">
                     </div>
 
                     <div class="form-group">
+                        <span class="help-block">Неверный пароль</span>
                         <label for="user-password-registation">Ваш пароль:</label>
-                        <input type="password" class="form-control" name="user-password-registation" id="user-password-registation">
+                        <input type="password" data-minlength="6" class="form-control" name="user-password-registation" id="user-password-registation">
                     </div>
                     <div class="form-group">
+                        <span class="help-block">Пароли не совпадают</span>
                         <label for="user-password-repeat">Повторите пароль:</label>
-                        <input type="password" class="form-control" name="user-password-repeat" id="user-password-repeat">
+                        <input type="password" data-minlength="6" class="form-control" name="user-password-repeat" id="user-password-repeat">
                     </div>
                     <div class="form-group">
                         <button type="submit" class="btn btn-log-in">Вход</button>
@@ -576,144 +735,8 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/bootstrap-typeahead.js"></script>
 <script src="js/script.js"></script>
+<script src="js/validator.js"></script>
 
-<script>
-    $(document).ready(function () {
-        $('#corporate-entity-registation').click(function () {
-            if ($("[value=corporation]").is(':checked')) {
-                $('.form-reg-name-organization').css({"display": "block"});
-            } else {
-                $('.form-reg-name-organization').css({"display": "none"});
-            }
-        });
-
-        $('#avia-tab').click(function () {
-            $('.tab-content').css({"border": "4px solid #257ee1"});
-        });
-        $('#train-tab').click(function () {
-            $('.tab-content').css({"border": "4px solid #296992"});
-        });
-        $('#insurance-tab').click(function () {
-            $('.tab-content').css({"border": "4px solid #1b8da5"});
-        });
-        $('#hotel-tab').click(function () {
-            $('.tab-content').css({"border": "4px solid #35a69a"});
-        });
-
-        $('.open-close').click(function () {
-            if ($('.аdvanced-searh-content').is(':visible')) {
-                $(this).text('Расширенный поиск');
-                $(this).addClass("search-link-arrow-down");
-                $(this).removeClass("search-link-arrow-up");
-            }
-            else {
-                $(this).text('Свернуть дополнительные параметры');
-                $(this).addClass("search-link-arrow-up");
-                $(this).removeClass("search-link-arrow-down");
-
-            }
-            $('.аdvanced-searh-content').slideToggle();
-            return false;
-        });
-
-        $("[name=radio-box]").click(function () {
-            if ($(this).attr("value") == "one-way") {
-                $('.open-close').text('Расширенный поиск');
-                $('.open-close').addClass("search-link-arrow-down");
-                $('.open-close').removeClass("search-link-arrow-up");
-                $('.аdvanced-searh-content').hide();
-
-//                $(".box").not(".one-way").hide();
-
-                $(".fly-returm").css({"display": "none"});
-                $(".add-flight").css({"display": "none"});
-            }
-            if ($(this).attr("value") == "go-back") {
-                $('.open-close').text('Расширенный поиск');
-                $('.open-close').addClass("search-link-arrow-down");
-                $('.open-close').removeClass("search-link-arrow-up");
-                $('.аdvanced-searh-content').hide();
-//                $(".box").not(".go-back").hide();
-//                $(".form-go-back-show").show();
-
-                $(".fly-returm").css({"display": "inline-block"});
-                $(".add-flight").css({"display": "none"});
-            }
-            if ($(this).attr("value") == "complicated-route") {
-                $('.open-close').text('Расширенный поиск');
-                $('.open-close').addClass("search-link-arrow-down");
-                $('.open-close').removeClass("search-link-arrow-up");
-                $('.аdvanced-searh-content').hide();
-
-//                $(".box").not(".complicated-route").hide();
-//                $(".form-complicated-route").show();
-                $(".fly-returm").css({"display": "none"});
-                $(".add-flight").css({"display": "inline-block"});
-
-            }
-        });
-
-        $("[name=radio-box-train]").click(function () {
-            if ($(this).attr("value") == "one-way-train") {
-                $('.open-close').text('Расширенный поиск');
-                $('.open-close').addClass("search-link-arrow-down");
-                $('.open-close').removeClass("search-link-arrow-up");
-                $('.аdvanced-searh-content').hide();
-                $(".train-return").css({"display": "none"});
-            }
-            if ($(this).attr("value") == "go-back-train") {
-                $('.open-close').text('Расширенный поиск');
-                $('.open-close').addClass("search-link-arrow-down");
-                $('.open-close').removeClass("search-link-arrow-up");
-                $('.аdvanced-searh-content').hide();
-                $(".train-return").css({"display": "inline-block"});
-            }
-        });
-
-        $('.qtyplus').click(function (e) {
-            e.preventDefault();
-            fieldName = $(this).attr('field');
-            var currentVal = parseInt($('input[name=' + fieldName + ']').val());
-            if (!isNaN(currentVal)) {
-                $('input[name=' + fieldName + ']').val(currentVal + 1);
-            } else {
-                $('input[name=' + fieldName + ']').val(0);
-            }
-        });
-        $(".qtyminus").click(function (e) {
-            e.preventDefault();
-            fieldName = $(this).attr('field');
-            var currentVal = parseInt($('input[name=' + fieldName + ']').val());
-            if (!isNaN(currentVal) && currentVal > 0) {
-                $('input[name=' + fieldName + ']').val(currentVal - 1);
-            } else {
-                $('input[name=' + fieldName + ']').val(0);
-            }
-        });
-
-//        $('.plus-insurance').click(function(e){
-//            e.preventDefault();
-//            fieldName = $(this).attr('field');
-//            var currentVal = parseInt($('input[name='+fieldName+']').val());
-//            if (!isNaN(currentVal)) {
-//                $('input[name='+fieldName+']').val(currentVal + 1);
-//            } else {
-//                $('input[name='+fieldName+']').val(0);
-//            }
-//        });
-//        $(".minus-insurance").click(function(e) {
-//            e.preventDefault();
-//            fieldName = $(this).attr('field');
-//            var currentVal = parseInt($('input[name='+fieldName+']').val());
-//            if (!isNaN(currentVal) && currentVal > 0) {
-//                $('input[name='+fieldName+']').val(currentVal - 1);
-//            } else {
-//                $('input[name='+fieldName+']').val(0);
-//            }
-//        });
-
-    });
-</script>
 
 </body>
 </html>
