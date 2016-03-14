@@ -4,8 +4,8 @@ input:focus, input:active, button:active, button:focus,a:focus, .btn.active.focu
 .top-page{background: url("../images/bg/bg-plane.png") no-repeat center center; height:1200px; min-width: 100%;  -webkit-background-size: cover;  -moz-background-size: cover;  -o-background-size: cover;  background-size: cover;  position: relative;  }
 .top-page-result-search{background: url("../images/bg/bg-search.png") no-repeat center center; min-height:100px; min-width: 100%;  -webkit-background-size: cover;  -moz-background-size: cover;  -o-background-size: cover;  background-size: cover;  position: relative;  }
 .top-page-result-search-train{background: url("../images/bg/bg-search-train.png") no-repeat center center; min-height:226px; min-width: 100%;  -webkit-background-size: cover;  -moz-background-size: cover;  -o-background-size: cover;  background-size: cover;  position: relative;  }
+.top-page-result-search-payment{background: url("../images/bg/bg-order.png") no-repeat center center; min-height:100px; min-width: 100%;  -webkit-background-size: cover;  -moz-background-size: cover;  -o-background-size: cover;  background-size: cover;  position: relative;}
 .top-page-result-search .navbar, .top-page-result-search-train .navbar{margin-bottom: 7px}
-
 .navbar{border: 0;}
 .menu-right{position: relative}
 
@@ -14,7 +14,9 @@ input:focus, input:active, button:active, button:focus,a:focus, .btn.active.focu
 #user-menu{position: absolute; right: 0;z-index: 1;}
 .user-menu-list{background-color:  #46607d; display: flex; width: 410px}
 .user-menu-list ul{margin: 6px 15px 3px 0;}
-.user-menu-list ul label{color:#ffb400; font-size: 18px}
+.user-menu-list ul label{color:#fff; font-size: 18px}
+.user-menu-list input[type="radio"]:checked ~ label{color:#ffb400;}
+.user-menu-list li b{text-transform: uppercase}
 
 
 
@@ -101,6 +103,7 @@ footer .col-sm-3 {padding-right: 55px;}
 .padding-right-0{padding-left: 0}
 .margin-0{margin: 0}
 .margin-bottom-15{margin-bottom: 5px}
+.margin-bottom-20{margin-bottom: 20px}
 .margin-bottom-75{margin-bottom: 75px}
 
 .support_payments{padding: 30px 0; margin: 0 auto; text-align: center;}
@@ -145,7 +148,7 @@ footer .col-sm-3 {padding-right: 55px;}
 label{color:#000;font-size: 16px;line-height: 30px;font-weight: 400;padding-left: 8px; cursor: pointer;}
 input[type="radio"] {opacity: 0;position: absolute;}
 input[type="radio"] + label > span {position: relative;border-radius: 12px; width: 14px; height: 14px; background-color: #FFFFFF;  border: 1px solid  #939393;  margin: 0 10px 0 0;  display: inline-block;  vertical-align: middle;  }
-input[type="radio"]:checked + label > span span {display: inline-block;width: 8px;height: 8px; position: absolute; left: 2px; top: 2px;  border-radius: 4px;  border: none;  background: #257ee1; }
+input[type="radio"]:checked + label > span span {display: inline-block;width: 8px;height: 8px; position: absolute; left: 2px; top: 2px;  border-radius: 4px;  border: none;  background: #2f54a4; }
 input::-webkit-input-placeholder{color:#828282;font-size: 16px;font-weight: 400;}
 input::-moz-placeholder{color:#828282;font-size: 16px;font-weight: 400;}
 
@@ -574,8 +577,8 @@ li.label-blue{border: 1px solid #0051bb; color: #0051bb;}
 .link-payment{color:  #155baa;font-size: 14px;font-weight: 400;line-height: 40px;}
 .logo-payment{ margin: 15px 0}
 .buyer{font-size: 16px;font-weight: 400;line-height: 25px;} .buyer span{text-transform: uppercase}
-.option-receipt li{display: inline-block; margin-right: 25px}
-.option-receipt li a{color:  #000;font-size: 14px;font-weight: 400;line-height: 40px; padding: 4px 10px 4px 33px}
+.option-receipt{display: flex; justify-content: space-between; align-items: center; align-content: flex-start}
+.option-receipt li a{color:  #000;font-size: 14px;font-weight: 400;line-height: 30px; padding: 3px 10px 4px 33px}
 #print-receipt{background: url("../images/print.png") no-repeat; }
 #send-mail-receipt{background: url("../images/mail.png") no-repeat;}
 #back-receipt{background: url("../images/back.png") no-repeat;}
@@ -641,12 +644,20 @@ li.label-blue{border: 1px solid #0051bb; color: #0051bb;}
     .tabs-result-search {width: 100%;padding-right: 0;padding-left: 0;}
     .filter-wrap {padding-bottom: 20px;}
     .filter-wrap {width: 25.13333%;}
+    .content-ticket{padding-left: 30px}
+    .padding-left-20{padding-left: 20px}
+    .margin-bottom-res{margin-bottom: 15px}
+    .hidden-small{display: none}
 }
 @media  (max-width: 992px){
     #proposition .col-action-block {padding-right: 155px;padding-left: 155px;}
     .section-information .padding-left-q {padding-left: 80px;}
     .timetables {padding-left: 100px}
     footer ul {padding-bottom: 25px;}
+    .col-search-fly{width: 15%;}
+    .col-flight-time {width: 22.2%;}
+    .link-payment {line-height: 20px}
+    .info-order{margin-top: 30px}
 }
 @media (max-width: 768px){
     .nav.user-menu.navbar-nav li{display: inline-block}
