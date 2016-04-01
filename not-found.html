@@ -1,0 +1,1903 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>MustGo</title>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500' rel='stylesheet' type='text/css'>
+    <link href="css/nouislider.min.css" rel="stylesheet">
+</head>
+<div class="top-page-result-search">
+    <nav class="navbar">
+        <div class="container clearfix">
+            <div class="navbar-header pull-left">
+                <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo"></a>
+            </div>
+            <div class="pull-right menu-right">
+
+                <div class="user-menu">
+                    <a class="dropdown-arrow collapsed" data-toggle="collapse" data-parent="#user-menu"
+                       href="#user-menu">Русский, <b>USD</b></a>
+                    <div class="pull-right sign-in"><a href="#">Вход</a></div>
+                    <!--<div class="pull-right log-out"><a href="#">Виход</a></div>-->
+                </div>
+                <div id="user-menu" class="collapse">
+                    <div class="user-menu-list">
+                        <ul class="list-unstyled">
+                            <li>
+                                <input type="radio" id="lang-ua" name="radio-lang" class="radio-box"  checked>
+                                <label for="lang-ua"><span><span></span></span>українська</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="lang-rus" name="radio-lang" class="radio-box"  checked>
+                                <label for="lang-rus"><span><span></span></span>русский</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="lang-en" name="radio-lang" class="radio-box"  checked>
+                                <label for="lang-en"><span><span></span></span>еnglish</label>
+                            </li>
+                        </ul>
+                        <ul class="list-unstyled">
+                            <li>
+                                <input type="radio" id="currency-usd" name="radio-currency" class="radio-box" checked>
+                                <label for="currency-usd"><span><span></span></span><b>USD</b> доллар США</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="currency-eur" name="radio-currency" class="radio-box" checked>
+                                <label for="currency-eur"><span><span></span></span><b>Eur</b> евро</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="currency-uan" name="radio-currency" class="radio-box" checked>
+                                <label for="currency-uan"><span><span></span></span><b>UAH</b> украинская гривна</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="currency-rub" name="radio-currency" class="radio-box" checked>
+                                <label for="currency-rub"><span><span></span></span><b>Rub</b> российский рубль</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <div class="container form-result-search">
+        <div>
+            <form class="form-inline form-search">
+                <div class="form-group-search-result">
+                    <div class="form-group">
+                        <div class="margin-top searched">Вы искали:</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="from-to-fly">Откуда:</label>
+                        <input type="text" class="form-control to-fly-search-result" id="from-to-fly" value="Одесса"
+                               placeholder="Откуда лететь" name="from-to-fly">
+                        <a href="#" class="input-arrow" id="link-open-autocomplete-where-to-fly"></a>
+                        <div class="autocomplete-wrap autocomplete-where-to-fly" id="open-autocomplete-where-to-fly">
+                            <div>
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs " role="tablist">
+                                    <li role="presentation" class="active anywhere"><a href="#anywhere"
+                                                                                       aria-controls="anywhere"
+                                                                                       role="tab"
+                                                                                       data-toggle="tab">Куда угодно</a>
+                                        <img class="link1" src="images/icon/arrow_down.png">
+                                    </li>
+                                    <li role="presentation" class="cities-and-airports"><a href="#cities-and-airports"
+                                                                                           aria-controls="cities-and-airports"
+                                                                                           role="tab" data-toggle="tab">Города
+                                        и
+                                        аэропорты</a>
+                                        <img class="link2" src="images/icon/arrow_down.png">
+                                    </li>
+                                    <li role="presentation" class="country"><a href="#country" aria-controls="country"
+                                                                               role="tab"
+                                                                               data-toggle="tab">Страны</a>
+                                        <img class="link3" src="images/icon/arrow_down.png">
+                                    </li>
+                                </ul>
+
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane active" id="anywhere">
+                                        <ul class="list-all-aeroport list-unstyled">
+                                            <li>
+                                                <div class="active-link list-all-link"><span
+                                                        class="aqua-letters">Нью</span>-Йорк,
+                                                    США, все
+                                                    аэропорты<span class="location-code ">NYC</span></div>
+                                                <ul class="sub-list list-unstyled">
+                                                    <li class="clearfix"><a href="#"><span
+                                                            class="aqua-letters">Нью</span>-Йорк,
+                                                        Ньюарк
+                                                        Либерти
+                                                        <span class=" location-code">EWR</span></a></li>
+                                                    <li class="clearfix"><a href="#"><span
+                                                            class="aqua-letters">Нью</span>Нью-Йорк,
+                                                        Джон
+                                                        Ф. Кеннеди<span class="location-code">JFK</span></a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <div class="list-all-link"><span class="all-aeroport-link">Петропавловск-Камчатский, Россия, все аэропорты</span><span
+                                                        class=" location-code">LGA</span></div>
+                                            </li>
+                                        </ul>
+                                        <div class="checkbox autocomplete-checkbox">
+                                            <input type="checkbox" value="" id="radius-from-where"
+                                                   name="radius-from-where">
+                                            <label for="radius-from-where"><span></span>В радиусе</label>
+                                            <input type="text" id="radius-where-km" name="radius-where-km">
+                                            <label for="radius-where-km">км</label>
+                                        </div>
+                                        <div class="location">
+                                            <img src="images/icon/locatin.png"> <a href="#">Показать на карте</a>
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="cities-and-airports">...</div>
+                                    <div role="tabpanel" class="tab-pane" id="country">...</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="where-to-fly">Куда:</label>
+                        <input type="text" class="form-control to-fly-search-result" id="where-to-fly" value="Стамбул"
+                               placeholder="Куда лететь" name="where-to-fly">
+                        <a href="#" class="input-arrow" id="link-autocomplete-from-where-fly"></a>
+                        <div class="autocomplete-wrap autocomplete-from-where-fly"
+                             id="open-autocomplete-from-where-fly">
+
+                            <ul class="list-all-aeroport list-unstyled">
+                                <li>
+                                    <div class="active-link"><span class="all-aeroport-link"><span class="aqua-letters">Нью</span>-Бедфорт, США</span><span
+                                            class=" location-code">LGA</span></div>
+                                </li>
+                                <li>
+                                    <div class="list-all-link"><span class="all-aeroport-link"><span
+                                            class="aqua-letters">Нью</span>-Берн, США</span><span
+                                            class=" location-code">LGA</span></div>
+                                </li>
+                                <li>
+                                    <div class="list-all-link"><span class="aqua-letters">Нью</span>-Бедфорт, США, <span
+                                            class="text-all-aeroport">все аэропорты</span><span
+                                            class="location-code ">NYC</span></div>
+                                    <ul class="sub-list list-unstyled">
+                                        <li class="clearfix"><a href="#"><span class="aqua-letters">Нью</span>-Берн, США
+                                            <span class=" location-code">EWR</span></a></li>
+                                        <li class="clearfix"><a href="#"><span class="aqua-letters">Нью</span>Нью-Йорк,
+                                            США<span
+                                                    class="location-code">JFK</span></a>
+                                        </li>
+                                        <li class="clearfix"><a href="#"><span class="aqua-letters">Нью</span>Нью-Йорк,
+                                            США<span
+                                                    class="location-code">JFK</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="list-all-link"><span class="all-aeroport-link"><span
+                                            class="aqua-letters">Нью</span>касл(-апон-Тайн), Великобритания</span><span
+                                            class=" location-code">LGA</span></div>
+                                </li>
+                            </ul>
+                            <div class="checkbox  autocomplete-checkbox">
+                                <input type="checkbox" value="" id="radius-anywhere" name="radius-anywhere">
+                                <label for="radius-anywhere"><span></span>В радиусе</label>
+                                <input type="text">
+                                <label>км</label>
+                            </div>
+                            <div class="location">
+                                <img src="images/icon/locatin.png"> <a href="#">Показать на карте</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--<div class="form-group-responsive">-->
+                    <div class="form-group">
+                        <label for="departure-date">Дата вылета:</label>
+                        <input type="text" class="form-control date-fly-search-result" id="departure-date"
+                               placeholder="Дата"
+                               value="16.12.2015"
+                               name="departure-date">
+                        <a href="#" class="input-arrow" id="link-open-calendar-three-day"></a>
+                        <div class="autocomplete-wrap autocomplete-calendar" id="open-calendar-three-day">
+                            <div class="calendar-month clearfix">
+                                <div class="pull-left">
+                                    <a href="#" class="navigation-arrow-left"></a><span>Ноябрь</span>
+                                </div>
+                                <div class="pull-right">
+                                    <span>Декабрь</span><a href="#" class="navigation-arrow-right"></a>
+                                </div>
+                            </div>
+                            <div class="row">
+
+                                <div class="col-sm-6">
+                                    <div class="weekdays">
+                                        <span>Пн</span>
+                                        <span>Вт</span>
+                                        <span>Ср</span>
+                                        <span>Чт</span>
+                                        <span>Пт</span>
+                                        <span>Сб</span>
+                                        <span>Нд</span>
+                                    </div>
+                                    <div class="day">
+                                        <a href="#">1</a>
+                                        <a href="#">2</a>
+                                        <a href="#">3</a>
+                                        <a href="#" class="three-day-check round-left">4</a>
+                                        <a href="#" class="three-day-check">5</a>
+                                        <a href="#" class="three-day-check ">6</a>
+                                        <a href="#" class="three-day-check select-date round-right">7</a>
+                                        <a href="#" class="three-day-check round-left">8</a>
+                                        <a href="#" class="three-day-check">9</a>
+                                        <a href="#" class="three-day-check round-right">10</a>
+                                        <a href="#">12</a>
+                                        <a href="#">13</a>
+                                        <a href="#">14</a>
+                                        <a href="#">15</a>
+                                        <a href="#">16</a>
+                                        <a href="#">17</a>
+                                        <a href="#">18</a>
+                                        <a href="#">19</a>
+                                        <a href="#">20</a>
+                                        <a href="#">21</a>
+                                        <a href="#">21</a>
+                                        <a href="#">23</a>
+                                        <a href="#">24</a>
+                                        <a href="#">25</a>
+                                        <a href="#">26</a>
+                                        <a href="#">27</a>
+                                        <a href="#">28</a>
+                                        <a href="#">29</a>
+                                        <a href="#">30</a>
+                                        <a href="#">31</a>
+
+                                    </div>
+
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="weekdays">
+                                        <span>Пн</span>
+                                        <span>Вт</span>
+                                        <span>Ср</span>
+                                        <span>Чт</span>
+                                        <span>Пт</span>
+                                        <span>Сб</span>
+                                        <span>Нд</span>
+                                    </div>
+                                    <div class="day">
+                                        <a href="#">1</a>
+                                        <a href="#">2</a>
+                                        <a href="#">3</a>
+                                        <a href="#">4</a>
+                                        <a href="#">5</a>
+                                        <a href="#">6</a>
+                                        <a href="#">7</a>
+                                        <a href="#">8</a>
+                                        <a href="#">9</a>
+                                        <a href="#">10</a>
+                                        <a href="#">12</a>
+                                        <a href="#">13</a>
+                                        <a href="#">14</a>
+                                        <a href="#">15</a>
+                                        <a href="#">16</a>
+                                        <a href="#">17</a>
+                                        <a href="#">18</a>
+                                        <a href="#">19</a>
+                                        <a href="#">20</a>
+                                        <a href="#">21</a>
+                                        <a href="#">21</a>
+                                        <a href="#">23</a>
+                                        <a href="#">24</a>
+                                        <a href="#">25</a>
+                                        <a href="#">26</a>
+                                        <a href="#">27</a>
+                                        <a href="#">28</a>
+                                        <a href="#">29</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="radio-checked-calendar">
+                                <input type="radio" id="exact-date" name="radio-box-date-check" class="radio-box"
+                                       value="exact-date" checked>
+                                <label for="exact-date"><span><span></span></span>Точная дата</label>
+
+                                <input type="radio" id="approximate-date" name="radio-box-date-check" class="radio-box"
+                                       value="approximate-date">
+                                <label for="approximate-date"><span><span></span></span>+/- 3 дня</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="arrival-date-fly">Обратно:</label>
+                        <input type="text" class="form-control date-fly-search-result" name="arrival-date-fly"
+                               id="arrival-date-fly"
+                               value="29.12.2015"
+                               placeholder="Дата">
+                        <a href="#" class="input-arrow" id="arrival-date-open-calendar"></a>
+                        <div class="autocomplete-wrap autocomplete-calendar" id="open-calendar">
+                            <div class="calendar-month clearfix">
+                                <div class="pull-left">
+                                    <a href="#" class="navigation-arrow-left"></a><span>Ноябрь</span>
+                                </div>
+                                <div class="pull-right">
+                                    <span>Декабрь</span><a href="#" class="navigation-arrow-right"></a>
+                                </div>
+                            </div>
+                            <div class="row">
+
+                                <div class="col-sm-6">
+                                    <div class="weekdays">
+                                        <span>Пн</span>
+                                        <span>Вт</span>
+                                        <span>Ср</span>
+                                        <span>Чт</span>
+                                        <span>Пт</span>
+                                        <span>Сб</span>
+                                        <span>Нд</span>
+                                    </div>
+                                    <div class="day">
+                                        <a href="#">1</a>
+                                        <a href="#">2</a>
+                                        <a href="#">3</a>
+                                        <a href="#" class="day-check">4</a>
+                                        <a href="#">5</a>
+                                        <a href="#">6</a>
+                                        <a href="#">7</a>
+                                        <a href="#">8</a>
+                                        <a href="#">9</a>
+                                        <a href="#">10</a>
+                                        <a href="#">12</a>
+                                        <a href="#">13</a>
+                                        <a href="#">14</a>
+                                        <a href="#">15</a>
+                                        <a href="#">16</a>
+                                        <a href="#">17</a>
+                                        <a href="#">18</a>
+                                        <a href="#">19</a>
+                                        <a href="#">20</a>
+                                        <a href="#">21</a>
+                                        <a href="#">21</a>
+                                        <a href="#" class="day-check">23</a>
+                                        <a href="#">24</a>
+                                        <a href="#">25</a>
+                                        <a href="#">26</a>
+                                        <a href="#">27</a>
+                                        <a href="#" class="day-check">28</a>
+                                        <a href="#">29</a>
+                                        <a href="#">30</a>
+                                        <a href="#">31</a>
+
+                                    </div>
+
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="weekdays">
+                                        <span>Пн</span>
+                                        <span>Вт</span>
+                                        <span>Ср</span>
+                                        <span>Чт</span>
+                                        <span>Пт</span>
+                                        <span>Сб</span>
+                                        <span>Нд</span>
+                                    </div>
+                                    <div class="day">
+                                        <a href="#">1</a>
+                                        <a href="#">2</a>
+                                        <a href="#">3</a>
+                                        <a href="#" class="day-check">4</a>
+                                        <a href="#">5</a>
+                                        <a href="#">6</a>
+                                        <a href="#">7</a>
+                                        <a href="#">8</a>
+                                        <a href="#">9</a>
+                                        <a href="#">10</a>
+                                        <a href="#">12</a>
+                                        <a href="#">13</a>
+                                        <a href="#">14</a>
+                                        <a href="#">15</a>
+                                        <a href="#">16</a>
+                                        <a href="#">17</a>
+                                        <a href="#">18</a>
+                                        <a href="#">19</a>
+                                        <a href="#">20</a>
+                                        <a href="#">21</a>
+                                        <a href="#">21</a>
+                                        <a href="#" class="day-check">23</a>
+                                        <a href="#">24</a>
+                                        <a href="#">25</a>
+                                        <a href="#">26</a>
+                                        <a href="#">27</a>
+                                        <a href="#" class="day-check">28</a>
+                                        <a href="#">29</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="radio-checked-calendar">
+                                <input type="radio" id="exact-date-2" name="radio-box-date-check" class="radio-box"
+                                       value="exact-date" checked>
+                                <label for="exact-date-2"><span><span></span></span>Точная дата</label>
+
+                                <input type="radio" id="approximate-date-2" name="radio-box-date-check"
+                                       class="radio-box"
+                                       value="approximate-date">
+                                <label for="approximate-date-2"><span><span></span></span>+/- 3 дня</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="count-tickets" id="count-tickets">3 билета</div>
+                    </div>
+                      <!--</div>-->
+                    <div class="form-group button-center">
+                        <button type="submit" class="btn btn-find" id="update">Обновить</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="text-center">
+            <a href="#" class="link-return-to-search-form">Вернуться к основной форме поиска</a>
+        </div>
+    </div>
+</div>
+
+<div class="container content-result-search">
+    <div class="col-lg-2 filter-wrap">
+        <div class="sorting clearfix">
+            <div class="sorting-title">Сортировка</div>
+            <a class="price-sort arrow-sort-up"><span>Цена</span></a>
+            <a class="time-sort arrow-sort-up"><span>Время в пути</span></a>
+        </div>
+
+        <div class="filter">
+            <div class="sorting-title">Фильтры</div>
+            <div class="filter-accordion">
+                <div class="filter-accordion-heading">
+                    <a class="filter-accordion-toggle collapsed" data-toggle="collapse" data-parent="#count-transship-go"
+                       href="#count-transship-go">Пересадки туда</a>
+                </div>
+                <div id="count-transship-go" class="panel-collapse collapse">
+                    <div class="accordion-body">
+                        <div class="checkbox-wrapper">
+                            <div class="checkbox">
+                                <input type="checkbox" value="" id="filter-no-transfers-1" name="filter-no-transfers">
+                                <label for="filter-no-transfers"><span></span>Без пересадок</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" value="" id="filter-one-transfers-1" name="filter-one-transfers">
+                                <label for="filter-one-transfers"><span></span>1 пересадка</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" value="" id="filter-two-transfers-1" name="filter-two-transfers">
+                                <label for="filter-two-transfers"><span></span>2+ пересадки</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-accordion">
+                <div class="filter-accordion-heading">
+                    <a class="filter-accordion-toggle collapsed" data-toggle="collapse" data-parent="#count-transship"
+                       href="#count-transship">Пересадки обратно</a>
+                </div>
+                <div id="count-transship" class="panel-collapse collapse">
+                    <div class="accordion-body">
+                        <div class="checkbox-wrapper">
+                            <div class="checkbox">
+                                <input type="checkbox" value="" id="filter-no-transfers" name="filter-no-transfers">
+                                <label for="filter-no-transfers"><span></span>Без пересадок</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" value="" id="filter-one-transfers" name="filter-one-transfers">
+                                <label for="filter-one-transfers"><span></span>1 пересадка</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" value="" id="filter-two-transfers" name="filter-two-transfers">
+                                <label for="filter-two-transfers"><span></span>2+ пересадки</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-accordion">
+                <div class="filter-accordion-heading">
+                    <a class="filter-accordion-toggle collapsed" data-toggle="collapse" data-parent="#filter-time"
+                       href="#filter-time">Время</a>
+                </div>
+                <div id="filter-time" class="panel-collapse collapse">
+                    <div class="accordion-body">
+                        <div class="clearfix filter-time">
+                            <p>Время вылета</p>
+                            <span class="pull-left">0:00</span>
+                            <span class="pull-right">23:59</span>
+                        </div>
+                        <div id="slider-range-sortie"></div>
+                        <div class="clearfix filter-time">
+                            <p>Время прилета</p>
+                            <span class="pull-left">0:00</span>
+                            <span class="pull-right">23:59</span>
+                        </div>
+                        <div id="slider-range-arrival"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-accordion">
+                <div class="filter-name">Класс</div>
+                <div class="filter-accordion-heading">
+                    <div class="checkbox-wrapper checkbox">
+                        <input type="checkbox" value="" id="filter-show-all-class" name="filter-show-all-class">
+                        <label for="filter-show-all-class"><span></span></label>
+                        <a class="filter-accordion-toggle show-all collapsed" data-toggle="collapse"
+                           data-parent="#filter-class"
+                           href="#filter-class">Показать все</a>
+                    </div>
+                </div>
+                <div id="filter-class" class="panel-collapse collapse">
+                    <div class="accordion-body">
+                        <div class="checkbox-wrapper">
+                            <div class="checkbox">
+                                <input type="checkbox" value="" id="filter-business-class" name="filter-business-class">
+                                <label for="filter-business-class"><span></span>Бизнес</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" value="" id="filter-first-class" name="filter-first-class">
+                                <label for="filter-first-class"><span></span>1 класс</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" value="" id="filter-economy-class" name="filter-economy-class">
+                                <label for="filter-economy-class"><span></span>Эконом</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" value="" id="filter-economy-plus-class"
+                                       name="filter-economy-plus-class">
+                                <label for="filter-economy-plus-class"><span></span>Эконом+</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-accordion">
+                <div class="filter-name">Аэропорт вылета</div>
+                <div class="filter-accordion-heading">
+                    <div class="checkbox-wrapper checkbox">
+                        <input type="checkbox" value="" id="filter-show-all-departure-airport"
+                               name="filter-show-all-departure-airport">
+                        <label for="filter-show-all-departure-airport"><span></span></label>
+                        <a class="filter-accordion-toggle show-all collapsed" data-toggle="collapse"
+                           data-parent="#filter-departure-airport"
+                           href="#filter-departure-airport">Показать все</a>
+                    </div>
+                </div>
+                <div id="filter-departure-airport" class="panel-collapse collapse">
+                    <div class="accordion-body">
+                        <div class="checkbox-wrapper">
+                            <div class="checkbox">
+                                <input type="checkbox" value="" id="filter-id-airoport-1" name="filter-id-airoport-1">
+                                <label for="filter-id-airoport-1"><span></span>Борисполь</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" value="" id="filter-id-airoport-2" name="filter-id-airoport-2">
+                                <label for="filter-id-airoport-2"><span></span>Жуляны</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-accordion">
+                <div class="filter-name">Аэропорт прилета</div>
+                <div class="filter-accordion-heading">
+                    <div class="checkbox-wrapper checkbox">
+                        <input type="checkbox" value="" id="filter-show-all-airport-arrival"
+                               name="filter-show-all-airport-arrival">
+                        <label for="filter-show-all-airport-arrival"><span></span></label>
+                        <a class="filter-accordion-toggle show-all collapsed" data-toggle="collapse"
+                           data-parent="#filter-airport-arrival"
+                           href="#filter-airport-arrival">Показать все</a>
+                    </div>
+                </div>
+                <div id="filter-airport-arrival" class="panel-collapse collapse">
+                    <div class="accordion-body">
+                        <div class="checkbox-wrapper">
+                            <div class="checkbox">
+                                <input type="checkbox" value="" id="filter-id-airoport-3" name="filter-id-airoport-1">
+                                <label for="filter-id-airoport-3"><span></span>Гатвик</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" value="" id="filter-id-airoport-4" name="filter-id-airoport-4">
+                                <label for="filter-id-airoport-4"><span></span>Хитроу</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-accordion">
+                <div class="filter-name">Авиакомпания</div>
+                <div class="filter-accordion-heading">
+                    <div class="checkbox-wrapper checkbox last-link">
+                        <input type="checkbox" value="" id="filter-show-all-airline" name="filter-show-all-airline">
+                        <label for="filter-show-all-airline"><span></span></label>
+                        <a class="filter-accordion-toggle show-all collapsed " data-toggle="collapse"
+                           data-parent="#filter-airline"
+                           href="#filter-airline">Показать все</a>
+                    </div>
+                </div>
+                <div id="filter-airline" class="panel-collapse collapse">
+                    <div class="accordion-body">
+                        <div class="checkbox-wrapper">
+                            <div class="checkbox">
+                                <input type="checkbox" value="" id="filter-id-airline-1" name="filter-id-airline-1">
+                                <label for="filter-id-airline-1"><span></span>Ukraine International Airlines</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" value="" id="filter-id-airline-2" name="filter-id-airline-2">
+                                <label for="filter-id-airline-2"><span></span>Turkish Airlines</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" value="" id="filter-id-airline-3" name="filter-id-airline-3">
+                                <label for="filter-id-airline-3"><span></span>Onur Air</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" value="" id="filter-id-airline-4" name="filter-id-airline-4">
+                                <label for="filter-id-airline-4"><span></span>Austrian Airlines</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" value="" id="filter-id-airline-5" name="filter-id-airline-5">
+                                <label for="filter-id-airline-5"><span></span>LOT Polish Airlines</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-filter">Применить фильтры</button>
+        </div>
+
+    </div>
+    <div class="col-lg-10 tabs-result-search">
+        <div>
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="active"><a href="#search-go-back" aria-controls="search-go-back" role="tab"
+                                      data-toggle="tab">Туда-Обратно<span>23</span></a></li>
+                <li><a href="#search-there" aria-controls="search-there" role="tab"
+                       data-toggle="tab">туда<span>12</span></a></li>
+                <li><a href="#search-back" aria-controls="search-back" role="tab"
+                       data-toggle="tab">обратно<span>11</span></a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content tab-content-result-search">
+                <div class="tab-pane active" id="search-go-back">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-lg-2 col-md-2">
+                                    <img src="images/logo-aviacompany/logo-mau.png">
+                                </div>
+                                <div class="col-lg-10 col-md-10 clearfix">
+                                    <div class="link-return-ticket pull-left"><a href="#">Правила обмена и возврата</a>
+                                    </div>
+                                    <ul class="list-unstyled label-list pull-right">
+                                        <li class="label-green">Самый быстрый</li>
+                                        <li class="label-orange">Выгодная цена</li>
+                                        <li class="label-pink">Багаж не включен в стоимость</li>
+                                        <li class="label-blue">Ночной перелет</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-lg-2 col-md-2">
+                                    <div class="margin-bottom-15">23 дек 2015, Вт</div>
+                                    <a class="search-more-accordion-toggle collapsed" data-toggle="collapse"
+                                       data-parent="#result-search-no-transship"
+                                       href="#result-search-no-transship">Подробнее</a>
+                                </div>
+                                <div class="col-lg-10 col-md-10">
+                                    <div class="col-search-fly col-search">
+                                        <div class="time">12:00</div>
+                                        <div class="hide-long-text" title="Днепропетровск">Днепропетровск</div>
+                                        <div>ОDS</div>
+                                        <div class="hide-long-text" title="Месопотамия">Месопотамия</div>
+                                        <div class="search-date">24 дек, Ср</div>
+                                    </div>
+                                    <div class="col-line-fly col-search">
+                                        <div class="line-fly">
+                                            <div class="circle start-line"></div>
+                                            <div class="circle end-line"></div>
+                                        </div>
+                                        <div class="search-transship-text">Без пересадок</div>
+                                    </div>
+                                    <div class="col-search-fly col-search">
+                                        <div class="time">13:00</div>
+                                        <div class="hide-long-text" title="Стамбул">Стамбул</div>
+                                        <div>IST</div>
+                                        <div class="hide-long-text" title="Турция">Турция</div>
+                                        <div class="search-date">24 дек, Ср</div>
+                                    </div>
+                                    <div class="col-flight-time col-search">
+                                        <div class="flight-time"><img src="images/icon/clock-search.png">1 ч 30 мин
+                                        </div>
+                                    </div>
+
+
+                                    <div id="result-search-no-transship" class="search-more-collapse collapse col-sm-12">
+                                        <div class="row margin-0">
+                                        <div class="col-search-time-fly col-search">
+                                            <div>Вылет:</div>
+                                            <div class="time">12:00</div>
+                                        </div>
+                                        <div class="col-search-country-fly col-search">
+                                            <div class="hide-long-text" title="Одесса">Одесса</div>
+                                            <div>ODS, А</div>
+                                            <p class="flight-country hide-long-text" title="Украина" >Украина</p>
+                                        </div>
+                                        <div class="col-search-time-fly-arrive col-search">
+                                            <div>Прибытие:</div>
+                                            <div class="time">14:00</div>
+                                        </div>
+                                        <div class="col-search-country-fly col-search">
+                                            <div class="hide-long-text" title="Варшава">Варшава</div>
+                                            <div>WAW, С</div>
+                                            <p class="flight-country" title="Польша">Польша</p>
+                                        </div>
+                                        <div class="col-search-model-plane col-search">
+                                            <div class="more-time">2ч</div>
+                                            <div class="model-plane  hide-long-text" title="Boeing 737-800">Boeing 737-800</div>
+                                            <div class="model-plane">PS-56</div>
+                                            <div>бизнес С</div>
+                                        </div>
+                                        <div class="col-flight-aviacompany col-search">
+                                            <div class="model-plane"><img src="images/logo-aviacompany/logo-tk-small.png">Turkish airlines
+                                            </div>
+                                        </div>
+                                            </div>
+                                    </div>
+
+
+                                    <div class="pull-right col-flight-price">
+                                        <div class="flight-price">3 799<span>UAH</span></div>
+                                        <a class="btn btn-buy">Купить</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-lg-2 col-md-2">
+                                    <img src="images/logo-aviacompany/logo-TK.png">
+                                </div>
+                                <div class="col-lg-10 col-md-10 clearfix">
+                                    <div class="link-return-ticket pull-left"><a href="#">Правила обмена и возврата</a>
+                                    </div>
+                                    <ul class="list-unstyled label-list pull-right">
+                                        <li class="label-orange">Выгодная цена</li>
+                                        <li class="label-blue">Ночной перелет</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-lg-2 col-md-2">
+                                    <div class="margin-bottom-15">23 дек 2015, Вт</div>
+                                    <a class="search-more-accordion-toggle collapsed" data-toggle="collapse"
+                                       data-parent="#result-search-arrived-next-day"
+                                       href="#result-search-arrived-next-day">Подробнее</a>
+                                </div>
+                                <div class="col-lg-10 col-md-10">
+                                    <div class="col-search-fly col-search">
+                                        <div class="time">12:00</div>
+                                        <div class="hide-long-text" title="Одесса">Одесса</div>
+                                        <div>ОDS</div>
+                                        <div class="hide-long-text" title="Украина">Украина</div>
+                                        <div class="search-date">24 дек, Ср</div>
+                                    </div>
+                                    <div class="col-line-fly col-search">
+                                        <div class="line-fly">
+                                            <div class="circle start-line"></div>
+                                            <div class="circle end-line"></div>
+                                        </div>
+                                        <div class="search-transship-text">Без пересадок</div>
+                                    </div>
+                                    <div class="col-search-fly col-search">
+                                        <div class="time">13:00</div>
+                                        <div class="hide-long-text" title="Стамбул">Стамбул</div>
+                                        <div>IST</div>
+                                        <div class="hide-long-text" title="Турция">Турция</div>
+                                        <div class="search-date next-day"><img class="arrive-next-day" src="images/icon/next-day.png">25 дек, Ср</div>
+                                        <div class="autocomplete-wrap tooltip-arrive-next-day" id="arrive-next-day">
+                                            Прилет на следующий день!
+                                        </div>
+                                    </div>
+                                    <div class="col-flight-time col-search">
+                                        <div class="flight-time"><img src="images/icon/clock-search.png">1 ч 30 мин
+                                        </div>
+                                    </div>
+
+
+                                    <div id="result-search-arrived-next-day" class="search-more-collapse collapse col-sm-12">
+                                        <div class="row margin-0">
+                                        <div class="col-search-time-fly col-search">
+                                            <div>Вылет:</div>
+                                            <div class="time">12:00</div>
+                                        </div>
+                                        <div class="col-search-country-fly col-search">
+                                            <div class="hide-long-text" title="Одесса">Одесса</div>
+                                            <div>ОDS, A</div>
+                                            <div class="flight-country hide-long-text">Украина</div>
+                                        </div>
+                                        <div class="col-search-time-fly-arrive col-search">
+                                            <div>Прибытие:</div>
+                                            <div class="time">14:00</div>
+                                        </div>
+                                        <div class="col-search-country-fly col-search">
+                                            <div class="hide-long-text" title="Варшава">Варшава</div>
+                                            <div>WAW, С</div>
+                                            <p class="flight-country" title="Польша">Польша</p>
+                                        </div>
+                                        <div class="col-search-model-plane col-search">
+                                            <div class="more-time">2ч</div>
+                                            <div class="model-plane  hide-long-text" title="Boeing 737-800">Boeing 737-800</div>
+                                            <div class="model-plane">PS-56</div>
+                                            <div>бизнес С</div>
+                                        </div>
+                                        <div class="col-flight-aviacompany col-search">
+                                            <div class="model-plane"><img src="images/logo-aviacompany/logo-tk-small.png">Turkish airlines</div>
+
+                                        </div>
+                                            </div>
+                                    </div>
+
+
+                                    <div class="pull-right col-flight-price">
+                                        <div class="flight-price">3 599<span>UAH</span></div>
+                                        <a class="btn btn-buy">Купить</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-lg-2 col-md-2">
+                                    <img src="images/logo-aviacompany/logo-TK.png">
+                                </div>
+                                <div class="col-lg-10 col-md-10 clearfix">
+                                    <div class="link-return-ticket pull-left"><a href="#">Правила обмена и возврата</a>
+                                    </div>
+                                    <ul class="list-unstyled label-list pull-right">
+                                        <li class="label-pink">Багаж не включен в стоимость</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-lg-2 col-md-2">
+                                    <div class="margin-bottom-15">24 дек 2015, Cp</div>
+                                    <a class="search-more-accordion-toggle collapsed" data-toggle="collapse"
+                                       data-parent="#result-search-flight-with-one-transship"
+                                       href="#result-search-flight-with-one-transship">Подробнее</a>
+                                </div>
+                                <div class="col-lg-10 col-md-10">
+                                    <div class="col-search-fly col-search">
+                                        <div class="time">12:00</div>
+                                        <div class="hide-long-text" title="Одесса">Одесса</div>
+                                        <div>ОDS</div>
+                                        <div class="hide-long-text" title="Украина">Украина</div>
+                                        <div class="search-date">24 дек, Ср</div>
+                                    </div>
+                                    <div class="col-line-fly col-search">
+                                        <div class="search-transship-text">пересадка 1 ч 20 мин</div>
+                                        <div class="line-fly">
+                                            <div class="circle start-line"></div>
+                                            <div class="circle middle-line"></div>
+                                            <div class="circle end-line"></div>
+                                        </div>
+                                        <div class="text-center">WAW</div>
+                                    </div>
+                                    <div class="col-search-fly col-search">
+                                        <div class="time">12:00</div>
+                                        <div class="hide-long-text" title="Стамбул">Стамбул</div>
+                                        <div>IST</div>
+                                        <div class="hide-long-text" title="Турция">Турция</div>                                        <div class="search-date">24 дек, Ср</div>
+                                    </div>
+                                    <div class="col-flight-time col-search">
+                                        <div class="flight-time"><img src="images/icon/clock-search.png">6 ч 30 мин
+                                        </div>
+                                    </div>
+
+
+                                    <div id="result-search-flight-with-one-transship" class="search-more-collapse collapse col-sm-12">
+                                        <div class="row margin-0">
+                                            <div class="col-search-time-fly col-search">
+                                                <div>Вылет:</div>
+                                                <div class="time">12:00</div>
+                                            </div>
+                                            <div class="col-search-country-fly col-search">
+                                                <div class="hide-long-text" title="Одесса">Одесса</div>
+                                                <div>ОDS, A</div>
+                                                <p class="flight-country" title="Украина">Украина</p>
+                                            </div>
+                                            <div class="col-search-time-fly-arrive col-search">
+                                                <div>Прибытие:</div>
+                                                <div class="time">14:00</div>
+                                            </div>
+                                            <div class="col-search-country-fly col-search">
+                                                <div class="hide-long-text" title="Варшава">Варшава</div>
+                                                <div>WAW, С</div>
+                                                <p class="flight-country" title="Польша">Польша</p>
+                                            </div>
+                                            <div class="col-search-model-plane col-search">
+                                                <div class="more-time">2ч</div>
+                                                <div class="model-plane  hide-long-text" title="Boeing 737-800">Boeing 737-800</div>
+                                                <div class="model-plane">PS-56</div>
+                                                <div>бизнес С</div>
+                                            </div>
+                                            <div class="col-flight-aviacompany col-search">
+                                                <div class="model-plane"><img src="images/logo-aviacompany/logo-tk-small.png">Turkish airlines
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-blue">пересадка в Варшаве 1ч 20мин</div>
+                                        <div class="row margin-0">
+                                            <div class="col-search-time-fly col-search">
+                                                <div>Вылет:</div>
+                                                <div class="time">12:00</div>
+                                            </div>
+                                            <div class="col-search-country-fly col-search">
+                                                <div class="hide-long-text" title="Одесса">Одесса</div>
+                                                <div>ОDS, A</div>
+                                                <p class="flight-country" title="Украина">Украина</p>
+                                            </div>
+                                            <div class="col-search-time-fly-arrive col-search">
+                                                <div>Прибытие:</div>
+                                                <div class="time">14:00</div>
+                                            </div>
+                                            <div class="col-search-country-fly col-search">
+                                                <div class="hide-long-text" title="Варшава">Варшава</div>
+                                                <div>WAW, С</div>
+                                                <p class="flight-country" title="Польша">Польша</p>
+                                            </div>
+                                            <div class="col-search-model-plane col-search">
+                                                <div class="more-time">2ч</div>
+                                                <div class="model-plane  hide-long-text" title="Boeing 737-800">Boeing 737-800</div>
+                                                <div class="model-plane">PS-56</div>
+                                                <div>бизнес С</div>
+                                            </div>
+                                            <div class="col-flight-aviacompany col-search">
+                                                <div class="model-plane"><img src="images/logo-aviacompany/logo-tk-small.png">Turkish airlines
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="pull-right col-flight-price">
+                                        <div class="flight-price">6 599<span>UAH</span></div>
+                                        <a class="btn btn-buy">Купить</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-lg-2 col-md-2">
+                                    <img src="images/logo-aviacompany/logo-mau.png">
+                                </div>
+                                <div class="col-lg-10 col-md-10  clearfix">
+                                    <div class="link-return-ticket pull-left"><a href="#">Правила обмена и возврата</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-lg-2 col-md-2">
+                                    <div class="margin-bottom-15">16 дек 2015, Чт</div>
+                                    <a class="search-more-accordion-toggle collapsed" data-toggle="collapse"
+                                       data-parent="#result-search-there"
+                                       href="#result-search-there">Подробнее</a>
+                                </div>
+                                <div class="col-lg-10 col-md-10">
+                                    <div class="plane-there-back"><img src="images/icon/plane-where.png" >Туда:</div>
+                                    <div class="col-search-fly col-search">
+                                        <div class="time">12:00</div>
+                                        <div class="hide-long-text" title="Одесса">Одесса</div>
+                                        <div>ОDS, A</div>
+                                        <div class="hide-long-text" title="Украина">Украина</div>
+                                        <div class="search-date">24 дек, Ср</div>
+                                    </div>
+                                    <div class="col-line-fly col-search">
+                                        <div class="line-fly">
+                                            <div class="circle start-line"></div>
+                                            <div class="circle end-line"></div>
+                                        </div>
+                                        <div class="search-transship-text">Без пересадок</div>
+                                    </div>
+                                    <div class="col-search-fly col-search">
+                                        <div class="time">13:00</div>
+                                        <div class="hide-long-text" title="Стамбул">Стамбул</div>
+                                        <div>IST</div>
+                                        <div class="hide-long-text" title="Турция">Турция</div>
+                                        <div class="search-date">24 дек, Ср</div>
+                                    </div>
+                                    <div class="col-flight-time col-search">
+                                        <div class="flight-time"><img src="images/icon/clock-search.png">1 ч 30 мин
+                                        </div>
+                                    </div>
+
+
+                                    <div id="result-search-there" class="search-more-collapse collapse col-sm-12">
+                                        <div class="row margin-0">
+                                            <div class="col-search-time-fly col-search">
+                                                <div>Вылет:</div>
+                                                <div class="time">12:00</div>
+                                            </div>
+                                            <div class="col-search-country-fly col-search">
+                                                <div class="hide-long-text" title="Одесса">Одесса</div>
+                                                <div>ОDS, A</div>
+                                                <p class="flight-country" title="Украина">Украина</p>
+                                            </div>
+                                            <div class="col-search-time-fly-arrive col-search">
+                                                <div>Прибытие:</div>
+                                                <div class="time">14:00</div>
+                                            </div>
+                                            <div class="col-search-country-fly col-search">
+                                                <div class="hide-long-text" title="Варшава">Варшава</div>
+                                                <div>WAW, С</div>
+                                                <p class="flight-country" title="Польша">Польша</p>
+                                            </div>
+                                            <div class="col-search-model-plane col-search">
+                                                <div class="more-time">2ч</div>
+                                                <div class="model-plane  hide-long-text" title="Boeing 737-800">Boeing 737-800</div>
+                                                <div class="model-plane">PS-56</div>
+                                                <div>бизнес С</div>
+                                            </div>
+                                            <div class="col-flight-aviacompany col-search">
+                                                <div class="model-plane"><img src="images/logo-aviacompany/logo-tk-small.png">Turkish airlines
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                            <div class="row margin-0"><div class="line-gray col-lg-offset-2 col-lg-8"></div></div>
+                            <div class="row">
+                                <div class="col-lg-2 col-md-2">
+                                    <div class="margin-bottom-15">23 дек 2015, Вт</div>
+                                    <a class="search-more-accordion-toggle collapsed" data-toggle="collapse"
+                                       data-parent="#result-search-back"
+                                       href="#result-search-back">Подробнее</a>
+                                </div>
+                                <div class="col-lg-10 col-md-10">
+                                    <div class="plane-there-back"><img src="images/icon/plane-from-where.png" >Обратно:</div>
+                                    <div class="col-search-fly col-search">
+                                       <div class="time">12:00</div>
+                                        <div class="hide-long-text" title="Одесса">Одесса</div>
+                                        <div>ОDS</div>
+                                        <div class="hide-long-text" title="Украина">Украина</div>
+                                        <div class="search-date">24 дек, Ср</div>
+                                    </div>
+                                    <div class="col-line-fly col-search">
+                                        <div class="line-fly">
+                                            <div class="circle start-line"></div>
+                                            <div class="circle end-line"></div>
+                                        </div>
+                                        <div class="search-transship-text">Без пересадок</div>
+                                    </div>
+                                    <div class="col-search-fly col-search">
+                                        <div class="time">12:00</div>
+                                        <div class="hide-long-text" title="Стамбул">Стамбул</div>
+                                        <div>IST</div>
+                                        <div class="hide-long-text" title="Турция">Турция</div>
+                                        <div class="search-date">24 дек, Ср</div>
+                                    </div>
+                                    <div class="col-flight-time col-search">
+                                        <div class="flight-time"><img src="images/icon/clock-search.png">1 ч 30 мин
+                                        </div>
+                                    </div>
+
+
+                                    <div id="result-search-back" class="search-more-collapse collapse col-sm-12">
+                                        <div class="row margin-0">
+                                            <div class="col-search-time-fly col-search">
+                                                <div>Вылет:</div>
+                                                <div class="time">12:00</div>
+                                            </div>
+                                            <div class="col-search-country-fly col-search">
+                                                <div class="hide-long-text" title="Одесса">Одесса</div>
+                                                <div>ОDS, A</div>
+                                                <p class="flight-country" title="Украина">Украина</p>
+                                            </div>
+                                            <div class="col-search-time-fly-arrive col-search">
+                                                <div>Прибытие:</div>
+                                                <div class="time">14:00</div>
+                                            </div>
+                                            <div class="col-search-country-fly col-search">
+                                                <div class="hide-long-text" title="Варшава">Варшава</div>
+                                                <div>WAW, С</div>
+                                                <p class="flight-country" title="Польша">Польша</p>
+                                            </div>
+                                            <div class="col-search-model-plane col-search">
+                                                <div class="more-time">2ч</div>
+                                                <div class="model-plane  hide-long-text" title="Boeing 737-800">Boeing 737-800</div>
+                                                <div class="model-plane">PS-56</div>
+                                                <div>бизнес С</div>
+                                            </div>
+                                            <div class="col-flight-aviacompany col-search">
+                                                <div class="model-plane"><img src="images/logo-aviacompany/logo-tk-small.png">Turkish airlines
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pull-right col-flight-price">
+                                        <div class="flight-price">1 028<span>UAH</span></div>
+                                        <a class="btn btn-buy">Купить</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-lg-2 col-md-2">
+                                    <img src="images/logo-aviacompany/logo-mau.png">
+                                </div>
+                                <div class="col-lg-10 col-md-10 clearfix">
+                                    <div class="link-return-ticket pull-left"><a href="#">Правила обмена и возврата</a>
+                                    </div>
+                                    <ul class="list-unstyled label-list pull-right">
+                                        <li class="label-pink">Багаж не включен в стоимость</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-lg-2 col-md-2">
+                                    <div class="margin-bottom-15">15 янв 2016, Пт</div>
+                                    <a class="search-more-accordion-toggle collapsed" data-toggle="collapse"
+                                       data-parent="#result-search-two-transship"
+                                       href="#result-search-two-transship">Подробнее</a>
+                                </div>
+                                <div class="col-lg-10 col-md-10">
+                                    <div class="col-search-fly col-search">
+                                        <div class="time">11:05</div>
+                                        <div class="hide-long-text" title="Киев">Киев</div>
+                                        <div>KBP</div>
+                                        <div class="hide-long-text" title="Украина">Украина</div>
+                                        <div class="search-date">15 янв, Пт</div>
+                                    </div>
+                                    <div class="col-line-fly col-search">
+                                        <div class="search-transship-text">2 пересадки</div>
+                                        <div class="line-fly">
+                                            <div class="circle start-line"></div>
+                                            <div class="circle one-line"><div class="two-transsip-code">WAW</div></div>
+                                            <div class="circle two-line"><div class="two-transsip-code">WAW</div></div>
+                                            <div class="circle end-line"></div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-search-fly col-search">
+                                        <div class="time">13:00</div>
+                                        <div class="hide-long-text" title="Стамбул">Стамбул</div>
+                                        <div>IST</div>
+                                        <div class="hide-long-text" title="Турция">Турция</div>
+                                        <div class="search-date">15 янв, Пт</div>
+                                    </div>
+                                    <div class="col-flight-time col-search">
+                                        <div class="flight-time"><img src="images/icon/clock-search.png">10 ч 45 мин
+                                        </div>
+                                    </div>
+
+
+                                    <div id="result-search-two-transship" class="search-more-collapse collapse col-sm-12">
+                                        <div class="row margin-0">
+                                            <div class="col-search-time-fly col-search">
+                                                <div>Вылет:</div>
+                                                <div class="time">12:00</div>
+                                            </div>
+                                            <div class="col-search-country-fly col-search">
+                                                <div class="hide-long-text" title="Одесса">Одесса</div>
+                                                <div>ODS, А</div>
+                                                <div class="flight-country hide-long-text" title="Украина">Украина</div>
+                                            </div>
+                                            <div class="col-search-time-fly-arrive col-search">
+                                                <div>Прибытие:</div>
+                                                <div class="time">14:00</div>
+                                            </div>
+                                            <div class="col-search-country-fly col-search">
+                                                <div class="hide-long-text" title="Варшава">Варшава</div>
+                                                <div>WAW, С</div>
+                                                <p class="flight-country" title="Польша">Польша</p>
+                                            </div>
+                                            <div class="col-search-model-plane col-search">
+                                                <div class="more-time">2ч</div>
+                                                <div class="model-plane  hide-long-text" title="Boeing 737-800">Boeing 737-800</div>
+                                                <div class="model-plane">PS-56</div>
+                                                <div>бизнес С</div>
+                                            </div>
+                                            <div class="col-flight-aviacompany col-search">
+                                                <div class="model-plane"><img src="images/logo-aviacompany/logo-mau-small.png">Ukraine International Airlines
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-blue">пересадка в Варшаве 1ч 20мин</div>
+                                        <div class="row margin-0">
+                                            <div class="col-search-time-fly col-search">
+                                                <div>Вылет:</div>
+                                                <div class="time">12:00</div>
+                                            </div>
+                                            <div class="col-search-country-fly col-search">
+                                                <div class="hide-long-text" title="Одесса">Одесса</div>
+                                                <div>ODS, А</div>
+                                                <div class="flight-country hide-long-text" title="Украина">Украина</div>
+                                            </div>
+                                            <div class="col-search-time-fly-arrive col-search">
+                                                <div>Прибытие:</div>
+                                                <div class="time">14:00</div>
+                                            </div>
+                                            <div class="col-search-country-fly col-search">
+                                                <div class="hide-long-text" title="Варшава">Варшава</div>
+                                                <div>WAW, С</div>
+                                                <p class="flight-country" title="Польша">Польша</p>
+                                            </div>
+                                            <div class="col-search-model-plane col-search">
+                                                <div class="more-time">2ч</div>
+                                                <div class="model-plane  hide-long-text" title="Boeing 737-800">Boeing 737-800</div>
+                                                <div class="model-plane">PS-56</div>
+                                                <div>бизнес С</div>
+                                            </div>
+                                            <div class="col-flight-aviacompany col-search">
+                                                <div class="model-plane"><img src="images/logo-aviacompany/logo-tk-small.png">Turkish airlines
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-blue">пересадка в Амстердаме 2ч 15 мин</div>
+                                        <div class="row margin-0">
+                                            <div class="col-search-time-fly col-search">
+                                                <div>Вылет:</div>
+                                                <div class="time">12:00</div>
+                                            </div>
+                                            <div class="col-search-country-fly col-search">
+                                                <div class="hide-long-text" title="Одесса">Одесса</div>
+                                                <div>ODS, А</div>
+                                                <div class="flight-country hide-long-text" title="Украина">Украина</div>
+                                            </div>
+                                            <div class="col-search-time-fly-arrive col-search">
+                                                <div>Прибытие:</div>
+                                                <div class="time">14:00</div>
+                                            </div>
+                                            <div class="col-search-country-fly col-search">
+                                                <div class="hide-long-text" title="Варшава">Варшава</div>
+                                                <div>WAW, С</div>
+                                                <p class="flight-country" title="Польша">Польша</p>
+                                            </div>
+                                            <div class="col-search-model-plane col-search">
+                                                <div class="more-time">2ч</div>
+                                                <div class="model-plane  hide-long-text" title="Boeing 737-800">Boeing 737-800</div>
+                                                <div class="model-plane">PS-56</div>
+                                                <div>бизнес С</div>
+                                            </div>
+                                            <div class="col-flight-aviacompany col-search">
+                                                <div class="model-plane"><img src="images/logo-aviacompany/logo-tk-small.png">Turkish airlines
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="pull-right col-flight-price">
+                                        <div class="flight-price">16 531<span>UAH</span></div>
+                                        <a class="btn btn-buy">Купить</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-lg-2 col-md-2">
+                                    <img src="images/logo-aviacompany/logo-mau.png">
+                                </div>
+                                <div class="col-lg-10 col-md-10 clearfix">
+                                    <div class="link-return-ticket pull-left"><a href="#">Правила обмена и возврата</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-lg-2 col-md-2">
+                                    <div class="margin-bottom-15">16 дек 2015, Чт</div>
+                                    <a class="search-more-accordion-toggle collapsed" data-toggle="collapse"
+                                       data-parent="#result-flight-selection-1"
+                                       href="#result-flight-selection-1">Подробнее</a>
+                                </div>
+                                <div class="col-lg-10 col-md-10">
+                                    <div class="col-search-fly col-search">
+                                        <div class="radio-result-flight">
+                                            <input type="radio" id="flight-selection-1" name="flight-selection" class="radio-box" value="" checked>
+                                            <label for="flight-selection-1"><span><span></span></span></label>
+                                        </div>
+                                        <div class="time">12:00</div>
+                                        <div class="hide-long-text" title="Одесса">Одесса</div>
+                                        <div>ODS</div>
+                                        <div class="hide-long-text" title="Украина">Украина</div>                                        <div class="search-date">24 дек, Ср</div>
+                                    </div>
+                                    <div class="col-line-fly col-search">
+                                        <div class="line-fly">
+                                            <div class="circle start-line"></div>
+                                            <div class="circle end-line"></div>
+                                        </div>
+                                        <div class="search-transship-text">Без пересадок</div>
+                                    </div>
+                                    <div class="col-search-fly col-search">
+                                        <div class="time">13:00</div>
+                                        <div class="hide-long-text" title="Стамбул">Стамбул</div>
+                                        <div>IST</div>
+                                        <div class="hide-long-text" title="Турция">Турция</div>
+                                        <div class="search-date">24 дек, Ср</div>
+                                    </div>
+                                    <div class="col-flight-time col-search">
+                                        <div class="flight-time"><img src="images/icon/clock-search.png">1 ч 30 мин
+                                        </div>
+                                    </div>
+
+
+                                    <div id="result-flight-selection-1" class="search-more-collapse collapse col-sm-12">
+                                        <div class="row margin-0">
+                                            <div class="col-search-time-fly col-search">
+                                                <div>Вылет:</div>
+                                                <div class="time">12:00</div>
+                                            </div>
+                                            <div class="col-search-country-fly col-search">
+                                                <div class="hide-long-text" title="Одесса">Одесса</div>
+                                                <div>ODS, А</div>
+                                                <div class="flight-country hide-long-text" title="Украина">Украина</div>
+                                            </div>
+                                            <div class="col-search-time-fly-arrive col-search">
+                                                <div>Прибытие:</div>
+                                                <div class="time">14:00</div>
+                                            </div>
+                                            <div class="col-search-country-fly col-search">
+                                                <div class="hide-long-text" title="Варшава">Варшава</div>
+                                                <div>WAW, С</div>
+                                                <p class="flight-country" title="Польша">Польша</p>
+                                            </div>
+                                            <div class="col-search-model-plane col-search">
+                                                <div class="more-time">2ч</div>
+                                                <div class="model-plane hide-long-text" title="Boeing 737-800">Boeing 737-800</div>
+                                                <div class="model-plane">PS-56</div>
+                                                <div>бизнес С</div>
+                                            </div>
+                                            <div class="col-flight-aviacompany col-search">
+                                                <div class="model-plane"><img src="images/logo-aviacompany/logo-tk-small.png">Turkish airlines
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                            <div class="row margin-0"><div class="line-gray col-lg-offset-2 col-lg-8"></div></div>
+                            <div class="row">
+                                <div class="col-lg-2 col-md-2">
+                                    <div class="margin-bottom-15">23 дек 2015, Вт</div>
+                                    <a class="search-more-accordion-toggle collapsed" data-toggle="collapse"
+                                       data-parent="#result-flight-selection-2"
+                                       href="#result-flight-selection-2">Подробнее</a>
+                                </div>
+                                <div class="col-lg-10 col-md-10">
+                                    <div class="col-search-fly col-search">
+                                        <div class="radio-result-flight">
+                                            <input type="radio" id="flight-selection-2" name="flight-selection" class="radio-box" value="">
+                                            <label for="flight-selection-2"><span><span></span></span></label>
+                                        </div>
+                                        <div class="time">12:00</div>
+                                        <div class="hide-long-text" title="Одесса">Одесса</div>
+                                        <div>ODS</div>
+                                        <div class="hide-long-text" title="Украина">Украина</div>                                        <div class="search-date">24 дек, Ср</div>
+                                    </div>
+                                    <div class="col-line-fly col-search">
+                                        <div class="line-fly">
+                                            <div class="circle start-line"></div>
+                                            <div class="circle end-line"></div>
+                                        </div>
+                                        <div class="search-transship-text">Без пересадок</div>
+                                    </div>
+                                    <div class="col-search-fly col-search">
+                                        <div class="time">12:00</div>
+                                        <div class="hide-long-text" title="Стамбул">Стамбул</div>
+                                        <div>IST</div>
+                                        <div class="hide-long-text" title="Турция">Турция</div>
+                                        <div class="search-date">24 дек, Ср</div>
+                                    </div>
+                                    <div class="col-flight-time col-search">
+                                        <div class="flight-time"><img src="images/icon/clock-search.png">1 ч 30 мин
+                                        </div>
+                                    </div>
+
+
+                                    <div id="result-flight-selection-2" class="search-more-collapse collapse col-sm-12">
+                                        <div class="row margin-0">
+                                            <div class="col-search-time-fly col-search">
+                                                <div>Вылет:</div>
+                                                <div class="time">12:00</div>
+                                            </div>
+                                            <div class="col-search-country-fly col-search">
+                                                <div class="hide-long-text" title="Одесса">Одесса</div>
+                                                <div>ODS, А</div>
+                                                <div class="flight-country hide-long-text" title="Украина">Украина</div>                                                                                         </div>
+                                            <div class="col-search-time-fly-arrive col-search">
+                                                <div>Прибытие:</div>
+                                                <div class="time">14:00</div>
+                                            </div>
+                                            <div class="col-search-country-fly col-search">
+                                                <div class="hide-long-text" title="Варшава">Варшава</div>
+                                                <div>WAW, С</div>
+                                                <p class="flight-country" title="Польша">Польша</p>
+                                            </div>
+                                            <div class="col-search-model-plane col-search">
+                                                <div class="more-time">2ч</div>
+                                                <div class="model-plane  hide-long-text" title="Boeing 737-800">Boeing 737-800</div>
+                                                <div class="model-plane">PS-56</div>
+                                                <div>бизнес С</div>
+                                            </div>
+                                            <div class="col-flight-aviacompany col-search">
+                                                <div class="model-plane"><img src="images/logo-aviacompany/logo-tk-small.png">Turkish airlines
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pull-right col-flight-price">
+                                        <div class="flight-price">1 028<span>UAH</span></div>
+                                        <a class="btn btn-buy">Купить</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-lg-2 col-md-2">
+                                    <img src="images/logo-aviacompany/logo-mau.png">
+                                </div>
+                                <div class="col-lg-10 col-md-10 clearfix">
+                                    <div class="link-return-ticket pull-left"><a href="#">Правила обмена и возврата</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-lg-2 col-md-2">
+                                    <div class="margin-bottom-15">16 дек 2015, Чт</div>
+                                    <a class="search-more-accordion-toggle collapsed" data-toggle="collapse"
+                                       data-parent="#result-search-flight-selection-1"
+                                       href="#result-search-flight-selection-1">Подробнее</a>
+                                </div>
+                                <div class="col-lg-10 col-md-10">
+                                    <div class="plane-there-back"><img src="images/icon/plane-where.png" >Туда:</div>
+                                    <div class="col-search-fly col-search">
+                                        <div class="time">12:00</div>
+                                        <div class="hide-long-text" title="Одесса">Одесса</div>
+                                        <div>ODS</div>
+                                        <div class="hide-long-text" title="Украина">Украина</div>
+                                        <div class="search-date">24 дек, Ср</div>
+                                    </div>
+                                    <div class="col-line-fly col-search">
+                                        <div class="line-fly">
+                                            <div class="circle start-line"></div>
+                                            <div class="circle end-line"></div>
+                                        </div>
+                                        <div class="search-transship-text">Без пересадок</div>
+                                    </div>
+                                    <div class="col-search-fly col-search">
+                                        <div class="time">13:00</div>
+                                        <div class="hide-long-text" title="Стамбул">Стамбул</div>
+                                        <div>IST</div>
+                                        <div class="hide-long-text" title="Турция">Турция</div>
+                                        <div class="search-date">24 дек, Ср</div>
+                                    </div>
+                                    <div class="col-flight-time col-search">
+                                        <div class="flight-time"><img src="images/icon/clock-search.png">1 ч 30 мин
+                                        </div>
+                                    </div>
+
+
+                                    <div id="result-search-flight-selection-1" class="search-more-collapse collapse col-sm-12">
+                                        <div class="row margin-0">
+                                            <div class="col-search-time-fly col-search">
+                                                <div>Вылет:</div>
+                                                <div class="time">12:00</div>
+                                            </div>
+                                            <div class="col-search-country-fly col-search">
+                                                <div class="hide-long-text" title="Одесса">Одесса</div>
+                                                <div>ODS, А</div>
+                                                <div class="flight-country hide-long-text" title="Украина">Украина</div>
+                                            </div>
+                                            <div class="col-search-time-fly-arrive col-search">
+                                                <div>Прибытие:</div>
+                                                <div class="time">14:00</div>
+                                            </div>
+                                            <div class="col-search-country-fly col-search">
+                                                <div class="hide-long-text" title="Варшава">Варшава</div>
+                                                <div>WAW, С</div>
+                                                <p class="flight-country" title="Польша">Польша</p>
+                                            </div>
+                                            <div class="col-search-model-plane col-search">
+                                                <div class="more-time">2ч</div>
+                                                <div class="model-plane  hide-long-text" title="Boeing 737-800">Boeing 737-800</div>
+                                                <div class="model-plane">PS-56</div>
+                                                <div>бизнес С</div>
+                                            </div>
+                                            <div class="col-flight-aviacompany col-search">
+                                                <div class="model-plane"><img src="images/logo-aviacompany/logo-tk-small.png">Turkish airlines
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                            <div class="row margin-0"><div class="line-gray col-lg-offset-2 col-lg-8"></div></div>
+                            <div class="row">
+                                <div class="col-lg-2 col-md-2">
+                                    <div class="margin-bottom-15">23 дек 2015, Вт</div>
+                                    <a class="search-more-accordion-toggle collapsed" data-toggle="collapse"
+                                       data-parent="#result-search-flight-selection-2"
+                                       href="#result-search-flight-selection-2">Подробнее</a>
+                                </div>
+                                <div class="col-lg-10 col-md-10">
+                                    <div class="plane-there-back"><img src="images/icon/plane-from-where.png" >Обратно:</div>
+                                    <div class="col-search-fly col-search">
+                                        <div class="radio-result-flight">
+                                            <input type="radio" id="flight-selection-3" name="flight-selection-two" class="radio-box" value="" checked>
+                                            <label for="flight-selection-3"><span><span></span></span></label>
+                                        </div>
+                                        <div class="time">12:00</div>
+                                        <div class="hide-long-text" title="Одесса">Одесса</div>
+                                        <div>ODS</div>
+                                        <div class="hide-long-text" title="Украина">Украина</div>
+                                        <div class="search-date">24 дек, Ср</div>
+                                    </div>
+                                    <div class="col-line-fly col-search">
+                                        <div class="line-fly">
+                                            <div class="circle start-line"></div>
+                                            <div class="circle end-line"></div>
+                                        </div>
+                                        <div class="search-transship-text">Без пересадок</div>
+                                    </div>
+                                    <div class="col-search-fly col-search">
+                                        <div class="time">12:00</div>
+                                        <div class="hide-long-text" title="Стамбул">Стамбул</div>
+                                        <div>IST</div>
+                                        <div class="hide-long-text" title="Турция">Турция</div>
+                                        <div class="search-date">24 дек, Ср</div>
+                                    </div>
+                                    <div class="col-flight-time col-search">
+                                        <div class="flight-time"><img src="images/icon/clock-search.png">1 ч 30 мин
+                                        </div>
+                                    </div>
+
+
+                                    <div id="result-search-flight-selection-2" class="search-more-collapse collapse col-sm-12">
+                                        <div class="row margin-0">
+                                            <div class="col-search-time-fly col-search">
+                                                <div>Вылет:</div>
+                                                <div class="time">12:00</div>
+                                            </div>
+                                            <div class="col-search-country-fly col-search">
+                                                <div class="hide-long-text" title="Одесса">Одесса</div>
+                                                <div>ODS, А</div>
+                                                <div class="flight-country hide-long-text" title="Украина">Украина</div>
+                                            </div>
+                                            <div class="col-search-time-fly-arrive col-search">
+                                                <div>Прибытие:</div>
+                                                <div class="time">14:00</div>
+                                            </div>
+                                            <div class="col-search-country-fly col-search">
+                                                <div class="hide-long-text" title="Варшава">Варшава</div>
+                                                <div>WAW, С</div>
+                                                <p class="flight-country" title="Польша">Польша</p>
+                                            </div>
+                                            <div class="col-search-model-plane col-search">
+                                                <div class="more-time">2ч</div>
+                                                <div class="model-plane  hide-long-text" title="Boeing 737-800">Boeing 737-800</div>
+                                                <div class="model-plane">PS-56</div>
+                                                <div>бизнес С</div>
+                                            </div>
+                                            <div class="col-flight-aviacompany col-search">
+                                                <div class="model-plane"><img src="images/logo-aviacompany/logo-tk-small.png">Turkish airlines
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-2 col-md-2">
+                                    <a class="search-more-accordion-toggle collapsed" data-toggle="collapse"
+                                       data-parent="#result-search-flight-selection-3"
+                                       href="#result-search-flight-selection-3">Подробнее</a>
+                                </div>
+                                <div class="col-lg-10 col-md-10">
+                                    <div class="col-search-fly col-search">
+                                        <div class="radio-result-flight">
+                                            <input type="radio" id="flight-selection-4" name="flight-selection-two" class="radio-box" value="">
+                                            <label for="flight-selection-4"><span><span></span></span></label>
+                                        </div>
+                                        <div class="time">12:00</div>
+                                        <div class="hide-long-text" title="Одесса">Одесса</div>
+                                        <div>ODS</div>
+                                        <div class="hide-long-text" title="Украина">Украина</div>
+                                        <div class="search-date">24 дек, Ср</div>
+                                    </div>
+                                    <div class="col-line-fly col-search">
+                                        <div class="line-fly">
+                                            <div class="circle start-line"></div>
+                                            <div class="circle end-line"></div>
+                                        </div>
+                                        <div class="search-transship-text">Без пересадок</div>
+                                    </div>
+                                    <div class="col-search-fly col-search">
+                                        <div class="time">12:00</div>
+                                        <div class="hide-long-text" title="Стамбул">Стамбул</div>
+                                        <div>IST</div>
+                                        <div class="hide-long-text" title="Турция">Турция</div>
+                                        <div class="search-date">24 дек, Ср</div>
+                                    </div>
+                                    <div class="col-flight-time col-search">
+                                        <div class="flight-time"><img src="images/icon/clock-search.png">1 ч 30 мин
+                                        </div>
+                                    </div>
+
+
+                                    <div id="result-search-flight-selection-3" class="search-more-collapse collapse col-sm-12">
+                                        <div class="row margin-0">
+                                            <div class="col-search-time-fly col-search">
+                                                <div>Вылет:</div>
+                                                <div class="time">12:00</div>
+                                            </div>
+                                            <div class="col-search-country-fly col-search">
+                                                <div class="hide-long-text" title="Одесса">Одесса</div>
+                                                <div>ODS, А</div>
+                                                <div class="flight-country hide-long-text" title="Украина">Украина</div>
+                                            </div>
+                                            <div class="col-search-time-fly-arrive col-search">
+                                                <div>Прибытие:</div>
+                                                <div class="time">14:00</div>
+                                            </div>
+                                            <div class="col-search-country-fly col-search">
+                                                <div class="hide-long-text" title="Варшава">Варшава</div>
+                                                <div>WAW, С</div>
+                                                <p class="flight-country" title="Польша">Польша</p>
+                                            </div>
+                                            <div class="col-search-model-plane col-search">
+                                                <div class="more-time">2ч</div>
+                                                <div class="model-plane hide-long-text" title="Boeing 737-800">Boeing 737-800</div>
+                                                <div class="model-plane">PS-56</div>
+                                                <div>бизнес С</div>
+                                            </div>
+                                            <div class="col-flight-aviacompany col-search">
+                                                <div class="model-plane"><img src="images/logo-aviacompany/logo-tk-small.png">Turkish airlines
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pull-right col-flight-price">
+                                        <div class="flight-price">11 247<span>UAH</span></div>
+                                        <a class="btn btn-buy">Купить</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="tab-pane" id="search-there">...</div>
+                <div class="tab-pane" id="search-back">...</div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <ul class="">
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Путешествия</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 hidden-md hidden-sm hidden-xs">
+                    <ul class="">
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">Договор оферты</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <ul class="address">
+                        <li id="phone"><a href="#">+38 044 3590569</a></li>
+                        <li><a href="#"> +7 495 7397922</a></li>
+                        <li id="mail"><a href="#">mustgoaero@gmail.com</a></li>
+                        <li id="skype"><a href="#">mustgoaero</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 hidden-lg">
+                    <ul class="">
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">Договор оферты</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <img src="images/logo.png">
+                    <p>Мы в соцсетях:</p>
+                    <ul class="social">
+                        <li><a href="#">
+                            <div id="vk"></div>
+                        </a></li>
+                        <li><a href="#">
+                            <div id="facebook"></div>
+                        </a></li>
+                        <li><a href="#">
+                            <div id="twit"></div>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="support_payments">
+            <img src="images/payments/qiwi-logo.png">
+            <img src="images/payments/yandex.png">
+            <img src="images/payments/wmlogo_vector_blue.png">
+            <img src="images/payments/okpay_logo.png">
+            <img src="images/payments/Visa_Inc.svg">
+            <img src="images/payments/logo-mastercard.png">
+            <img src="images/payments/300px-Libert.svg">
+            <img src="images/payments/logo-perfect-money.png">
+            <img src="images/payments/liqpay_logo.png">
+            <img src="images/payments/privat24.png">
+            <img src="images/payments/RBKmoney.png">
+            <img src="images/payments/paypallogo.png">
+        </div>
+    </div>
+</footer>
+
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/nouislider.min.js"></script>
+<script src="js/wNumb.js"></script>
+<script>
+    function getSliderVal(value) {
+        var i = 0,
+                time = [];
+        for (i; i < value.length; i++) {
+            var h = value[i] / 60 ^ 0;
+            if (h) {
+                var m = value[i] % 60;
+                if (m < 10) m = '0' + m;
+                time[i] = h + ':' + m;
+            } else {
+                if (value[i] < 10) {
+                    time[i] = '0:0' + parseInt(value[i]);
+                } else {
+                    time[i] = '0:' + parseInt(value[i]);
+                }
+            }
+        }
+        return time;
+    }
+    var rangeSliderarrival = document.getElementById('slider-range-arrival');
+
+    noUiSlider.create(rangeSliderarrival, {
+        step: 15,
+        margin: 50,
+        connect: true,
+        behaviour: 'tap',
+        start: [0, 1440],
+        tooltips: [wNumb({decimals: 2, mark: ':'}), wNumb({decimals: 2, mark: ':'})],
+        range: {
+            'min': [0],
+            'max': [1440]
+        }
+    });
+
+    var rangeSlider = document.getElementById('slider-range-sortie');
+
+    noUiSlider.create(rangeSlider, {
+        step: 15,
+        margin: 50,
+        connect: true,
+        behaviour: 'tap',
+        start: [0, 1440],
+        tooltips: [wNumb({decimals: 2, mark: ':'}), wNumb({decimals: 2, mark: ':'})],
+        range: {
+            'min': [0],
+            'max': [1440]
+        }
+    });
+
+    rangeSlider.noUiSlider.on('change', function () {
+        var value = rangeSlider.noUiSlider.get(),
+                time = getSliderVal(value);
+        $('#slider-range-sortie .noUi-handle-lower .noUi-tooltip').text(time[0]);
+        $('#slider-range-sortie .noUi-handle-upper .noUi-tooltip').text(time[1]);
+    });
+
+    rangeSlider.noUiSlider.on('start', function () {
+        var value = rangeSlider.noUiSlider.get(),
+                time = getSliderVal(value);
+        $('#slider-range-sortie .noUi-handle-lower .noUi-tooltip').text(time[0]);
+        $('#slider-range-sortie .noUi-handle-upper .noUi-tooltip').text(time[1]);
+    });
+
+    rangeSlider.noUiSlider.on('update', function () {
+        var value = rangeSlider.noUiSlider.get(),
+                time = getSliderVal(value);
+        $('#slider-range-sortie .noUi-handle-lower .noUi-tooltip').text(time[0]);
+        $('#slider-range-sortie .noUi-handle-upper .noUi-tooltip').text(time[1]);
+    });
+
+    rangeSliderarrival.noUiSlider.on('change', function () {
+        var value = rangeSliderarrival.noUiSlider.get(),
+                time = getSliderVal(value);
+        $('#slider-range-arrival .noUi-handle-lower .noUi-tooltip').text(time[0]);
+        $('#slider-range-arrival .noUi-handle-upper .noUi-tooltip').text(time[1]);
+    });
+
+    rangeSliderarrival.noUiSlider.on('start', function () {
+        var value = rangeSliderarrival.noUiSlider.get(),
+                time = getSliderVal(value);
+        $('#slider-range-arrival .noUi-handle-lower .noUi-tooltip').text(time[0]);
+        $('#slider-range-arrival .noUi-handle-upper .noUi-tooltip').text(time[1]);
+    });
+
+    rangeSliderarrival.noUiSlider.on('update', function () {
+        var value = rangeSliderarrival.noUiSlider.get(),
+                time = getSliderVal(value);
+        $('#slider-range-arrival .noUi-handle-lower .noUi-tooltip').text(time[0]);
+        $('#slider-range-arrival .noUi-handle-upper .noUi-tooltip').text(time[1]);
+    });
+
+
+</script>
+
+</body>
+</html>
