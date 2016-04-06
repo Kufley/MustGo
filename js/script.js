@@ -1,4 +1,69 @@
+$(window).load(function () {
+    var svgobject = document.getElementById('platscart-vagon');
+    svgobject.onload = function() {
+        var svgobject = this;
+        if ('contentDocument' in svgobject) {
+            var svgdom = svgobject.contentDocument;
+            var viewBox = svgdom.rootElement.getAttribute("viewBox").split(" ");
+            var aspectRatio = viewBox[1] / viewBox[2];
+            svgobject.height = parseInt(svgobject.offsetWidth / aspectRatio);
+            $(".enable-wagon", svgdom).click(function () {
+                if ($(this).css('fill') === 'rgb(45, 188, 248)') {
+                    $(this).css({'fill': 'rgb(26, 136, 182)'});
+
+                } else {
+                    $(this).css({'fill': 'rgb(45, 188, 248)'});
+                }
+            });
+
+            $("g", svgdom).each(function() {
+                if($(this).attr('class')==="disable-wagon") {
+                    $(this).css({'pointer-events': 'none'});}
+            });
+        }
+    };
+});
+
+
+
+
 $(document).ready(function () {
+
+    $('#carousel-foto-page').carousel({
+        interval: 0
+    });
+
+    $('.carousel .item').each(function(){
+        var next = $(this).next();
+        if (!next.length) {
+            next = $(this).siblings(':first');
+        }
+        next.children(':first-child').clone().appendTo($(this));
+
+        if (next.next().length>0) {
+            next.next().children(':first-child').clone().appendTo($(this));
+        }
+        else {
+            $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+        }
+    });
+
+    $("[value=mastercard]").click(function () {
+        $("#liqpay").hide();
+        $("#deposit").hide();
+        $("#mastercard").show();
+    });
+    $("[value=liqpay]").click(function () {
+        $("#mastercard").hide();
+        $("#deposit").hide();
+        $("#liqpay").show();
+    });
+    $("[value=deposit]").click(function () {
+        $("#mastercard").hide();
+        $("#liqpay").hide();
+        $("#deposit").show();
+    });
+
     function plus(id_plus)
     {
         var fieldName = $(id_plus).attr("field");
@@ -142,14 +207,35 @@ $(document).ready(function () {
     });
 
 
+
     $('.search-more-accordion-toggle').click(function(){
         var $this = $(this);
         if($this.hasClass('collapsed')){
             $('.line-gray').hide();
+
             $this.text('Скрыть');
         } else {
             $this.text('Подробнее');
             $('.line-gray').show();
+        }
+    });
+
+    $('.promo-code-link').click(function(){
+        var $this = $(this);
+        if($this.hasClass('collapsed')){
+            $this.text('У меня есть промокод');
+        } else {
+            $this.text('У вас есть промокод?');
+        }
+    });
+
+    $('.promo-bonus').click(function(){
+        var $this = $(this);
+        if($this.hasClass('collapsed')){
+
+            $this.text('Я участвую в бонусной программе');
+        } else {
+            $this.text('Участвуете в бонусной программе?');
         }
     });
 
@@ -180,6 +266,7 @@ $(document).ready(function () {
     //});
     //$('.form-registation').validator();
     /* Event for checkbox*/
+
 
     $("[name=radio-box]").click(function () {
         var $this = $(this),
@@ -362,4 +449,9 @@ customScroll = function () {
     listen(sEl, "click touchstart mousewheel DOMMouseScroll", stopScroll);
 };
 customScroll();
+
+$('.border-bottom a').click(function () {
+    $('.border-bottom').addClass("active");
+
+});
 

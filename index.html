@@ -564,7 +564,7 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <button type="submit" class="btn btn-request" data-toggle="modal" data-target="#request-for-group-flight">запрос на групповой перелет</button>
+                                        <button type="button" class="btn btn-request" data-toggle="modal" data-target="#request-for-group-flight">запрос на групповой перелет</button>
                                     </div>
                                 </div>
                             </div>
@@ -1548,8 +1548,8 @@
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <ul class="address">
-                            <li id="phone"><a href="#">+38 044 3590569,</a></li>
-                            <li><a href="#"> +7 495 7397922</a></li>
+                            <li id="phone"><a href="#">+38 044 359·05·69</a></li>
+                            <li><a href="#"> +7 495 739·79·22</a></li>
                             <li id="mail"><a href="#">mustgoaero@gmail.com</a></li>
                             <li id="skype"><a href="#">mustgoaero</a></li>
                         </ul>
@@ -1597,17 +1597,17 @@
     </footer>
 <div class="modal fade " id="form-registration" tabindex="-1" role="dialog"  aria-hidden="true">
     <div class="modal-dialog ">
-        <div class="modal-content form-log-in">
+        <div class="modal-content modal-info form-log-in">
             <div class="modal-header clearfix">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="images/icon/close-aqua.png" alt="close"></button>
 
                 <h1>Регистрация</h1>
             </div>
             <div class="modal-body">
-                <form role="form" class="form-registation">
+                <form role="form" class="form-registation"  data-toggle="validator">
                     <div class="form-group">
                         <label for="user-name">Ваше имя:</label>
-                        <input type="email" class="form-control" name="user-name" id="user-name">
+                        <input type="text" class="form-control" name="user-name" id="user-name">
                     </div>
                     <div class="form-group form-reg-corporate-entity">
                         <input type="checkbox" value="corporation"  name="corporate-entity-registation" id="corporate-entity-registation">
@@ -1619,17 +1619,20 @@
                         <a href="#" class="input-arrow"></a>
                     </div>
                     <div class="form-group">
+                        <span class="help-block">Неверный email</span>
                         <label for="user-email-registation">Ваш е-mail:</label>
                         <input type="email" class="form-control" name="user-email-registation" id="user-email-registation">
                     </div>
 
                     <div class="form-group">
+                        <span class="help-block">Неверный пароль</span>
                         <label for="user-password-registation">Ваш пароль:</label>
-                        <input type="password" class="form-control" name="user-password-registation" id="user-password-registation">
+                        <input type="password" data-minlength="6" class="form-control" name="user-password-registation" id="user-password-registation">
                     </div>
                     <div class="form-group">
+                        <span class="help-block">Пароли не совпадают</span>
                         <label for="user-password-repeat">Повторите пароль:</label>
-                        <input type="password" class="form-control" name="user-password-repeat" id="user-password-repeat">
+                        <input type="password" data-minlength="6" class="form-control" name="user-password-repeat" id="user-password-repeat">
                     </div>
                     <div class="form-group">
                         <button type="submit" class="btn btn-log-in">Вход</button>
@@ -1641,7 +1644,7 @@
         </div>
     </div>
 </div>
-<div class="modal" id="request-for-group-flight" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade" id="request-for-group-flight" tabindex="-1" role="dialog" >
     <div class="modal-dialog" role="document">
         <div class="modal-content modal-request-for-group">
             <div class="modal-header">

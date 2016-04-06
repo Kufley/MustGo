@@ -62,8 +62,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="phone">+38 044 359·05·69</div>
-                <div class="feedback"><a href="#">Заказать обратный звонок</a></div>
+
             </div>
         </div>
     </nav>
@@ -463,8 +462,32 @@
             <div class="sorting-title">Фильтры</div>
             <div class="filter-accordion">
                 <div class="filter-accordion-heading">
+                    <a class="filter-accordion-toggle collapsed" data-toggle="collapse" data-parent="#count-transship-go"
+                       href="#count-transship-go">Пересадки туда</a>
+                </div>
+                <div id="count-transship-go" class="panel-collapse collapse">
+                    <div class="accordion-body">
+                        <div class="checkbox-wrapper">
+                            <div class="checkbox">
+                                <input type="checkbox" value="" id="filter-no-transfers-1" name="filter-no-transfers">
+                                <label for="filter-no-transfers"><span></span>Без пересадок</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" value="" id="filter-one-transfers-1" name="filter-one-transfers">
+                                <label for="filter-one-transfers"><span></span>1 пересадка</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" value="" id="filter-two-transfers-1" name="filter-two-transfers">
+                                <label for="filter-two-transfers"><span></span>2+ пересадки</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-accordion">
+                <div class="filter-accordion-heading">
                     <a class="filter-accordion-toggle collapsed" data-toggle="collapse" data-parent="#count-transship"
-                       href="#count-transship">Количество пересадок</a>
+                       href="#count-transship">Пересадки обратно</a>
                 </div>
                 <div id="count-transship" class="panel-collapse collapse">
                     <div class="accordion-body">
@@ -1170,10 +1193,11 @@
                                         <div class="search-transship-text">2 пересадки</div>
                                         <div class="line-fly">
                                             <div class="circle start-line"></div>
-                                            <div class="circle one-line"></div>
-                                            <div class="circle two-line"></div>
+                                            <div class="circle one-line"><div class="two-transsip-code">WAW</div></div>
+                                            <div class="circle two-line"><div class="two-transsip-code">WAW</div></div>
                                             <div class="circle end-line"></div>
                                         </div>
+
                                     </div>
                                     <div class="col-search-fly col-search">
                                         <div class="time">13:00</div>
@@ -1727,7 +1751,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <ul class="address">
-                        <li id="phone"><a href="#">+38 044 3590569,</a></li>
+                        <li id="phone"><a href="#">+38 044 3590569</a></li>
                         <li><a href="#"> +7 495 7397922</a></li>
                         <li id="mail"><a href="#">mustgoaero@gmail.com</a></li>
                         <li id="skype"><a href="#">mustgoaero</a></li>

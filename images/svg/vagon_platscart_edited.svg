@@ -6,14 +6,11 @@
 	 viewBox="0 0 740 208" enable-background="new 0 0 740 208" xml:space="preserve">
 <defs>
 	<style type="text/css">
-            <!--.checked-wagon path{fill: rgb(26, 136, 182);}-->
-            <!--.checked-wagon text{fill: #fff;}-->
-
 		    .enable-wagon {fill: rgb(45, 188, 248); cursor:pointer;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none; }
-            .enable-wagon text{fill: #fff;}
+            .enable-wagon text{fill: #fff;font-family: monospace; font-size: 14px;}
 
 		    .disable-wagon path{fill: #fff; stroke:#d2d2d2; stroke-width:2}
-		    .disable-wagon text{fill:#d2d2d2}
+		    .disable-wagon text{fill:#d2d2d2; font-family: monospace; font-size: 14px;}
         </style>
 </defs>
 
@@ -40,7 +37,7 @@
 			<path fill="#898989" d="M6,91v32H2V91H6 M8,89H0v36h8V89L8,89z"/>
 	</g>
 	<g id="rect-30">
-			<path fill="#FFFFFF" d="z"/>
+			<path fill="#FFFFFF"/>
 			<polygon fill="#898989" points="75,15 73,15 73,194 75,194 75,15 			"/>
 	</g>
 	<g id="rect-31">
@@ -114,12 +111,12 @@
 	</g>
 	<g id="rect-wagon-1" class="enable-wagon">
 		<path fill-rule="evenodd" clip-rule="evenodd" d="M263,31h-20c-2.761,0-5,2.239-5,5v20c0,2.761,2.239,5,5,5h20c2.761,0,5-2.239,5-5V36C268,33.239,265.762,31,263,31z"/>
-		<text transform="matrix(1 0 0 1 248.7696 52.1914)" font-family="'Roboto-Regular'" font-size="16">2</text>
+		<text transform="matrix(1 0 0 1 248.7696 52.1914)" >2</text>
 	</g>
 
 	<g id="rect-wagon-2" class="disable-wagon">
 		<path fill-rule="evenodd" clip-rule="evenodd"  d="M349,31h-20c-2.761,0-5,2.239-5,5v20c0,2.761,2.239,5,5,5h20c2.761,0,5-2.239,5-5V36C354,33.239,351.761,31,349,31z"/>
-		<text transform="matrix(1 0 0 1 334.7696 52.1914)"  font-family="'Roboto-Regular'" font-size="16">3</text>
+		<text transform="matrix(1 0 0 1 334.7696 52.1914)">3</text>
 	</g>
 	<g id="rect-wagon-3" class="enable-wagon">
 		<path fill-rule="evenodd" clip-rule="evenodd"  d="M263,77h-20c-2.761,0-5,2.239-5,5v20c0,2.761,2.239,5,5,5h20c2.761,0,5-2.239,5-5V82C268,79.239,265.762,77,263,77z"/>
@@ -127,7 +124,7 @@
 	</g>
 	<g id="rect-wagon-4" class="enable-wagon">
 		<path fill-rule="evenodd" clip-rule="evenodd"  d="M283,161h-20c-2.761,0-5,2.239-5,5v20c0,2.761,2.239,5,5,5h20c2.761,0,5-2.239,5-5v-20C288,163.239,285.762,161,283,161z"/>
-		<text transform="matrix(1 0 0 1 268.7696 182.1914)" font-family="'Roboto-Regular'" font-size="16">5</text>
+		<text transform="matrix(1 0 0 1 268.7696 182.1914)">5</text>
 	</g>
 
 	<g id="Прямоугольник_x2C__скругл._углы_4_копия_4">

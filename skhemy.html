@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>MustGo</title>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900' rel='stylesheet'
+          type='text/css'>
+    <link href="css/nouislider.min.css" rel="stylesheet">
+    <style>
+        figure{margin: 50px}
+    </style>
+</head>
+<body>
+
+<h1 class="text-center">СХЕМИ</h1>
+<figure>
+    <h3>Плацткартный вагон</h3>
+    <object data="images/svg/vagon_platscart_edited.svg" type="image/svg+xml" id="platscart-vagon">
+        <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает даний формат.</p>
+    </object>
+</figure>
+<figure>
+    <h3>Поезд Хюндай Вагон №1 2 класс</h3>
+    <object data="images/svg/pass_vagon_2_klassa_otkr_tipa.svg" type="image/svg+xml" id="pass_vagon_2_klassa_otkr_tipa">
+        <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает даний формат.</p>
+    </object>
+</figure>
+<figure>
+    <h3>Пасажирский вагон 2 класса открытого типа с баром</h3>
+    <object data="images/svg/pass_vagon_2_klassa_otkr_tipa_s_barom.svg" type="image/svg+xml" id="pass_vagon_2_klassa_otkr_tipa_s_barom">
+        <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает даний формат.</p>
+    </object>
+</figure>
+<figure>
+    <h3>Пасажирский вагон 2 класса открытого типа с местами для сиденья для инвалида 60 мест</h3>
+    <object data="images/svg/pass_vagon_2_klassa_otkr_tipa_invalid.svg" type="image/svg+xml" id="pass_vagon_2_klassa_otkr_tipa_invalid">
+        <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает даний формат.</p>
+    </object>
+</figure>
+<figure>
+    <h3>Пасажирский вагон 2 класса открытого типа 68 мест</h3>
+    <object data="images/svg/pass_vagon_2_klassa_otkr_tipa_68.svg" type="image/svg+xml" id="pass_vagon_2_klassa_otkr_tipa_68">
+        <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает даний формат.</p>
+    </object>
+</figure>
+<figure>
+    <h3>Пасажирский купейный вагон для инвалидов</h3>
+    <object data="images/svg/pass_kupeinyi_dlia_invalidov.svg" type="image/svg+xml" id="pass_kupeinyi_dlia_invalidov">
+        <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает даний формат.</p>
+    </object>
+</figure>
+<figure>
+    <h3>Купе, перший клас 45 місць </h3>
+    <object data="images/svg/kupe_1_klass_45_mest.svg" type="image/svg+xml" id="kupe_1_klass_45_mest">
+        <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает даний формат.</p>
+    </object>
+</figure>
+<figure>
+    <h3>Купе, перший клас 42 місця</h3>
+    <object data="images/svg/kupe_1_lkass_42_mesta.svg" type="image/svg+xml" id="kupe_1_lkass_42_mesta">
+        <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает даний формат.</p>
+    </object>
+</figure>
+<figure>
+    <h3>Купе обычное вагон</h3>
+    <object data="images/svg/kupe_obychnoe_vagon.svg" type="image/svg+xml" id="kupe_obychnoe_vagon">
+        <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает даний формат.</p>
+    </object>
+</figure>
+
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script>
+    $(window).load(function () {
+        var svgobject = document.getElementById('platscart-vagon');
+            if ('contentDocument' in svgobject) {
+                var svgdom = svgobject.contentDocument;
+                var viewBox = svgdom.rootElement.getAttribute("viewBox").split(" ");
+                var aspectRatio = viewBox[1] / viewBox[2];
+                svgobject.height = parseInt(svgobject.offsetWidth / aspectRatio);
+                $(".enable-wagon", svgdom).click(function () {
+                    if ($(this).css('fill') === 'rgb(45, 188, 248)') {
+                        $(this).css({'fill': 'rgb(26, 136, 182)'});
+
+                    } else {
+                        $(this).css({'fill': 'rgb(45, 188, 248)'});
+                    }
+                });
+
+                $("g", svgdom).each(function() {
+                    if($(this).attr('class')==="disable-wagon") {
+                        $(this).css({'pointer-events': 'none'});}
+                });
+        };
+    });
+
+</script>
+</body>
+</html>
