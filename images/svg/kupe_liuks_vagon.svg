@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="kupe_liuks_vagon"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="740px" height="208px"
+	 viewBox="0 0 740 208" enable-background="new 0 0 740 208" xml:space="preserve">
+<g id="left-side-wagon-11">
+	<g id="rect-569">
+			<path fill="#898989" d="M60,10v5v2h2h170.985L233,193H62h-2v2v5H35v-5v-2h-2H12.981C8.58,193,5,189.411,5,185V25
+				c0-4.411,3.58-8,7.981-8H33h2v-2v-5H60 M62,8H33v7c-12.424,0-20.019,0-20.019,0C7.469,15,3,19.477,3,25v160
+				c0,5.523,4.469,10,9.981,10c0,0,7.571,0,20.019,0v7h29v-7h173l-0.016-180H62V8L62,8z"/>
+	</g>
+	<g id="rect-570"><path fill="#898989" d="M60,10v1H35v-1H60 M62,8H33v5h29V8L62,8z"/></g>
+	<g id="rect-571"><path fill="#898989" d="M60,199v1H35v-1H60 M62,197H33v5h29V197L62,197z"/></g>
+	<g id="rect-572"><rect x="42" y="3" fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" width="11" height="16"/></g>
+	<g id="rect-573"><polygon fill="#898989" points="49,16 49,0 46,0 46,16 42,16 42,17 43,17 43,18 44,18 44,19 45,19 45,20 46,20 46,21 47,21 47,22 48,22 48,21 49,21 49,20 50,20 50,19 51,19 51,18 52,18 52,17 53,17 53,16 			"/></g>
+	<g id="rect-574"><rect x="42" y="189" fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" width="11" height="16"/></g>
+	<g id="rect-575"><polygon fill="#898989" points="52,191 52,190 51,190 51,189 50,189 50,188 49,188 49,187 48,187 48,186 47,186 47,187 46,187	46,188 45,188 45,189 44,189 44,190 43,190 43,191 42,191 42,192 46,192 46,208 49,208 49,192 53,192 53,191 			"/></g>
+	<g id="rect-576">
+			<rect x="1" y="90" fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" width="6" height="34"/>
+			<path fill="#898989" d="M6,91v32H2V91H6 M8,89H0v36h8V89L8,89z"/>
+	</g>
+	<g id="rect-577">
+			<rect x="73" y="15" fill="#FFFFFF" width="2" height="179"/>
+			<polygon fill="#898989" points="75,15 73,15 73,194 75,194 75,15"/>
+	</g>
+	<g id="rect-578">
+			<rect x="71" y="94" fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" width="6" height="27"/>
+			<path fill="#898989" d="M76,95v25h-4V95H76 M78,93h-8v29h8V93L78,93z"/>
+	</g>
+	<g id="rect-579">
+			<rect x="231" y="128" fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" width="6" height="26"/>
+			<path fill="#898989" d="M236,129v24h-4v-24H236 M238,127h-8v28h8V127L238,127z"/>
+	</g>
+	<g id="rect-580">
+			<polygon fill="#898989" points="122.192,150.539 74.192,130.539 73.808,131.462 74.163,131.61 73.808,132.461 121.808,152.462 122.192,151.538 121.837,151.391"/>
+	</g>
+	<g id="rect-581">
+			<polygon fill="#898989" points="122.192,101.538 74.192,81.539 73.808,82.461 74.163,82.609 73.808,83.462 121.808,103.461 122.192,102.539 121.837,102.391 			"/>
+	</g>
+	<g id="rect-582">
+			<polygon fill="#898989" points="169.192,121.539 121.192,101.538 120.808,102.462 121.163,102.61 120.808,103.461 	168.808,123.462 169.192,122.538 168.837,122.39 			"/>
+	</g>
+	<g id="rect-583"><rect x="120" y="151" fill="#898989" width="2" height="43"/></g>
+	<g id="rect-584"><rect x="120" y="15" fill="#898989" width="2" height="88"/></g>
+	<g id="rect-585"><rect x="168" y="121" fill="#898989" width="67" height="2"/>
+		<text transform="matrix(1 0 0 1 78.7697 76.1916)" fill="#898989" font-family="'Roboto-Regular'" font-size="24">WC</text>
+	</g>
+	<g id="rect-586">
+			<path fill="#898989" d="M168.5,54h2.5v1.686c-0.631,0.95-1,2.088-1,3.314v1c0,3.314,2.686,6,6,6h1c3.314,0,6-2.686,6-6v-1
+				c0-1.226-0.369-2.364-1-3.314V54h2.5c0.276,0,0.5-0.224,0.5-0.5v-1c0-0.276-0.224-0.5-0.5-0.5h-16c-0.276,0-0.5,0.224-0.5,0.5v1
+				C168,53.776,168.224,54,168.5,54z M178,67h-3c-5.523,0-10,4.477-10,10v4h23v-4C188,71.477,183.523,67,178,67z"/>
+	</g>
+	<line fill="none" stroke="#898989" stroke-width="2" stroke-miterlimit="100" x1="234" y1="16.008" x2="483" y2="16.008"/>
+	<line fill="none" stroke="#898989" stroke-width="2" stroke-miterlimit="100" x1="234" y1="194.008" x2="483" y2="194.008"/>
+</g>
+<g id="right-side-wagon-11">
+	<g id="rect-587">
+			<path fill="#898989" d="M705.031,10v5v2h2h20.003c4.394,0,7.969,3.589,7.969,8v160c0,4.411-3.575,8-7.969,8h-20.003h-2v2v5
+				h-24.969v-5v-2h-2H617V17h61.062h2v-2v-5H705.031 M707.031,8h-28.969v7H615v180h63.062v7h28.969v-7c11.966,0,20.003,0,20.003,0
+				c5.506,0,9.969-4.477,9.969-10V25c0-5.523-4.464-10-9.969-10c0,0-7.61,0-20.003,0V8L707.031,8z"/>
+	</g>
+	<g id="rect-588">
+			<polygon fill="#898989" points="666,123 616,123 616,125 666,125 666,123 			"/>
+	</g>
+	<g id="rect-589">
+			<path fill="#898989" d="M705.031,199v1h-24.969v-1H705.031 M707.031,197h-28.969v5h28.969V197L707.031,197z"/>
+	</g>
+	<g id="rect-590">
+			<path fill="#898989" d="M705.031,10v1h-24.969v-1H705.031 M707.031,8h-28.969v5h28.969V8L707.031,8z"/>
+	</g>
+	<g id="rect-591">
+			<rect x="733" y="86" fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" width="6.001" height="34"/>
+			<path fill="#898989" d="M738,87v32h-4V87H738 M740,85h-8v36h8V85L740,85z"/>
+
+	</g>
+	<g id="rect-592">
+			<polygon fill="#FFFFFF" points="665.087,16 665,194 667,194 667,16 			"/>
+			<polygon fill="#898989" points="667,16 665.087,16 665,194 667,194 667,16 			"/>
+
+	</g>
+	<g id="rect-593">
+			<rect x="663" y="133" fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" width="6" height="34"/>
+			<path fill="#898989" d="M668,134v32h-4v-32H668 M670,132h-8v36h8V132L670,132z"/>
+	</g>
+	<g id="rect-594">
+			<rect x="613" y="133" fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" width="6" height="34"/>
+			<path fill="#898989" d="M618,134v32h-4v-32H618 M620,132h-8v36h8V132L620,132z"/>
+	</g>
+	<g id="WC_11">
+		<text transform="matrix(1 0 0 1 622.7693 78.1916)" fill="#898989" font-family="'Roboto-Regular'" font-size="24">WC</text>
+	</g>
+</g>
+<g id="stateroom_11">
+	<g id="rect-595" opacity="0.502">
+			<path fill="#898989" d="M271,16v106h-35V16H271 M272,15h-37v108h37V15L272,15z"/>
+	</g>
+	<g id="rect-596" opacity="0.502">
+			<path fill="#898989" d="M358,16v106h-37V16H358 M359,15h-39v108h39V15L359,15z"/>
+	</g>
+	<g id="rect-597">
+			<rect x="357" y="15" fill="#898989" width="2" height="108"/>
+	</g>
+	<g id="rect-598">
+			<rect x="235" y="121" fill-rule="evenodd" clip-rule="evenodd" fill="#898989" width="124" height="2"/>
+	</g>
+	<g id="rect-599">
+			<rect x="279" y="119" fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" width="34" height="6"/>
+			<path fill="#898989" d="M312,120v4h-32v-4H312 M314,118h-36v8h36V118L314,118z"/>
+	</g>
+	<g id="rect-wagon-212">
+			<path fill-rule="evenodd" clip-rule="evenodd" fill="#2DBCF8" d="M263,53h-20c-2.761,0-5,2.239-5,5v20c0,2.761,2.239,5,5,5h20c2.761,0,5-2.239,5-5V58C268,55.239,265.762,53,263,53z"/>
+			<text transform="matrix(1 0 0 1 248.7697 74.1916)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="16">1</text>
+	</g>
+	<g id="rect-wagon-213">
+			<path fill-rule="evenodd" clip-rule="evenodd" fill="#2DBCF8" d="M349,53h-20c-2.761,0-5,2.239-5,5v20c0,2.761,2.239,5,5,5h20c2.761,0,5-2.239,5-5V58C354,55.239,351.762,53,349,53z"/>
+			<text transform="matrix(1 0 0 1 334.7697 74.1916)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="16">2</text>
+	</g>
+</g>
+<g id="stateroom-11_1">
+	<g id="rect-600" opacity="0.502">
+			<path fill="#898989" d="M395,16v106h-35V16H395 M396,15h-37v108h37V15L396,15z"/>
+	</g>
+	<g id="rect-601" opacity="0.502">
+			<path fill="#898989" d="M482,16v106h-37V16H482 M483,15h-39v108h39V15L483,15z"/>
+	</g>
+	<g id="rect-602">
+			<rect x="481" y="15" fill="#898989" width="2" height="108"/>
+	</g>
+	<g id="rect-603">
+			<rect x="359" y="121" fill-rule="evenodd" clip-rule="evenodd" fill="#898989" width="124" height="2"/>
+	</g>
+	<g id="rect-604">
+			<rect x="403" y="119" fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" width="34" height="6"/>
+			<path fill="#898989" d="M436,120v4h-32v-4H436 M438,118h-36v8h36V118L438,118z"/>
+	</g>
+	<g id="rect-wagon-214">
+			<path fill-rule="evenodd" clip-rule="evenodd" fill="#1A88B6" d="M387,53h-20c-2.761,0-5,2.239-5,5v20c0,2.761,2.239,5,5,5h20c2.761,0,5-2.239,5-5V58C392,55.239,389.761,53,387,53z"/>
+			<text transform="matrix(1 0 0 1 367.7697 74.1916)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="16">17</text>
+	</g>
+	<g id="rect-wagon-215">
+			<path fill-rule="evenodd" clip-rule="evenodd" fill="#2DBCF8" d="M473,53h-20c-2.761,0-5,2.239-5,5v20c0,2.761,2.239,5,5,5h20	c2.761,0,5-2.239,5-5V58C478,55.239,475.762,53,473,53z"/>
+			<text transform="matrix(1 0 0 1 453.7693 74.1916)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="16">18</text>
+	</g>
+</g>
+</svg>

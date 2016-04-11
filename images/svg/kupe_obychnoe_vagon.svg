@@ -165,7 +165,7 @@
 			<rect x="403" y="119" fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" width="34" height="6"/>
 			<path fill="#898989" d="M436,120v4h-32v-4H436 M438,118h-36v8h36V118L438,118z"/>
 	</g>
-	<g id="Прямоугольник_x2C__скругл._углы_4_1_">
+	<g id="rect-wagon-206">
 			<path fill-rule="evenodd" clip-rule="evenodd" fill="#2DBCF8" d="M387,31h-20c-2.761,0-5,2.239-5,5v20c0,2.761,2.239,5,5,5h20c2.761,0,5-2.239,5-5V36C392,33.239,389.762,31,387,31z"/>
 			<text transform="matrix(1 0 0 1 367.7697 52.1916)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="16">18</text>
 	</g>
@@ -177,7 +177,7 @@
 			<path fill-rule="evenodd" clip-rule="evenodd" fill="#1A88B6" d="M387,77h-20c-2.761,0-5,2.239-5,5v20c0,2.761,2.239,5,5,5h20c2.761,0,5-2.239,5-5V82C392,79.239,389.762,77,387,77z"/>
 			<text transform="matrix(1 0 0 1 367.7697 98.1916)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="16">17</text>
 	</g>
-	<g id="rect-wagon-205">
+	<g id="rect-wagon-207">
 			<path fill-rule="evenodd" clip-rule="evenodd" fill="#2DBCF8" d="M473,77h-20c-2.761,0-5,2.239-5,5v20c0,2.761,2.239,5,5,5h20c2.761,0,5-2.239,5-5V82C478,79.239,475.762,77,473,77z"/>
 			<text transform="matrix(1 0 0 1 453.7693 98.1916)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="16">19</text>
 	</g>
