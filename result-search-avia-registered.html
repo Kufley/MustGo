@@ -449,6 +449,46 @@
         </div>
     </div>
 </div>
+<div class="slide-panel display-flex" id="slide-panel">
+    <a href="#" id="left-side-panel">
+    <div class="slide-panel-header">
+         <div class="slide-panel-text text-uppercase">Избранные варианты <span>(3)</span></div>
+    </div>
+    </a>
+    <div class="slide-panel-right">
+    <div class="clear-panel">
+        <a href="#" class="clear-list">Очистить</a>
+        <a href="#" id="close-slide-panel"><img src="images/close.png" alt="close" class="close"></a>
+    </div>
+    <div class="check-flight">
+        <div>
+        PS58 N 31MAR ODS  KBP  1655 1755 735 0100 E
+        __________________________SUB TOTAL 1927 UAH
+        </div>
+        <div>
+        PS58 Z 31MAR ODS  KBP  1655 1755 735 0100 B
+        __________________________SUB TOTAL 2264 UAH
+        </div>
+        <div>
+        PS56 Z 31MAR ODS  KBP  0700 0800 737 0100 B
+        __________________________SUB TOTAL 2335 UAH
+        </div>
+        <div>
+        PS58 N 31MAR ODS  KBP  1655 1755 735 0100 E
+        __________________________SUB TOTAL 1927 UAH
+        </div>
+        <div>
+        PS58 Z 31MAR ODS  KBP  1655 1755 735 0100 B
+        __________________________SUB TOTAL 2264 UAH
+        </div>
+        <div>
+        PS56 Z 31MAR ODS  KBP  0700 0800 737 0100 B
+        __________________________SUB TOTAL 2335 UAH
+        </div>
+
+</div>
+    </div>
+</div>
 
 <div class="container content-result-search">
     <div class="col-lg-2 filter-wrap">
@@ -1870,12 +1910,22 @@
                                name="currency" value="UAH">
                         <a href="#" class="input-arrow"></a>
                     </div>
-                    <div class="form-group">
+                    <div class="text-center">
                         <label for="email-follow-price">Ваш e-mail</label>
-                        <input type="text" class="form-control"
+                        <input type="text" class="form-control width-100"
                                id="email-follow-price"
-                               name="email-follow-price" value="UAH">
+                               name="email-follow-price">
                     </div>
+                    <div class="margin-top-25">
+                        <input type="checkbox" value="confirmation-email"  name="confirmation-email" id="confirmation-email">
+                        <label for="confirmation-email" class="confirmation-email"><span></span>Высылать на электронную почту последние новости, туристические
+                            подсказки и предложения от Skyscanner</label>
+                    </div>
+                    <button type="submit" class="btn btn-notification">Создать оповещение</button>
+
+                    <div class="text-center modal-notification">Регистрируясь,
+                        вы принимаете <span class="confirmation-email">Условия предоставления услуг</span>
+                        и <span class="confirmation-email">Политику конфиденциальности</span> компании Skyscanner</div>
                 </form>
             </div>
 

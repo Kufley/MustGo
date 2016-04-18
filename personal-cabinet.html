@@ -1,0 +1,389 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>MustGo</title>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500' rel='stylesheet' type='text/css'>
+    <link href="css/nouislider.min.css" rel="stylesheet">
+</head>
+<div class="top-page-personal-cabinet">
+    <nav class="navbar">
+        <div class="container clearfix">
+            <div class="navbar-header pull-left">
+                <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo"></a>
+            </div>
+            <div class="pull-right menu-right">
+                <div class="user-menu">
+                    <span class="user-name">Здравствуйте, Konstantin Belocerkovskiy</span>
+                    <span class="user-name bold">Личный кабинет</span>
+                    <a class="dropdown-arrow collapsed" data-toggle="collapse" data-parent="#user-menu"
+                       href="#user-menu">Русский, <b>USD</b></a>
+                    <div class="pull-right sign-in"><a href="#">Вход</a></div>
+                    <!--<div class="pull-right log-out"><a href="#">Виход</a></div>-->
+                </div>
+                <div id="user-menu" class="collapse">
+                    <div class="user-menu-list">
+                        <ul class="list-unstyled">
+                            <li>
+                                <input type="radio" id="lang-ua" name="radio-lang" class="radio-box"  checked>
+                                <label for="lang-ua"><span><span></span></span>українська</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="lang-rus" name="radio-lang" class="radio-box"  checked>
+                                <label for="lang-rus"><span><span></span></span>русский</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="lang-en" name="radio-lang" class="radio-box"  checked>
+                                <label for="lang-en"><span><span></span></span>еnglish</label>
+                            </li>
+                        </ul>
+                        <ul class="list-unstyled">
+                            <li>
+                                <input type="radio" id="currency-usd" name="radio-currency" class="radio-box" checked>
+                                <label for="currency-usd"><span><span></span></span><b>USD</b> доллар США</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="currency-eur" name="radio-currency" class="radio-box" checked>
+                                <label for="currency-eur"><span><span></span></span><b>Eur</b> евро</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="currency-uan" name="radio-currency" class="radio-box" checked>
+                                <label for="currency-uan"><span><span></span></span><b>UAH</b> украинская гривна</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="currency-rub" name="radio-currency" class="radio-box" checked>
+                                <label for="currency-rub"><span><span></span></span><b>Rub</b> российский рубль</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div class="container content-result-search">
+    <ul class="list-unstyled list-personal-cabinet">
+        <li><a href="#">Забронированные услуги</a></li>
+        <li><a href="#">Выкупленные заказы</a></li>
+        <li><a href="#">Список пассажиров</a></li>
+        <li><a href="#">Календарь поездок</a></li>
+        <li><a href="#">Платежи и отчетность</a></li>
+        <li><a href="#">Настройки аккаунта</a></li>
+    </ul>
+
+    <div class="col-lg-12 tabs-result-search tabs-personal-cabinet">
+        <div>
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="active"><a href="#cabinet-avia-ticket" aria-controls="search-go-back" role="tab"
+                                      data-toggle="tab">Авабилеты<span>3</span></a></li>
+                <li><a href="#cabinet-train-ticket" aria-controls="search-there" role="tab"
+                       data-toggle="tab">Железнодорожные билеты<span>12</span></a></li>
+                <li><a href="#cabinet-insurance" aria-controls="search-back" role="tab"
+                       data-toggle="tab">Страховки<span>14</span></a></li>
+            </ul>
+            <div class="sorting clearfix">
+                <a href="#" class="arrow-sort-up price-sort"><span>Сортировать по дате</span></a>
+                <div class="filter-personal-cabinet pull-left">
+                <a href="#">Актуальные</a>
+                <a href="#" class="border-dotted">История</a>
+                </div>
+                <div class="search-pass pull-right position-relative">
+                    <label for="search-pass" class="sr-only">:</label>
+                    <input type="text" class=""
+                           id="search-pass" name="search-pass" placeholder="Поиск по пассажирам">
+                    <div href="#" class="input-search-pass"></div>
+                </div>
+            </div>
+
+
+
+            <!-- Tab panes -->
+            <div class="tab-content tab-content-result-search">
+                <div class="tab-pane active" id="cabinet-avia-ticket">
+                    <table class="table table-bordered table-striped table-order">
+                        <thead>
+                        <tr>
+                            <th>№ заказа</th>
+                            <th>Маршрут</th>
+                            <th>Дата и время вылета</th>
+                            <th>Дата и время прилёта</th>
+                            <th>Пассажиры</th>
+                            <th>Статус заказа</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>58300</td>
+                            <td>Нью-Йорк—Амстердам</td>
+                            <td>14.04.2016<p>11:05</p></td>
+                            <td>14.04.2016<p>22:55</p></td>
+                            <td>1 билет</td>
+                            <td>Оплачен</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" class="print-ticket">
+                                <ul class="list-unstyled display-flex-space-between">
+                                    <li><a href="#" class="print-receipt">Печать</a></li>
+                                    <li><a href="#" class="send-mail-receipt">Отправить</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10467</td>
+                            <td>Франкфурт-на-Майне—Варшава</td>
+                            <td>14.04.2016<p>11:05</p></td>
+                            <td>14.04.2016<p>22:55</p></td>
+                            <td>1 билет</td>
+                            <td>Оплачен</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" class="print-ticket">
+                                <ul class="list-unstyled display-flex-space-between">
+                                    <li><a href="#" class="print-receipt">Печать</a></li>
+                                    <li><a href="#" class="send-mail-receipt">Отправить</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="tab-pane" id="cabinet-train-ticket">...</div>
+                <div class="tab-pane" id="cabinet-insurance">...</div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <ul class="">
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Путешествия</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 hidden-md hidden-sm hidden-xs">
+                    <ul class="">
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">Договор оферты</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <ul class="address">
+                        <li id="phone"><a href="#">+38 044 3590569</a></li>
+                        <li><a href="#"> +7 495 7397922</a></li>
+                        <li id="mail"><a href="#">mustgoaero@gmail.com</a></li>
+                        <li id="skype"><a href="#">mustgoaero</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 hidden-lg">
+                    <ul class="">
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">Договор оферты</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <img src="images/logo.png">
+                    <p>Мы в соцсетях:</p>
+                    <ul class="social">
+                        <li><a href="#">
+                            <div id="vk"></div>
+                        </a></li>
+                        <li><a href="#">
+                            <div id="facebook"></div>
+                        </a></li>
+                        <li><a href="#">
+                            <div id="twit"></div>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="support_payments">
+            <img src="images/payments/qiwi-logo.png">
+            <img src="images/payments/yandex.png">
+            <img src="images/payments/wmlogo_vector_blue.png">
+            <img src="images/payments/okpay_logo.png">
+            <img src="images/payments/Visa_Inc.svg">
+            <img src="images/payments/logo-mastercard.png">
+            <img src="images/payments/300px-Libert.svg">
+            <img src="images/payments/logo-perfect-money.png">
+            <img src="images/payments/liqpay_logo.png">
+            <img src="images/payments/privat24.png">
+            <img src="images/payments/RBKmoney.png">
+            <img src="images/payments/paypallogo.png">
+        </div>
+    </div>
+</footer>
+<div class="modal fade" id="follow-price" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-follow-price" role="document">
+        <div class="modal-content ">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="images/close.png" alt="close"></button>
+
+            </div>
+            <div class="modal-body">
+                <div class="panel-text-light text-uppercase text-center">Создать новое оповещение о ценах</div>
+                <div class="delete-pass  text-center">Мы будем регулярно проверять цены и вышлемвам уведомление, если они изменятся</div>
+                <div class="info-aeroport delete-pass text-center">
+                    <div>Из аэропорта<span class="bold-text">Киев (Жуляны)</span> (IEV) в аэропорт <span class="bold-text">Стамбул (IST)</span></div>
+                    <div class="bold-text">5 мая-13 мая</div>
+                    <div>Эконом-класс</div>
+                </div>
+                <form class="form-inline form-search form-follow-price form-order">
+
+                    <div class="form-group label-follow-price buyer">
+                        Высылать уведомления, когда
+                        цена опустится ниже, чем
+                    </div>
+                    <div class="form-group">
+                        <label for="price" class="sr-only"></label>
+                        <input type="text" class="form-control text-center number-passport-order" id="price" name="price" value="15 000">
+                    </div>
+                    <div class="form-group">
+                        <label for="currency" class="sr-only"></label>
+                        <input type="text" class="form-control text-center number-passport-order"
+                               id="currency"
+                               name="currency" value="UAH">
+                        <a href="#" class="input-arrow"></a>
+                    </div>
+                    <div class="text-center">
+                        <label for="email-follow-price">Ваш e-mail</label>
+                        <input type="text" class="form-control width-100"
+                               id="email-follow-price"
+                               name="email-follow-price">
+                    </div>
+                    <div class="margin-top-25">
+                        <input type="checkbox" value="confirmation-email"  name="confirmation-email" id="confirmation-email">
+                        <label for="confirmation-email" class="confirmation-email"><span></span>Высылать на электронную почту последние новости, туристические
+                            подсказки и предложения от Skyscanner</label>
+                    </div>
+                    <button type="submit" class="btn btn-notification">Создать оповещение</button>
+
+                    <div class="text-center modal-notification">Регистрируясь,
+                        вы принимаете <span class="confirmation-email">Условия предоставления услуг</span>
+                        и <span class="confirmation-email">Политику конфиденциальности</span> компании Skyscanner</div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/nouislider.min.js"></script>
+<script src="js/wNumb.js"></script>
+<script>
+    function getSliderVal(value) {
+        var i = 0,
+                time = [];
+        for (i; i < value.length; i++) {
+            var h = value[i] / 60 ^ 0;
+            if (h) {
+                var m = value[i] % 60;
+                if (m < 10) m = '0' + m;
+                time[i] = h + ':' + m;
+            } else {
+                if (value[i] < 10) {
+                    time[i] = '0:0' + parseInt(value[i]);
+                } else {
+                    time[i] = '0:' + parseInt(value[i]);
+                }
+            }
+        }
+        return time;
+    }
+    var rangeSliderarrival = document.getElementById('slider-range-arrival');
+
+    noUiSlider.create(rangeSliderarrival, {
+        step: 15,
+        margin: 50,
+        connect: true,
+        behaviour: 'tap',
+        start: [0, 1440],
+        tooltips: [wNumb({decimals: 2, mark: ':'}), wNumb({decimals: 2, mark: ':'})],
+        range: {
+            'min': [0],
+            'max': [1440]
+        }
+    });
+
+    var rangeSlider = document.getElementById('slider-range-sortie');
+
+    noUiSlider.create(rangeSlider, {
+        step: 15,
+        margin: 50,
+        connect: true,
+        behaviour: 'tap',
+        start: [0, 1440],
+        tooltips: [wNumb({decimals: 2, mark: ':'}), wNumb({decimals: 2, mark: ':'})],
+        range: {
+            'min': [0],
+            'max': [1440]
+        }
+    });
+
+    rangeSlider.noUiSlider.on('change', function () {
+        var value = rangeSlider.noUiSlider.get(),
+                time = getSliderVal(value);
+        $('#slider-range-sortie .noUi-handle-lower .noUi-tooltip').text(time[0]);
+        $('#slider-range-sortie .noUi-handle-upper .noUi-tooltip').text(time[1]);
+    });
+
+    rangeSlider.noUiSlider.on('start', function () {
+        var value = rangeSlider.noUiSlider.get(),
+                time = getSliderVal(value);
+        $('#slider-range-sortie .noUi-handle-lower .noUi-tooltip').text(time[0]);
+        $('#slider-range-sortie .noUi-handle-upper .noUi-tooltip').text(time[1]);
+    });
+
+    rangeSlider.noUiSlider.on('update', function () {
+        var value = rangeSlider.noUiSlider.get(),
+                time = getSliderVal(value);
+        $('#slider-range-sortie .noUi-handle-lower .noUi-tooltip').text(time[0]);
+        $('#slider-range-sortie .noUi-handle-upper .noUi-tooltip').text(time[1]);
+    });
+
+    rangeSliderarrival.noUiSlider.on('change', function () {
+        var value = rangeSliderarrival.noUiSlider.get(),
+                time = getSliderVal(value);
+        $('#slider-range-arrival .noUi-handle-lower .noUi-tooltip').text(time[0]);
+        $('#slider-range-arrival .noUi-handle-upper .noUi-tooltip').text(time[1]);
+    });
+
+    rangeSliderarrival.noUiSlider.on('start', function () {
+        var value = rangeSliderarrival.noUiSlider.get(),
+                time = getSliderVal(value);
+        $('#slider-range-arrival .noUi-handle-lower .noUi-tooltip').text(time[0]);
+        $('#slider-range-arrival .noUi-handle-upper .noUi-tooltip').text(time[1]);
+    });
+
+    rangeSliderarrival.noUiSlider.on('update', function () {
+        var value = rangeSliderarrival.noUiSlider.get(),
+                time = getSliderVal(value);
+        $('#slider-range-arrival .noUi-handle-lower .noUi-tooltip').text(time[0]);
+        $('#slider-range-arrival .noUi-handle-upper .noUi-tooltip').text(time[1]);
+    });
+
+
+</script>
+
+</body>
+</html>

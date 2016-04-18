@@ -24,8 +24,14 @@ $(window).load(function () {
     };
 });
 
+/*Hide block*/
 
-
+//$(document).click(function(e) {
+//    if ($(e.target).parents().filter('#slide-panel:visible').length != 1)
+//        $('.slide-panel').css({"margin-right":"-400px"});
+//        //$('.slide-panel-right').css({"height":"278px"});
+//
+//});
 
 $(document).ready(function () {
 
@@ -252,11 +258,21 @@ $(document).ready(function () {
     $('.close-book').click(function(){
         $('#info-booking').hide();
     });
+
+    $('#left-side-panel').click(function(){
+        $('.slide-panel-right').toggle().css({"height":"100%"});
+        //$('.slide-panel-right').css({"height":"100%"});
+    });
+
+    $('#close-slide-panel').click(function(){
+        $('.slide-panel-right').hide().css({"height":"278px"});;
+    });
     /*Sort*/
 
     $(".price-sort, .time-sort").click(function () {
         $(this).toggleClass('arrow-sort-down');
     });
+
     /*Validation*/
 
     //$("input").blur(function () {
