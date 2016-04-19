@@ -23,8 +23,8 @@
                 <div class="user-menu">
                     <a class="dropdown-arrow collapsed" data-toggle="collapse" data-parent="#user-menu"
                        href="#user-menu">Русский, <b>USD</b></a>
-                    <div class="pull-right sign-in"><a href="#">Вход</a></div>
-                    <!--<div class="pull-right log-out"><a href="#">Виход</a></div>-->
+                    <div class="sign-in"><a href="#">Вход</a></div>
+                    <!--<div class=" log-out"><a href="#">Виход</a></div>-->
                 </div>
                 <div id="user-menu" class="collapse">
                     <div class="user-menu-list">
@@ -297,103 +297,6 @@
 
 <script src="js/jquery-1.10.2.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/script.js"></script>
-<script src="js/nouislider.min.js"></script>
-<script src="js/wNumb.js"></script>
-<script>
-    function getSliderVal(value) {
-        var i = 0,
-                time = [];
-        for (i; i < value.length; i++) {
-            var h = value[i] / 60 ^ 0;
-            if (h) {
-                var m = value[i] % 60;
-                if (m < 10) m = '0' + m;
-                time[i] = h + ':' + m;
-            } else {
-                if (value[i] < 10) {
-                    time[i] = '0:0' + parseInt(value[i]);
-                } else {
-                    time[i] = '0:' + parseInt(value[i]);
-                }
-            }
-        }
-        return time;
-    }
-    var rangeSliderarrival = document.getElementById('slider-range-arrival');
-
-    noUiSlider.create(rangeSliderarrival, {
-        step: 15,
-        margin: 50,
-        connect: true,
-        behaviour: 'tap',
-        start: [0, 1440],
-        tooltips: [wNumb({decimals: 2, mark: ':'}), wNumb({decimals: 2, mark: ':'})],
-        range: {
-            'min': [0],
-            'max': [1440]
-        }
-    });
-
-    var rangeSlider = document.getElementById('slider-range-sortie');
-
-    noUiSlider.create(rangeSlider, {
-        step: 15,
-        margin: 50,
-        connect: true,
-        behaviour: 'tap',
-        start: [0, 1440],
-        tooltips: [wNumb({decimals: 2, mark: ':'}), wNumb({decimals: 2, mark: ':'})],
-        range: {
-            'min': [0],
-            'max': [1440]
-        }
-    });
-
-    rangeSlider.noUiSlider.on('change', function () {
-        var value = rangeSlider.noUiSlider.get(),
-                time = getSliderVal(value);
-        $('#slider-range-sortie .noUi-handle-lower .noUi-tooltip').text(time[0]);
-        $('#slider-range-sortie .noUi-handle-upper .noUi-tooltip').text(time[1]);
-    });
-
-    rangeSlider.noUiSlider.on('start', function () {
-        var value = rangeSlider.noUiSlider.get(),
-                time = getSliderVal(value);
-        $('#slider-range-sortie .noUi-handle-lower .noUi-tooltip').text(time[0]);
-        $('#slider-range-sortie .noUi-handle-upper .noUi-tooltip').text(time[1]);
-    });
-
-    rangeSlider.noUiSlider.on('update', function () {
-        var value = rangeSlider.noUiSlider.get(),
-                time = getSliderVal(value);
-        $('#slider-range-sortie .noUi-handle-lower .noUi-tooltip').text(time[0]);
-        $('#slider-range-sortie .noUi-handle-upper .noUi-tooltip').text(time[1]);
-    });
-
-    rangeSliderarrival.noUiSlider.on('change', function () {
-        var value = rangeSliderarrival.noUiSlider.get(),
-                time = getSliderVal(value);
-        $('#slider-range-arrival .noUi-handle-lower .noUi-tooltip').text(time[0]);
-        $('#slider-range-arrival .noUi-handle-upper .noUi-tooltip').text(time[1]);
-    });
-
-    rangeSliderarrival.noUiSlider.on('start', function () {
-        var value = rangeSliderarrival.noUiSlider.get(),
-                time = getSliderVal(value);
-        $('#slider-range-arrival .noUi-handle-lower .noUi-tooltip').text(time[0]);
-        $('#slider-range-arrival .noUi-handle-upper .noUi-tooltip').text(time[1]);
-    });
-
-    rangeSliderarrival.noUiSlider.on('update', function () {
-        var value = rangeSliderarrival.noUiSlider.get(),
-                time = getSliderVal(value);
-        $('#slider-range-arrival .noUi-handle-lower .noUi-tooltip').text(time[0]);
-        $('#slider-range-arrival .noUi-handle-upper .noUi-tooltip').text(time[1]);
-    });
-
-
-</script>
 
 </body>
 </html>
