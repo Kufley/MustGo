@@ -12,6 +12,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500' rel='stylesheet' type='text/css'>
     <link href="css/nouislider.min.css" rel="stylesheet">
 </head>
+<body>
 <div class="top-page-personal-cabinet">
     <nav class="navbar">
         <div class="container clearfix">
@@ -31,15 +32,15 @@
                     <div class="user-menu-list">
                         <ul class="list-unstyled">
                             <li>
-                                <input type="radio" id="lang-ua" name="radio-lang" class="radio-box"  checked>
+                                <input type="radio" id="lang-ua" name="radio-lang" class="radio-box" checked>
                                 <label for="lang-ua"><span><span></span></span>українська</label>
                             </li>
                             <li>
-                                <input type="radio" id="lang-rus" name="radio-lang" class="radio-box"  checked>
+                                <input type="radio" id="lang-rus" name="radio-lang" class="radio-box" checked>
                                 <label for="lang-rus"><span><span></span></span>русский</label>
                             </li>
                             <li>
-                                <input type="radio" id="lang-en" name="radio-lang" class="radio-box"  checked>
+                                <input type="radio" id="lang-en" name="radio-lang" class="radio-box" checked>
                                 <label for="lang-en"><span><span></span></span>еnglish</label>
                             </li>
                         </ul>
@@ -69,7 +70,7 @@
     </nav>
 </div>
 
-<div class="container content-result-search">
+<div class="container content-result-search margin-bottom-350">
     <ul class="list-unstyled list-personal-cabinet">
         <li><a href="#">Забронированные услуги</a></li>
         <li><a href="personal-cabinet.html">Выкупленные заказы</a></li>
@@ -79,98 +80,138 @@
         <li><a href="#">Настройки аккаунта</a></li>
     </ul>
 
-    <div class="col-lg-12 tabs-result-search tabs-personal-cabinet">
-        <div>
-            <!-- Nav tabs -->
-            <ul class="nav nav-tabs" role="tablist">
-                <li class="active"><a href="#cabinet-avia-ticket" aria-controls="search-go-back" role="tab"
-                                      data-toggle="tab">Авабилеты<span>3</span></a></li>
-                <li><a href="#cabinet-train-ticket" aria-controls="search-there" role="tab"
-                       data-toggle="tab">Железнодорожные билеты<span>12</span></a></li>
-                <li><a href="#cabinet-ins" aria-controls="search-back" role="tab"
-                       data-toggle="tab">Страховки<span>14</span></a></li>
-            </ul>
-            <div class="sorting clearfix">
-                <div class="filter-personal-cabinet pull-left">
-                <a href="#">Актуальные</a>
-                <a href="#" class="border-dotted">История</a>
-                </div>
-                <div class="search-pass pull-right position-relative">
-                    <label for="search-pass" class="sr-only">:</label>
-                    <input type="text" class=""
-                           id="search-pass" name="search-pass" placeholder="Поиск по пассажирам">
-                    <div href="#" class="input-search-pass"></div>
-                </div>
-            </div>
-
-
-            <!-- Tab panes -->
-            <div class="tab-content tab-content-result-search">
-                <div class="tab-pane active" id="cabinet-avia-ticket">
-                    <table class="table table-bordered table-striped table-order">
-                        <thead>
-                        <tr>
-                            <th>№ заказа</th>
-                            <th>Маршрут</th>
-                            <th><a href="#" class="arrow-sort-date"><span>Дата и время вылета</span></a></th>
-                            <th><a href="#" class="arrow-sort-date"><span>Дата и время прилёта</span></a></th>
-                            <th>Пассажиры</th>
-                            <th>Статус заказа</th>
-                            <th>Действия</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>58300</td>
-                            <td>Нью-Йорк—Амстердам</td>
-                            <td>14.04.2016<p>11:05</p></td>
-                            <td>14.04.2016<p>22:55</p></td>
-                            <td>1 билет</td>
-                            <td>Оплачен</td>
-                            <td>
-                                <ul class="list-unstyled print-ticket">
-                                    <li><a href="#" class="print-receipt">Печать</a></li>
-                                    <li><a href="#" class="send-mail-receipt">Отправить</a></li>
-                                </ul>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>10467</td>
-                            <td>Франкфурт-на-Майне—Варшава</td>
-                            <td>14.04.2016<p>11:05</p></td>
-                            <td>14.04.2016<p>22:55</p></td>
-                            <td>1 билет</td>
-                            <td>Оплачен</td>
-                            <td>
-                                <ul class="list-unstyled print-ticket">
-                                    <li><a href="#" class="print-receipt">Печать</a></li>
-                                    <li><a href="#" class="send-mail-receipt">Отправить</a></li>
-                                </ul>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>10467</td>
-                            <td>Франкфурт-на-Майне—Варшава</td>
-                            <td>14.04.2016<p>11:05</p></td>
-                            <td>14.04.2016<p>22:55</p></td>
-                            <td>1 билет</td>
-                            <td>Оплачен</td>
-                            <td>
-                                <ul class="list-unstyled print-ticket">
-                                    <li><a href="#" class="print-receipt">Печать</a></li>
-                                    <li><a href="#" class="send-mail-receipt">Отправить</a></li>
-                                </ul>
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
-
-                </div>
-                <div class="tab-pane" id="cabinet-train-ticket">...</div>
-                <div class="tab-pane" id="cabinet-ins">...</div>
-            </div>
-
+    <div class="sorting clearfix">
+        <div class="pull-left add-pass">
+            <a href="#"><img src="images/icon/arrow-left-pass.png"><span>Назад к списку пассажиров</span></a>
         </div>
+        <div class="pull-right add-pass">
+            <a href="#"><span>Сохранить</span></a>
+        </div>
+    </div>
+
+    <form class="form-inline form-search form-order">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="form-group label-pass">
+                    <div class="panel-text-bold">ФИО кириллицей</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="name-order-cyrilic">Имя:</label>
+                    <input type="text" class="form-control form-control-order text-uppercase"
+                           id="name-order-cyrilic"
+                           name="name-order-cyrilic" value="Konstantin">
+                </div>
+                <div class="form-group">
+                    <label for="middlename-order-cyrilic">Отчество:</label>
+                    <input type="text" class="form-control form-control-order text-uppercase"
+                           id="middlename-order-cyrilic"
+                           name="middlename-order-cyrilic" value="gennadievich">
+                </div>
+                <div class="form-group">
+                    <label for="surname-order-cyrilic">Фамилия:</label>
+                    <input type="text" class="form-control form-control-order text-uppercase"
+                           id="surname-order-cyrilic"
+                           name="surname-order-cyrilic" value="belocerkovskiy">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="form-group label-pass">
+                    <div class="panel-text-bold">ФИО латиницей</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="surname-order-lat">Фамилия:</label>
+                    <input type="text" class="form-control form-control-order text-uppercase"
+                           id="surname-order-lat"
+                           name="surname-order-lat" value="Константин">
+                </div>
+                <div class="form-group">
+                    <label for="name-order-lat">Имя:</label>
+                    <input type="text" class="form-control form-control-order text-uppercase"
+                           id="name-order-lat"
+                           name="name-order-lat" value="Геннадьевич">
+                </div>
+                <div class="form-group">
+                    <label for="middlename-order-lat">Отчество:</label>
+                    <input type="text" class="form-control form-control-order text-uppercase"
+                           id="middlename-order-lat"
+                           name="middlename-order-lat" value="Белоцерковский">
+                </div>
+                </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="form-group label-pass">
+                    <div class="panel-text-bold">E-mail</div>
+                </div>
+                <div class="form-group">
+                    <label for="email-order">E-mail:</label>
+                    <input type="text" class="form-control form-control-order"
+                           id="email-order" value="belocerkovskiy@gmail.com"
+                           name="email-order">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="form-group label-pass">
+                    <div class="panel-text-bold">Телефон</div>
+                </div>
+                <div class="form-group">
+                    <label for="number-phone">Номер телефона:</label>
+                    <input type="text" class="form-control number-phone number-phone-pass" value="+380673467122" id="number-phone" name="number-phone">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="form-group label-pass">
+                    <div class="panel-text-bold">Документ</div>
+                </div>
+                <div class="form-group">
+                    <label for="type-document-order">Тип документа:</label>
+                    <input type="text" class="form-control form-control-order"
+                           id="type-document-order" value="Загранпаспорт"
+                           name="type-document-order">
+                    <a href="#" class="input-arrow"></a>
+                </div>
+                <div class="form-group">
+                    <label for="series-passport-order">Серия:</label>
+                    <input type="text" class="form-control text-center series-passport-order"
+                           id="series-passport-order"
+                           name="series-passport-order">
+                </div>
+                <div class="form-group">
+                    <label for="number-passport-order">Номер:</label>
+                    <input type="text" class="form-control text-center number-passport-order"
+                           id="number-passport-order"
+                           name="number-passport-order">
+                </div>
+                <div class="form-group expiration-date-arrow">
+                    <label for="expiration-date-mm">Срок действия документа:</label>
+                    <div class="wrap-date-birth-order">
+                        <input type="text" class="form-control expiration-date "
+                               id="expiration-date-mm"
+                               name="expiration-date-mm" placeholder="ММ">
+                        <a href="#" class="input-arrow"></a>
+                    </div>
+                    <div class="wrap-date-birth-order">
+                        <label for="expiration-date-yy" class="sr-only">Срок действия документа:</label>
+                        <input type="text" class="form-control expiration-date margin-left-10"
+                               id="expiration-date-yy"
+                               name="expiration-date-yy" placeholder="ГГ">
+                        <a href="#" class="input-arrow"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="pull-left add-pass">
+        <a href="#"><img src="images/icon/plus-green.png"><span>Добавить новый документ</span></a>
     </div>
 </div>
 
@@ -244,14 +285,18 @@
     <div class="modal-dialog modal-follow-price" role="document">
         <div class="modal-content ">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="images/close.png" alt="close"></button>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="images/close.png"
+                                                                                                 alt="close"></button>
 
             </div>
             <div class="modal-body">
                 <div class="panel-text-light text-uppercase text-center">Создать новое оповещение о ценах</div>
-                <div class="delete-pass  text-center">Мы будем регулярно проверять цены и вышлемвам уведомление, если они изменятся</div>
+                <div class="delete-pass  text-center">Мы будем регулярно проверять цены и вышлемвам уведомление, если
+                    они изменятся
+                </div>
                 <div class="info-aeroport delete-pass text-center">
-                    <div>Из аэропорта<span class="bold-text">Киев (Жуляны)</span> (IEV) в аэропорт <span class="bold-text">Стамбул (IST)</span></div>
+                    <div>Из аэропорта<span class="bold-text">Киев (Жуляны)</span> (IEV) в аэропорт <span
+                            class="bold-text">Стамбул (IST)</span></div>
                     <div class="bold-text">5 мая-13 мая</div>
                     <div>Эконом-класс</div>
                 </div>
@@ -263,7 +308,8 @@
                     </div>
                     <div class="form-group">
                         <label for="price" class="sr-only"></label>
-                        <input type="text" class="form-control text-center number-passport-order" id="price" name="price" value="15 000">
+                        <input type="text" class="form-control text-center number-passport-order" id="price"
+                               name="price" value="15 000">
                     </div>
                     <div class="form-group">
                         <label for="currency" class="sr-only"></label>
@@ -279,15 +325,18 @@
                                name="email-follow-price">
                     </div>
                     <div class="margin-top-25">
-                        <input type="checkbox" value="confirmation-email"  name="confirmation-email" id="confirmation-email">
-                        <label for="confirmation-email" class="confirmation-email"><span></span>Высылать на электронную почту последние новости, туристические
+                        <input type="checkbox" value="confirmation-email" name="confirmation-email"
+                               id="confirmation-email">
+                        <label for="confirmation-email" class="confirmation-email"><span></span>Высылать на электронную
+                            почту последние новости, туристические
                             подсказки и предложения от Skyscanner</label>
                     </div>
                     <button type="submit" class="btn btn-notification">Создать оповещение</button>
 
                     <div class="text-center modal-notification">Регистрируясь,
                         вы принимаете <span class="confirmation-email">Условия предоставления услуг</span>
-                        и <span class="confirmation-email">Политику конфиденциальности</span> компании Skyscanner</div>
+                        и <span class="confirmation-email">Политику конфиденциальности</span> компании Skyscanner
+                    </div>
                 </form>
             </div>
 

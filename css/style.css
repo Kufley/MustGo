@@ -121,6 +121,7 @@ footer .col-sm-3 {padding-right: 55px;}
 .margin-bottom-20{margin-bottom: 20px}
 .margin-bottom-75{margin-bottom: 75px}
 .margin-bottom-50{margin-bottom: 50px}
+.margin-bottom-350{margin-bottom: 350px}
 
 
 .support_payments{padding: 30px 0; margin: 0 auto; text-align: center;}
@@ -160,6 +161,12 @@ footer .col-sm-3 {padding-right: 55px;}
 .container.main-content .nav-tabs.nav.nav-menu>li> a{ color: #fff;font-size: 18px;font-weight: 400;line-height: 30px;}
 .nav>li>.avia-tickets:focus, .nav>li>.avia-tickets:hover,.nav-tabs>li.active>.avia-tickets, .nav-tabs>li.active>.avia-tickets:focus, .nav-tabs>li.active>.avia-tickets:hover {color: #fff;background-color: #257ee1;border: 1px solid #257ee1;height: 62px;  margin-top: -10px; padding-top: 15px;}
 .nav-tabs .avia-tickets{background-color:#257ee1;}
+
+.nav-bought-order.nav-tabs.nav-menu {border-bottom:0}
+.nav-bought-order.nav-tabs.nav.nav-menu>li> a{ color: #fff;font-size: 18px;font-weight: 400;line-height: 30px;}
+.nav>li>.avia-tickets:focus, .nav>li>.avia-tickets:hover,.nav-tabs>li.active>.avia-tickets, .nav-tabs>li.active>.avia-tickets:focus, .nav-tabs>li.active>.avia-tickets:hover {color: #fff;background-color: #257ee1;border: 1px solid #257ee1;height: 62px;  margin-top: -10px; padding-top: 15px;}
+.nav-tabs .avia-tickets{background-color:#257ee1;}
+
 .container.main-content .nav-tabs.nav.nav-menu>li.active>.avia-tickets{font-weight: 700;}
 
 .nav>li>.train-tickets:focus, .nav>li>.train-tickets:hover,.nav-tabs>li.active>.train-tickets, .nav-tabs>li.active>.train-tickets:focus, .nav-tabs>li.active>.train-tickets:hover {color: #fff;background-color: #296992;border: 1px solid #296992; height: 62px;  margin-top: -10px; padding-top: 15px;}
@@ -490,6 +497,9 @@ a.three-day-check.round-right{border-bottom-right-radius: 15px;border-top-right-
 .sorting .price-sort span, .sorting .time-sort span{border-bottom: 2px dotted #0054ac; display: inline-block}
 .arrow-sort-up{background: url("../images/icon/arrow-sort.png") no-repeat 100% 50%; padding: 0 20px 0 0; margin: 0 10px;}
 .arrow-sort-down{background: url("../images/icon/arrow-sort-down.png") no-repeat 100% 50%;}
+
+.arrow-sort-date span{color: #000;border-bottom: 2px dotted #000;}
+.arrow-sort-date{background: url("../images/icon/arrow-sort-date.png") no-repeat 100% 50%;padding: 0 20px 0 0;}
 .price-sort{float: left;} .time-sort{float: right}
 .filter-accordion .checkbox-wrapper{margin-top: 0; margin-bottom: 0;}
 .filter-accordion .checkbox-wrapper label, .checkbox-order label{padding-left: 0}
@@ -508,7 +518,7 @@ a.three-day-check.round-right{border-bottom-right-radius: 15px;border-top-right-
 .tabs-result-search{width: 79.66666%;padding-right: 0; padding-left: 53px}
 .tabs-result-search .nav-tabs {border-bottom: 2px solid #007fe5; margin-bottom: 45px;}
 .tabs-result-search .nav-tabs>li {float: left;margin-bottom: -2px;width: 283px;text-align: center;}
-.tabs-result-search .nav-tabs>li.active>a, .tabs-result-search .nav-tabs>li.active>a:focus, .tabs-result-search .nav-tabs>li.active>a:hover{  color: #007fe5;  cursor: default;  background-color: #fff;  border: 2px solid #007fe5;  border-bottom-color: transparent;  font-size: 20px;  font-weight: 400;  line-height: 30px;  text-transform: uppercase;  padding: 15px 25px;}
+.tabs-result-search .nav-tabs>li.active>a, .tabs-result-search .nav-tabs>li.active>a:focus, .tabs-result-search .nav-tabs>li.active>a:hover{  color: #007fe5;  cursor: default;  background: #fff;  border: 2px solid #007fe5;  border-bottom-color: transparent;  font-size: 20px;  font-weight: 400;  line-height: 30px;  text-transform: uppercase;  padding: 15px 25px;}
 .tabs-result-search .nav-tabs>li>a span, .tabs-result-search .nav-tabs>li.active>a span{ font-weight: 300; margin-left: 15px}
 .tabs-result-search .nav-tabs>li>a {margin-right: 10px;color:  #787878; font-size: 20px;  font-weight: 400;  line-height: 30px;  text-transform: uppercase;  padding: 15px 25px 13px;  border: 2px solid #dedede;;  border-radius: 4px 4px 0 0;  border-bottom-color: transparent;}
 
@@ -654,11 +664,12 @@ li.label-red{border: 1px solid #f6042c; color: #f6042c;}
 .link-payment{color:  #155baa;font-size: 14px;font-weight: 400;line-height: 40px;}
 .logo-payment{ margin: 15px 0}
 .buyer{font-size: 16px;font-weight: 400;line-height: 25px;} .buyer span{text-transform: uppercase}
-.print-ticket .display-flex-space-between{display: flex;  display: -ms-flexbox;  justify-content: flex-end; align-items: center; align-content: flex-start; margin-bottom: 0;}
-.print-ticket .display-flex-space-between li a{margin-left: 30px}
+.print-ticket{margin-bottom: 0;}
+.print-ticket li{margin-bottom: 10px}
+.print-ticket li a{color:  #000;font-size: 14px;font-weight: 400;line-height: 30px; padding: 3px 10px 4px 33px}
 
-.display-flex-space-between{display: flex; display: -ms-flexbox;   justify-content: space-between; -ms-flex-pack: justify; align-items: center; align-content: flex-start}
-.display-flex-space-between li a{color:  #000;font-size: 14px;font-weight: 400;line-height: 30px; padding: 3px 10px 4px 33px}
+.display-flex-space-between{display: flex; display: -ms-flexbox;   justify-content: space-between; -ms-flex-pack: justify; align-items: center; align-content: flex-start; flex-wrap: wrap}
+.display-flex-space-between li a{color:  #000;font-size: 14px;font-weight: 400;line-height: 30px; padding: 5px 10px 5px 33px}
 
 .print-receipt{background: url("../images/print.png") no-repeat; }
 .send-mail-receipt{background: url("../images/mail.png") no-repeat;}
@@ -855,8 +866,8 @@ blockquote {padding: 30px 20px; margin: 40px 0 50px;  background-color:  #f2f2f2
 .list-personal-cabinet a:hover{color:#007fe5; text-decoration: none}
 
 
-.filter-personal-cabinet{margin-left:40px}
-.filter-personal-cabinet a{margin-left:40px}
+
+.filter-personal-cabinet a{margin-right:40px}
 .input-search-pass{background: url("../images/icon/dandruff.png") no-repeat; width: 20px; height: 20px;position: absolute;right:0; top:7px;}
 
 .search-pass input{border-bottom: 1px solid #3055a8; border-top: 0; border-left: 0;border-right: 0;padding: 10px 52px 1px 0;width: 240px; font-size: 18px }
@@ -864,13 +875,49 @@ blockquote {padding: 30px 20px; margin: 40px 0 50px;  background-color:  #f2f2f2
 .search-pass input::-webkit-input-placeholder{color:#3055a8;font-size: 18px;font-weight: 400;}
 .search-pass input::-moz-placeholder{color:#3055a8;font-size: 18px;font-weight: 400;}
 
-.print-ticket{text-align: right}
 .table-order{font-size: 18px; border: 1px solid #c1c1c1; border-radius: 5px;box-shadow: 0 2px 4px 0 rgba(8, 10, 12, 0.5); margin-bottom: 280px}
 .table-order.table-bordered>tbody>tr>td, .table-order.table-bordered>tfoot>tr>th,
 .table-order.table-bordered>thead>tr>td, .table-order.table-borderedtable-bordered>tbody>tr>th,
-.table-order.table-bordered>tfoot>tr>td, .table-order>thead>tr>th{border-top: 0; border-bottom: 0}
+.table-order.table-bordered>tfoot>tr>td, .table-order>thead>tr>th{border-top: 0; border-bottom: 0;padding: 17px}
 
 .clear-panel{text-align: right}
+.add-pass{padding-top: 12px}
+.add-pass a{color:#3055a8;font-size: 18px;font-weight: 400;text-decoration: none;}
+.add-pass span{border-bottom: 2px dotted #3055a8; margin-left: 15px}
+
+.name-pass{color:#000;font-size: 18px;font-weight: 400;line-height: 30px;text-decoration: underline; text-transform: uppercase}
+.table-order.table-bordered.table-pass>tbody>tr>td, .table-order.table-bordered.table-pass>tfoot>tr>th,
+.table-order.table-bordered.table-pass>thead>tr>td, .table-order.table-borderedtable-bordered.table-pass>tbody>tr>th,
+.table-order.table-bordered.table-pass>tfoot>tr>td, .table-order.table-pass>thead>tr>th{padding: 17px}
+
+.table-lang{color:#007fe5;font-size: 16px;font-weight: 400;line-height: 30px; margin-left: 35px; padding-right: 30px}
+.table-lang.up{background:url("../images/icon/arrow-down-search.png") no-repeat 100% 50%;}
+.table-lang.down{background:url("../images/icon/arrow-up-search.png") no-repeat 100% 50%;}
+
+.label-pass{width: 200px; margin-top: -25px}
+.form-order.form-search.form-inline .form-control.number-phone.number-phone-pass{padding-left: 8px}
+.expiration-date-arrow .wrap-date-birth-order .input-arrow {top:5px}
+
+.tabs-result-search .nav-tabs.nav-bought-order{border-bottom: 2px solid #007fe5;margin-bottom: 45px;}
+.tabs-result-search .nav-tabs.nav-bought-order>li{margin-bottom: 0}
+.tabs-result-search .nav-tabs.nav-bought-order>li.active>a,
+.tabs-result-search .nav-tabs.nav-bought-order>li.active>a:focus,
+.tabs-result-search .nav-tabs.nav-bought-order>li.active>a:hover{border:0;}
+
+.nav-bought-order.nav-tabs.nav.nav-menu>li> a{ color: #fff;font-size: 18px;font-weight: 400;line-height: 30px;}
+
+.nav.nav-bought-order>li>.avia-tickets:focus, .nav.nav-bought-order>li>.avia-tickets:hover,.nav-tabs.nav-bought-order>li.active>.avia-tickets, .nav-tabs.nav-bought-order>li.active>.avia-tickets:focus, .nav-tabs.nav-bought-order>li.active>.avia-tickets:hover {color: #fff;background-color: #257ee1;border: 1px solid #257ee1;height: 62px;  margin-top: -4px; padding-top: 15px;}
+.nav-tabs .avia-tickets{background-color:#257ee1;}
+
+
+.nav.nav-bought-order>li>.train-tickets:focus, .nav.nav-bought-order>li>.train-tickets:hover,.nav-tabs.nav-bought-order>li.active>.train-tickets, .nav-tabs.nav-bought-order>li.active>.train-tickets:focus, .nav-tabs.nav-bought-order>li.active>.train-tickets:hover {color: #fff;background-color: #296992;border: 1px solid #296992; height: 62px;  margin-top: -4px; padding-top: 15px;}
+.nav-tabs.nav-bought-order .train-tickets{background-color:#296992;}
+
+.nav.nav-bought-order>li>.insurance:focus, .nav.nav-bought-order>li>.insurance:hover,.nav-tabs.nav-bought-order>li.active>.insurance, .nav-tabs.nav-bought-order>li.active>.insurance:focus, .nav-tabs.nav-bought-order>li.active>.insurance:hover {color: #fff;background-color: #1b8da5;border: 1px solid #1b8da5; height: 62px;  margin-top: -4px; padding-top: 15px;}
+.nav-tabs.nav-bought-order .insurance{background-color:#1b8da5;}
+
+
+.tabs-result-search .nav-tabs.nav-bought-order>li>a{border:0; color:#fff;}
 
 @media (min-width: 1875px) {
 .modal-my-flight.modal-dialog{width: 1372px;margin-left: 16.333%;}
@@ -887,7 +934,7 @@ blockquote {padding: 30px 20px; margin: 40px 0 50px;  background-color:  #f2f2f2
     .container,.top-page-result-search .container, .container.content-result-search, .container.form-result-search,.container.main-content{width: 100%; padding: 0 15px}
     .col-search-model-plane{width: 12%;margin-left: 10px;margin-top: 29px;}
     .btn-filter {width: 100%;font-size: 14px;}
-    .route-column{flex: 0 0 180px; margin-top: 50px; }
+    .route-column{flex: 0 0 175px; margin-top: 50px; }
     .heading-info-compiled-route .bold-text{width: 35%; margin-bottom: 50px}
     .price-info-compiled-route{width: 65%;margin-bottom: 50px}
     .modal-body .price-info-compiled-route{margin-left: 0;display: block;}
@@ -897,6 +944,11 @@ blockquote {padding: 30px 20px; margin: 40px 0 50px;  background-color:  #f2f2f2
     .label-list {float: left !important;}
     .tab-content-result-search .panel-default .col-lg-10{padding-left: 45px}
     .modal-dialog.modal-my-flight{width: 1170px}
+}
+
+@media (max-width: 1360px) {
+    .filter-wrap {display: none}
+    .tabs-result-search {width: 100%}
 }
 @media (min-width: 1200px ) and (max-width: 1465px){
     .container.content-result-search{width:100%}
@@ -911,8 +963,6 @@ blockquote {padding: 30px 20px; margin: 40px 0 50px;  background-color:  #f2f2f2
     .timetables{padding-left: 20px;}
     .panel-default .media-left {padding-right: 15px;}
     .form-control.to-fly-search-result {width: 240px;}
-
-
 }
 
 @media (max-width: 1200px){
@@ -932,6 +982,10 @@ blockquote {padding: 30px 20px; margin: 40px 0 50px;  background-color:  #f2f2f2
     .hidden-small{display: none}
     .modal-dialog.modal-my-flight{width: 980px}
     .modal-my-flight.modal-dialog .price-info-compiled-route{text-align: left}
+    .col-search-date-train{justify-content: center; flex-wrap: wrap}
+    .col-search-date-train div{margin-right: 20px; margin-top: 30px}
+    .col-article {width: 44%;}
+    .display-column {flex-wrap:nowrap;overflow-x: scroll;}
 }
 @media  (max-width: 992px){
     #proposition .col-action-block {padding-right: 155px;padding-left: 155px;}
@@ -944,6 +998,7 @@ blockquote {padding: 30px 20px; margin: 40px 0 50px;  background-color:  #f2f2f2
     .info-order{margin-top: 30px}
     object{width: 100%}
     .modal-dialog.modal-my-flight{width: 750px}
+    .col-article {width: 100%;}
 
 
 }

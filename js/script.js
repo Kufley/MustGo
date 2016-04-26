@@ -29,7 +29,7 @@ $(window).load(function () {
 $(document).click(function(e) {
     if ($(e.target).parents().filter('#slide-panel:visible').length != 1)
         $('.slide-panel').css({"margin-right":"-400px"});
-        //$('.slide-panel-right').css({"height":"278px"});
+    //$('.slide-panel-right').css({"height":"278px"});
 
 });
 
@@ -206,8 +206,8 @@ $(document).ready(function () {
             $('.line-gray-train').hide();
         } else {
             $this.text('Выбрать')
-                 .addClass("btn-buy-train")
-                 .removeClass("btn-buy-train-active");
+                .addClass("btn-buy-train")
+                .removeClass("btn-buy-train-active");
             $('.line-gray-train').show();
         }
     });
@@ -471,4 +471,3 @@ $('.border-bottom a').click(function () {
     $('.border-bottom').addClass("active");
 
 });
-

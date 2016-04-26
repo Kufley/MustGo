@@ -82,24 +82,21 @@
     <div class="col-lg-12 tabs-result-search tabs-personal-cabinet">
         <div>
             <!-- Nav tabs -->
-            <ul class="nav nav-tabs" role="tablist">
-                <li class="active"><a href="#cabinet-avia-ticket" aria-controls="search-go-back" role="tab"
-                                      data-toggle="tab">Авабилеты<span>3</span></a></li>
-                <li><a href="#cabinet-train-ticket" aria-controls="search-there" role="tab"
-                       data-toggle="tab">Железнодорожные билеты<span>12</span></a></li>
-                <li><a href="#cabinet-ins" aria-controls="search-back" role="tab"
-                       data-toggle="tab">Страховки<span>14</span></a></li>
+            <ul class="nav nav-tabs nav-menu nav-bought-order" role="tablist">
+                <li id="avia-tab-cabinet" class="active"><a href="#cabinet-avia-ticket" aria-controls="search-go-back" role="tab"
+                                      data-toggle="tab" class="avia-tickets">Авабилеты<span>3</span></a></li>
+                <li id="train-tab-cabinet"><a href="#cabinet-train-ticket" aria-controls="search-there" role="tab"
+                       data-toggle="tab" class="train-tickets ">Железнодорожные билеты<span>12</span></a></li>
+                <li id="insurance-tab-cabinet"><a href="#cabinet-ins" aria-controls="search-back" role="tab"
+                       data-toggle="tab" class="insurance">Страховки<span>14</span></a></li>
             </ul>
             <div class="sorting clearfix">
-                <div class="filter-personal-cabinet pull-left">
-                <a href="#">Актуальные</a>
-                <a href="#" class="border-dotted">История</a>
-                </div>
-                <div class="search-pass pull-right position-relative">
-                    <label for="search-pass" class="sr-only">:</label>
-                    <input type="text" class=""
-                           id="search-pass" name="search-pass" placeholder="Поиск по пассажирам">
-                    <div href="#" class="input-search-pass"></div>
+                <div class="filter-personal-cabinet">
+                    <span class="add-pass">
+                        <a href="#"><img src="images/icon/arrow-left-pass.png"><span>Назад к списку пассажиров</span></a>
+                    </span>
+                    <a href="#">Актуальные</a>
+                    <a href="#" class="border-dotted">История</a>
                 </div>
             </div>
 
@@ -107,64 +104,187 @@
             <!-- Tab panes -->
             <div class="tab-content tab-content-result-search">
                 <div class="tab-pane active" id="cabinet-avia-ticket">
-                    <table class="table table-bordered table-striped table-order">
-                        <thead>
-                        <tr>
-                            <th>№ заказа</th>
-                            <th>Маршрут</th>
-                            <th><a href="#" class="arrow-sort-date"><span>Дата и время вылета</span></a></th>
-                            <th><a href="#" class="arrow-sort-date"><span>Дата и время прилёта</span></a></th>
-                            <th>Пассажиры</th>
-                            <th>Статус заказа</th>
-                            <th>Действия</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>58300</td>
-                            <td>Нью-Йорк—Амстердам</td>
-                            <td>14.04.2016<p>11:05</p></td>
-                            <td>14.04.2016<p>22:55</p></td>
-                            <td>1 билет</td>
-                            <td>Оплачен</td>
-                            <td>
-                                <ul class="list-unstyled print-ticket">
-                                    <li><a href="#" class="print-receipt">Печать</a></li>
-                                    <li><a href="#" class="send-mail-receipt">Отправить</a></li>
-                                </ul>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>10467</td>
-                            <td>Франкфурт-на-Майне—Варшава</td>
-                            <td>14.04.2016<p>11:05</p></td>
-                            <td>14.04.2016<p>22:55</p></td>
-                            <td>1 билет</td>
-                            <td>Оплачен</td>
-                            <td>
-                                <ul class="list-unstyled print-ticket">
-                                    <li><a href="#" class="print-receipt">Печать</a></li>
-                                    <li><a href="#" class="send-mail-receipt">Отправить</a></li>
-                                </ul>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>10467</td>
-                            <td>Франкфурт-на-Майне—Варшава</td>
-                            <td>14.04.2016<p>11:05</p></td>
-                            <td>14.04.2016<p>22:55</p></td>
-                            <td>1 билет</td>
-                            <td>Оплачен</td>
-                            <td>
-                                <ul class="list-unstyled print-ticket">
-                                    <li><a href="#" class="print-receipt">Печать</a></li>
-                                    <li><a href="#" class="send-mail-receipt">Отправить</a></li>
-                                </ul>
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
+                    <div class="panel panel-default panel-train panel-order">
+                        <div class="panel-heading ">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-3 col-sm-3 padding-left-0">
+                                    <div class="route-ticket">Маршрутная квитанция</div>
+                                    <img src="images/logo-payment.png" class="logo-payment">
+                                    <div class="address-company">Киев, бул. Ивана Лепсе, 4, оф. 513</div>
+                                    <div class="address-company">+38 044 3590569</div>
+                                    <div><a href="#" class="link-payment">Правила обмена/возврата</a></div>
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-9 padding-right-0 clearfix content-ticket">
+                                    <div class="row " id="content-ticket">
+                                        <div class="col-lg-5" id="buyer">
+                                            <div class="buyer" >Покупатель: <span>Grishko Anatoliy</span></div>
+                                        </div>
+                                        <div class="col-lg-7" id="option-receipt">
+                                            <ul class="list-unstyled display-flex-space-between">
+                                                <li><a href="#" class="print-receipt">Печать</a></li>
+                                                <li><a href="#" class="send-mail-receipt">Отправить</a></li>
+                                                <li><a href="#" class="back-receipt">Вернуть</a></li>
+                                                <li><a href="#" class="return-receipt">Обменять</a></li>
+                                                <li><a href="#" class="cancel-receipt">Отменить</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-12  status-order">
+                                            Статус заказа: Manual mode
+                                            <a href="#tooltip" data-toggle="modal"><img
+                                                    src="images/icon/q.png" class="question"></a>
+                                        </div>
+                                    </div>
+                                    <div class="row margin-bottom-20">
+                                        <div class="col-lg-3 col-md-5 col-sm-7 margin-bottom-res">
+                                            <div class="code-order">Код бронирования:</div>
+                                            <div class="address-company">Номер брони в системе перевозчика:</div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-7 col-sm-5 margin-bottom-res code-order">
+                                            <div>7MLZ0A</div>
+                                            <div>INZKZ6</div>
+                                        </div>
 
+                                        <div class="col-lg-2 col-md-5 col-sm-7 address-company">
+                                            <div>Статус билетов:</div>
+                                            <div>Дата бронирования:</div>
+                                        </div>
+                                        <div class="col-lg-5  col-md-7 col-sm-5 code-order">
+                                            <div>Оплачены</div>
+                                            <div>1.03.2016</div>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-12 margin-bottom-res">
+                                            <div class="address-company">Пассажиры и номера билетов:</div>
+                                        </div>
+
+                                        <div class="col-lg-4  col-md-5 col-sm-7 code-order">
+                                            <div>Grishko Anatoliy Aleksandrovich</div>
+                                            <div>Antonov Nickolay Mihaylovich</div>
+                                            <div>Antonova Anna Nickolaevna</div>
+                                        </div>
+                                        <div class="col-lg-3  col-md-7 col-sm-5 code-order">
+                                            <div>284 6395710573</div>
+                                            <div>284 6395710573</div>
+                                            <div>284 6395710573</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-3 col-sm-3 padding-left-0">
+                                    <div class="margin-bottom-15">24 дек 2015, Cp</div>
+                                    <a class="search-more-accordion-toggle collapsed" data-toggle="collapse"
+                                       data-parent="#result-search-flight-with-one-transship"
+                                       href="#result-search-flight-with-one-transship">Подробнее</a>
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-9 padding-right-0 padding-left-20">
+                                    <div class="col-search-fly col-search">
+                                        <div class="time">12:00</div>
+                                        <div class="hide-long-text" title="Одесса">Одесса</div>
+                                        <div>ОDS</div>
+                                        <div class="hide-long-text" title="Украина">Украина</div>
+                                        <div class="search-date">24 дек, Ср</div>
+                                    </div>
+                                    <div class="col-line-fly col-search">
+                                        <div class="search-transship-text">пересадка 1 ч 20 мин</div>
+                                        <div class="line-fly">
+                                            <div class="circle start-line"></div>
+                                            <div class="circle middle-line"></div>
+                                            <div class="circle end-line"></div>
+                                        </div>
+                                        <div class="text-center">WAW</div>
+                                    </div>
+                                    <div class="col-search-fly col-search">
+                                        <div class="time">12:00</div>
+                                        <div class="hide-long-text" title="Стамбул">Стамбул</div>
+                                        <div>IST</div>
+                                        <div class="hide-long-text" title="Турция">Турция</div>
+                                        <div class="search-date">24 дек, Ср</div>
+                                    </div>
+                                    <div class="col-flight-time col-search">
+                                        <div class="flight-time"><img src="images/icon/clock-search.png">6 ч 30 мин
+                                        </div>
+                                    </div>
+
+
+                                    <div id="result-search-flight-with-one-transship"
+                                         class="search-more-collapse collapse   col-xs-12">
+                                        <div class="row margin-0">
+                                            <div class="col-search-time-fly col-search">
+                                                <div>Вылет:</div>
+                                                <div class="time">12:00</div>
+                                            </div>
+                                            <div class="col-search-country-fly col-search">
+                                                <div class="hide-long-text" title="Одесса">Одесса</div>
+                                                <div>ОDS, A</div>
+                                                <p class="flight-country" title="Украина">Украина</p>
+                                            </div>
+                                            <div class="col-search-time-fly-arrive col-search">
+                                                <div>Прибытие:</div>
+                                                <div class="time">14:00</div>
+                                            </div>
+                                            <div class="col-search-country-fly col-search">
+                                                <div class="hide-long-text" title="Варшава">Варшава</div>
+                                                <div>WAW, С</div>
+                                                <p class="flight-country" title="Польша">Польша</p>
+                                            </div>
+                                            <div class="col-search-model-plane col-search">
+                                                <div class="more-time">2ч</div>
+                                                <div class="model-plane  hide-long-text" title="Boeing 737-800">Boeing 737-800
+                                                </div>
+                                                <div class="model-plane">PS-56</div>
+                                                <div>бизнес С</div>
+                                            </div>
+                                            <div class="col-flight-aviacompany col-search">
+                                                <div class="model-plane"><img src="images/logo-aviacompany/logo-tk-small.png"><span class="hidden-small">Turkish
+                                        airlines</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-blue">пересадка в Варшаве 1ч 20мин</div>
+                                        <div class="row margin-0">
+                                            <div class="col-search-time-fly col-search">
+                                                <div>Вылет:</div>
+                                                <div class="time">12:00</div>
+                                            </div>
+                                            <div class="col-search-country-fly col-search">
+                                                <div class="hide-long-text" title="Одесса">Одесса</div>
+                                                <div>ОDS, A</div>
+                                                <p class="flight-country" title="Украина">Украина</p>
+                                            </div>
+                                            <div class="col-search-time-fly-arrive col-search">
+                                                <div>Прибытие:</div>
+                                                <div class="time">14:00</div>
+                                            </div>
+                                            <div class="col-search-country-fly col-search">
+                                                <div class="hide-long-text" title="Варшава">Варшава</div>
+                                                <div>WAW, С</div>
+                                                <p class="flight-country" title="Польша">Польша</p>
+                                            </div>
+                                            <div class="col-search-model-plane col-search">
+                                                <div class="more-time">2ч</div>
+                                                <div class="model-plane  hide-long-text" title="Boeing 737-800">Boeing 737-800
+                                                </div>
+                                                <div class="model-plane">PS-56</div>
+                                                <div>бизнес С</div>
+                                            </div>
+                                            <div class="col-flight-aviacompany col-search">
+                                                <div class="model-plane"><img src="images/logo-aviacompany/logo-tk-small.png"><span class="hidden-small">Turkish
+                                        airlines</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="tab-pane" id="cabinet-train-ticket">...</div>
                 <div class="tab-pane" id="cabinet-ins">...</div>
