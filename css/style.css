@@ -166,8 +166,7 @@ footer .col-sm-3 {padding-right: 55px;}
 .nav>li>.avia-tickets:focus, .nav>li>.avia-tickets:hover,.nav-tabs>li.active>.avia-tickets, .nav-tabs>li.active>.avia-tickets:focus, .nav-tabs>li.active>.avia-tickets:hover {color: #fff;background-color: #257ee1;border: 1px solid #257ee1;height: 62px;  margin-top: -10px; padding-top: 15px;}
 .nav-tabs .avia-tickets{background-color:#257ee1;}
 
-.nav-bought-order.nav-tabs.nav-menu {border-bottom:0}
-.nav-bought-order.nav-tabs.nav.nav-menu>li> a{ color: #fff;font-size: 18px;font-weight: 400;line-height: 30px;}
+
 .nav>li>.avia-tickets:focus, .nav>li>.avia-tickets:hover,.nav-tabs>li.active>.avia-tickets, .nav-tabs>li.active>.avia-tickets:focus, .nav-tabs>li.active>.avia-tickets:hover {color: #fff;background-color: #257ee1;border: 1px solid #257ee1;height: 62px;  margin-top: -10px; padding-top: 15px;}
 .nav-tabs .avia-tickets{background-color:#257ee1;}
 
@@ -868,7 +867,7 @@ blockquote {padding: 30px 20px; margin: 40px 0 50px;  background-color:  #f2f2f2
 .tabs-result-search.tabs-personal-cabinet .nav-tabs>li {width: auto;}
 .list-personal-cabinet {display: flex; display: -ms-flexbox;   flex-wrap: wrap; justify-content: space-between; -ms-flex-pack: justify; margin-bottom: 25px}
 .list-personal-cabinet a{color:#000;font-size: 18px;font-weight: 700;line-height: 30px;}
-.list-personal-cabinet a:hover{color:#007fe5; text-decoration: none}
+.list-personal-cabinet a:hover,.list-personal-cabinet a.active{color:#007fe5; text-decoration: none}
 
 
 
@@ -884,6 +883,7 @@ blockquote {padding: 30px 20px; margin: 40px 0 50px;  background-color:  #f2f2f2
 .table-order.table-bordered>tbody>tr>td, .table-order.table-bordered>tfoot>tr>th,
 .table-order.table-bordered>thead>tr>td, .table-order.table-borderedtable-bordered>tbody>tr>th,
 .table-order.table-bordered>tfoot>tr>td, .table-order>thead>tr>th{border-top: 0; border-bottom: 0;padding: 17px}
+.table-order.table-bordered>tbody>tr>td>a{color: #000}
 
 .clear-panel{text-align: right}
 .add-pass{padding-top: 12px}
@@ -903,35 +903,40 @@ blockquote {padding: 30px 20px; margin: 40px 0 50px;  background-color:  #f2f2f2
 .form-order.form-search.form-inline .form-control.number-phone.number-phone-pass{padding-left: 8px}
 .expiration-date-arrow .wrap-date-birth-order .input-arrow {top:5px}
 
+
+.nav-bought-order.nav-tabs.nav.nav-menu>li>a{ color: #fff;font-size: 18px;font-weight: 400;line-height: 30px; border: none}
+.nav-bought-order.nav-tabs.nav.nav-menu>li.active>a{color: #007fe5;border: 2px solid #007fe5;border-bottom-color: transparent; margin-top: -4px}
+.nav-bought-order.nav-tabs.nav.nav-menu>li>a:hover{margin-top: -4px}
 .tabs-result-search .nav-tabs.nav-bought-order{border-bottom: 2px solid #007fe5;margin-bottom: 45px;}
-
 .tabs-result-search .nav-tabs.nav-bought-order>li{margin-bottom: 0}
-.tabs-result-search .nav-tabs.nav-bought-order>li.active>a,
-.tabs-result-search .nav-tabs.nav-bought-order>li.active>a:focus,
-.tabs-result-search .nav-tabs.nav-bought-order>li.active>a:hover{border:0;}
 
-.nav-bought-order.nav-tabs.nav.nav-menu>li> a{ color: #fff;font-size: 18px;font-weight: 400;line-height: 30px;}
+/*.tabs-result-search .nav-tabs.nav-bought-order>li{margin-bottom: 0}*/
+/*.tabs-result-search .nav-tabs.nav-bought-order>li.active>a,*/
+/*.tabs-result-search .nav-tabs.nav-bought-order>li.active>a:focus,*/
+/*.tabs-result-search .nav-tabs.nav-bought-order>li.active>a:hover{border:0;}*/
 
-.nav.nav-bought-order>li>.avia-tickets:focus,
-.nav.nav-bought-order>li>.avia-tickets:hover,
-.nav-tabs.nav-bought-order>li.active>.avia-tickets,
-.nav-tabs.nav-bought-order>li.active>.avia-tickets:focus,
-.nav-tabs.nav-bought-order>li.active>.avia-tickets:hover {color: #fff;background-color: #257ee1;height: 62px;  margin-top: -4px; padding-top: 15px;}
+/*.nav-bought-order.nav-tabs.nav.nav-menu>li> a{ color: #fff;font-size: 18px;font-weight: 400;line-height: 30px;}*/
 
-.nav.nav-bought-order>li>.train-tickets:focus,
-.nav.nav-bought-order>li>.train-tickets:hover,
-.nav-tabs.nav-bought-order>li.active>.train-tickets,
-.nav-tabs.nav-bought-order>li.active>.train-tickets:focus,
-.nav-tabs.nav-bought-order>li.active>.train-tickets:hover {color: #fff;background-color: #296992;height: 62px;  margin-top: -4px; padding-top: 15px;}
+/*.nav.nav-bought-order>li>.avia-tickets:focus,*/
+/*.nav.nav-bought-order>li>.avia-tickets:hover,*/
+/*.nav-tabs.nav-bought-order>li.active>.avia-tickets,*/
+/*.nav-tabs.nav-bought-order>li.active>.avia-tickets:focus,*/
+/*.nav-tabs.nav-bought-order>li.active>.avia-tickets:hover {color: #fff;background-color: #257ee1;height: 62px;  margin-top: -4px; padding-top: 15px;}*/
 
-.nav.nav-bought-order>li>.insurance:focus,
-.nav.nav-bought-order>li>.insurance:hover,
-.nav-tabs.nav-bought-order>li.active>.insurance,
-.nav-tabs.nav-bought-order>li.active>.insurance:focus,
-.nav-tabs.nav-bought-order>li.active>.insurance:hover {color: #fff;background-color: #1b8da5;height: 62px;  margin-top: -4px; padding-top: 15px;}
+/*.nav.nav-bought-order>li>.train-tickets:focus,*/
+/*.nav.nav-bought-order>li>.train-tickets:hover,*/
+/*.nav-tabs.nav-bought-order>li.active>.train-tickets,*/
+/*.nav-tabs.nav-bought-order>li.active>.train-tickets:focus,*/
+/*.nav-tabs.nav-bought-order>li.active>.train-tickets:hover {color: #fff;background-color: #296992;height: 62px;  margin-top: -4px; padding-top: 15px;}*/
+
+/*.nav.nav-bought-order>li>.insurance:focus,*/
+/*.nav.nav-bought-order>li>.insurance:hover,*/
+/*.nav-tabs.nav-bought-order>li.active>.insurance,*/
+/*.nav-tabs.nav-bought-order>li.active>.insurance:focus,*/
+/*.nav-tabs.nav-bought-order>li.active>.insurance:hover {color: #fff;background-color: #1b8da5;height: 62px;  margin-top: -4px; padding-top: 15px;}*/
 
 
-.tabs-result-search .nav-tabs.nav-bought-order>li>a{border:0; color:#fff;}
+/*.tabs-result-search .nav-tabs.nav-bought-order>li>a{border:0; color:#fff;}*/
 
 .order-confirm-price{width: 12.55%; position: absolute; right: 15px; top:0}
 .order-confirm-content{width: 87.333333%;}
