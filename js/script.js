@@ -29,7 +29,7 @@ $(window).load(function () {
 $(document).click(function(e) {
     if ($(e.target).parents().filter('#slide-panel:visible').length != 1)
         $('.slide-panel').css({"margin-right":"-400px"});
-    //$('.slide-panel-right').css({"height":"278px"});
+        //$('.slide-panel-right').css({"height":"278px"});
 
 });
 
@@ -103,7 +103,7 @@ $(document).ready(function () {
             .addClass("search-link-arrow-down")
             .removeClass("search-link-arrow-up")
             .find("span").text("Расширенный поиск");
-        $(".аdvanced-searh-content").hide();
+            $(".аdvanced-searh-content").hide();
     }
 
     function addFlight($this)
@@ -168,11 +168,24 @@ $(document).ready(function () {
         $(".wrap-add-fly").hide();
     });
 
+    $("#avia-tab-cabinet").click(function () {
+        $(".tabs-result-search .nav-tabs.nav-bought-order").css({"border-bottom": "2px solid #007fe5;"});
+    });
+
+    $("#train-tab-cabinet").click(function () {
+        $(".tabs-result-search .nav-tabs.nav-bought-order").css({"border-bottom": "2px solid #296992;"});
+    });
+
+    $("#insurance-tab-cabinet").click(function () {
+        $(".tabs-result-search .nav-tabs.nav-bought-order").css({"border-bottom": "2px solid #1b8da5;"});
+    });
     /*Registration*/
 
     $("#corporate-entity-registation").click(function () {
         $("[value=corporation]").is(":checked") ? $(".form-reg-name-organization").css({"display": "block"}) : $(".form-reg-name-organization").css({"display": "none"});
     });
+
+
 
     /*Advanced search*/
 

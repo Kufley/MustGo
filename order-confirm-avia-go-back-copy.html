@@ -1,0 +1,1407 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>MustGo</title>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500' rel='stylesheet' type='text/css'>
+    <link href="css/nouislider.min.css" rel="stylesheet">
+</head>
+<div class="top-page-result-search">
+    <nav class="navbar">
+        <div class="container clearfix">
+            <div class="navbar-header pull-left">
+                <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo"></a>
+            </div>
+            <div class="pull-right menu-right">
+
+                <div class="user-menu">
+                    <a class="dropdown-arrow collapsed" data-toggle="collapse" data-parent="#user-menu"
+                       href="#user-menu">Русский, <b>USD</b></a>
+                    <div class="sign-in"><a href="#">Вход</a></div>
+                    <!--<div class="log-out"><a href="#">Виход</a></div>-->
+                </div>
+                <div id="user-menu" class="collapse">
+                    <div class="user-menu-list">
+                        <ul class="list-unstyled">
+                            <li>
+                                <input type="radio" id="lang-ua" name="radio-lang" class="radio-box" checked>
+                                <label for="lang-ua"><span><span></span></span>українська</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="lang-rus" name="radio-lang" class="radio-box" checked>
+                                <label for="lang-rus"><span><span></span></span>русский</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="lang-en" name="radio-lang" class="radio-box" checked>
+                                <label for="lang-en"><span><span></span></span>еnglish</label>
+                            </li>
+                        </ul>
+                        <ul class="list-unstyled">
+                            <li>
+                                <input type="radio" id="currency-usd" name="radio-currency" class="radio-box" checked>
+                                <label for="currency-usd"><span><span></span></span><b>USD</b> доллар США</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="currency-eur" name="radio-currency" class="radio-box" checked>
+                                <label for="currency-eur"><span><span></span></span><b>Eur</b> евро</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="currency-uan" name="radio-currency" class="radio-box" checked>
+                                <label for="currency-uan"><span><span></span></span><b>UAH</b> украинская гривна</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="currency-rub" name="radio-currency" class="radio-box" checked>
+                                <label for="currency-rub"><span><span></span></span><b>Rub</b> российский рубль</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <div class="container form-result-search">
+            <form class="form-inline form-search">
+                <div class="form-group-search-result">
+                    <div class="form-group">
+                        <div class="margin-top searched">Вы искали:</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="from-to-fly">Откуда:</label>
+                        <input type="text" class="form-control to-fly-search-result" id="from-to-fly" value="Одесса"
+                               placeholder="Откуда лететь" name="from-to-fly">
+                        <a href="#" class="input-arrow" id="link-open-autocomplete-where-to-fly"></a>
+                        <div class="autocomplete-wrap autocomplete-where-to-fly" id="open-autocomplete-where-to-fly">
+                            <div>
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs " role="tablist">
+                                    <li role="presentation" class="active anywhere"><a href="#anywhere"
+                                                                                       aria-controls="anywhere"
+                                                                                       role="tab"
+                                                                                       data-toggle="tab">Куда угодно</a>
+                                        <img class="link1" src="images/icon/arrow_down.png">
+                                    </li>
+                                    <li role="presentation" class="cities-and-airports"><a href="#cities-and-airports"
+                                                                                           aria-controls="cities-and-airports"
+                                                                                           role="tab" data-toggle="tab">Города
+                                        и
+                                        аэропорты</a>
+                                        <img class="link2" src="images/icon/arrow_down.png">
+                                    </li>
+                                    <li role="presentation" class="country"><a href="#country" aria-controls="country"
+                                                                               role="tab"
+                                                                               data-toggle="tab">Страны</a>
+                                        <img class="link3" src="images/icon/arrow_down.png">
+                                    </li>
+                                </ul>
+
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane active" id="anywhere">
+                                        <ul class="list-all-aeroport list-unstyled">
+                                            <li>
+                                                <div class="active-link list-all-link"><span
+                                                        class="aqua-letters">Нью</span>-Йорк,
+                                                    США, все
+                                                    аэропорты<span class="location-code ">NYC</span></div>
+                                                <ul class="sub-list list-unstyled">
+                                                    <li class="clearfix"><a href="#"><span
+                                                            class="aqua-letters">Нью</span>-Йорк,
+                                                        Ньюарк
+                                                        Либерти
+                                                        <span class=" location-code">EWR</span></a></li>
+                                                    <li class="clearfix"><a href="#"><span
+                                                            class="aqua-letters">Нью</span>Нью-Йорк,
+                                                        Джон
+                                                        Ф. Кеннеди<span class="location-code">JFK</span></a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <div class="list-all-link"><span class="all-aeroport-link">Петропавловск-Камчатский, Россия, все аэропорты</span><span
+                                                        class=" location-code">LGA</span></div>
+                                            </li>
+                                        </ul>
+                                        <div class="checkbox autocomplete-checkbox">
+                                            <input type="checkbox" value="" id="radius-from-where"
+                                                   name="radius-from-where">
+                                            <label for="radius-from-where"><span></span>В радиусе</label>
+                                            <input type="text" id="radius-where-km" name="radius-where-km">
+                                            <label for="radius-where-km">км</label>
+                                        </div>
+                                        <div class="location">
+                                            <img src="images/icon/locatin.png"> <a href="#">Показать на карте</a>
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="cities-and-airports">...</div>
+                                    <div role="tabpanel" class="tab-pane" id="country">...</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="where-to-fly">Куда:</label>
+                        <input type="text" class="form-control to-fly-search-result" id="where-to-fly" value="Стамбул"
+                               placeholder="Куда лететь" name="where-to-fly">
+                        <a href="#" class="input-arrow" id="link-autocomplete-from-where-fly"></a>
+                        <div class="autocomplete-wrap autocomplete-from-where-fly"
+                             id="open-autocomplete-from-where-fly">
+
+                            <ul class="list-all-aeroport list-unstyled">
+                                <li>
+                                    <div class="active-link"><span class="all-aeroport-link"><span class="aqua-letters">Нью</span>-Бедфорт, США</span><span
+                                            class=" location-code">LGA</span></div>
+                                </li>
+                                <li>
+                                    <div class="list-all-link"><span class="all-aeroport-link"><span
+                                            class="aqua-letters">Нью</span>-Берн, США</span><span
+                                            class=" location-code">LGA</span></div>
+                                </li>
+                                <li>
+                                    <div class="list-all-link"><span class="aqua-letters">Нью</span>-Бедфорт, США, <span
+                                            class="text-all-aeroport">все аэропорты</span><span
+                                            class="location-code ">NYC</span></div>
+                                    <ul class="sub-list list-unstyled">
+                                        <li class="clearfix"><a href="#"><span class="aqua-letters">Нью</span>-Берн, США
+                                            <span class=" location-code">EWR</span></a></li>
+                                        <li class="clearfix"><a href="#"><span class="aqua-letters">Нью</span>Нью-Йорк,
+                                            США<span
+                                                    class="location-code">JFK</span></a>
+                                        </li>
+                                        <li class="clearfix"><a href="#"><span class="aqua-letters">Нью</span>Нью-Йорк,
+                                            США<span
+                                                    class="location-code">JFK</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="list-all-link"><span class="all-aeroport-link"><span
+                                            class="aqua-letters">Нью</span>касл(-апон-Тайн), Великобритания</span><span
+                                            class=" location-code">LGA</span></div>
+                                </li>
+                            </ul>
+                            <div class="checkbox  autocomplete-checkbox">
+                                <input type="checkbox" value="" id="radius-anywhere" name="radius-anywhere">
+                                <label for="radius-anywhere"><span></span>В радиусе</label>
+                                <input type="text">
+                                <label>км</label>
+                            </div>
+                            <div class="location">
+                                <img src="images/icon/locatin.png"> <a href="#">Показать на карте</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="departure-date">Дата вылета:</label>
+                        <input type="text" class="form-control date-fly-search-result" id="departure-date"
+                               placeholder="Дата"
+                               value="16.12.2015"
+                               name="departure-date">
+                        <a href="#" class="input-arrow" id="link-open-calendar-three-day"></a>
+                        <div class="autocomplete-wrap autocomplete-calendar" id="open-calendar-three-day">
+                            <div class="calendar-month clearfix">
+                                <div class="pull-left">
+                                    <a href="#" class="navigation-arrow-left"></a><span>Ноябрь</span>
+                                </div>
+                                <div class="pull-right">
+                                    <span>Декабрь</span><a href="#" class="navigation-arrow-right"></a>
+                                </div>
+                            </div>
+                            <div class="row">
+
+                                <div class="col-sm-6">
+                                    <div class="weekdays">
+                                        <span>Пн</span>
+                                        <span>Вт</span>
+                                        <span>Ср</span>
+                                        <span>Чт</span>
+                                        <span>Пт</span>
+                                        <span>Сб</span>
+                                        <span>Нд</span>
+                                    </div>
+                                    <div class="day">
+                                        <a href="#">1</a>
+                                        <a href="#">2</a>
+                                        <a href="#">3</a>
+                                        <a href="#" class="three-day-check round-left">4</a>
+                                        <a href="#" class="three-day-check">5</a>
+                                        <a href="#" class="three-day-check ">6</a>
+                                        <a href="#" class="three-day-check select-date round-right">7</a>
+                                        <a href="#" class="three-day-check round-left">8</a>
+                                        <a href="#" class="three-day-check">9</a>
+                                        <a href="#" class="three-day-check round-right">10</a>
+                                        <a href="#">12</a>
+                                        <a href="#">13</a>
+                                        <a href="#">14</a>
+                                        <a href="#">15</a>
+                                        <a href="#">16</a>
+                                        <a href="#">17</a>
+                                        <a href="#">18</a>
+                                        <a href="#">19</a>
+                                        <a href="#">20</a>
+                                        <a href="#">21</a>
+                                        <a href="#">21</a>
+                                        <a href="#">23</a>
+                                        <a href="#">24</a>
+                                        <a href="#">25</a>
+                                        <a href="#">26</a>
+                                        <a href="#">27</a>
+                                        <a href="#">28</a>
+                                        <a href="#">29</a>
+                                        <a href="#">30</a>
+                                        <a href="#">31</a>
+
+                                    </div>
+
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="weekdays">
+                                        <span>Пн</span>
+                                        <span>Вт</span>
+                                        <span>Ср</span>
+                                        <span>Чт</span>
+                                        <span>Пт</span>
+                                        <span>Сб</span>
+                                        <span>Нд</span>
+                                    </div>
+                                    <div class="day">
+                                        <a href="#">1</a>
+                                        <a href="#">2</a>
+                                        <a href="#">3</a>
+                                        <a href="#">4</a>
+                                        <a href="#">5</a>
+                                        <a href="#">6</a>
+                                        <a href="#">7</a>
+                                        <a href="#">8</a>
+                                        <a href="#">9</a>
+                                        <a href="#">10</a>
+                                        <a href="#">12</a>
+                                        <a href="#">13</a>
+                                        <a href="#">14</a>
+                                        <a href="#">15</a>
+                                        <a href="#">16</a>
+                                        <a href="#">17</a>
+                                        <a href="#">18</a>
+                                        <a href="#">19</a>
+                                        <a href="#">20</a>
+                                        <a href="#">21</a>
+                                        <a href="#">21</a>
+                                        <a href="#">23</a>
+                                        <a href="#">24</a>
+                                        <a href="#">25</a>
+                                        <a href="#">26</a>
+                                        <a href="#">27</a>
+                                        <a href="#">28</a>
+                                        <a href="#">29</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="radio-checked-calendar">
+                                <input type="radio" id="exact-date" name="radio-box-date-check" class="radio-box"
+                                       value="exact-date" checked>
+                                <label for="exact-date"><span><span></span></span>Точная дата</label>
+
+                                <input type="radio" id="approximate-date" name="radio-box-date-check" class="radio-box"
+                                       value="approximate-date">
+                                <label for="approximate-date"><span><span></span></span>+/- 3 дня</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="arrival-date-fly">Обратно:</label>
+                        <input type="text" class="form-control date-fly-search-result" name="arrival-date-fly"
+                               id="arrival-date-fly"
+                               value="29.12.2015"
+                               placeholder="Дата">
+                        <a href="#" class="input-arrow" id="arrival-date-open-calendar"></a>
+                        <div class="autocomplete-wrap autocomplete-calendar" id="open-calendar">
+                            <div class="calendar-month clearfix">
+                                <div class="pull-left">
+                                    <a href="#" class="navigation-arrow-left"></a><span>Ноябрь</span>
+                                </div>
+                                <div class="pull-right">
+                                    <span>Декабрь</span><a href="#" class="navigation-arrow-right"></a>
+                                </div>
+                            </div>
+                            <div class="row">
+
+                                <div class="col-sm-6">
+                                    <div class="weekdays">
+                                        <span>Пн</span>
+                                        <span>Вт</span>
+                                        <span>Ср</span>
+                                        <span>Чт</span>
+                                        <span>Пт</span>
+                                        <span>Сб</span>
+                                        <span>Нд</span>
+                                    </div>
+                                    <div class="day">
+                                        <a href="#">1</a>
+                                        <a href="#">2</a>
+                                        <a href="#">3</a>
+                                        <a href="#" class="day-check">4</a>
+                                        <a href="#">5</a>
+                                        <a href="#">6</a>
+                                        <a href="#">7</a>
+                                        <a href="#">8</a>
+                                        <a href="#">9</a>
+                                        <a href="#">10</a>
+                                        <a href="#">12</a>
+                                        <a href="#">13</a>
+                                        <a href="#">14</a>
+                                        <a href="#">15</a>
+                                        <a href="#">16</a>
+                                        <a href="#">17</a>
+                                        <a href="#">18</a>
+                                        <a href="#">19</a>
+                                        <a href="#">20</a>
+                                        <a href="#">21</a>
+                                        <a href="#">21</a>
+                                        <a href="#" class="day-check">23</a>
+                                        <a href="#">24</a>
+                                        <a href="#">25</a>
+                                        <a href="#">26</a>
+                                        <a href="#">27</a>
+                                        <a href="#" class="day-check">28</a>
+                                        <a href="#">29</a>
+                                        <a href="#">30</a>
+                                        <a href="#">31</a>
+
+                                    </div>
+
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="weekdays">
+                                        <span>Пн</span>
+                                        <span>Вт</span>
+                                        <span>Ср</span>
+                                        <span>Чт</span>
+                                        <span>Пт</span>
+                                        <span>Сб</span>
+                                        <span>Нд</span>
+                                    </div>
+                                    <div class="day">
+                                        <a href="#">1</a>
+                                        <a href="#">2</a>
+                                        <a href="#">3</a>
+                                        <a href="#" class="day-check">4</a>
+                                        <a href="#">5</a>
+                                        <a href="#">6</a>
+                                        <a href="#">7</a>
+                                        <a href="#">8</a>
+                                        <a href="#">9</a>
+                                        <a href="#">10</a>
+                                        <a href="#">12</a>
+                                        <a href="#">13</a>
+                                        <a href="#">14</a>
+                                        <a href="#">15</a>
+                                        <a href="#">16</a>
+                                        <a href="#">17</a>
+                                        <a href="#">18</a>
+                                        <a href="#">19</a>
+                                        <a href="#">20</a>
+                                        <a href="#">21</a>
+                                        <a href="#">21</a>
+                                        <a href="#" class="day-check">23</a>
+                                        <a href="#">24</a>
+                                        <a href="#">25</a>
+                                        <a href="#">26</a>
+                                        <a href="#">27</a>
+                                        <a href="#" class="day-check">28</a>
+                                        <a href="#">29</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="radio-checked-calendar">
+                                <input type="radio" id="exact-date-2" name="radio-box-date-check" class="radio-box"
+                                       value="exact-date" checked>
+                                <label for="exact-date-2"><span><span></span></span>Точная дата</label>
+
+                                <input type="radio" id="approximate-date-2" name="radio-box-date-check"
+                                       class="radio-box"
+                                       value="approximate-date">
+                                <label for="approximate-date-2"><span><span></span></span>+/- 3 дня</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="count-tickets" id="count-tickets">2 билета</div>
+                    </div>
+                    <div class="form-group button-center">
+                        <button type="submit" class="btn btn-find" id="update">Обновить</button>
+                    </div>
+                </div>
+            </form>
+        <div class="text-center">
+            <a href="#" class="link-return-to-search-form">Вернуться к основной форме поиска</a>
+        </div>
+    </div>
+</div>
+
+<div class="container content-result-search">
+    <div class="text-center">
+        <p class="heading-payment">Оформление авиабилета</p>
+    </div>
+    <div class="col-lg-offset-1">
+        <div class="tab-content tab-content-order">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="clearfix">
+                            <div class="link-return-ticket pull-left">Выбранные рейсы:</div>
+                            <ul class="list-unstyled label-list pull-right">
+                                <li class="label-green">Обмен доступен</li>
+                                <li class="label-red">Возврат невозможен</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-lg-1 col-md-2 date-order-confirm">
+                            <div class="margin-bottom-15">24 дек 2015, Cp</div>
+                            <a class="search-more-accordion-toggle collapsed" data-toggle="collapse"
+                               data-parent="#result-search-flight-with-one-transship"
+                               href="#result-search-flight-with-one-transship">Подробнее</a>
+                        </div>
+                        <div class="col-lg-10 order-confirm-content">
+                            <div class="plane-there-back"><img src="images/icon/plane-where.png" >Туда:</div>
+                            <div class="col-search-fly col-search">
+                                <div class="time">12:00</div>
+                                <div class="hide-long-text" title="Одесса">Одесса</div>
+                                <div>ОDS</div>
+                                <div class="hide-long-text" title="Украина">Украина</div>
+                                <div class="search-date">24 дек, Ср</div>
+                            </div>
+                            <div class="col-line-fly col-search">
+                                <div class="search-transship-text">пересадка 1 ч 20 мин</div>
+                                <div class="line-fly">
+                                    <div class="circle start-line"></div>
+                                    <div class="circle middle-line"></div>
+                                    <div class="circle end-line"></div>
+                                </div>
+                                <div class="text-center">WAW</div>
+                            </div>
+                            <div class="col-search-fly col-search">
+                                <div class="time">12:00</div>
+                                <div class="hide-long-text" title="Стамбул">Стамбул</div>
+                                <div>IST</div>
+                                <div class="hide-long-text" title="Турция">Турция</div>
+                                <div class="search-date">24 дек, Ср</div>
+                            </div>
+                            <div class="col-flight-time col-search">
+                                <div class="flight-time"><img src="images/icon/clock-search.png">6 ч 30 мин
+                                </div>
+                            </div>
+                            <div class="col-search">
+                                <div class="flight-price">6 599<span>UAH</span></div>
+                            </div>
+                            <div class="order-confirm-price">
+                                <div class="price-info address-company">
+                                    Указанная цена действительна до:
+                                    <div class="count-train">22.02.2016 19:23</div>
+
+                                </div>
+                            </div>
+
+
+                            <div id="result-search-flight-with-one-transship"
+                                 class="search-more-collapse collapse col-sm-12">
+                                <div class="row margin-0">
+                                    <div class="col-search-time-fly col-search">
+                                        <div>Вылет:</div>
+                                        <div class="time">12:00</div>
+                                    </div>
+                                    <div class="col-search-country-fly col-search">
+                                        <div title="Одесса">Одесса, ОDS, A Украина</div>
+                                    </div>
+                                    <div class="col-search-time-fly-arrive col-search">
+                                        <div>Прибытие:</div>
+                                        <div class="time">14:00</div>
+                                    </div>
+                                    <div class="col-search-country-fly col-search">
+                                        <div class="hide-long-text" title="Варшава">Варшава</div>
+                                        <div>WAW, С</div>
+                                        <p class="flight-country" title="Польша">Польша</p>
+                                    </div>
+                                    <div class="col-search-model-plane col-search">
+                                        <div class="more-time">2ч</div>
+                                        <div class="model-plane  hide-long-text" title="Boeing 737-800">Boeing 737-800
+                                        </div>
+                                        <div class="model-plane">PS-56</div>
+                                        <div>бизнес С</div>
+                                    </div>
+                                    <div class="col-flight-aviacompany col-search">
+                                        <div class="model-plane"><img src="images/logo-aviacompany/logo-tk-small.png">Turkish
+                                            airlines
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-blue">пересадка в Варшаве 1ч 20мин</div>
+                                <div class="row margin-0">
+                                    <div class="col-search-time-fly col-search">
+                                        <div>Вылет:</div>
+                                        <div class="time">12:00</div>
+                                    </div>
+                                    <div class="col-search-country-fly col-search">
+                                        <div class="hide-long-text" title="Одесса">Одесса</div>
+                                        <div>ОDS, A</div>
+                                        <p class="flight-country" title="Украина">Украина</p>
+                                    </div>
+                                    <div class="col-search-time-fly-arrive col-search">
+                                        <div>Прибытие:</div>
+                                        <div class="time">14:00</div>
+                                    </div>
+                                    <div class="col-search-country-fly col-search">
+                                        <div class="hide-long-text" title="Варшава">Варшава</div>
+                                        <div>WAW, С</div>
+                                        <p class="flight-country" title="Польша">Польша</p>
+                                    </div>
+                                    <div class="col-search-model-plane col-search">
+                                        <div class="more-time">2ч</div>
+                                        <div class="model-plane  hide-long-text" title="Boeing 737-800">Boeing 737-800
+                                        </div>
+                                        <div class="model-plane">PS-56</div>
+                                        <div>бизнес С</div>
+                                    </div>
+                                    <div class="col-flight-aviacompany col-search">
+                                        <div class="model-plane"><img src="images/logo-aviacompany/logo-tk-small.png">Turkish
+                                            airlines
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="row "><div class="line-gray-train line-order"></div></div>
+                    <div class="row">
+                        <div class="col-lg-1 col-md-2 date-order-confirm">
+                            <div class="margin-bottom-15">24 дек 2015, Cp</div>
+                            <a class="search-more-accordion-toggle collapsed" data-toggle="collapse"
+
+                               href="#result-search-flight-with-one-transship-1">Подробнее</a>
+                        </div>
+                        <div class="col-lg-9 col-md-9">
+                            <div class="plane-there-back"><img src="images/icon/plane-from-where.png" >Обратно:</div>
+                            <div class="col-search-fly col-search">
+                                <div class="time">12:00</div>
+                                <div class="hide-long-text" title="Одесса">Одесса</div>
+                                <div>ОDS</div>
+                                <div class="hide-long-text" title="Украина">Украина</div>
+                                <div class="search-date">24 дек, Ср</div>
+                            </div>
+                            <div class="col-line-fly col-search">
+                                <div class="search-transship-text">пересадка 1 ч 20 мин</div>
+                                <div class="line-fly">
+                                    <div class="circle start-line"></div>
+                                    <div class="circle middle-line"></div>
+                                    <div class="circle end-line"></div>
+                                </div>
+                                <div class="text-center">WAW</div>
+                            </div>
+                            <div class="col-search-fly col-search">
+                                <div class="time">12:00</div>
+                                <div class="hide-long-text" title="Стамбул">Стамбул</div>
+                                <div>IST</div>
+                                <div class="hide-long-text" title="Турция">Турция</div>
+                                <div class="search-date">24 дек, Ср</div>
+                            </div>
+                            <div class="col-flight-time col-search">
+                                <div class="flight-time"><img src="images/icon/clock-search.png">6 ч 30 мин
+                                </div>
+                            </div>
+
+
+                            <div id="result-search-flight-with-one-transship-1"
+                                 class="search-more-collapse collapse col-sm-12">
+                                <div class="row margin-0">
+                                    <div class="col-search-time-fly col-search">
+                                        <div>Вылет:</div>
+                                        <div class="time">12:00</div>
+                                    </div>
+                                    <div class="col-search-country-fly col-search">
+                                        <div class="hide-long-text" title="Одесса">Одесса</div>
+                                        <div>ОDS, A</div>
+                                        <p class="flight-country" title="Украина">Украина</p>
+                                    </div>
+                                    <div class="col-search-time-fly-arrive col-search">
+                                        <div>Прибытие:</div>
+                                        <div class="time">14:00</div>
+                                    </div>
+                                    <div class="col-search-country-fly col-search">
+                                        <div class="hide-long-text" title="Варшава">Варшава</div>
+                                        <div>WAW, С</div>
+                                        <p class="flight-country" title="Польша">Польша</p>
+                                    </div>
+                                    <div class="col-search-model-plane col-search">
+                                        <div class="more-time">2ч</div>
+                                        <div class="model-plane  hide-long-text" title="Boeing 737-800">Boeing 737-800
+                                        </div>
+                                        <div class="model-plane">PS-56</div>
+                                        <div>бизнес С</div>
+                                    </div>
+                                    <div class="col-flight-aviacompany col-search">
+                                        <div class="model-plane"><img src="images/logo-aviacompany/logo-tk-small.png">Turkish
+                                            airlines
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-blue">пересадка в Варшаве 1ч 20мин</div>
+                                <div class="row margin-0">
+                                    <div class="col-search-time-fly col-search">
+                                        <div>Вылет:</div>
+                                        <div class="time">12:00</div>
+                                    </div>
+                                    <div class="col-search-country-fly col-search">
+                                        <div class="hide-long-text" title="Одесса">Одесса</div>
+                                        <div>ОDS, A</div>
+                                        <p class="flight-country" title="Украина">Украина</p>
+                                    </div>
+                                    <div class="col-search-time-fly-arrive col-search">
+                                        <div>Прибытие:</div>
+                                        <div class="time">14:00</div>
+                                    </div>
+                                    <div class="col-search-country-fly col-search">
+                                        <div class="hide-long-text" title="Варшава">Варшава</div>
+                                        <div>WAW, С</div>
+                                        <p class="flight-country" title="Польша">Польша</p>
+                                    </div>
+                                    <div class="col-search-model-plane col-search">
+                                        <div class="more-time">2ч</div>
+                                        <div class="model-plane  hide-long-text" title="Boeing 737-800">Boeing 737-800
+                                        </div>
+                                        <div class="model-plane">PS-56</div>
+                                        <div>бизнес С</div>
+                                    </div>
+                                    <div class="col-flight-aviacompany col-search">
+                                        <div class="model-plane"><img src="images/logo-aviacompany/logo-tk-small.png">Turkish
+                                            airlines
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="checkbox checkbox-order">
+            <input type="checkbox" value="" id="accept" name="accept" checked>
+            <label for="accept" class="link-payment"><span></span><img src="images/info-i.png">Я ознакомлен и согласен с
+                <a href="#">правилами обмена/возврата</a> и
+                <a href="#">правилами авиапассажирских перевозок</a></label>
+        </div>
+        <div class="font-size-28">Введите данные пассажиров (латинскими буквами):</div>
+        <form class="form-inline form-search form-order">
+            <div class="clearfix">
+                <div class="pull-left bold-text">Пассажир 1:</div>
+                <div class="pull-right">
+                    <div class="checkbox checkbox-order">
+                        <input type="checkbox" value="" id="save" name="save">
+                        <label for="save"><span></span>Сохранить данные пассажира</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="form-group">
+                        <label for="citizenship">Гражданство:</label>
+                        <input type="text" class="form-control form-control-order"
+                               id="citizenship"
+                               name="citizenship" value="Украина">
+                        <a href="#" class="input-arrow"></a>
+                    </div>
+                    <div class="form-group">
+                        <label for="surname-order">Фамилия:</label>
+                        <input type="text" class="form-control form-control-order"
+                               id="surname-order"
+                               name="surname-order">
+                    </div>
+                    <div class="form-group">
+                        <label for="name-order">Имя:</label>
+                        <input type="text" class="form-control form-control-order"
+                               id="name-order"
+                               name="name-order">
+                    </div>
+                    <div class="form-group">
+                        <label for="middlename-order">Отчество:</label>
+                        <input type="text" class="form-control form-control-order"
+                               id="middlename-order"
+                               name="middlename-order">
+                    </div>
+                    <div class="form-group">
+                        <label for="date-birth-dd-1">Дата рождения:</label>
+                        <div class="wrap-date-birth-order">
+                            <input type="text" class="form-control text-center date-birth-order"
+                                   id="date-birth-dd-1"
+                                   name="date-birth-dd-1" placeholder="ДД">
+                        </div>
+                        /
+                        <div class="wrap-date-birth-order">
+                            <label for="date-birth-mm-1" class="sr-only">Дата рождения</label>
+                            <input type="text" class="form-control text-center date-birth-order"
+                                   id="date-birth-mm-1"
+                                   name="date-birth-mm-1" placeholder="ММ">
+                        </div>
+                        /
+                        <div class="wrap-date-birth-order">
+                            <label for="date-birth-yy-1" class="sr-only">Дата рождения
+                                (для
+                                детского билета)</label>
+                            <input type="text" class="form-control text-center date-birth-order"
+                                   id="date-birth-yy-1"
+                                   name="date-birth-yy-1" placeholder="ГГ">
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Пол:</label>
+                        <div class="radio-checked-order">
+                            <input type="radio" id="female" name="radio-box-sex" class="radio-box" checked>
+                            <label for="female"><span><span></span></span>Мужской</label>
+
+                            <input type="radio" id="male" name="radio-box-sex" class="radio-box">
+                            <label for="male"><span><span></span></span>Женский</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="form-group">
+                        <label for="type-document-order">Тип документа:</label>
+                        <input type="text" class="form-control form-control-order"
+                               id="type-document-order" value="Загранпаспорт"
+                               name="type-document-order">
+                        <a href="#" class="input-arrow"></a>
+                    </div>
+                    <div class="form-group">
+                        <label for="series-passport-order">Серия:</label>
+                        <input type="text" class="form-control text-center series-passport-order margin-right-10"
+                               id="series-passport-order"
+                               name="series-passport-order">
+                    </div>
+                    <div class="form-group">
+                        <label for="number-passport-order">Номер:</label>
+                        <input type="text" class="form-control text-center number-passport-order"
+                               id="number-passport-order"
+                               name="number-passport-order">
+                    </div>
+                    <div class="form-group">
+                        <label for="expiration-date-mm">Срок действия документа:</label>
+                        <div class="wrap-date-birth-order">
+                            <input type="text" class="form-control text-center expiration-date margin-right-10"
+                                   id="expiration-date-mm"
+                                   name="expiration-date-mm" placeholder="ММ">
+                        </div>
+                        /
+                        <div class="wrap-date-birth-order">
+                            <label for="expiration-date-yy" class="sr-only">Срок действия документа:</label>
+                            <input type="text" class="form-control text-center expiration-date margin-left-10"
+                                   id="expiration-date-yy"
+                                   name="expiration-date-yy" placeholder="ГГ">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="number-phone">Номер телефона:</label>
+                        <input type="text" class="form-control number-phone"
+                               id="number-phone"
+                               name="number-phone">
+                        <div class="input-flag"><img src="images/flag/flag-ua.png"><span>+380</span><img
+                                src="images/icon/arrow-input-black.png"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email-order">E-mail:</label>
+                        <input type="text" class="form-control form-control-order"
+                               id="email-order" value=""
+                               name="email-order">
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="link-payment font-size-16"><a href="#">Собираете мили Turkish Airlines?</a></div>
+            <div class="clearfix margin-top-25">
+                <div class="pull-left bold-text">Пассажир 2:</div>
+                <div class="pull-right">
+                    <div class="checkbox checkbox-order">
+                        <input type="checkbox" value="" id="save-2" name="save">
+                        <label for="save"><span></span>Сохранить данные пассажира</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="form-group">
+                        <label for="citizenship-1">Гражданство:</label>
+                        <input type="text" class="form-control form-control-order"
+                               id="citizenship-1"
+                               name="citizenship-1" value="Украина">
+                        <a href="#" class="input-arrow"></a>
+                    </div>
+                    <div class="form-group">
+                        <label for="surname-order-1">Фамилия:</label>
+                        <input type="text" class="form-control form-control-order text-uppercase"
+                               id="surname-order-1"
+                               name="surname-order-1" value="Grishko">
+                    </div>
+                    <div class="form-group">
+                        <label for="name-order-1">Имя:</label>
+                        <input type="text" class="form-control form-control-order text-uppercase"
+                               id="name-order-1"
+                               name="name-order-1" value="Anatoliy">
+                    </div>
+                    <div class="form-group">
+                        <label for="middlename-order-1">Отчество:</label>
+                        <input type="text" class="form-control form-control-order text-uppercase"
+                               id="middlename-order-1"
+                               name="middlename-order-1" value="Aleksandrovich">
+                    </div>
+                    <div class="form-group">
+                        <label for="date-birth-dd-2">Дата рождения:</label>
+                        <div class="wrap-date-birth-order">
+                            <input type="text" class="form-control text-center date-birth-order"
+                                   id="date-birth-dd-2"
+                                   name="date-birth-dd-2" placeholder="ДД" value="23">
+                        </div>
+                        /
+                        <div class="wrap-date-birth-order">
+                            <label for="date-birth-mm-2" class="sr-only">Дата рождения</label>
+                            <input type="text" class="form-control text-center date-birth-order"
+                                   id="date-birth-mm-2"
+                                   name="date-birth-mm-2" placeholder="ММ" value="08">
+                        </div>
+                        /
+                        <div class="wrap-date-birth-order">
+                            <label for="date-birth-yy-2" class="sr-only">Дата рождения
+                                (для
+                                детского билета)</label>
+                            <input type="text" class="form-control text-center date-birth-order"
+                                   id="date-birth-yy-2"
+                                   name="date-birth-yy-2" placeholder="ГГ" value="1967">
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Пол:</label>
+                        <div class="radio-checked-order">
+                            <input type="radio" id="female-1" name="radio-box-sex-2" class="radio-box" checked>
+                            <label for="female"><span><span></span></span>Мужской</label>
+
+                            <input type="radio" id="male-1" name="radio-box-sex-2" class="radio-box">
+                            <label for="male"><span><span></span></span>Женский</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="form-group">
+                        <label for="type-document-order-1">Тип документа:</label>
+                        <input type="text" class="form-control form-control-order"
+                               id="type-document-order-1" value="Загранпаспорт"
+                               name="type-document-order-1">
+                        <a href="#" class="input-arrow"></a>
+                    </div>
+                    <div class="form-group">
+                        <label for="series-passport-order-1">Серия:</label>
+                        <input type="text" class="form-control text-center series-passport-order margin-right-10"
+                               id="series-passport-order-1"
+                               name="series-passport-order-1" value="6290">
+                    </div>
+                    <div class="form-group">
+                        <label for="number-passport-order-1">Номер:</label>
+                        <input type="text" class="form-control text-center number-passport-order"
+                               id="number-passport-order-1"
+                               name="number-passport-order-1" value="947392">
+                    </div>
+                    <div class="form-group">
+                        <label for="expiration-date-mm-1">Срок действия документа:</label>
+                        <div class="wrap-date-birth-order">
+                            <input type="text" class="form-control text-center expiration-date margin-right-10"
+                                   id="expiration-date-mm-1"
+                                   name="expiration-date-mm-1" placeholder="ММ" value="03">
+                        </div>
+                        /
+                        <div class="wrap-date-birth-order">
+                            <label for="expiration-date-yy-1" class="sr-only">Срок действия документа:</label>
+                            <input type="text" class="form-control text-center expiration-date margin-left-10"
+                                   id="expiration-date-yy-1"
+                                   name="expiration-date-yy-1" placeholder="ГГ" value="2023">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="number-phone-1">Номер телефона:</label>
+                        <input type="text" class="form-control number-phone"
+                               id="number-phone-1"
+                               name="number-phone-1">
+                        <div class="input-flag"><img src="images/flag/flag-ua.png"><span>+380</span><img
+                                src="images/icon/arrow-input-black.png"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email-order-1">E-mail:</label>
+                        <input type="email" class="form-control form-control-order"
+                               id="email-order-1" value="grishko_anatoliy@yandex.ru"
+                               name="email-order-1">
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <label for="aviacompany-name">Авиакомпания:</label>
+                                <input type="text" class="form-control form-control-order"
+                                       id="aviacompany-name"
+                                       name=aviacompany-name" value="Turkish Airways">
+                                <a href="#" class="input-arrow"></a>
+                            </div>
+                            <div class="form-group">
+                                <label for="number-card">Номер карты:</label>
+                                <input type="text" class="form-control text-center form-control-order"
+                                       id="number-card"
+                                       name="number-card">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="font-size-28">Данные о покупателе:</div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <label for="surname-order-2">Фамилия:</label>
+                                <input type="text" class="form-control form-control-order text-uppercase"
+                                       id="surname-order-2"
+                                       name="surname-order-2">
+                            </div>
+                            <div class="form-group">
+                                <label for="name-order-2">Имя:</label>
+                                <input type="text" class="form-control form-control-order text-uppercase"
+                                       id="name-order-2"
+                                       name="name-order-2">
+                            </div>
+                            <div class="form-group">
+                                <label for="number-phone-2">Номер телефона:</label>
+                                <input type="text" class="form-control number-phone"
+                                       id="number-phone-2"
+                                       name="number-phone-2">
+                                <div class="input-flag"><img src="images/flag/flag-ua.png"><span>+380</span><img
+                                        src="images/icon/arrow-input-black.png"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email-order-2">E-mail:</label>
+                                <input type="email" class="form-control form-control-order"
+                                       id="email-order-2" value="grishko_anatoliy@yandex.ru"
+                                       name="email-order-2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="font-size-28">Выберите форму оплаты:</div>
+                    <div class="row">
+                        <div class="col-lg-6 method-payment-wrap">
+                            <div class="radio-checked-order method-payment">
+                                <input type="radio" id="payment-1" name="radio-method-payment" class="radio-box" value="mastercard"
+                                       checked>
+                                <label for="payment-1"><span><span></span></span>Visa(MasterCard)</label>
+
+                                <input type="radio" id="payment-2" name="radio-method-payment" class="radio-box" value="liqpay">
+                                <label for="payment-2"><span><span></span></span>Liqpay</label>
+
+                                <input type="radio" id="payment-3" name="radio-method-payment" class="radio-box" value="deposit">
+                                <label for="payment-3" ><span><span></span></span>Депозит</label>
+                            </div>
+                            <div id="mastercard">
+                                <div class="radio-checked-order currency">
+                                    <label>Валюта:</label>
+                                    <div class="border-bottom active"><a href="#">UAH</a></div>
+                                    <div class="border-bottom"><a href="#">USD</a></div>
+                                    <div class="border-bottom"><a href="#">EUR</a></div>
+                                    <div class="border-bottom"><a href="#">RUB</a></div>
+                                </div>
+                                <div class="row">
+
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <label for="number-passport-order-2">Номер карты:</label>
+                                            <input type="text" class="form-control text-center form-control-order"
+                                                   id="number-passport-order-2"
+                                                   name="number-passport-order-2" value="947392">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="expiration-date-mm-2">Срок действия карты:</label>
+                                            <div class="wrap-date-birth-order">
+                                                <input type="text" class="form-control text-center expiration-date margin-right-10"
+                                                       id="expiration-date-mm-2"
+                                                       name="expiration-date-mm-2" placeholder="ММ" value="03">
+                                            </div>
+                                            /
+                                            <div class="wrap-date-birth-order">
+                                                <label for="expiration-date-yy-2" class="sr-only">Срок действия
+                                                    документа:</label>
+                                                <input type="text" class="form-control text-center expiration-date margin-left-10"
+                                                       id="expiration-date-yy-2"
+                                                       name="expiration-date-yy-2" placeholder="ГГ" value="2017">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="number-passport-order-5">CVV / CVC</label>
+                                            <input type="text" class="form-control text-center expiration-date"
+                                                   id="number-passport-order-5"
+                                                   name="number-passport-order-5">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <label for="surname-order-4">Фамилия владельца:</label>
+                                            <input type="text" class="form-control form-control-order text-uppercase"
+                                                   id="surname-order-4"
+                                                   name="surname-order-4">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="name-order-4">Имя владельца:</label>
+                                            <input type="text" class="form-control form-control-order text-uppercase"
+                                                   id="name-order-4"
+                                                   name="name-order-4">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div id="liqpay">
+                                <div class="radio-checked-order currency">
+                                    <label >Валюта:</label>
+                                    <div class="border-bottom active"><a href="#">UAH</a></div>
+
+                                </div>
+                                <div class="row">
+
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <label for="number-passport-order-4">Номер карты:</label>
+                                            <input type="text" class="form-control text-center form-control-order"
+                                                   id="number-passport-order-4"
+                                                   name="number-passport-order-4" value="947392">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="expiration-date-mm-3">Срок действия карты:</label>
+                                            <div class="wrap-date-birth-order">
+                                                <input type="text" class="form-control text-center expiration-date margin-right-10"
+                                                       id="expiration-date-mm-3"
+                                                       name="expiration-date-mm-3" placeholder="ММ" value="03">
+                                            </div>
+                                            /
+                                            <div class="wrap-date-birth-order">
+                                                <label for="expiration-date-yy-3" class="sr-only">Срок действия
+                                                    документа:</label>
+                                                <input type="text" class="form-control text-center expiration-date margin-left-10"
+                                                       id="expiration-date-yy-3"
+                                                       name="expiration-date-yy-3" placeholder="ГГ" value="2017">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="number-passport-order-3">CVV / CVC</label>
+                                            <input type="text" class="form-control text-center expiration-date"
+                                                   id="number-passport-order-3"
+                                                   name="number-passport-order-3">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <label for="surname-order-3">Фамилия владельца:</label>
+                                            <input type="text" class="form-control form-control-order text-uppercase"
+                                                   id="surname-order-3"
+                                                   name="surname-order-3">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="name-order-3">Имя владельца:</label>
+                                            <input type="text" class="form-control form-control-order text-uppercase"
+                                                   id="name-order-3"
+                                                   name="name-order-3">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div id="deposit">
+                                <div class="address-company margin-top-25 promo-bonus-depoisit">
+                                    <div>На вашем счету:</div>
+                                    <div><span class="count-train">5235</span>грн</div>
+                                    <div><span class="count-train">1920</span>бонусов</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="payment-card info-order">
+                                <div class="clearfix">
+                                    <div class="pull-left">
+                                        <div>Стоимость:</div>
+                                        <div>Комиссия платежной системы:</div>
+                                    </div>
+                                    <div class="pull-right text-right">
+                                        <div>3 799 UAH</div>
+                                        <div>219 UAH</div>
+                                    </div>
+                                </div>
+                                <div class="border-blue"></div>
+                                <div class="clearfix">
+                                    <div class="pull-left">
+                                        <div class="result-price">Итого к оплате:</div>
+                                        <div class="block-contract">Переходя к оплате, вы соглашаетесь с <a href="#" class="link-contract">условиями оферты</a></div>
+                                    </div>
+                                    <div class="pull-right text-right">
+                                        <div class="result-price"><span>4 001</span> UAH</div>
+                                        <a class="btn btn-buy-order">Оплатить</a>
+                                    </div>
+                                </div>
+                                <div class="display-flex">
+                                <a class="btn btn-reservation">Забронировать</a>
+                                <div class="address-company text-reservation">Или бронируйте сейчас и зафиксируйте цену
+                                    до <span class="count-train">15.03.2016 18:55</span>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="promo-code">
+                                <div class="font-size-16">
+                                    <a class="promo-accordion-toggle promo-code-link collapsed" data-toggle="collapse"
+                                       href="#promo-code">У вас есть промокод?</a></div>
+                                <div class="collapse" id="promo-code">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="form-group">
+                                                <label for="number-passport-order-6">Промокод</label>
+                                                <input type="text" class="form-control text-center expiration-date"
+                                                       id="number-passport-order-6"
+                                                       name="number-passport-order-6" value="947392">
+                                                <a href="#"><img src="images/icon/reload.png" alt="reload" class="margin-left-10"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="font-size-16">
+                                    <a class="promo-accordion-toggle promo-bonus collapsed" data-toggle="collapse"
+                                       href="#promo-code-1">Участвуете в бонусной программе?</a></div>
+                                <div class="collapse" id="promo-code-1">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="form-group">
+                                                <label for="number-passport-order-7">Выберите партнера:</label>
+                                                <input type="text" class="form-control  form-control-order"
+                                                       id="number-passport-order-7"
+                                                       name="number-passport-order-7" placeholder="Keycard">
+                                                <a href="#" class="input-arrow"></a>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="number-passport-order-8">Номер карты:</label>
+                                                <input type="text" class="form-control text-center form-control-order"
+                                                       id="number-passport-order-8"
+                                                       name="number-passport-order-8" value="947392">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="bonus">Бонусов для списания (доступно 1920):</label>
+                                                <div class="wrap-date-birth-order">
+                                                    <input type="text" class="form-control text-center form-control-order"
+                                                           id="bonus"
+                                                           name="bonus" placeholder="ДД" value="23">
+                                                    <a href="#"><img src="images/icon/reload.png" alt="reload" class="margin-left-10"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<footer>
+    <div class="footer-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <ul class="">
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Путешествия</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 hidden-md hidden-sm hidden-xs">
+                    <ul class="">
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">Договор оферты</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <ul class="address">
+                        <li id="phone"><a href="#">+38 044 359·05·69</a></li>
+                        <li><a href="#"> +7 495 739·79·22</a></li>
+                        <li id="mail"><a href="#">mustgoaero@gmail.com</a></li>
+                        <li id="skype"><a href="#">mustgoaero</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 hidden-lg">
+                    <ul class="">
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">Договор оферты</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <img src="images/logo.png">
+                    <p>Мы в соцсетях:</p>
+                    <ul class="social">
+                        <li><a href="#">
+                            <div id="vk"></div>
+                        </a></li>
+                        <li><a href="#">
+                            <div id="facebook"></div>
+                        </a></li>
+                        <li><a href="#">
+                            <div id="twit"></div>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="support_payments">
+            <img src="images/payments/qiwi-logo.png">
+            <img src="images/payments/yandex.png">
+            <img src="images/payments/wmlogo_vector_blue.png">
+            <img src="images/payments/okpay_logo.png">
+            <img src="images/payments/Visa_Inc.svg">
+            <img src="images/payments/logo-mastercard.png">
+            <img src="images/payments/300px-Libert.svg">
+            <img src="images/payments/logo-perfect-money.png">
+            <img src="images/payments/liqpay_logo.png">
+            <img src="images/payments/privat24.png">
+            <img src="images/payments/RBKmoney.png">
+            <img src="images/payments/paypallogo.png">
+        </div>
+    </div>
+</footer>
+
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/nouislider.min.js"></script>
+<script src="js/wNumb.js"></script>
+<script>
+    function getSliderVal(value) {
+        var i = 0,
+                time = [];
+        for (i; i < value.length; i++) {
+            var h = value[i] / 60 ^ 0;
+            if (h) {
+                var m = value[i] % 60;
+                if (m < 10) m = '0' + m;
+                time[i] = h + ':' + m;
+            } else {
+                if (value[i] < 10) {
+                    time[i] = '0:0' + parseInt(value[i]);
+                } else {
+                    time[i] = '0:' + parseInt(value[i]);
+                }
+            }
+        }
+        return time;
+    }
+    var rangeSliderarrival = document.getElementById('slider-range-arrival');
+
+    noUiSlider.create(rangeSliderarrival, {
+        step: 15,
+        margin: 50,
+        connect: true,
+        behaviour: 'tap',
+        start: [0, 1440],
+        tooltips: [wNumb({decimals: 2, mark: ':'}), wNumb({decimals: 2, mark: ':'})],
+        range: {
+            'min': [0],
+            'max': [1440]
+        }
+    });
+
+    var rangeSlider = document.getElementById('slider-range-sortie');
+
+    noUiSlider.create(rangeSlider, {
+        step: 15,
+        margin: 50,
+        connect: true,
+        behaviour: 'tap',
+        start: [0, 1440],
+        tooltips: [wNumb({decimals: 2, mark: ':'}), wNumb({decimals: 2, mark: ':'})],
+        range: {
+            'min': [0],
+            'max': [1440]
+        }
+    });
+
+    rangeSlider.noUiSlider.on('change', function () {
+        var value = rangeSlider.noUiSlider.get(),
+                time = getSliderVal(value);
+        $('#slider-range-sortie .noUi-handle-lower .noUi-tooltip').text(time[0]);
+        $('#slider-range-sortie .noUi-handle-upper .noUi-tooltip').text(time[1]);
+    });
+
+    rangeSlider.noUiSlider.on('start', function () {
+        var value = rangeSlider.noUiSlider.get(),
+                time = getSliderVal(value);
+        $('#slider-range-sortie .noUi-handle-lower .noUi-tooltip').text(time[0]);
+        $('#slider-range-sortie .noUi-handle-upper .noUi-tooltip').text(time[1]);
+    });
+
+    rangeSlider.noUiSlider.on('update', function () {
+        var value = rangeSlider.noUiSlider.get(),
+                time = getSliderVal(value);
+        $('#slider-range-sortie .noUi-handle-lower .noUi-tooltip').text(time[0]);
+        $('#slider-range-sortie .noUi-handle-upper .noUi-tooltip').text(time[1]);
+    });
+
+    rangeSliderarrival.noUiSlider.on('change', function () {
+        var value = rangeSliderarrival.noUiSlider.get(),
+                time = getSliderVal(value);
+        $('#slider-range-arrival .noUi-handle-lower .noUi-tooltip').text(time[0]);
+        $('#slider-range-arrival .noUi-handle-upper .noUi-tooltip').text(time[1]);
+    });
+
+    rangeSliderarrival.noUiSlider.on('start', function () {
+        var value = rangeSliderarrival.noUiSlider.get(),
+                time = getSliderVal(value);
+        $('#slider-range-arrival .noUi-handle-lower .noUi-tooltip').text(time[0]);
+        $('#slider-range-arrival .noUi-handle-upper .noUi-tooltip').text(time[1]);
+    });
+
+    rangeSliderarrival.noUiSlider.on('update', function () {
+        var value = rangeSliderarrival.noUiSlider.get(),
+                time = getSliderVal(value);
+        $('#slider-range-arrival .noUi-handle-lower .noUi-tooltip').text(time[0]);
+        $('#slider-range-arrival .noUi-handle-upper .noUi-tooltip').text(time[1]);
+    });
+
+
+</script>
+
+</body>
+</html>

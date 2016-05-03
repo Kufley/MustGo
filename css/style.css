@@ -1,4 +1,6 @@
-body{font-family: 'Roboto', sans-serif; min-width: 768px;  cursor: default;color: #000;}
+html{height: 100%;}
+
+body{font-family: 'Roboto', sans-serif; min-width: 768px;  cursor: default;color: #000; min-height: 100%; position: relative;}
 input:focus, input:active, button:active, button:focus,a:focus, .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {outline-style: none}
 
 h1{font-size: 30px;font-weight: 700;line-height: 36px;}
@@ -70,7 +72,7 @@ a.dropdown-arrow{color:#ffb400;font-size: 20px;font-weight: 400; padding: 0 25px
 .price-discont-blue{color:#155baa;font-size: 24px;font-weight: 900;padding-left: 5px;line-height: 30px;}
 .price-discont-green{color:#2d9186;font-size: 24px;font-weight: 900; line-height: 10px}
 
-.link-details-hotel{color:  #35a69a;font-size: 16px;font-weight: 400;position: absolute;bottom: 60px;text-decoration: underline; }
+.link-details-hotel{color:  #35a69a;font-size: 16px;font-weight: 400;position: absolute;bottom: 60px;text-decoration: underline;}
 .link-action{color:  #4773b5;font-size: 24px;font-weight: 700;line-height: 30px;text-decoration: underline;margin-bottom: 45px;margin-top: 5px;}
 
 .section-information{background-color:  #f2f2f2;box-shadow: 0 2px 4px 0 rgba(8, 10, 12, 0.5); padding: 30px 0 60px}
@@ -96,6 +98,8 @@ a.dropdown-arrow{color:#ffb400;font-size: 20px;font-weight: 400; padding: 0 25px
 #section-timetables-train{display: none;}
 
 .footer-info{background:url("../images/bg/bg-f.png") no-repeat; background-size: cover; color:#fff;font-size: 18px; padding: 57px 0 30px}
+.wrapper-page{padding-bottom: 385px}
+.footer-fixed{position: absolute; right: 0; left: 0; bottom: 0}
 footer ul{list-style: none; padding: 0}
 footer ul li a{color:#fff;font-size: 18px;line-height: 36px;}
 footer ul li a:hover{color:#fff;}
@@ -289,7 +293,7 @@ input[type="checkbox"]:checked + label span {background:url("../images/icon/chec
 .modal-body  .personal-information{margin-top: 40px}
 .modal-request-for-group.modal-content:after{bottom: 100%;left:30px;border: solid transparent;content: " "; height: 0;  width: 0;  position: absolute;  pointer-events: none;  border-color: rgba(248, 248, 248, 0);  border-bottom-color: #f8f8f8;  border-width: 13px;  margin-left: -13px;}
 .modal-my-flight.modal-dialog .modal-content{background-color: #fff}
-.modal-my-flight.modal-dialog .result-search-left{font-size: 22px; }
+.modal-my-flight.modal-dialog .result-search-left{font-size: 22px}
 .modal-my-flight.modal-dialog .modal-header {padding: 15px 15px 0; color: #000}
 .modal-my-flight.modal-dialog .modal-body {padding-bottom: 70px}
 .modal-my-flight.modal-dialog .search-more-collapse {margin: 0}
@@ -845,6 +849,7 @@ blockquote {padding: 30px 20px; margin: 40px 0 50px;  background-color:  #f2f2f2
 .form-follow-price{margin-top: 20px}
 .confirmation-email{color:  #005aae;line-height: 18px;}
 .modal-notification{margin: 30px 0 10px}
+.heading-order.font-size-22{font-size: 22px; line-height: 45px}
 
 .slide-panel{position: fixed;right:0;box-shadow:  2px 2px 2px 2px rgba(3, 4, 5, 0.5); top: 350px; width: 455px; z-index: 1; background-color: #f8f8f8; -moz-transition:margin 0.3s linear;  -o-transition:margin 0.3s linear;  -webkit-transition:margin 0.3s linear;  -ms-transition:margin 0.3s linear;  transition:margin 0.3s linear;  margin-right: -400px;}
 .slide-panel-header{width: 55px; height: 278px; position: relative;}
@@ -899,6 +904,7 @@ blockquote {padding: 30px 20px; margin: 40px 0 50px;  background-color:  #f2f2f2
 .expiration-date-arrow .wrap-date-birth-order .input-arrow {top:5px}
 
 .tabs-result-search .nav-tabs.nav-bought-order{border-bottom: 2px solid #007fe5;margin-bottom: 45px;}
+
 .tabs-result-search .nav-tabs.nav-bought-order>li{margin-bottom: 0}
 .tabs-result-search .nav-tabs.nav-bought-order>li.active>a,
 .tabs-result-search .nav-tabs.nav-bought-order>li.active>a:focus,
@@ -906,18 +912,29 @@ blockquote {padding: 30px 20px; margin: 40px 0 50px;  background-color:  #f2f2f2
 
 .nav-bought-order.nav-tabs.nav.nav-menu>li> a{ color: #fff;font-size: 18px;font-weight: 400;line-height: 30px;}
 
-.nav.nav-bought-order>li>.avia-tickets:focus, .nav.nav-bought-order>li>.avia-tickets:hover,.nav-tabs.nav-bought-order>li.active>.avia-tickets, .nav-tabs.nav-bought-order>li.active>.avia-tickets:focus, .nav-tabs.nav-bought-order>li.active>.avia-tickets:hover {color: #fff;background-color: #257ee1;border: 1px solid #257ee1;height: 62px;  margin-top: -4px; padding-top: 15px;}
-.nav-tabs .avia-tickets{background-color:#257ee1;}
+.nav.nav-bought-order>li>.avia-tickets:focus,
+.nav.nav-bought-order>li>.avia-tickets:hover,
+.nav-tabs.nav-bought-order>li.active>.avia-tickets,
+.nav-tabs.nav-bought-order>li.active>.avia-tickets:focus,
+.nav-tabs.nav-bought-order>li.active>.avia-tickets:hover {color: #fff;background-color: #257ee1;height: 62px;  margin-top: -4px; padding-top: 15px;}
 
+.nav.nav-bought-order>li>.train-tickets:focus,
+.nav.nav-bought-order>li>.train-tickets:hover,
+.nav-tabs.nav-bought-order>li.active>.train-tickets,
+.nav-tabs.nav-bought-order>li.active>.train-tickets:focus,
+.nav-tabs.nav-bought-order>li.active>.train-tickets:hover {color: #fff;background-color: #296992;height: 62px;  margin-top: -4px; padding-top: 15px;}
 
-.nav.nav-bought-order>li>.train-tickets:focus, .nav.nav-bought-order>li>.train-tickets:hover,.nav-tabs.nav-bought-order>li.active>.train-tickets, .nav-tabs.nav-bought-order>li.active>.train-tickets:focus, .nav-tabs.nav-bought-order>li.active>.train-tickets:hover {color: #fff;background-color: #296992;border: 1px solid #296992; height: 62px;  margin-top: -4px; padding-top: 15px;}
-.nav-tabs.nav-bought-order .train-tickets{background-color:#296992;}
-
-.nav.nav-bought-order>li>.insurance:focus, .nav.nav-bought-order>li>.insurance:hover,.nav-tabs.nav-bought-order>li.active>.insurance, .nav-tabs.nav-bought-order>li.active>.insurance:focus, .nav-tabs.nav-bought-order>li.active>.insurance:hover {color: #fff;background-color: #1b8da5;border: 1px solid #1b8da5; height: 62px;  margin-top: -4px; padding-top: 15px;}
-.nav-tabs.nav-bought-order .insurance{background-color:#1b8da5;}
+.nav.nav-bought-order>li>.insurance:focus,
+.nav.nav-bought-order>li>.insurance:hover,
+.nav-tabs.nav-bought-order>li.active>.insurance,
+.nav-tabs.nav-bought-order>li.active>.insurance:focus,
+.nav-tabs.nav-bought-order>li.active>.insurance:hover {color: #fff;background-color: #1b8da5;height: 62px;  margin-top: -4px; padding-top: 15px;}
 
 
 .tabs-result-search .nav-tabs.nav-bought-order>li>a{border:0; color:#fff;}
+
+.order-confirm-price{width: 12.55%; position: absolute; right: 15px; top:0}
+.order-confirm-content{width: 87.333333%;}
 
 @media (min-width: 1875px) {
 .modal-my-flight.modal-dialog{width: 1372px;margin-left: 16.333%;}
