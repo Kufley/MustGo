@@ -12,6 +12,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500' rel='stylesheet' type='text/css'>
     <link href="css/nouislider.min.css" rel="stylesheet">
 </head>
+<body>
 <div class="top-page-personal-cabinet">
     <nav class="navbar">
         <div class="container clearfix">
@@ -69,93 +70,89 @@
     </nav>
 </div>
 
-<div class="container content-result-search">
+<div class="container content-result-search margin-bottom-350">
     <ul class="list-unstyled list-personal-cabinet">
         <li><a href="personal-cabinet-booking.html">Забронированные услуги</a></li>
         <li><a href="personal-cabinet.html">Выкупленные заказы</a></li>
-        <li><a href="personal-cabinet-airbill.html" class="active">Список пассажиров</a></li>
+        <li><a href="personal-cabinet-airbill.html">Список пассажиров</a></li>
         <li><a href="#">Календарь поездок</a></li>
         <li><a href="#">Платежи и отчетность</a></li>
-        <li><a href="personal-cabinet-settings-list.html">Настройки аккаунта</a></li>
+        <li><a href="personal-cabinet-settings-list.html" class="active">Настройки аккаунта</a></li>
     </ul>
 
     <div class="sorting clearfix">
-        <div class="pull-left add-pass">
-            <a href="#"><img src="images/icon/plus-green.png"><span>Добавить пасажира</span></a>
+        <div class="pull-left add-pass settings-top">
+            <a href="personal-cabinet-settings-account.html"><span>Настройки аккаунта</span></a>
+            <a href="personal-cabinet-settings-list.html"><span class="active">Пользователи</span></a>
         </div>
-        <div class="search-pass pull-right position-relative">
-            <label for="search-pass" class="sr-only">:</label>
-            <input type="text" id="search-pass" name="search-pass" placeholder="Поиск по пассажирам">
-            <div href="#" class="input-search-pass"></div>
+        <div class="pull-right add-pass">
+            <a href="#"><span>Сохранить</span></a>
         </div>
     </div>
+    <form class="form-inline form-search form-order form-settings">
+        <div class="row">
+            <div class="col-lg-12 ">
+                <div class="form-group">
+                    <label for="surname-settings">Фамилия</label>
+                    <input type="text" class="form-control form-control-settings"
+                           id="surname-settings" value="Антонов"
+                           name="surname-settings">
+                </div>
+                <div class="form-group">
+                    <label for="name-settings">Имя</label>
+                    <input type="text" class="form-control form-control-settings"
+                           id="name-settings" value="Юрий"
+                           name="name-settings">
+                </div>
+                <div class="form-group">
+                    <label for="login-settings">Логин</label>
+                    <input type="text" class="form-control form-control-settings"
+                           id="login-settings"
+                           name="login-settings" value="antonov@gmail.com">
 
-    <table class="table table-bordered table-striped table-order table-pass">
-        <thead>
-        <tr>
-            <th>Пассажир
-                <a href="#" class="table-lang up">кириллица</a>
-                <a href="#" class="table-lang down">латиница</a>
-            </th>
-            <th>E-mail</th>
-            <th>Телефон</th>
-            <th>Количество билетов</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td><a href="personal-cabinet-airbill-document.html" class="name-pass">Konstantin belocerkovskiy</a></td>
-            <td>konstantin_belocerkovskiy@gmail.com</td>
-            <td>+380997837724</td>
-            <td>2</td>
+                </div>
+                <div class="form-group">
+                    <label for="phone-settings">Телефон</label>
+                    <input type="text" class="form-control form-control-settings"
+                           id="phone-settings" value="+380673457820"
+                           name="phone-settings">
+                </div>
+                <div class="form-group">
+                    <label for="status-settings">Статус:</label>
+                    <input type="text" class="form-control form-control-settings"
+                           id="status-settings" value="Активен"
+                           name="status-settings">
+                    <a href="#" class="input-arrow"></a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="form-group">
+                    <label for="pass-settings">Пароль</label>
+                    <input type="text" class="form-control form-control-settings"
+                           id="pass-settings"
+                           name="pass-settings" value="M3VO349SZ">
 
-        </tr>
-        <tr>
-            <td><a href="personal-cabinet-airbill-document.html" class="name-pass">Anatoliy Serebryanskiy</a></td>
-            <td>serebryanskiy@gmail.com</td>
-            <td>+380673467122</td>
-            <td>1</td>
-        </tr>
-        <tr>
-            <td><a href="personal-cabinet-airbill-document.html" class="name-pass">Vladimir Korneychuk</a></td>
-            <td>cool_vladimir76@gmail.com</td>
-            <td>+380673467122</td>
-            <td>3</td>
-        </tr>
-        <tr>
-            <td><a href="personal-cabinet-airbill-document.html" class="name-pass">Анастасия Александровна Толмачёва</a></td>
-            <td>anastasia2016@gmail.com</td>
-            <td>+380673467122</td>
-            <td>2</td>
-        </tr>
-        <tr>
-
-        </tr>
-        </tbody>
-    </table>
-    <nav class="text-center">
-        <ul class="pagination">
-            <li>
-                <a href="#" aria-label="Previous" class="pagination-arrow">
-                    <img src="images/icon/pagination-prev.png">
-                </a>
-            </li>
-            <li ><a href="#">...</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-            <li class="active"><a href="#">6</a></li>
-            <li><a href="#">7</a></li>
-            <li><a href="#">8</a></li>
-            <li><a href="#">9</a></li>
-            <li><a href="#">10</a></li>
-            <li><a href="#">...</a></li>
-            <li>
-                <a href="#" aria-label="Next" class="pagination-arrow">
-                    <img src="images/icon/pagination-next.png">
-                </a>
-            </li>
-        </ul>
-    </nav>
+                </div>
+                <div class="form-group">
+                    <label for="newpass-settings">Новый пароль</label>
+                    <input type="text" class="form-control form-control-settings"
+                           id="newpass-settings"
+                           name="newpass-settings">
+                </div>
+                <div class="form-group">
+                    <label for="repeatpass-settings">Повторите пароль</label>
+                    <input type="text" class="form-control form-control-settings"
+                           id="repeatpass-settings"
+                           name="repeatpass-settings">
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="pull-left booking-links">
+        <a href="personal-cabinet-settings-list.html"><span>Вернуться к списку пользователей</span></a>
+    </div>
 </div>
 
 <footer>
