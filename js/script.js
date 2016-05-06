@@ -239,6 +239,16 @@ $(document).ready(function () {
         }
     });
 
+    $('.show-table-date').on('shown.bs.collapse', function () {
+        $('.table-accordion-toggle span').text('Свернуть');
+        $('.table-accordion-toggle').removeClass('more-arrow-table-down').addClass('more-arrow-table-up');
+
+    });
+    $('.show-table-date').on('hidden.bs.collapse', function () {
+        $('.table-accordion-toggle span').text('Подробнее');
+        $('.table-accordion-toggle').removeClass('more-arrow-table-up').addClass('more-arrow-table-down');
+    });
+
     $('.promo-code-link').click(function(){
         var $this = $(this);
         if($this.hasClass('collapsed')){

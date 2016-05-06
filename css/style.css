@@ -43,7 +43,7 @@ h5{font-size: 16px;font-weight: 700;line-height: 30px;}
 .phone{color:#fff;font-size: 30px;font-weight: 500; margin-top: 17px;}
 .feedback{text-align: center;}
 .feedback a{color:#ffb400;font-size: 19px;font-weight: 400; border-bottom: 1px dashed #ffb400;}
-a.dropdown-arrow:hover, a.dropdown-arrow:focus, a.dropdown-arrow:active,.feedback a:hover, .feedback a:focus, .feedback a:active{text-decoration: none}
+a.dropdown-arrow:hover, a.dropdown-arrow:focus, a.dropdown-arrow:active,.feedback a:hover, .feedback a:focus, .feedback a:active, .arrow-sort-date:hover{text-decoration: none}
 
 .section-information .padding-left-a{padding-left: 80px;}
 .section-information .padding-left-q{padding-left: 37px;}
@@ -328,8 +328,10 @@ a.filter-accordion-toggle.show-all.collapsed,a.filter-accordion-toggle.show-all 
 .filter-name{color:#000;font-size: 16px;font-weight: 700;line-height: 35px;text-decoration:none;}
 
 a.search-more-accordion-toggle:after{background: url("../images/icon/arrow-up-search.png"); width: 16px; height: 7px;  overflow: no-display;  content:" ";  text-decoration: none;  position: absolute;  margin-top: 13px;  margin-left: 10px;  }
-a.search-more-accordion-toggle.collapsed:after{content:" ";  background: url("../images/icon/arrow-down-search.png"); width: 16px; height: 7px;  }
+a.search-more-accordion-toggle.accordion-toggle-top:after{margin-left: 0; right: 0}
+a.search-more-accordion-toggle.collapsed:after, .arrow-down-table{content:" ";  background: url("../images/icon/arrow-down-search.png"); width: 16px; height: 7px;  }
 a.search-more-accordion-toggle{color:#007fe5;font-size: 14px;font-weight: 400;line-height: 30px;text-decoration:none;border-bottom: 2px dotted #007fe5;}
+a.search-more-accordion-toggle.accordion-toggle-top{margin-right: 25px}
 
 a.promo-accordion-toggle:after{background: url("../images/icon/arrow-up-search.png"); width: 16px; height: 7px;  overflow: no-display;  content:" ";  text-decoration: none;  position: absolute;  margin-top: 13px;  margin-left: 10px;  }
 a.promo-accordion-toggle.collapsed:after{content:" ";  background: url("../images/icon/arrow-down-search.png"); width: 16px; height: 7px;  }
@@ -355,6 +357,7 @@ a.promo-accordion-toggle{color:#007fe5;font-size: 16px;font-weight: 400;line-hei
 .autocomplete-where-to-fly .nav-tabs>.cities-and-airports.active .link2{display: block; position: absolute;left: 27%;  bottom: -18px;}
 .autocomplete-where-to-fly .nav-tabs>.country.active .link3{display: block; position: absolute;left: 27%; bottom: -18px;}
 .autocomplete-wrap.autocomplete-where-to-fly .tab-content{background:#0b2038; border: 0}
+.autocomplete-wrap.tooltip-variable{color:#fff;font-size: 14px;position: absolute; padding: 15px 10px; width: 300px; top: 60px;left: 44px;z-index:1;display: none}
 
 
 .sub-list li{padding-left: 58px;padding-right: 50px;}
@@ -379,14 +382,19 @@ a.promo-accordion-toggle{color:#007fe5;font-size: 16px;font-weight: 400;line-hei
 .autocomplete-insurance{width: 116px; padding: 20px 15px 5px}
 .autocomplete-class-fly{width: 112px;}
 .autocomplete-check-passengers{width: 350px}
-.autocomplete-priority-company{width: 452px; padding: 20px 0;}
+.autocomplete-priority-company{width: 452px; padding: 20px 0; }
 
 .autocomplete-calendar{width: 583px;padding:20px 0 15px;}
-.navigation-arrow-left{background:url("../images/icon/arrow-left-calendar.png") center no-repeat; width: 7px; height: 16px;display: inline-block; margin-right: 60px}
-.navigation-arrow-right{background:url("../images/icon/calehdar-right.png") center no-repeat; width: 7px; height: 16px;display: inline-block; margin-left: 60px;}
+.autocomplete-calendar .year-calendar .navigation-arrow-left{margin:0 15px 0 0}
+.autocomplete-calendar .year-calendar .navigation-arrow-right{margin:0 0 0 15px}
+.autocomplete-calendar .navigation-arrow-left{background:url("../images/icon/arrow-left-calendar.png") center no-repeat; width: 7px; height: 16px;display: inline-block; margin:0 60px 0 0}
+.autocomplete-calendar .navigation-arrow-right{background:url("../images/icon/calehdar-right.png") center no-repeat; width: 7px; height: 16px;display: inline-block; margin:0 0 0 60px}
 
 .navigation-arrow-left:hover{background:url("../images/icon/calendar-hover-left.png") center no-repeat; width: 7px; height: 16px;}
 .navigation-arrow-right:hover{background:url("../images/icon/arrow-right-calendar.png") center no-repeat; width: 7px; height: 16px;}
+.year-calendar{padding: 10px 25px;color:#fff;font-size: 24px;font-weight: 400;line-height: 18px;}
+.year-calendar span{margin: 0 11px}
+.year-calendar span:hover, .year-calendar span.active{color:  #1dd7ff;}
 
 .calendar-month{border-bottom: 1px solid #1dd7ff; padding: 10px 25px}
 .calendar-month span{color:#fff;font-size: 18px;font-weight: 400;line-height: 30px;}
@@ -398,14 +406,14 @@ a.promo-accordion-toggle{color:#007fe5;font-size: 16px;font-weight: 400;line-hei
 .day,.weekdays{margin: 10px 25px;display: flex; display: -ms-flexbox;   flex-wrap: wrap; width: 236px;flex: 0 0 auto;justify-content: flex-start;}
 .weekdays span{width: 33px;color:  #88b1df;font-size: 18px;font-weight: 400;line-height: 30px; text-align: center;}
 
-.day a{width: 33px; margin-bottom:10px;color:#fff;font-size: 18px;font-weight: 400;line-height: 22px; text-align: center;position: relative;  z-index: 1;}
-a.day-check:before{content:""; border-radius: 50%;background-color:  #1dd7ff;width: 33px;height: 33px;text-align: center; display: block;  position: absolute;  z-index: -1;  top: -5px;}
+.autocomplete-calendar .day a{width: 33px; margin:0 0 10px 0;color:#fff;font-size: 18px;font-weight: 400;line-height: 22px; text-align: center;position: relative;  z-index: 1;}
+.autocomplete-calendar a.day-check:before{content:""; border-radius: 50%;background-color:  #1dd7ff;width: 33px;height: 33px;text-align: center; display: block;  position: absolute;  z-index: -1;  top: -5px;}
 
-a.three-day-check{background-color:  #1dd7ff;text-align: center;}
-a.select-date{color: #5a5a5a;}
+.autocomplete-calendar a.three-day-check{background-color:  #1dd7ff;text-align: center;}
+.autocomplete-calendar a.select-date{color: #5a5a5a;}
 
-a.three-day-check.round-left{border-bottom-left-radius: 15px;border-top-left-radius: 15px;}
-a.three-day-check.round-right{border-bottom-right-radius: 15px;border-top-right-radius: 15px;}
+.autocomplete-calendar a.three-day-check.round-left{border-bottom-left-radius: 15px;border-top-left-radius: 15px;}
+.autocomplete-calendar a.three-day-check.round-right{border-bottom-right-radius: 15px;border-top-right-radius: 15px;}
 
 .autocomplete-class-fly .autocomplete-checkbox input[type="checkbox"] + label span{margin: -7px 9px -3px 5px;}
 .autocomplete-class-fly .autocomplete-checkbox{padding: 10px 0 10px}
@@ -871,8 +879,7 @@ blockquote {padding: 30px 20px; margin: 40px 0 50px;  background-color:  #f2f2f2
 .tabs-result-search.tabs-personal-cabinet .nav-tabs>li {width: auto;}
 .list-personal-cabinet {display: flex; display: -ms-flexbox;   flex-wrap: wrap; justify-content: space-between; -ms-flex-pack: justify; margin-bottom: 25px}
 .list-personal-cabinet a{color:#000;font-size: 18px;font-weight: 700;line-height: 30px;}
-.list-personal-cabinet a:hover,.list-personal-cabinet a.active{color:#007fe5; text-decoration: none}
-
+.list-personal-cabinet a:hover,.list-personal-cabinet a.active, .table-accordion-toggle:hover{color:#007fe5; text-decoration: none}
 
 
 .filter-personal-cabinet a{margin-right:40px}
@@ -930,6 +937,7 @@ blockquote {padding: 30px 20px; margin: 40px 0 50px;  background-color:  #f2f2f2
 
 .bold-18{font-size: 18px;font-weight: 700;line-height: 24px;}
 .normal-18{font-size: 18px;font-weight: 400;line-height: 24px;}
+.normal-14{font-size: 14px;font-weight: 400;line-height: 18px;}
 
 
 .order-confirm-price{width: 12.55%; position: absolute; right: 15px; top:0}
@@ -945,7 +953,34 @@ blockquote {padding: 30px 20px; margin: 40px 0 50px;  background-color:  #f2f2f2
 
 .form-order.form-settings .form-group{margin-right: 35px}
 
+.arrow-table-right{background: url("../images/icon/arrow-table-right.png") no-repeat 100% 50%; padding-right: 22px}
+.arrow-table-down{background: url("../images/icon/arrow-table-down.png") no-repeat 0 85%; padding-left: 17px}
 
+.more-arrow-table-down{background: url("../images/icon/arrow-up-search.png") no-repeat 100% 50%; padding-right: 25px;}
+.more-arrow-table-up{background: url("../images/icon/arrow-down-search.png") no-repeat 100% 50%; padding-right: 25px;}
+
+.table.table-bordered.table-striped.table-order.table-date, .table-order.table-date>thead>tr>th{text-align: center}
+.table.table-bordered.table-striped.table-order.table-date{margin-bottom: 40px;}
+.table-order.table-date>tbody>tr>td{position: relative}
+.table-order.table-date>tbody>tr>td:hover .autocomplete-wrap.tooltip-variable{display: block}
+.table-order.table-date>thead>tr>th.less-padding{padding:9px 17px;text-align: left; font-size: 14px; font-weight: 400; color: #000;border-bottom: 1px solid #ddd;}
+.table-order.table-date>thead>tr:first-of-type{color:#204c87;font-size: 16px; font-weight: 700;line-height: 18px; background-color: #fff}
+.table-order.table-date>tbody>tr>td:first-of-type{color:#204c87;font-size: 16px; font-weight: 700;line-height: 18px; background-color: #fff;border-bottom: 1px solid #ddd; padding: 20px 17px 17px;}
+
+.check-cell{background-color:  #163f6e; color:  #1dd7ff;}
+.table-order.table-date>tbody>tr>td.check-date, .table-order.table-date>thead>tr>th.check-date{background-color:  #3cc7ef; color: #fff}
+.table-accordion-toggle span{color:#007fe5;font-size: 14px;font-weight: 400;line-height: 30px;text-decoration:none;border-bottom: 2px dotted #007fe5;}
+
+.table-order.table-bordered>tbody>tr>td.payment-doc{border: 0}
+.show-payment{font-size: 16px; margin-bottom: 20px;}
+.show-payment a{font-size: 16px;color: #3055a8;margin-left: 15px}
+
+.autocomplete-calendar-with-year{position: absolute;left: 10%;top: 40px; display: none}
+.show-payment a:hover ~ .autocomplete-calendar.autocomplete-calendar-with-year{display: block}
+
+.table-order.table-bordered>tbody>tr .payment-doc a, .payment-doc a{color:#257ee1; text-decoration: underline}
+.glyphicon.glyphicon-minus{color: #007fe5; margin-right: 15px}
+.glyphicon.glyphicon-plus{color: #afd833; margin-right: 15px}
 
 @media (min-width: 1875px) {
 .modal-my-flight.modal-dialog{width: 1372px;margin-left: 16.333%;}
