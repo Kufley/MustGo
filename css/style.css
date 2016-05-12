@@ -121,7 +121,8 @@ footer .col-sm-3 {padding-right: 55px;}
 .padding-right-0{padding-left: 0}
 .margin-0{margin: 0}
 .margin-top-35{margin-top: 35px}
-.margin-bottom-15{margin-bottom: 5px}
+.margin-bottom-5{margin-bottom: 5px}
+.margin-bottom-15{margin-bottom: 15px}
 .margin-bottom-20{margin-bottom: 20px}
 .margin-bottom-75{margin-bottom: 75px}
 .margin-bottom-50{margin-bottom: 50px}
@@ -163,28 +164,28 @@ footer .col-sm-3 {padding-right: 55px;}
 
 .container.form-result-search{padding: 0;}
 .container.main-content{padding: 0; margin-top: 295px; position: relative; z-index: 10;}
-.container.main-content .nav-tabs.nav-menu {border-bottom:0}
-.container.main-content .nav-tabs.nav.nav-menu>li> a{ color: #fff;font-size: 18px;font-weight: 400;line-height: 30px;}
+.nav-tabs.nav-menu {border-bottom:0}
+.nav-tabs.nav.nav-menu>li> a{ color: #fff;font-size: 18px;font-weight: 400;line-height: 30px;}
 
-.nav>li>.all:focus, .nav>li>.all:hover,.nav-tabs>li.active>.all, .nav-tabs>li.active>.all:focus, .nav-tabs>li.active>.all:hover {color: #fff;background-color: #4095DA;border: 1px solid #4095DA;height: 62px;  margin-top: -10px; padding-top: 15px;}
-.nav-tabs .all{background-color:#4095DA;}
+.nav.nav-menu>li>.all:focus, .nav.nav-menu>li>.all:hover,.nav-tabs.nav-menu>li.active>.all, .nav-tabs.nav-menu>li.active>.all:focus, .nav-tabs.nav-menu>li.active>.all:hover {color: #fff;background-color: #4095DA;border: 1px solid #4095DA;height: 62px;  margin-top: -10px; padding-top: 15px;}
+.nav-tabs.nav-menu .all{background-color:#4095DA;}
 
-.nav>li>.avia-tickets:focus, .nav>li>.avia-tickets:hover,.nav-tabs>li.active>.avia-tickets, .nav-tabs>li.active>.avia-tickets:focus, .nav-tabs>li.active>.avia-tickets:hover {color: #fff;background-color: #257ee1;border: 1px solid #257ee1;height: 62px;  margin-top: -10px; padding-top: 15px;}
-.nav-tabs .avia-tickets{background-color:#257ee1;}
+.nav.nav-menu>li>.avia-tickets:focus, .nav.nav-menu>li>.avia-tickets:hover,.nav-tabs.nav-menu>li.active>.avia-tickets, .nav-tabs.nav-menu>li.active>.avia-tickets:focus, .nav-tabs.nav-menu>li.active>.avia-tickets:hover {color: #fff;background-color: #257ee1;border: 1px solid #257ee1;height: 62px;  margin-top: -10px; padding-top: 15px;}
+.nav-tabs.nav-menu .avia-tickets{background-color:#257ee1;}
 
-.container.main-content .nav-tabs.nav.nav-menu>li.active>.avia-tickets{font-weight: 700;}
+.nav-tabs.nav.nav-menu>li.active>.avia-tickets{font-weight: 700;}
 
-.nav>li>.train-tickets:focus, .nav>li>.train-tickets:hover,.nav-tabs>li.active>.train-tickets, .nav-tabs>li.active>.train-tickets:focus, .nav-tabs>li.active>.train-tickets:hover {color: #fff;background-color: #296992;border: 1px solid #296992; height: 62px;  margin-top: -10px; padding-top: 15px;}
-.nav-tabs .train-tickets{background-color:#296992;}
-.container.main-content .nav-tabs.nav.nav-menu>li.active>.train-tickets{font-weight: 700; }
+.nav>.nav-menu>li>.train-tickets:focus, .nav.nav-menu>li>.train-tickets:hover,.nav-tabs.nav-menu>li.active>.train-tickets, .nav-tabs.nav-menu>li.active>.train-tickets:focus, .nav-tabs.nav-menu>li.active>.train-tickets:hover {color: #fff;background-color: #296992;border: 1px solid #296992; height: 62px;  margin-top: -10px; padding-top: 15px;}
+.nav-tabs.nav-menu .train-tickets{background-color:#296992;}
+.nav-tabs.nav.nav-menu>li.active>.train-tickets{font-weight: 700; }
 
-.nav>li>.insurance:focus, .nav>li>.insurance:hover,.nav-tabs>li.active>.insurance, .nav-tabs>li.active>.insurance:focus, .nav-tabs>li.active>.insurance:hover {color: #fff;background-color: #1b8da5;border: 1px solid #1b8da5; height: 62px;  margin-top: -10px; padding-top: 15px;}
-.nav-tabs .insurance{background-color:#1b8da5; padding: 10px 40px}
-.container.main-content .nav-tabs.nav.nav-menu>li.active>.insurance{font-weight: 700; }
+.nav.nav-menu>li>.insurance:focus, .nav.nav-menu>li>.insurance:hover,.nav-tabs.nav-menu>li.active>.insurance, .nav-tabs.nav-menu>li.active>.insurance:focus, .nav-tabs.nav-menu>li.active>.insurance:hover {color: #fff;background-color: #1b8da5;border: 1px solid #1b8da5; height: 62px;  margin-top: -10px; padding-top: 15px;}
+.nav-tabs.nav-menu .insurance{background-color:#1b8da5;}
+.nav-tabs.nav.nav-menu>li.active>.insurance{font-weight: 700; }
 
-.nav>li>.hotel:focus, .nav>li>.hotel:hover,.nav-tabs>li.active>.hotel, .nav-tabs>li.active>.hotel:focus, .nav-tabs>li.active>.hotel:hover {color: #fff;background-color: #35a69a; border: 1px solid #35a69a;height: 62px;  margin-top: -10px; padding-top: 15px;}
-.nav-tabs .hotel{background-color:#35a69a;padding: 10px 45px}
-.container.main-content .nav-tabs.nav.nav-menu>li.active>.hotel{font-weight: 700; }
+.nav.nav-menu>li>.hotel:focus, .nav.nav-menu>li>.hotel:hover,.nav-tabs.nav-menu>li.active>.hotel, .nav-tabs.nav-menu>li.active>.hotel:focus, .nav-tabs.nav-menu>li.active>.hotel:hover {color: #fff;background-color: #35a69a; border: 1px solid #35a69a;height: 62px;  margin-top: -10px; padding-top: 15px;}
+.nav-tabs.nav-menu .hotel{background-color:#35a69a;}
+.nav-tabs.nav.nav-menu>li.active>.hotel{font-weight: 700; }
 
 .container.form-result-search .form-search label{color:#fff;font-size: 16px;font-weight: 400;line-height: 30px;}
 label{color:#000;font-size: 16px;line-height: 30px;font-weight: 400;padding-left: 8px; cursor: pointer;}
@@ -889,15 +890,21 @@ blockquote {padding: 30px 20px; margin: 40px 0 50px;  background-color:  #f2f2f2
 .filter-personal-cabinet a{margin-right:40px}
 .input-search-pass{background: url("../images/icon/dandruff.png") no-repeat; width: 20px; height: 20px;position: absolute;right:0; top:7px;}
 
-.search-pass input{border-bottom: 1px solid #3055a8; border-top: 0; border-left: 0;border-right: 0;padding: 10px 52px 1px 0;width: 240px; font-size: 18px }
+.search-pass input{border-bottom: 1px solid #3055a8; border-top: 0; border-left: 0;border-right: 0;padding: 10px 25px 1px 0;width: 280px; font-size: 18px }
 
 .search-pass input::-webkit-input-placeholder{color:#3055a8;font-size: 18px;font-weight: 400;}
 .search-pass input::-moz-placeholder{color:#3055a8;font-size: 18px;font-weight: 400;}
 
 .table-order{font-size: 18px; border: 1px solid #c1c1c1; border-radius: 5px;box-shadow: 0 2px 4px 0 rgba(8, 10, 12, 0.5); margin-bottom: 280px}
+
 .table-order.table-bordered>tbody>tr>td, .table-order.table-bordered>tfoot>tr>th,
-.table-order.table-bordered>thead>tr>td, .table-order.table-borderedtable-bordered>tbody>tr>th,
+.table-order.table-bordered>thead>tr>td, .table-order.table-bordered>tbody>tr>th,
 .table-order.table-bordered>tfoot>tr>td, .table-order>thead>tr>th{border-top: 0; border-bottom: 0;padding: 17px}
+
+.table-padding.table-order.table-bordered>tbody>tr>td, .table-padding.table-order.table-bordered>tfoot>tr>th,
+.table-padding.table-order.table-bordered>thead>tr>td, .table-padding.table-order.table-bordered>tbody>tr>th,
+.table-order.table-bordered>tfoot>tr>td, .table-order>thead>tr>th{padding:10px 17px}
+
 .table-order.table-bordered>tbody>tr>td>a{color: #000}
 
 .clear-panel{text-align: right}
@@ -910,7 +917,7 @@ blockquote {padding: 30px 20px; margin: 40px 0 50px;  background-color:  #f2f2f2
 
 .name-pass{color:#000;font-size: 18px;font-weight: 400;line-height: 30px;text-decoration: underline; text-transform: uppercase}
 .table-order.table-bordered.table-pass>tbody>tr>td, .table-order.table-bordered.table-pass>tfoot>tr>th,
-.table-order.table-bordered.table-pass>thead>tr>td, .table-order.table-borderedtable-bordered.table-pass>tbody>tr>th,
+.table-order.table-bordered.table-pass>thead>tr>td, .table-order.table-bordered.table-pass>tbody>tr>th,
 .table-order.table-bordered.table-pass>tfoot>tr>td, .table-order.table-pass>thead>tr>th{padding: 17px}
 
 .table-lang{color:#007fe5;font-size: 16px;font-weight: 400;line-height: 30px; margin-left: 35px; padding-right: 30px}
@@ -923,7 +930,7 @@ blockquote {padding: 30px 20px; margin: 40px 0 50px;  background-color:  #f2f2f2
 
 
 .nav-bought-order.nav-tabs.nav.nav-menu>li>a{ color: #fff;font-size: 18px;font-weight: 400;line-height: 30px; border: none}
-.nav-bought-order.nav-tabs.nav.nav-menu>li.active>a{color: #007fe5;border: 2px solid #007fe5;border-bottom-color: transparent; margin-top: -4px}
+.nav-bought-order.nav-tabs.nav.nav-menu>li.active>a{border-bottom-color: transparent; margin-top: -4px}
 .nav-bought-order.nav-tabs.nav.nav-menu>li>a:hover{margin-top: -4px}
 .tabs-result-search .nav-tabs.nav-bought-order{border-bottom: 2px solid #007fe5;margin-bottom: 45px;}
 .tabs-result-search .nav-tabs.nav-bought-order>li{margin-bottom: 0}

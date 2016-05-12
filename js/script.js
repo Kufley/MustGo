@@ -248,12 +248,12 @@ $(document).ready(function () {
 
     $('.show-table-date').on('shown.bs.collapse', function () {
         $('.table-accordion-toggle span').text('Свернуть');
-        $('.table-accordion-toggle').removeClass('more-arrow-table-down').addClass('more-arrow-table-up');
+        $('.table-accordion-toggle').removeClass('more-arrow-table-up').addClass('more-arrow-table-down');
 
     });
     $('.show-table-date').on('hidden.bs.collapse', function () {
         $('.table-accordion-toggle span').text('Подробнее');
-        $('.table-accordion-toggle').removeClass('more-arrow-table-up').addClass('more-arrow-table-down');
+        $('.table-accordion-toggle').removeClass('more-arrow-table-down').addClass('more-arrow-table-up');
     });
 
     $('.promo-code-link').click(function(){
