@@ -232,6 +232,15 @@ $(document).ready(function () {
         }
     });
 
+    $('.btn-filter-small').click(function() {
+        $('.filter-wrap').css({"margin-left":"0"});
+    });
+
+    $('.close-filter').click(function(){
+        $('.filter-wrap').css({"margin-left":"-400px"});
+
+    });
+
 
 
     $('.search-more-accordion-toggle').click(function(){
@@ -239,18 +248,18 @@ $(document).ready(function () {
         if($this.hasClass('collapsed')){
             $('.line-gray').hide();
 
-            $this.text('Скрыть');
+            $this.text('Свернуть');
         } else {
             $this.text('Подробнее');
             $('.line-gray').show();
         }
     });
-
     $('.show-table-date').on('shown.bs.collapse', function () {
         $('.table-accordion-toggle span').text('Свернуть');
         $('.table-accordion-toggle').removeClass('more-arrow-table-up').addClass('more-arrow-table-down');
 
     });
+
     $('.show-table-date').on('hidden.bs.collapse', function () {
         $('.table-accordion-toggle span').text('Подробнее');
         $('.table-accordion-toggle').removeClass('more-arrow-table-down').addClass('more-arrow-table-up');
@@ -264,7 +273,6 @@ $(document).ready(function () {
             $this.text('У вас есть промокод?');
         }
     });
-
     $('.promo-bonus').click(function(){
         var $this = $(this);
         if($this.hasClass('collapsed')){
@@ -274,22 +282,34 @@ $(document).ready(function () {
             $this.text('Участвуете в бонусной программе?');
         }
     });
-
-    $('.dropdown-arrow').click(function(){
-        var $this = $(this);
-        if($this.hasClass('collapsed')){
-            $('.user-menu').css({"background-color":"#46607d"});
-        } else {
+    $(document).on('click', function(e) {
+        if (!$(e.target).closest(".user-menu").length && !$(e.target).closest("#user-menu").length) {
+            $('#user-menu').hide();
+            $("a.dropdown-arrow").removeClass('togg');
             $('.user-menu').css({"background-color":"rgba(11, 85, 168, 0.35)"});
         }
+        e.stopPropagation();
     });
 
+
+    $('.dropdown-arrow').click(function(){
+        if ( $("#user-menu").is(":visible") ) {
+            $("a.dropdown-arrow").removeClass('togg');
+             $("#user-menu").hide();
+             $('.user-menu').css({"background-color":"rgba(11, 85, 168, 0.35)"});
+
+        } else if ( $("#user-menu").is(":hidden") ) {
+            $("a.dropdown-arrow").addClass('togg');
+            $("#user-menu").show();
+            $('.user-menu').css({"background-color":"#46607d"});
+        }
+    });
 
     $('.close-book').click(function(){
         $('#info-booking').hide();
     });
-
     /*Hide block*/
+
     $(document).on('click', function(e) {
         if (!$(e.target).closest("#slide-panel").length) {
             $('.slide-panel').css({"margin-right":"-400px"});
@@ -297,11 +317,11 @@ $(document).ready(function () {
         }
         e.stopPropagation();
     });
-
     $('#left-side-panel').click(function(){
         $('.slide-panel').css({"margin-right":"0"});
         $('.slide-panel-right').css({"height":"100%"});
     });
+
 
     /*Sort*/
 

@@ -454,12 +454,14 @@
     <div class="col-lg-2 filter-wrap">
         <div class="sorting clearfix">
             <div class="sorting-title">Сортировка</div>
-            <a class="price-sort arrow-sort-up"><span>Цена</span></a>
-            <a class="time-sort arrow-sort-up"><span>Время в пути</span></a>
+            <a class="price-sort pull-left arrow-sort-up"><span>Цена</span></a>
+            <a class="time-sort pull-right arrow-sort-up"><span>Время в пути</span></a>
         </div>
 
         <div class="filter">
+            <a class="close-filter"><span class="glyphicon glyphicon-remove-circle"></span></a>
             <div class="sorting-title">Фильтры</div>
+            <div class="filter-content">
             <div class="filter-accordion">
                 <div class="filter-accordion-heading">
                     <a class="filter-accordion-toggle collapsed" data-toggle="collapse" data-parent="#count-transship-go"
@@ -657,8 +659,10 @@
                     </div>
                 </div>
             </div>
-
+            </div>
+            <div class="wrap-btn-filter">
             <button type="submit" class="btn btn-filter">Применить фильтры</button>
+            </div>
         </div>
 
     </div>
@@ -673,6 +677,11 @@
                 <li><a href="#search-back" aria-controls="search-back" role="tab"
                        data-toggle="tab">обратно<span>11</span></a></li>
             </ul>
+            <div class="sorting sorting-mobile">
+                <a href="#" type="submit" class="btn btn-filter btn-filter-small"><span class="glyphicon glyphicon-filter"></span></a>
+                <a class="price-sort arrow-sort-up"><span>Цена</span></a>
+                <a class="time-sort arrow-sort-up"><span>Время в пути</span></a>
+            </div>
             <div class="clearfix margin-bottom-15">
                 <div class="pull-left bold-text">
                     Цена билетов на ближайшие даты

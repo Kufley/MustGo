@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="pass_vagon_2_klassa_otkr_tipa"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="770px" height="202px"
+	 viewBox="0 0 770 202" enable-background="new 0 0 770 202" xml:space="preserve">
+<defs>
+	<style type="text/css">
+		    .enable-wagon {fill: rgb(45, 188, 248); cursor:pointer;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none; }
+			.enable-wagon text{fill: #fff;font-family: monospace; font-size: 14px;}
+
+			.disable-wagon path{fill: #fff; stroke:#d2d2d2; stroke-width:2}
+			.disable-wagon text{fill:#d2d2d2; font-family: monospace; font-size: 14px;}
+        </style>
+</defs>
+
+<g id="left-side-wagon-2">
+	<g id="rounded-corners-2">
+		<g>
+			<path fill="#898989" d="M309.395,14l0.023,176c-36.053-0.007-151.626-0.195-152.785-0.197
+				c-0.385-0.006-38.982-0.727-77.227-11.783c-22.329-6.455-40.158-15.113-52.992-25.733C10.578,139.182,2.364,122.998,2,104.223
+				L2,101.18c0.389-16.437,8.586-31.214,24.364-43.921c12.822-10.326,30.621-19.315,52.903-26.719
+				c37.258-12.38,74.827-16.131,76.894-16.33C160.021,14.204,272.585,14.007,309.395,14 M311.394,12
+				c-35.345,0-155.329,0.211-155.329,0.211S1.771,26.335,0,101.133v3.09c1.649,85.197,156.601,87.58,156.601,87.58
+				S277.489,192,311.418,192L311.394,12L311.394,12z"/>
+		</g>
+	</g>
+	<g id="rect-45"><path fill="#898989" d="M294,10v1h-25v-1H294 M296,8h-29v5h29V8L296,8z"/></g>
+	<g id="rect-46"><path fill="#898989" d="M294,193v1h-25v-1H294 M296,191h-29v5h29V191L296,191z"/></g>
+	<g id="rect-47"><rect x="276" y="3" fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" width="11" height="16"/></g>
+	<g id="rect-48"><polygon fill="#898989" points="283,16 283,0 280,0 280,16 276,16 276,17 277,17 277,18 278,18 278,19 279,19 279,20 280,20
+				280,21 281,21 281,22 282,22 282,21 283,21 283,20 284,20 284,19 285,19 285,18 286,18 286,17 287,17 287,16"/>
+	</g>
+	<g id="rect-49"><rect x="276" y="183" fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" width="11" height="16"/></g>
+	<g id="rect-50"><polygon fill="#898989" points="286,185 286,184 285,184 285,183 284,183 284,182 283,182 283,181 282,181 282,180 281,180
+				281,181 280,181 280,182 279,182 279,183 278,183 278,184 277,184 277,185 276,185 276,186 280,186 280,202 283,202 283,186 
+				287,186 287,185"/>
+	</g>
+	<g id="rect-51"><rect x="198" y="80" fill="#898989" width="34" height="2"/></g>
+	<g id="rect-52"><rect x="155" y="80" fill-rule="evenodd" clip-rule="evenodd" fill="#898989" width="96" height="2"/></g>
+	<g id="rect-53"><rect x="154" y="121" fill-rule="evenodd" clip-rule="evenodd" fill="#898989" width="96" height="2"/></g>
+	<g id="rect-54"><rect x="250" y="12" fill="#898989" width="2" height="70"/></g>
+	<g id="rect-55"><rect x="250" y="121" fill="#898989" width="2" height="70"/></g>
+	<g id="rect-56"><rect x="196" y="12" fill="#898989" width="2" height="70"/></g>
+	<g id="rect-57"><rect x="155" y="14" fill="#898989" width="2" height="68"/></g>
+	<g id="rect-58"><rect x="154" y="123" fill="#898989" width="2" height="68"/></g>
+	<line fill="none" stroke="#898989" stroke-width="2" stroke-miterlimit="100" x1="695" y1="12.992" x2="555" y2="12.992"/>
+	<line fill="none" stroke="#898989" stroke-width="2" stroke-miterlimit="100" x1="695" y1="190.992" x2="555" y2="190.992"/>
+	<line fill="none" stroke="#898989" stroke-width="2" stroke-miterlimit="100" x1="310.735" y1="13" x2="501" y2="13"/>
+	<line fill="none" stroke="#898989" stroke-width="2" stroke-miterlimit="100" x1="310.735" y1="191" x2="501" y2="191"/>
+</g>
+<g id="rect-59">
+	<g id="rect-59" opacity="0.502"><path fill="#898989" d="M433,14v76h-35V14H433 M434,13h-37v78h37V13L434,13z"/></g>
+	<g id="rect-60">
+			<path fill="#898989" d="M398,15.016c2.758,0.18,5,1.83,5,3.763v15.441c0,1.933-2.243,3.583-5,3.763V15.016 M397.5,14
+				c-0.169,0-0.334,0.009-0.5,0.019v24.963c0.166,0.009,0.331,0.018,0.5,0.018c3.59,0,6.5-2.14,6.5-4.779V18.779
+				C404,16.14,401.09,14,397.5,14L397.5,14z"/>
+	</g>
+	<g id="rect-61"><path fill="#898989" d="M398,40.016c2.799,0.183,5,1.887,5,3.954v16.059c0,2.068-2.201,3.771-5,3.954V40.016 M397.5,39
+				c-0.169,0-0.334,0.01-0.5,0.019v25.961c0.166,0.01,0.331,0.019,0.5,0.019c3.59,0,6.5-2.225,6.5-4.971V43.971
+				C404,41.225,401.09,39,397.5,39L397.5,39z"/>
+	</g>
+	<g id="rect-62">
+			<path fill="#898989" d="M398,66.016c2.758,0.18,5,1.83,5,3.763v15.441c0,1.933-2.243,3.583-5,3.763V66.016 M397.5,65
+				c-0.169,0-0.334,0.009-0.5,0.018v24.963c0.166,0.009,0.331,0.019,0.5,0.019c3.59,0,6.5-2.14,6.5-4.779V69.779
+				C404,67.14,401.09,65,397.5,65L397.5,65z"/>
+	</g>
+	<g id="rect-63">
+			<path fill-rule="evenodd" clip-rule="evenodd" fill="#2DBCF8" d="M427,40h-14c-2.761,0-5,2.239-5,5v14c0,2.761,2.239,5,5,5h14
+				c2.761,0,5-2.239,5-5V45C432,42.239,429.762,40,427,40z"/>
+	</g>
+	<g id="rect-wagon-13">
+		<text transform="matrix(1 0 0 1 415.7693 58.1916)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="16">8</text>
+		<path fill-rule="evenodd" clip-rule="evenodd" fill="#2DBCF8" d="M427,65h-14c-2.761,0-5,2.239-5,5v14c0,2.761,2.239,5,5,5h14
+				c2.761,0,5-2.239,5-5V70C432,67.239,429.762,65,427,65z"/>
+	</g>
+	<g id="rect-wagon-14">
+		<text transform="matrix(1 0 0 1 415.7693 83.1916)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="16">7</text>
+		<path fill-rule="evenodd" clip-rule="evenodd" fill="#2DBCF8" d="M427,15h-14c-2.761,0-5,2.239-5,5v14c0,2.761,2.239,5,5,5h14
+			c2.761,0,5-2.239,5-5V20C432,17.239,429.762,15,427,15z"/>
+	</g>
+	<g id="rect-wagon-15">
+		<text transform="matrix(1 0 0 1 415.7693 33.1916)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="16">9</text>
+		<path fill="#898989" d="M347,139v51h-35v-51H347 M348,138h-37v53h37V138L348,138z"/>
+	</g>
+	<g id="rect-64">
+			<path fill="#898989" d="M312,140.016c2.799,0.183,5,1.887,5,3.954v16.059c0,2.068-2.201,3.771-5,3.954V140.016 M311.5,139
+				c-0.169,0-0.334,0.01-0.5,0.019v25.962c0.166,0.01,0.331,0.019,0.5,0.019c3.59,0,6.5-2.225,6.5-4.971v-16.059
+				C318,141.225,315.09,139,311.5,139L311.5,139z"/>
+	</g>
+	<g id="rect-65">
+			<path fill="#898989" d="M312,166.016c2.757,0.18,5,1.83,5,3.763v15.441c0,1.933-2.242,3.583-5,3.763V166.016 M311.5,165
+				c-0.169,0-0.334,0.009-0.5,0.019v24.963c0.166,0.009,0.331,0.018,0.5,0.018c3.59,0,6.5-2.14,6.5-4.779v-15.441
+				C318,167.14,315.09,165,311.5,165L311.5,165z"/>
+	</g>
+	<g id="rect-66">
+			<path fill-rule="evenodd" clip-rule="evenodd" fill="#2DBCF8" d="M341,140h-14c-2.761,0-5,2.239-5,5v14c0,2.761,2.239,5,5,5h14
+				c2.761,0,5-2.239,5-5v-14C346,142.239,343.761,140,341,140z"/>
+	</g>
+	<g id="rect-wagon-16">
+		<text transform="matrix(1 0 0 1 329.7697 158.1911)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="16">2</text>
+		<path fill-rule="evenodd" clip-rule="evenodd" fill="#2DBCF8" d="M341,165h-14c-2.761,0-5,2.239-5,5v14c0,2.761,2.239,5,5,5h14
+		c2.761,0,5-2.239,5-5v-14C346,167.239,343.761,165,341,165z"/>
+	</g>
+	<g id="rect-wagon-17">
+		<text transform="matrix(1 0 0 1 329.7697 183.1911)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="16">1</text>
+		<path fill="#898989" d="M390,139.964v49.073h-35v-49.073H390 M391,138.964h-37v51.073h37V138.964L391,138.964z"/>
+	</g>
+
+	<g id="rect-67">
+			<path fill="#898989" d="M390,140.016v23.968c-2.799-0.183-5-1.887-5-3.954v-16.059C385,141.903,387.201,140.199,390,140.016
+				 M390.5,139c-3.59,0-6.5,2.225-6.5,4.971v16.059c0,2.745,2.91,4.971,6.5,4.971c0.169,0,0.334-0.01,0.5-0.019v-25.962
+				C390.834,139.01,390.669,139,390.5,139L390.5,139z"/>
+	</g>
+	<g id="rect-68">
+			<path fill="#898989" d="M390,166.016v22.967c-2.757-0.18-5-1.83-5-3.763v-15.441C385,167.846,387.243,166.196,390,166.016
+				 M390.5,165c-3.59,0-6.5,2.14-6.5,4.779v15.441c0,2.64,2.91,4.779,6.5,4.779c0.169,0,0.334-0.009,0.5-0.018v-24.963
+				C390.834,165.009,390.669,165,390.5,165L390.5,165z"/>
+	</g>
+	<g id="rect-69">
+			<path fill-rule="evenodd" clip-rule="evenodd" fill="#2DBCF8" d="M375,140h-14c-2.761,0-5,2.239-5,5v14c0,2.761,2.239,5,5,5h14
+				c2.761,0,5-2.239,5-5v-14C380,142.239,377.762,140,375,140z"/>
+	</g>
+	<g id="rect-wagon-18">
+		<text transform="matrix(0.9752 0 0 1 363.5735 158.0017)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="16">4</text>
+			<path fill-rule="evenodd" clip-rule="evenodd" fill="#2DBCF8" d="M375,165h-14c-2.761,0-5,2.239-5,5v14c0,2.761,2.239,5,5,5h14
+				c2.761,0,5-2.239,5-5v-14C380,167.239,377.762,165,375,165z"/>
+	</g>
+	<g id="rect-wagon-19">
+		<text transform="matrix(0.9752 0 0 1 363.5735 183.0017)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="16">3</text>
+		<path fill="#898989" d="M476,139.982v50.037h-35v-50.037H476 M477,138.982h-37v52.037h37V138.982L477,138.982z"/>
+	</g>
+	<g id="rect-70">
+			<path fill="#898989" d="M476,140.016v23.968c-2.799-0.183-5-1.887-5-3.954v-16.059C471,141.903,473.201,140.199,476,140.016
+				 M476.5,139c-3.59,0-6.5,2.225-6.5,4.971v16.059c0,2.745,2.91,4.971,6.5,4.971c0.169,0,0.335-0.01,0.5-0.019v-25.962
+				C476.835,139.01,476.669,139,476.5,139L476.5,139z"/>
+	</g>
+	<g id="rect-71">
+			<path fill="#898989" d="M476,166.016v22.967c-2.757-0.18-5-1.83-5-3.763v-15.441C471,167.846,473.243,166.196,476,166.016
+				 M476.5,165c-3.59,0-6.5,2.14-6.5,4.779v15.441c0,2.64,2.91,4.779,6.5,4.779c0.169,0,0.335-0.009,0.5-0.018v-24.963
+				C476.835,165.009,476.669,165,476.5,165L476.5,165z"/>
+	</g>
+	<g id="rect-72" opacity="0.502"><path fill="#898989" d="M476,14v76h-35V14H476 M477,13h-37v78h37V13L477,13z"/></g>
+	<g id="rect-73"><path fill="#898989" d="M441,15.016c2.757,0.18,5,1.83,5,3.763v15.441c0,1.933-2.242,3.583-5,3.763V15.016 M440.5,14
+				c-0.169,0-0.334,0.009-0.5,0.019v24.963c0.166,0.009,0.331,0.018,0.5,0.018c3.59,0,6.5-2.14,6.5-4.779V18.779
+				C447,16.14,444.09,14,440.5,14L440.5,14z"/>
+	</g>
+	<g id="rect-74">
+			<path fill="#898989" d="M441,40.016c2.799,0.183,5,1.887,5,3.954v16.059c0,2.068-2.201,3.771-5,3.954V40.016 M440.5,39
+				c-0.169,0-0.334,0.01-0.5,0.019v25.961c0.166,0.01,0.331,0.019,0.5,0.019c3.59,0,6.5-2.225,6.5-4.971V43.971
+				C447,41.225,444.09,39,440.5,39L440.5,39z"/>
+	</g>
+	<g id="rect-75">
+			<path fill="#898989" d="M441,66.016c2.757,0.18,5,1.83,5,3.763v15.441c0,1.933-2.242,3.583-5,3.763V66.016 M440.5,65
+				c-0.169,0-0.334,0.009-0.5,0.018v24.963c0.166,0.009,0.331,0.019,0.5,0.019c3.59,0,6.5-2.14,6.5-4.779V69.779
+				C447,67.14,444.09,65,440.5,65L440.5,65z"/>
+	</g>
+	<g id="rect-76">
+			<path fill-rule="evenodd" clip-rule="evenodd" fill="#2DBCF8" d="M470,40h-14c-2.761,0-5,2.239-5,5v14c0,2.761,2.239,5,5,5h14
+				c2.761,0,5-2.239,5-5V45C475,42.239,472.761,40,470,40z"/>
+	</g>
+	<g id="rect-wagon-19">
+		<text transform="matrix(1 0 0 1 453.7693 58.1916)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="16">13</text>
+		<path fill-rule="evenodd" clip-rule="evenodd" fill="#2DBCF8" d="M470,65h-14c-2.761,0-5,2.239-5,5v14c0,2.761,2.239,5,5,5h14
+				c2.761,0,5-2.239,5-5V70C475,67.239,472.761,65,470,65z"/>
+	</g>
+	<g id="rect-wagon-20">
+		<text transform="matrix(1 0 0 1 453.7693 83.1916)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="16">12</text>
+		<path fill-rule="evenodd" clip-rule="evenodd" fill="#2DBCF8" d="M470,15h-14c-2.761,0-5,2.239-5,5v14c0,2.761,2.239,5,5,5h14
+				c2.761,0,5-2.239,5-5V20C475,17.239,472.761,15,470,15z"/>
+	</g>
+	<g id="rect-wagon-21">
+		<text transform="matrix(1 0 0 1 453.7693 33.1916)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="16">14</text>
+		<path fill="#898989" d="M650,14v76h-35V14H650 M651,13h-37v78h37V13L651,13z"/>
+	</g>
+	<g id="rect-77">
+			<path fill="#898989" d="M615,15.016c2.758,0.18,5,1.83,5,3.763v15.441c0,1.933-2.242,3.583-5,3.763V15.016 M614.5,14
+				c-0.169,0-0.334,0.009-0.5,0.019v24.963c0.166,0.009,0.331,0.018,0.5,0.018c3.59,0,6.5-2.14,6.5-4.779V18.779
+				C621,16.14,618.09,14,614.5,14L614.5,14z"/>
+	</g>
+	<g id="rect-78">
+			<path fill="#898989" d="M615,40.016c2.799,0.183,5,1.887,5,3.954v16.059c0,2.068-2.201,3.771-5,3.954V40.016 M614.5,39
+				c-0.169,0-0.334,0.01-0.5,0.019v25.961c0.166,0.01,0.331,0.019,0.5,0.019c3.59,0,6.5-2.225,6.5-4.971V43.971
+				C621,41.225,618.09,39,614.5,39L614.5,39z"/>
+	</g>
+	<g id="rect-79">
+			<path fill="#898989" d="M615,66.016c2.758,0.18,5,1.83,5,3.763v15.441c0,1.933-2.242,3.583-5,3.763V66.016 M614.5,65
+				c-0.169,0-0.334,0.009-0.5,0.018v24.963c0.166,0.009,0.331,0.019,0.5,0.019c3.59,0,6.5-2.14,6.5-4.779V69.779
+				C621,67.14,618.09,65,614.5,65L614.5,65z"/>
+	</g>
+	<g id="rect-80">
+			<path fill-rule="evenodd" clip-rule="evenodd" fill="#2DBCF8" d="M644,40h-14c-2.761,0-5,2.239-5,5v14c0,2.761,2.239,5,5,5h14
+				c2.761,0,5-2.239,5-5V45C649,42.239,646.762,40,644,40z"/>
+	</g>
+	<g id="rect-wagon-22">
+		<text transform="matrix(1 0 0 1 627.7693 58.1916)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="16">53</text>
+		<path fill-rule="evenodd" clip-rule="evenodd" fill="#2DBCF8" d="M644,65h-14c-2.761,0-5,2.239-5,5v14c0,2.761,2.239,5,5,5h14
+				c2.761,0,5-2.239,5-5V70C649,67.239,646.762,65,644,65z"/>
+	</g>
+	<g id="rect-wagon-23">
+		<text transform="matrix(1 0 0 1 627.7693 83.1916)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="16">52</text>
+		<path fill-rule="evenodd" clip-rule="evenodd" fill="#2DBCF8" d="M644,15h-14c-2.761,0-5,2.239-5,5v14c0,2.761,2.239,5,5,5h14
+				c2.761,0,5-2.239,5-5V20C649,17.239,646.762,15,644,15z"/>
+	</g>
+	<g id="rect-wagon-24">
+		<text transform="matrix(1 0 0 1 627.7693 33.1916)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="16">54</text>
+		<path fill="#898989" d="M607,14v76h-35V14H607 M608,13h-37v78h37V13L608,13z"/>
+	</g>
+	<g id="rect-81">
+			<path fill="#898989" d="M572,15.016c2.757,0.18,5,1.83,5,3.763v15.441c0,1.933-2.242,3.583-5,3.763V15.016 M571.5,14
+				c-0.169,0-0.335,0.009-0.5,0.019v24.963c0.166,0.009,0.331,0.018,0.5,0.018c3.59,0,6.5-2.14,6.5-4.779V18.779
+				C578,16.14,575.09,14,571.5,14L571.5,14z"/>
+	</g>
+	<g id="rect-82">
+			<path fill="#898989" d="M572,40.016c2.799,0.183,5,1.887,5,3.954v16.059c0,2.068-2.201,3.771-5,3.954V40.016 M571.5,39
+				c-0.169,0-0.335,0.01-0.5,0.019v25.961c0.166,0.01,0.331,0.019,0.5,0.019c3.59,0,6.5-2.225,6.5-4.971V43.971
+				C578,41.225,575.09,39,571.5,39L571.5,39z"/>
+	</g>
+	<g id="rect-83">
+			<path fill="#898989" d="M572,66.016c2.757,0.18,5,1.83,5,3.763v15.441c0,1.933-2.242,3.583-5,3.763V66.016 M571.5,65
+				c-0.169,0-0.335,0.009-0.5,0.018v24.963c0.166,0.009,0.331,0.019,0.5,0.019c3.59,0,6.5-2.14,6.5-4.779V69.779
+				C578,67.14,575.09,65,571.5,65L571.5,65z"/>
+	</g>
+	<g id="rect-84">
+			<path fill-rule="evenodd" clip-rule="evenodd" fill="#2DBCF8" d="M601,40h-14c-2.761,0-5,2.239-5,5v14c0,2.761,2.239,5,5,5h14
+				c2.761,0,5-2.239,5-5V45C606,42.239,603.762,40,601,40z"/>
+	</g>
+	<g id="rect-wagon-24">
+		<text transform="matrix(1 0 0 1 584.7693 58.1916)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="16">48</text>
+			<path fill-rule="evenodd" clip-rule="evenodd" fill="#2DBCF8" d="M601,65h-14c-2.761,0-5,2.239-5,5v14c0,2.761,2.239,5,5,5h14
+				c2.761,0,5-2.239,5-5V70C606,67.239,603.762,65,601,65z"/>
+	</g>
+	<g id="rect-wagon-25">
+		<text transform="matrix(1 0 0 1 584.7693 83.1916)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="16">47</text>
+		<path fill-rule="evenodd" clip-rule="evenodd" fill="#2DBCF8" d="M601,15h-14c-2.761,0-5,2.239-5,5v14c0,2.761,2.239,5,5,5h14
+				c2.761,0,5-2.239,5-5V20C606,17.239,603.762,15,601,15z"/>
+	</g>
+	<g id="rect-wagon-26">
+		<text transform="matrix(1 0 0 1 584.7693 33.1916)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="16">49</text>
+		<image overflow="visible" width="54" height="47" id="Прямоугольник_x2C__скругл._углы_7_xA0_Изображение" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADcAAAAwCAYAAAC13uL+AAAACXBIWXMAAAsSAAALEgHS3X78AAAA
+GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAj9JREFUeNrsmk+LUmEUxo/eSa+K
+dr03JcJ/YDYjOoGpuxGcQCjqMwQtgxbtpFVtlYY20beYdRtrGS7aRDtXoWK5iBlXyWjacy7aJodu
+5YxvcR54OHi9yvN7z/W870IikUh0nnL9zs2NRsOLsg3fgffgG/AleOsMsn2Dj+GP8Dv4Dfy6Xq9/
+WSscoC6gFOEn8K0NNuMz/BJ+Acijv4YDmIVyH37scrnMQCBAmUyG0uk0RaNR8vv95Ha7104xn89p
+PB7TaDSiwWBAnU6H+v0+zWazE7zd5jwAfPvHcAC7hnIA3/X5fJTP56lUKlEwGDz3lk2nU+r1etRu
+t+0KfeJsADw47TPaLzp2D34QDoepWq1SuVwmr9e7keeRnw7OkUwmbdDhcMgrfKVWq71vtVo9x3AA
+86Dsw88Mw9ArlQpls1klJiAvbiQSoclkwoBhXIoB8BUAv/60IKd8x1X4EX5PRi6XUwZsqVAoRMVi
+keLx+HLQPVzZ7RVd01F2MTxuWpZFhUJByT2MH1EGxOMaxcvbyH3ZSed439rjKZhKpexpqKI0TSNe
+/EQi8SOzE7iL8HWejrFYTOkTCC/8IqPBmZ3A8RTa8Xg89sqoLM5omuYy87YTOJ6UJrdd13Wl4Xh7
+WGTkzJYTOL62hYFyJiePtR6MkZGbsDiMaE63gv9CAidwAidwAidwAidwAidwAidwAidwAidwAidw
+AidwqmnVvxBG8Idut7vbbDb/FQ47s5POdeCnq25WGOwQfk4ikWij+i7AAF9rd5mKar4QAAAAAElF
+TkSuQmCC" transform="matrix(1 0 0 1 646.0001 148)">
+		</image>
+		<path fill="#898989" d="M433,139.982v50.037h-35v-50.037H433 M434,138.982h-37v52.037h37V138.982L434,138.982z"/>
+	</g>
+	<g id="rect-85">
+			<path fill="#898989" d="M433,140.016v23.968c-2.799-0.183-5-1.887-5-3.954v-16.059C428,141.903,430.201,140.199,433,140.016
+				 M433.5,139c-3.59,0-6.5,2.225-6.5,4.971v16.059c0,2.745,2.91,4.971,6.5,4.971c0.169,0,0.334-0.01,0.5-0.019v-25.962
+				C433.834,139.01,433.669,139,433.5,139L433.5,139z"/>
+	</g>
+	<g id="rect-86">
+			<path fill="#898989" d="M433,166.016v22.967c-2.758-0.18-5-1.83-5-3.763v-15.441C428,167.846,430.243,166.196,433,166.016
+				 M433.5,165c-3.59,0-6.5,2.14-6.5,4.779v15.441c0,2.64,2.91,4.779,6.5,4.779c0.169,0,0.334-0.009,0.5-0.018v-24.963
+				C433.834,165.009,433.669,165,433.5,165L433.5,165z"/>
+	</g>
+	<g id="rect-87">
+			<path fill-rule="evenodd" clip-rule="evenodd" fill="#2DBCF8" d="M418,140h-14c-2.761,0-5,2.239-5,5v14c0,2.761,2.239,5,5,5h14
+				c2.761,0,5-2.239,5-5v-14C423,142.239,420.762,140,418,140z"/>
+	</g>
+	<g id="rect-wagon-27">
+		<text transform="matrix(0.9981 0 0 1 405.9707 159.0017)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="16">6</text>
+		<path fill-rule="evenodd" clip-rule="evenodd" fill="#2DBCF8" d="M418,165h-14c-2.761,0-5,2.239-5,5v14c0,2.761,2.239,5,5,5h14
+				c2.761,0,5-2.239,5-5v-14C423,167.239,420.762,165,418,165z"/>
+	</g>
+	<g id="rect-wagon-28">
+		<text transform="matrix(0.9981 0 0 1 405.9707 184.0017)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="16">5</text>
+		<path fill-rule="evenodd" clip-rule="evenodd" fill="#2DBCF8" d="M461,140h-14c-2.761,0-5,2.239-5,5v14c0,2.761,2.239,5,5,5h14
+				c2.761,0,5-2.239,5-5v-14C466,142.239,463.761,140,461,140z"/>
+	</g>
+	<g id="rect-wagon-29">
+		<text transform="matrix(0.9981 0 0 1 444.8975 157.0017)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="16">11</text>
+		<path fill-rule="evenodd" clip-rule="evenodd" fill="#2DBCF8" d="M461,165h-14c-2.761,0-5,2.239-5,5v14c0,2.761,2.239,5,5,5h14
+				c2.761,0,5-2.239,5-5v-14C466,167.239,463.761,165,461,165z"/>
+	</g>
+	<g id="rect-wagon-30">
+		<text transform="matrix(0.9981 0 0 1 443.8995 182.0017)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="16">10</text>
+		<path fill="#898989" d="M650,138.982v50.036h-35v-50.036H650 M651,137.982h-37v52.036h37V137.982L651,137.982z"/>
+
+	</g>
+	<g id="rect-88">
+			<path fill="#898989" d="M650,139.016v23.968c-2.799-0.183-5-1.887-5-3.954v-16.059C645,140.903,647.201,139.199,650,139.016
+				 M650.5,138c-3.59,0-6.5,2.225-6.5,4.971v16.059c0,2.745,2.91,4.971,6.5,4.971c0.169,0,0.334-0.01,0.5-0.019v-25.962
+				C650.835,138.01,650.669,138,650.5,138L650.5,138z"/>
+	</g>
+	<g id="rect-89">
+			<path fill="#898989" d="M650,165.016v22.968c-2.758-0.18-5-1.83-5-3.763v-15.441C645,166.846,647.243,165.196,650,165.016
+				 M650.5,164c-3.59,0-6.5,2.14-6.5,4.78v15.441c0,2.64,2.91,4.78,6.5,4.78c0.169,0,0.334-0.009,0.5-0.019v-24.963
+				C650.835,164.009,650.669,164,650.5,164L650.5,164z"/>
+	</g>
+	<g id="rect--90" opacity="0.502">
+			<path fill="#898989" d="M607,138.982v50.036h-35v-50.036H607 M608,137.982h-37v52.036h37V137.982L608,137.982z"/>
+	</g>
+	<g id="rect-91">
+			<path fill="#898989" d="M607,139.016v23.968c-2.799-0.183-5-1.887-5-3.954v-16.059C602,140.903,604.201,139.199,607,139.016
+				 M607.5,138c-3.59,0-6.5,2.225-6.5,4.971v16.059c0,2.745,2.91,4.971,6.5,4.971c0.169,0,0.334-0.01,0.5-0.019v-25.962
+				C607.835,138.01,607.669,138,607.5,138L607.5,138z"/>
+	</g>
+	<g id="rect-92">
+			<path fill="#898989" d="M607,165.016v22.968c-2.758-0.18-5-1.83-5-3.763v-15.441C602,166.846,604.243,165.196,607,165.016
+				 M607.5,164c-3.59,0-6.5,2.14-6.5,4.78v15.441c0,2.64,2.91,4.78,6.5,4.78c0.169,0,0.334-0.009,0.5-0.019v-24.963
+				C607.835,164.009,607.669,164,607.5,164L607.5,164z"/>
+	</g>
+	<g id="rect-93">
+			<path fill-rule="evenodd" clip-rule="evenodd" fill="#2DBCF8" d="M592,139h-14c-2.761,0-5,2.239-5,5v14c0,2.761,2.239,5,5,5h14
+				c2.761,0,5-2.239,5-5v-14C597,141.239,594.762,139,592,139z"/>
+	</g>
+	<g id="rect-wagon-31">
+		<text transform="matrix(0.9981 0 0 1 575.9701 158.0017)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="16">46</text>
+		<path fill-rule="evenodd" clip-rule="evenodd" fill="#2DBCF8" d="M592,164h-14c-2.761,0-5,2.239-5,5v14c0,2.761,2.239,5,5,5h14
+				c2.761,0,5-2.239,5-5v-14C597,166.239,594.762,164,592,164z"/>
+	</g>
+	<g id="rect-wagon-31">
+		<text transform="matrix(0.9981 0 0 1 575.9701 183.0017)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="16">45</text>
+		<path fill-rule="evenodd" clip-rule="evenodd" fill="#2DBCF8" d="M635,139h-14c-2.761,0-5,2.239-5,5v14c0,2.761,2.239,5,5,5h14
+				c2.761,0,5-2.239,5-5v-14C640,141.239,637.762,139,635,139z"/>
+	</g>
+	<g id="rect-wagon-32">
+		<text transform="matrix(0.9981 0 0 1 618.8975 156.0017)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="16">51</text>
+		<path fill-rule="evenodd" clip-rule="evenodd" fill="#2DBCF8" d="M635,164h-14c-2.761,0-5,2.239-5,5v14c0,2.761,2.239,5,5,5h14
+				c2.761,0,5-2.239,5-5v-14C640,166.239,637.762,164,635,164z"/>
+	</g>
+	<g id="rect-wagon-33">
+		<text transform="matrix(0.9981 0 0 1 617.8995 181.0017)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="16">50</text>
+		<path fill="#898989" d="M694,14.982v50.036h-35V14.982H694 M695,13.982h-37v52.036h37V13.982L695,13.982z"/>
+	</g>
+	<g id="rect-94">
+			<path fill="#898989" d="M694,15.016v23.968c-2.799-0.183-5-1.886-5-3.954V18.971C689,16.903,691.201,15.199,694,15.016 M694.5,14
+				c-3.59,0-6.5,2.225-6.5,4.971V35.03c0,2.745,2.91,4.97,6.5,4.97c0.169,0,0.334-0.01,0.5-0.019V14.019
+				C694.835,14.01,694.669,14,694.5,14L694.5,14z"/>
+	</g>
+	<g id="rect-95">
+			<path fill="#898989" d="M694,41.016v22.967c-2.758-0.18-5-1.83-5-3.763V44.779C689,42.846,691.243,41.196,694,41.016 M694.5,40
+				c-3.59,0-6.5,2.14-6.5,4.779v15.441c0,2.639,2.91,4.779,6.5,4.779c0.169,0,0.334-0.009,0.5-0.019V40.018
+				C694.835,40.009,694.669,40,694.5,40L694.5,40z"/>
+	</g>
+	<g id="rect-96">
+			<path fill-rule="evenodd" clip-rule="evenodd" fill="#2DBCF8" d="M679,15h-14c-2.761,0-5,2.239-5,5v14c0,2.761,2.239,5,5,5h14c2.761,0,5-2.239,5-5V20C684,17.239,681.762,15,679,15z"/>
+	</g>
+	<g id="rect-wagon-34">
+		<text transform="matrix(0.9981 0 0 1 662.8973 32.0017)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="16">56</text>
+		<path fill-rule="evenodd" clip-rule="evenodd" fill="#2DBCF8" d="M679,40h-14c-2.761,0-5,2.239-5,5v14c0,2.761,2.239,5,5,5h14
+				c2.761,0,5-2.239,5-5V45C684,42.239,681.762,40,679,40z"/>
+	</g>
+	<g id="_x35_5">
+		<text transform="matrix(0.9981 0 0 1 662.8992 57.0017)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="16">55</text>
+	</g>
+</g>
+<g id="right-side-wagon-2">
+	<g id="rect-96">
+			<path fill="#898989" d="M734.031,7v5v2h2h20.003c4.395,0,7.97,3.589,7.97,8v160c0,4.411-3.575,8-7.97,8h-20.003h-2v2v5h-24.969
+				v-5v-2h-2H696V14h11.062h2v-2V7H734.031 M736.031,5h-28.969v7H694v180h13.062v7h28.969v-7c11.423,0,20.003,0,20.003,0
+				c5.506,0,9.97-4.477,9.97-10V22c0-5.523-4.464-10-9.97-10c0,0-2.639,0-20.003,0V5L736.031,5z"/>
+	</g>
+	<g id="rect-97"><path fill="#898989" d="M734.031,196v1h-24.969v-1H734.031 M736.031,194h-28.969v5h28.969V194L736.031,194z"/></g>
+	<g id="rect-98"><path fill="#898989" d="M734.031,7v1h-24.969V7H734.031 M736.031,5h-28.969v5h28.969V5L736.031,5z"/></g>
+	<g id="rect-99">
+			<rect x="763" y="85" fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" width="6" height="34"/>
+			<path fill="#898989" d="M768,86v32h-4V86H768 M770,84h-8v36h8V84L770,84z"/>
+	</g>
+	<g id="Фигура_1_копия_6">
+			<polygon fill="#FFFFFF" points="694.087,13 694,191 696,191 696,13"/>
+			<polygon fill="#898989" points="696,13 694.087,13 694,191 696,191 696,13"/>
+	</g>
+	<g id="Прямоугольник_3_копия_8">
+			<rect x="692" y="85" fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" width="6" height="34"/>
+			<path fill="#898989" d="M697,86v32h-4V86H697 M699,84h-8v36h8V84L699,84z"/>
+	</g>
+</g>
+<g id="WC-2"><text transform="matrix(1 0 0 1 204.7697 56.1916)" fill="#898989" font-family="'Roboto-Regular'" font-size="24">WC</text></g>
+<g id="WC-2-1"><text transform="matrix(1 0 0 1 184.7697 166.1911)" fill="#898989" font-family="'Roboto-Regular'" font-size="24">WC</text></g>
+</svg>

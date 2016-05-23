@@ -456,211 +456,215 @@
     <div class="col-lg-2 filter-wrap">
         <div class="sorting clearfix">
             <div class="sorting-title">Сортировка</div>
-            <a class="price-sort arrow-sort-up"><span>Цена</span></a>
-            <a class="time-sort arrow-sort-up"><span>Время в пути</span></a>
+            <a class="price-sort pull-left arrow-sort-up"><span>Цена</span></a>
+            <a class="time-sort pull-right arrow-sort-up"><span>Время в пути</span></a>
         </div>
 
         <div class="filter">
+            <a class="close-filter"><span class="glyphicon glyphicon-remove-circle"></span></a>
             <div class="sorting-title">Фильтры</div>
-            <div class="filter-accordion">
-                <div class="filter-accordion-heading">
-                    <a class="filter-accordion-toggle collapsed" data-toggle="collapse" data-parent="#count-transship-go"
-                       href="#count-transship-go">Пересадки туда</a>
+            <div class="filter-content">
+                <div class="filter-accordion">
+                    <div class="filter-accordion-heading">
+                        <a class="filter-accordion-toggle collapsed" data-toggle="collapse" data-parent="#count-transship-go"
+                           href="#count-transship-go">Пересадки туда</a>
+                    </div>
+                    <div id="count-transship-go" class="panel-collapse collapse">
+                        <div class="accordion-body">
+                            <div class="checkbox-wrapper">
+                                <div class="checkbox">
+                                    <input type="checkbox" value="" id="filter-no-transfers-1" name="filter-no-transfers">
+                                    <label for="filter-no-transfers"><span></span>Без пересадок</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" value="" id="filter-one-transfers-1" name="filter-one-transfers">
+                                    <label for="filter-one-transfers"><span></span>1 пересадка</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" value="" id="filter-two-transfers-1" name="filter-two-transfers">
+                                    <label for="filter-two-transfers"><span></span>2+ пересадки</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div id="count-transship-go" class="panel-collapse collapse">
-                    <div class="accordion-body">
-                        <div class="checkbox-wrapper">
-                            <div class="checkbox">
-                                <input type="checkbox" value="" id="filter-no-transfers-1" name="filter-no-transfers">
-                                <label for="filter-no-transfers"><span></span>Без пересадок</label>
+                <div class="filter-accordion">
+                    <div class="filter-accordion-heading">
+                        <a class="filter-accordion-toggle collapsed" data-toggle="collapse" data-parent="#count-transship"
+                           href="#count-transship">Пересадки обратно</a>
+                    </div>
+                    <div id="count-transship" class="panel-collapse collapse">
+                        <div class="accordion-body">
+                            <div class="checkbox-wrapper">
+                                <div class="checkbox">
+                                    <input type="checkbox" value="" id="filter-no-transfers" name="filter-no-transfers">
+                                    <label for="filter-no-transfers"><span></span>Без пересадок</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" value="" id="filter-one-transfers" name="filter-one-transfers">
+                                    <label for="filter-one-transfers"><span></span>1 пересадка</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" value="" id="filter-two-transfers" name="filter-two-transfers">
+                                    <label for="filter-two-transfers"><span></span>2+ пересадки</label>
+                                </div>
                             </div>
-                            <div class="checkbox">
-                                <input type="checkbox" value="" id="filter-one-transfers-1" name="filter-one-transfers">
-                                <label for="filter-one-transfers"><span></span>1 пересадка</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-accordion">
+                    <div class="filter-accordion-heading">
+                        <a class="filter-accordion-toggle collapsed" data-toggle="collapse" data-parent="#filter-time"
+                           href="#filter-time">Время</a>
+                    </div>
+                    <div id="filter-time" class="panel-collapse collapse">
+                        <div class="accordion-body">
+                            <div class="clearfix filter-time">
+                                <p>Время вылета</p>
+                                <span class="pull-left">0:00</span>
+                                <span class="pull-right">23:59</span>
                             </div>
-                            <div class="checkbox">
-                                <input type="checkbox" value="" id="filter-two-transfers-1" name="filter-two-transfers">
-                                <label for="filter-two-transfers"><span></span>2+ пересадки</label>
+                            <div id="slider-range-sortie"></div>
+                            <div class="clearfix filter-time">
+                                <p>Время прилета</p>
+                                <span class="pull-left">0:00</span>
+                                <span class="pull-right">23:59</span>
+                            </div>
+                            <div id="slider-range-arrival"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-accordion">
+                    <div class="filter-name">Класс</div>
+                    <div class="filter-accordion-heading">
+                        <div class="checkbox-wrapper checkbox">
+                            <input type="checkbox" value="" id="filter-show-all-class" name="filter-show-all-class">
+                            <label for="filter-show-all-class"><span></span></label>
+                            <a class="filter-accordion-toggle show-all collapsed" data-toggle="collapse"
+                               data-parent="#filter-class"
+                               href="#filter-class">Показать все</a>
+                        </div>
+                    </div>
+                    <div id="filter-class" class="panel-collapse collapse">
+                        <div class="accordion-body">
+                            <div class="checkbox-wrapper">
+                                <div class="checkbox">
+                                    <input type="checkbox" value="" id="filter-business-class" name="filter-business-class">
+                                    <label for="filter-business-class"><span></span>Бизнес</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" value="" id="filter-first-class" name="filter-first-class">
+                                    <label for="filter-first-class"><span></span>1 класс</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" value="" id="filter-economy-class" name="filter-economy-class">
+                                    <label for="filter-economy-class"><span></span>Эконом</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" value="" id="filter-economy-plus-class"
+                                           name="filter-economy-plus-class">
+                                    <label for="filter-economy-plus-class"><span></span>Эконом+</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-accordion">
+                    <div class="filter-name">Аэропорт вылета</div>
+                    <div class="filter-accordion-heading">
+                        <div class="checkbox-wrapper checkbox">
+                            <input type="checkbox" value="" id="filter-show-all-departure-airport"
+                                   name="filter-show-all-departure-airport">
+                            <label for="filter-show-all-departure-airport"><span></span></label>
+                            <a class="filter-accordion-toggle show-all collapsed" data-toggle="collapse"
+                               data-parent="#filter-departure-airport"
+                               href="#filter-departure-airport">Показать все</a>
+                        </div>
+                    </div>
+                    <div id="filter-departure-airport" class="panel-collapse collapse">
+                        <div class="accordion-body">
+                            <div class="checkbox-wrapper">
+                                <div class="checkbox">
+                                    <input type="checkbox" value="" id="filter-id-airoport-1" name="filter-id-airoport-1">
+                                    <label for="filter-id-airoport-1"><span></span>Борисполь</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" value="" id="filter-id-airoport-2" name="filter-id-airoport-2">
+                                    <label for="filter-id-airoport-2"><span></span>Жуляны</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-accordion">
+                    <div class="filter-name">Аэропорт прилета</div>
+                    <div class="filter-accordion-heading">
+                        <div class="checkbox-wrapper checkbox">
+                            <input type="checkbox" value="" id="filter-show-all-airport-arrival"
+                                   name="filter-show-all-airport-arrival">
+                            <label for="filter-show-all-airport-arrival"><span></span></label>
+                            <a class="filter-accordion-toggle show-all collapsed" data-toggle="collapse"
+                               data-parent="#filter-airport-arrival"
+                               href="#filter-airport-arrival">Показать все</a>
+                        </div>
+                    </div>
+                    <div id="filter-airport-arrival" class="panel-collapse collapse">
+                        <div class="accordion-body">
+                            <div class="checkbox-wrapper">
+                                <div class="checkbox">
+                                    <input type="checkbox" value="" id="filter-id-airoport-3" name="filter-id-airoport-1">
+                                    <label for="filter-id-airoport-3"><span></span>Гатвик</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" value="" id="filter-id-airoport-4" name="filter-id-airoport-4">
+                                    <label for="filter-id-airoport-4"><span></span>Хитроу</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-accordion">
+                    <div class="filter-name">Авиакомпания</div>
+                    <div class="filter-accordion-heading">
+                        <div class="checkbox-wrapper checkbox last-link">
+                            <input type="checkbox" value="" id="filter-show-all-airline" name="filter-show-all-airline">
+                            <label for="filter-show-all-airline"><span></span></label>
+                            <a class="filter-accordion-toggle show-all collapsed " data-toggle="collapse"
+                               data-parent="#filter-airline"
+                               href="#filter-airline">Показать все</a>
+                        </div>
+                    </div>
+                    <div id="filter-airline" class="panel-collapse collapse">
+                        <div class="accordion-body">
+                            <div class="checkbox-wrapper">
+                                <div class="checkbox">
+                                    <input type="checkbox" value="" id="filter-id-airline-1" name="filter-id-airline-1">
+                                    <label for="filter-id-airline-1"><span></span>Ukraine International Airlines</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" value="" id="filter-id-airline-2" name="filter-id-airline-2">
+                                    <label for="filter-id-airline-2"><span></span>Turkish Airlines</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" value="" id="filter-id-airline-3" name="filter-id-airline-3">
+                                    <label for="filter-id-airline-3"><span></span>Onur Air</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" value="" id="filter-id-airline-4" name="filter-id-airline-4">
+                                    <label for="filter-id-airline-4"><span></span>Austrian Airlines</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" value="" id="filter-id-airline-5" name="filter-id-airline-5">
+                                    <label for="filter-id-airline-5"><span></span>LOT Polish Airlines</label>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="filter-accordion">
-                <div class="filter-accordion-heading">
-                    <a class="filter-accordion-toggle collapsed" data-toggle="collapse" data-parent="#count-transship"
-                       href="#count-transship">Пересадки обратно</a>
-                </div>
-                <div id="count-transship" class="panel-collapse collapse">
-                    <div class="accordion-body">
-                        <div class="checkbox-wrapper">
-                            <div class="checkbox">
-                                <input type="checkbox" value="" id="filter-no-transfers" name="filter-no-transfers">
-                                <label for="filter-no-transfers"><span></span>Без пересадок</label>
-                            </div>
-                            <div class="checkbox">
-                                <input type="checkbox" value="" id="filter-one-transfers" name="filter-one-transfers">
-                                <label for="filter-one-transfers"><span></span>1 пересадка</label>
-                            </div>
-                            <div class="checkbox">
-                                <input type="checkbox" value="" id="filter-two-transfers" name="filter-two-transfers">
-                                <label for="filter-two-transfers"><span></span>2+ пересадки</label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="wrap-btn-filter">
+                <button type="submit" class="btn btn-filter">Применить фильтры</button>
             </div>
-            <div class="filter-accordion">
-                <div class="filter-accordion-heading">
-                    <a class="filter-accordion-toggle collapsed" data-toggle="collapse" data-parent="#filter-time"
-                       href="#filter-time">Время</a>
-                </div>
-                <div id="filter-time" class="panel-collapse collapse">
-                    <div class="accordion-body">
-                        <div class="clearfix filter-time">
-                            <p>Время вылета</p>
-                            <span class="pull-left">0:00</span>
-                            <span class="pull-right">23:59</span>
-                        </div>
-                        <div id="slider-range-sortie"></div>
-                        <div class="clearfix filter-time">
-                            <p>Время прилета</p>
-                            <span class="pull-left">0:00</span>
-                            <span class="pull-right">23:59</span>
-                        </div>
-                        <div id="slider-range-arrival"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="filter-accordion">
-                <div class="filter-name">Класс</div>
-                <div class="filter-accordion-heading">
-                    <div class="checkbox-wrapper checkbox">
-                        <input type="checkbox" value="" id="filter-show-all-class" name="filter-show-all-class">
-                        <label for="filter-show-all-class"><span></span></label>
-                        <a class="filter-accordion-toggle show-all collapsed" data-toggle="collapse"
-                           data-parent="#filter-class"
-                           href="#filter-class">Показать все</a>
-                    </div>
-                </div>
-                <div id="filter-class" class="panel-collapse collapse">
-                    <div class="accordion-body">
-                        <div class="checkbox-wrapper">
-                            <div class="checkbox">
-                                <input type="checkbox" value="" id="filter-business-class" name="filter-business-class">
-                                <label for="filter-business-class"><span></span>Бизнес</label>
-                            </div>
-                            <div class="checkbox">
-                                <input type="checkbox" value="" id="filter-first-class" name="filter-first-class">
-                                <label for="filter-first-class"><span></span>1 класс</label>
-                            </div>
-                            <div class="checkbox">
-                                <input type="checkbox" value="" id="filter-economy-class" name="filter-economy-class">
-                                <label for="filter-economy-class"><span></span>Эконом</label>
-                            </div>
-                            <div class="checkbox">
-                                <input type="checkbox" value="" id="filter-economy-plus-class"
-                                       name="filter-economy-plus-class">
-                                <label for="filter-economy-plus-class"><span></span>Эконом+</label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="filter-accordion">
-                <div class="filter-name">Аэропорт вылета</div>
-                <div class="filter-accordion-heading">
-                    <div class="checkbox-wrapper checkbox">
-                        <input type="checkbox" value="" id="filter-show-all-departure-airport"
-                               name="filter-show-all-departure-airport">
-                        <label for="filter-show-all-departure-airport"><span></span></label>
-                        <a class="filter-accordion-toggle show-all collapsed" data-toggle="collapse"
-                           data-parent="#filter-departure-airport"
-                           href="#filter-departure-airport">Показать все</a>
-                    </div>
-                </div>
-                <div id="filter-departure-airport" class="panel-collapse collapse">
-                    <div class="accordion-body">
-                        <div class="checkbox-wrapper">
-                            <div class="checkbox">
-                                <input type="checkbox" value="" id="filter-id-airoport-1" name="filter-id-airoport-1">
-                                <label for="filter-id-airoport-1"><span></span>Борисполь</label>
-                            </div>
-                            <div class="checkbox">
-                                <input type="checkbox" value="" id="filter-id-airoport-2" name="filter-id-airoport-2">
-                                <label for="filter-id-airoport-2"><span></span>Жуляны</label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="filter-accordion">
-                <div class="filter-name">Аэропорт прилета</div>
-                <div class="filter-accordion-heading">
-                    <div class="checkbox-wrapper checkbox">
-                        <input type="checkbox" value="" id="filter-show-all-airport-arrival"
-                               name="filter-show-all-airport-arrival">
-                        <label for="filter-show-all-airport-arrival"><span></span></label>
-                        <a class="filter-accordion-toggle show-all collapsed" data-toggle="collapse"
-                           data-parent="#filter-airport-arrival"
-                           href="#filter-airport-arrival">Показать все</a>
-                    </div>
-                </div>
-                <div id="filter-airport-arrival" class="panel-collapse collapse">
-                    <div class="accordion-body">
-                        <div class="checkbox-wrapper">
-                            <div class="checkbox">
-                                <input type="checkbox" value="" id="filter-id-airoport-3" name="filter-id-airoport-1">
-                                <label for="filter-id-airoport-3"><span></span>Гатвик</label>
-                            </div>
-                            <div class="checkbox">
-                                <input type="checkbox" value="" id="filter-id-airoport-4" name="filter-id-airoport-4">
-                                <label for="filter-id-airoport-4"><span></span>Хитроу</label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="filter-accordion">
-                <div class="filter-name">Авиакомпания</div>
-                <div class="filter-accordion-heading">
-                    <div class="checkbox-wrapper checkbox last-link">
-                        <input type="checkbox" value="" id="filter-show-all-airline" name="filter-show-all-airline">
-                        <label for="filter-show-all-airline"><span></span></label>
-                        <a class="filter-accordion-toggle show-all collapsed " data-toggle="collapse"
-                           data-parent="#filter-airline"
-                           href="#filter-airline">Показать все</a>
-                    </div>
-                </div>
-                <div id="filter-airline" class="panel-collapse collapse">
-                    <div class="accordion-body">
-                        <div class="checkbox-wrapper">
-                            <div class="checkbox">
-                                <input type="checkbox" value="" id="filter-id-airline-1" name="filter-id-airline-1">
-                                <label for="filter-id-airline-1"><span></span>Ukraine International Airlines</label>
-                            </div>
-                            <div class="checkbox">
-                                <input type="checkbox" value="" id="filter-id-airline-2" name="filter-id-airline-2">
-                                <label for="filter-id-airline-2"><span></span>Turkish Airlines</label>
-                            </div>
-                            <div class="checkbox">
-                                <input type="checkbox" value="" id="filter-id-airline-3" name="filter-id-airline-3">
-                                <label for="filter-id-airline-3"><span></span>Onur Air</label>
-                            </div>
-                            <div class="checkbox">
-                                <input type="checkbox" value="" id="filter-id-airline-4" name="filter-id-airline-4">
-                                <label for="filter-id-airline-4"><span></span>Austrian Airlines</label>
-                            </div>
-                            <div class="checkbox">
-                                <input type="checkbox" value="" id="filter-id-airline-5" name="filter-id-airline-5">
-                                <label for="filter-id-airline-5"><span></span>LOT Polish Airlines</label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <button type="submit" class="btn btn-filter">Применить фильтры</button>
         </div>
 
     </div>
@@ -668,6 +672,7 @@
         <div>
             <!-- Nav tabs -->
             <ul class="nav nav-tabs" role="tablist">
+
                 <li class="active"><a href="#search-go-back" aria-controls="search-go-back" role="tab"
                                       data-toggle="tab">Туда-Обратно<span>23</span></a></li>
                 <li><a href="#search-there" aria-controls="search-there" role="tab"
@@ -675,7 +680,11 @@
                 <li><a href="#search-back" aria-controls="search-back" role="tab"
                        data-toggle="tab">обратно<span>11</span></a></li>
             </ul>
-
+            <div class="sorting sorting-mobile">
+                <a href="#" type="submit" class="btn btn-filter btn-filter-small"><span class="glyphicon glyphicon-filter"></span></a>
+                <a class="price-sort arrow-sort-up"><span>Цена</span></a>
+                <a class="time-sort arrow-sort-up"><span>Время в пути</span></a>
+            </div>
             <!-- Tab panes -->
             <div class="tab-content tab-content-result-search">
                 <div class="tab-pane active" id="search-go-back">

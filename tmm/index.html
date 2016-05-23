@@ -1,0 +1,1488 @@
+<html lang="ru"><head>
+        <title>Mustgo | Авиабилеты</title>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="yandex-verification" content="5cb9d0ef6e8be4d7">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+        <link rel="shortcut icon" href="http://mustgo.dev/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.v3.3.6.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style_new.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="css/jquery/jquery-ui.css">
+		<link rel="stylesheet" type="text/css" href="css/jquery/themes/datepicker.css">
+
+
+        <script>
+            var HTTP_HOST = 'http://mustgo.dev/';
+            var LOCALE_LANG = 'ru';
+            var IS_LOGGED = false;
+            var lang = {};
+        </script>
+        <!--<script src="http://mustgo.dev/js/google_analitics.js"></script>-->
+   </head>
+    <body style="zoom: 1;">
+        <!--- head --->
+        <div class="top-page">
+            <nav class="navbar">
+    <div class="container clearfix">
+        <div class="navbar-header pull-left">
+            <a class="navbar-brand" href="http://mustgo.dev/"><img src="http://mustgo.dev/images/logo.png" alt="logo"></a>
+        </div>
+        <div class="pull-right menu-right">
+            <div class="user-menu" style="background-color: rgba(11, 85, 168, 0.34902);">
+                <a class="dropdown-arrow collapsed" data-toggle="collapse" data-parent="#user-menu" href="#user-menu">Русский, <b>USD</b></a>
+                
+                 <div class="sign-in log-in"><a href="#">Вход</a></div> 
+            </div>
+            <div id="user-menu" class="collapse" style="display: none;">
+                <div class="user-menu-list">
+                    <ul class="list-unstyled">
+                        <li>
+                            <input type="radio" id="lang-ua" name="radio-lang" class="radio-box" checked="">
+                            <label for="lang-ua"><span><span></span></span>українська</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="lang-rus" name="radio-lang" class="radio-box" checked="">
+                            <label for="lang-rus"><span><span></span></span>русский</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="lang-en" name="radio-lang" class="radio-box" checked="">
+                            <label for="lang-en"><span><span></span></span>еnglish</label>
+                        </li>
+                    </ul>
+                    <ul class="list-unstyled">
+                        <li>
+                            <input type="radio" id="currency-usd" name="radio-currency" class="radio-box" checked="">
+                            <label for="currency-usd"><span><span></span></span><b>USD</b> доллар США</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="currency-eur" name="radio-currency" class="radio-box" checked="">
+                            <label for="currency-eur"><span><span></span></span><b>Eur</b> евро</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="currency-uan" name="radio-currency" class="radio-box" checked="">
+                            <label for="currency-uan"><span><span></span></span><b>UAH</b> украинская гривна</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="currency-rub" name="radio-currency" class="radio-box" checked="">
+                            <label for="currency-rub"><span><span></span></span><b>Rub</b> российский рубль</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pull-right">
+                <div class="phone">+38 044 359·05·69</div>
+                <div class="feedback "><a href="#">Заказать обратный звонок</a></div>
+            </div>
+        </div>
+    </div>
+</nav>
+                <div class="container main-content">
+        <ul class="nav nav-tabs nav-menu" role="tablist">
+            <li role="presentation" id="avia-tab" class="active"><a href="#avia-tickets" aria-controls="avia-tickets" role="tab" data-toggle="tab" class="avia-tickets">Авиабилеты</a></li>
+            <li role="presentation" id="train-tab"><a href="#train-tickets" aria-controls="train-tickets" role="tab" data-toggle="tab" class="train-tickets ">Железнодорожные билеты</a></li>
+            <li role="presentation" id="insurance-tab"><a href="#insurance" aria-controls="insurance" role="tab" data-toggle="tab" class="insurance">Страховки</a></li>
+        </ul>
+
+        <div class="tab-content tab-content-main">
+            <div role="tabpanel" class="tab-pane active" id="avia-tickets"><div class="radio-checked">
+    <input type="radio" id="one-way" name="radio-box" class="radio-box" value="one-way" checked="">
+    <label for="one-way"><span><span></span></span>В одну сторону</label>
+
+    <input type="radio" id="go-back" name="radio-box" class="radio-box" value="go-back">
+    <label for="go-back"><span><span></span></span>Туда и обратно</label>
+
+    <input type="radio" id="complicated-route" name="radio-box" class="radio-box" value="complicated-route">
+    <label for="complicated-route" class="dificul"><span><span></span></span>Сложный маршрут</label>
+    <a href="#tooltip" data-toggle="modal"><img src="http://mustgo.dev/images/icon/q.png" class="question"></a>
+</div>
+
+<form class="form-inline form-search">
+    <div class="form-group-search">
+
+        <div class="form-group ">
+            <label for="departure-date">Дата вылета:</label>
+            <input type="text" class="form-control date-fly calendar2month hasDatepicker" id="departure-date" placeholder="Дата" name="departure-date" readonly="readonly">
+            <a href="#" class="input-arrow" id="link-open-calendar-three-day"></a>
+        </div>
+        <div class="form-group fly-returm">
+            <label for="arrival-date-fly">Обратно:</label>
+            <input type="text" class="form-control date-fly calendar2month hasDatepicker" name="arrival-date-fly" id="arrival-date-fly" placeholder="Дата" readonly="readonly">
+            <a href="#" class="input-arrow" id="arrival-date-open-calendar"></a>
+            <!--<div class="autocomplete-wrap autocomplete-calendar" id="open-calendar" >-->
+                <!--<div class="calendar-month clearfix">-->
+                    <!--<div class="pull-left">-->
+                        <!--<a href="#" class="navigation-arrow-left"></a><span>Ноябрь</span>-->
+                    <!--</div>-->
+                    <!--<div class="pull-right">-->
+                        <!--<span>Декабрь</span><a href="#" class="navigation-arrow-right"></a>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="row">-->
+
+                    <!--<div class="col-sm-6">-->
+                        <!--<div class="weekdays">-->
+                            <!--<span>Пн</span>-->
+                            <!--<span>Вт</span>-->
+                            <!--<span>Ср</span>-->
+                            <!--<span>Чт</span>-->
+                            <!--<span>Пт</span>-->
+                            <!--<span>Сб</span>-->
+                            <!--<span>Нд</span>-->
+                        <!--</div>-->
+                        <!--<div class="day">-->
+                            <!--<a href="#">1</a>-->
+                            <!--<a href="#">2</a>-->
+                            <!--<a href="#">3</a>-->
+                            <!--<a href="#" class="day-check">4</a>-->
+                            <!--<a href="#">5</a>-->
+                            <!--<a href="#">6</a>-->
+                            <!--<a href="#">7</a>-->
+                            <!--<a href="#">8</a>-->
+                            <!--<a href="#">9</a>-->
+                            <!--<a href="#">10</a>-->
+                            <!--<a href="#">12</a>-->
+                            <!--<a href="#">13</a>-->
+                            <!--<a href="#">14</a>-->
+                            <!--<a href="#">15</a>-->
+                            <!--<a href="#">16</a>-->
+                            <!--<a href="#">17</a>-->
+                            <!--<a href="#">18</a>-->
+                            <!--<a href="#">19</a>-->
+                            <!--<a href="#">20</a>-->
+                            <!--<a href="#">21</a>-->
+                            <!--<a href="#">21</a>-->
+                            <!--<a href="#" class="day-check">23</a>-->
+                            <!--<a href="#">24</a>-->
+                            <!--<a href="#">25</a>-->
+                            <!--<a href="#">26</a>-->
+                            <!--<a href="#">27</a>-->
+                            <!--<a href="#" class="day-check">28</a>-->
+                            <!--<a href="#">29</a>-->
+                            <!--<a href="#">30</a>-->
+                            <!--<a href="#">31</a>-->
+
+                        <!--</div>-->
+
+                    <!--</div>-->
+                    <!--<div class="col-sm-6">-->
+                        <!--<div class="weekdays">-->
+                            <!--<span>Пн</span>-->
+                            <!--<span>Вт</span>-->
+                            <!--<span>Ср</span>-->
+                            <!--<span>Чт</span>-->
+                            <!--<span>Пт</span>-->
+                            <!--<span>Сб</span>-->
+                            <!--<span>Нд</span>-->
+                        <!--</div>-->
+                        <!--<div class="day">-->
+                            <!--<a href="#">1</a>-->
+                            <!--<a href="#">2</a>-->
+                            <!--<a href="#">3</a>-->
+                            <!--<a href="#" class="day-check">4</a>-->
+                            <!--<a href="#">5</a>-->
+                            <!--<a href="#">6</a>-->
+                            <!--<a href="#">7</a>-->
+                            <!--<a href="#">8</a>-->
+                            <!--<a href="#">9</a>-->
+                            <!--<a href="#">10</a>-->
+                            <!--<a href="#">12</a>-->
+                            <!--<a href="#">13</a>-->
+                            <!--<a href="#">14</a>-->
+                            <!--<a href="#">15</a>-->
+                            <!--<a href="#">16</a>-->
+                            <!--<a href="#">17</a>-->
+                            <!--<a href="#">18</a>-->
+                            <!--<a href="#">19</a>-->
+                            <!--<a href="#">20</a>-->
+                            <!--<a href="#">21</a>-->
+                            <!--<a href="#">21</a>-->
+                            <!--<a href="#" class="day-check">23</a>-->
+                            <!--<a href="#">24</a>-->
+                            <!--<a href="#">25</a>-->
+                            <!--<a href="#">26</a>-->
+                            <!--<a href="#">27</a>-->
+                            <!--<a href="#" class="day-check">28</a>-->
+                            <!--<a href="#">29</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                <!--</div>-->
+                <!--<div class="radio-checked-calendar">-->
+                    <!--<input type="radio" id="exact-date-2" name="radio-box-date-check" class="radio-box"-->
+                           <!--value="exact-date" checked>-->
+                    <!--<label for="exact-date-2"><span><span></span></span>Точная дата</label>-->
+
+                    <!--<input type="radio" id="approximate-date-2" name="radio-box-date-check" class="radio-box"-->
+                           <!--value="approximate-date">-->
+                    <!--<label for="approximate-date-2"><span><span></span></span>+/- 3 дня</label>-->
+                <!--</div>-->
+            <!--</div>-->
+        </div>
+        <div class="form-group">
+            <label for="from-to-fly-">Откуда:</label>
+            <input type="text" class="form-control to-fly place-avia-fly" id="from-to-fly-" placeholder="Откуда лететь" name="from-to-fly" data-block="open-autocomplete-from-where-fly">
+            <a href="#" class="input-arrow" id="link-open-autocomplete-where-to-fly"></a>
+            <div class="autocomplete-wrap autocomplete-from-where-fly" id="open-autocomplete-from-where-fly">
+
+                <!--<ul class="list-all-aeroport list-unstyled">-->
+                    <!--<li>-->
+                        <!--<div class="active-link"><span class="all-aeroport-link"><span class="aqua-letters">Нью</span>-Бедфорт, США</span><span-->
+                                <!--class=" location-code">LGA</span></div>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<div class="list-all-link"><span class="all-aeroport-link"><span class="aqua-letters">Нью</span>-Берн, США</span><span-->
+                                <!--class=" location-code">LGA</span></div>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<div class="list-all-link"><span class="aqua-letters">Нью</span>-Бедфорт, США, <span-->
+                                <!--class="text-all-aeroport">все аэропорты</span><span-->
+                                <!--class="location-code ">NYC</span></div>-->
+                        <!--<ul class="sub-list list-unstyled">-->
+                            <!--<li class="clearfix"><a href="#"><span class="aqua-letters">Нью</span>-Берн, США-->
+                                <!--<span class=" location-code">EWR</span></a></li>-->
+                            <!--<li class="clearfix"><a href="#"><span class="aqua-letters">Нью</span>Нью-Йорк, США<span-->
+                                    <!--class="location-code">JFK</span></a>-->
+                            <!--</li>-->
+                            <!--<li class="clearfix"><a href="#"><span class="aqua-letters">Нью</span>Нью-Йорк, США<span-->
+                                    <!--class="location-code">JFK</span></a>-->
+                            <!--</li>-->
+                        <!--</ul>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<div class="list-all-link"><span class="all-aeroport-link"><span class="aqua-letters">Нью</span>касл(-апон-Тайн), Великобритания</span><span-->
+                                <!--class=" location-code">LGA</span></div>-->
+                    <!--</li>-->
+                <!--</ul>-->
+                <!--<div class="checkbox  autocomplete-checkbox">-->
+                    <!--<input type="checkbox" value="" id="radius-anywhere" name="radius-anywhere">-->
+                    <!--<label for="radius-anywhere"><span></span>В радиусе</label>-->
+                    <!--<input type="text">-->
+                    <!--<label>км</label>-->
+                <!--</div>-->
+                <!--<div class="location">-->
+                    <!--<img src="http://mustgo.dev/images/icon/locatin.png"> <a href="#">Показать на карте</a>-->
+                <!--</div>-->
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="where-to-fly-">Куда:</label>
+            <input type="text" class="form-control to-fly place-avia-fly" id="where-to-fly-" placeholder="Куда лететь" name="where-to-fly" data-block="open-autocomplete-where-to-fly">
+            <a href="#" class="input-arrow" id="link-autocomplete-from-where-fly"></a>
+            <div class="autocomplete-wrap autocomplete-where-to-fly" id="open-autocomplete-where-to-fly">
+                <!--<div>-->
+                    <!-- Nav tabs -->
+                    <!--<ul class="nav nav-tabs " role="tablist">-->
+                        <!--<li role="presentation" class="active anywhere"><a href="#anywhere" aria-controls="anywhere"-->
+                                                                           <!--role="tab"-->
+                                                                           <!--data-toggle="tab">Куда угодно</a>-->
+                            <!--<img class="link1" src="http://mustgo.dev/images/icon/arrow_down.png">-->
+                        <!--</li>-->
+                        <!--<li role="presentation" class="cities-and-airports"><a href="#cities-and-airports"-->
+                                                                               <!--aria-controls="cities-and-airports"-->
+                                                                               <!--role="tab" data-toggle="tab">Города и-->
+                            <!--аэропорты</a>-->
+                            <!--<img class="link2" src="http://mustgo.dev/images/icon/arrow_down.png">-->
+                        <!--</li>-->
+                        <!--<li role="presentation" class="country"><a href="#country" aria-controls="country" role="tab"-->
+                                                                   <!--data-toggle="tab">Страны</a>-->
+                            <!--<img class="link3" src="http://mustgo.dev/images/icon/arrow_down.png">-->
+                        <!--</li>-->
+                    <!--</ul>-->
+
+                    <!-- Tab panes -->
+                    <!--<div class="tab-content">-->
+                        <!--<div role="tabpanel" class="tab-pane active" id="anywhere">-->
+                            <!--<ul class="list-all-aeroport list-unstyled">-->
+                                <!--<li>-->
+                                    <!--<div class="active-link list-all-link"><span class="aqua-letters">Нью</span>-Йорк,-->
+                                        <!--США, все-->
+                                        <!--аэропорты<span class="location-code ">NYC</span></div>-->
+                                    <!--<ul class="sub-list list-unstyled">-->
+                                        <!--<li class="clearfix"><a href="#"><span class="aqua-letters">Нью</span>-Йорк,-->
+                                            <!--Ньюарк-->
+                                            <!--Либерти-->
+                                            <!--<span class=" location-code">EWR</span></a></li>-->
+                                        <!--<li class="clearfix"><a href="#"><span class="aqua-letters">Нью</span>Нью-Йорк,-->
+                                            <!--Джон-->
+                                            <!--Ф. Кеннеди<span class="location-code">JFK</span></a></li>-->
+                                    <!--</ul>-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                    <!--<div class="list-all-link"><span class="all-aeroport-link">Петропавловск-Камчатский, Россия, все аэропорты</span><span-->
+                                            <!--class=" location-code">LGA</span></div>-->
+                                <!--</li>-->
+                            <!--</ul>-->
+                            <!--<div class="checkbox autocomplete-checkbox">-->
+                                <!--<input type="checkbox" value="" id="radius-from-where" name="radius-from-where">-->
+                                <!--<label for="radius-from-where"><span></span>В радиусе</label>-->
+                                <!--<input type="text" id="radius-where-km" name="radius-where-km">-->
+                                <!--<label for="radius-where-km">км</label>-->
+                            <!--</div>-->
+                            <!--<div class="location">-->
+                                <!--<img src="http://mustgo.dev/images/icon/locatin.png"> <a href="#">Показать на карте</a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div role="tabpanel" class="tab-pane" id="cities-and-airports">...</div>-->
+                        <!--<div role="tabpanel" class="tab-pane" id="country">...</div>-->
+                    <!--</div>-->
+
+                <!--</div>-->
+            </div>
+
+        </div>
+        <div class="form-group">
+            <label for="number-people-">Количество:</label>
+            <input type="text" class="form-control count-people" id="number-people-" placeholder="1 взрослый" name="number-people" data-block="open-autocomplete-passengers">
+            <a href="#" class="input-arrow count-people" id="link-autocomplete-passengers" data-block="open-autocomplete-passengers"></a>
+            <div class="autocomplete-wrap autocomplete-passengers" id="open-autocomplete-passengers">
+
+                <div class="clearfix">
+                    <span class="custom-text-autocomplete">Взрослые</span>
+                    <div class="pull-right">
+                        <input type="button" value="—" class="minus-passengers input-decrement">
+                        <input type="text" size="25" value="1" id="counter-1" class="counter-passengers" data-max="4" data-min="1">
+                        <input type="button" value="+" class="plus-passengers input-increment">
+                    </div>
+                </div>
+
+                <div class="clearfix">
+                    <span class="custom-text-autocomplete">Дети 0-2 лет</span>
+                    <div class="pull-right">
+                        <input type="button" value="—" class="minus-passengers input-decrement">
+                        <input type="text" size="25" value="0" id="counter-2" class="counter-passengers" data-max="4">
+                        <input type="button" value="+" class="plus-passengers input-increment">
+                    </div>
+                </div>
+
+                <div class="clearfix">
+                    <span class="custom-text-autocomplete">Дети старше 2 лет</span>
+                    <div class="pull-right">
+                        <input type="button" value="—" class="minus-passengers input-decrement">
+                        <input type="text" size="25" value="0" id="counter-3" class="counter-passengers" data-max="4">
+                        <input type="button" value="+" class="plus-passengers input-increment">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="form-group add-flight" id="wrap-add-flight">
+            <div class="margin-top"><a href="#avia-tab" id="add-flight" class="add-flight"><img src="http://mustgo.dev/images/icon/plus-green.png">Добавить пассажира</a></div>
+        </div>
+        <div class="form-group button-center" id="wrap-button-search">
+            <button type="submit" class="btn btn-find" id="search">Найти</button>
+        </div>
+    </div>
+    <div class="text-center аdvanced-searh"><a href="#" class="open-close search-link-arrow-down"><span>Расширенный поиск</span></a></div>
+    <div class="аdvanced-searh-content">
+        <div class="row">
+            <div class="col-lg-4 col-md-12">
+                <div class="checkbox">
+                    <input type="checkbox" value="" id="best-price" name="best-price">
+                    <label for="best-price"><span></span>Лучшая цена</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" value="" id="ability-return" name="ability-return">
+                    <label for="ability-return"><span></span>Возможность возврата</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" value="" id="transfers" name="transfers">
+                    <label for="transfers"><span></span>Без пересадок</label>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="form-group">
+                    <label for="flight-class-">Класс:</label>
+                    <input type="text" class="form-control flight-class" id="flight-class-" placeholder="Эконом" name="flight-class" data-block="open-autocomplete-class-fly">
+                    <a href="#" class="input-arrow flight-class" id="link-autocomplete-class-fly"> </a>
+                    <div class="autocomplete-wrap autocomplete-class-fly " id="open-autocomplete-class-fly">
+                        <ul class="autocomplete-checkbox list-unstyled">
+                            <li><input type="checkbox" value="" id="economy-class" name="economy-class">
+                                <label for="economy-class"><span></span>Эконом</label></li>
+                            <li><input type="checkbox" value="" id="business-class" name="business-class">
+                                <label for="business-class"><span></span>Бизнес</label></li>
+                            <li><input type="checkbox" value="" id="luxury-class" name="luxury-class">
+                                <label for="luxury-class"><span></span>Первый</label></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="аdvanced-searh-content-not-authorized">
+        <div class="row">
+            <div class="col-sm-2">
+                <div class="form-group">
+                    <label for="flight-class-2">Класс:</label>
+                    <input type="text" class="form-control flight-class" name="flight-class" id="flight-class-2" placeholder="Эконом">
+                    <a href="#" class="input-arrow"></a>
+                </div>
+            </div>
+            <div class="col-sm-10">
+                <div class="checkbox-wrapper">
+                    <div class="checkbox">
+                        <input type="checkbox" value="" id="best-price-not-authorized">
+                        <label for="best-price-not-authorized"><span></span>Лучшая цена</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" value="" id="ability-return-not-authorized">
+                        <label for="ability-return-not-authorized"><span></span>Возможность возврата/label&gt;
+                    </label></div>
+                    <div class="checkbox">
+                        <input type="checkbox" value="" id="transfers-not-authorized">
+                        <label for="transfers-not-authorized"><span></span>Без пересадок</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 text-center text-not-authorized">
+                Если вы хотите воспользоваться еще более удобным поиском, <a href="#">
+                зарегистрируйтесь</a>
+            </div>
+        </div>
+    </div>
+</form>
+</div>
+            <div role="tabpanel" class="tab-pane" id="train-tickets"><div class="radio-checked">
+    <input type="radio" id="one-way-train" name="radio-box-train" class="radio-box-train" value="one-way-train" checked="">
+    <label for="one-way-train"><span><span></span></span>В одну сторону</label>
+
+    <input type="radio" id="go-back-train" name="radio-box-train" class="radio-box-train" value="go-back-train">
+    <label for="go-back-train"><span><span></span></span>Туда и обратно (cкидка 10%)</label>
+</div>
+<form class="form-inline form-search">
+<div class="form-group-search">
+<div class="form-group">
+    <label for="departure-date-train-">Дата отправления:</label>
+    <input type="text" class="form-control date-fly calendar2month hasDatepicker" id="departure-date-train-" placeholder="Дата" name="departure-date" readonly="readonly">
+    <a href="#" class="input-arrow"></a>
+    <div class="autocomplete-wrap autocomplete-calendar" id="open-calendar-train">
+        <div class="calendar-month clearfix">
+            <div class="pull-left">
+                <a href="#" class="navigation-arrow-left"></a><span>Ноябрь</span>
+            </div>
+            <div class="pull-right">
+                <span>Декабрь</span><a href="#" class="navigation-arrow-right"></a>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-sm-6">
+                <div class="weekdays">
+                    <span>Пн</span>
+                    <span>Вт</span>
+                    <span>Ср</span>
+                    <span>Чт</span>
+                    <span>Пт</span>
+                    <span>Сб</span>
+                    <span>Нд</span>
+                </div>
+                <div class="day">
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#" class="three-day-check round-left">4</a>
+                    <a href="#" class="three-day-check">5</a>
+                    <a href="#" class="three-day-check ">6</a>
+                    <a href="#" class="three-day-check select-date round-right">7</a>
+                    <a href="#" class="three-day-check round-left">8</a>
+                    <a href="#" class="three-day-check">9</a>
+                    <a href="#" class="three-day-check round-right">10</a>
+                    <a href="#">12</a>
+                    <a href="#">13</a>
+                    <a href="#">14</a>
+                    <a href="#">15</a>
+                    <a href="#">16</a>
+                    <a href="#">17</a>
+                    <a href="#">18</a>
+                    <a href="#">19</a>
+                    <a href="#">20</a>
+                    <a href="#">21</a>
+                    <a href="#">21</a>
+                    <a href="#">23</a>
+                    <a href="#">24</a>
+                    <a href="#">25</a>
+                    <a href="#">26</a>
+                    <a href="#">27</a>
+                    <a href="#">28</a>
+                    <a href="#">29</a>
+                    <a href="#">30</a>
+                    <a href="#">31</a>
+
+                </div>
+
+            </div>
+            <div class="col-sm-6">
+                <div class="weekdays">
+                    <span>Пн</span>
+                    <span>Вт</span>
+                    <span>Ср</span>
+                    <span>Чт</span>
+                    <span>Пт</span>
+                    <span>Сб</span>
+                    <span>Нд</span>
+                </div>
+                <div class="day">
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">7</a>
+                    <a href="#">8</a>
+                    <a href="#">9</a>
+                    <a href="#">10</a>
+                    <a href="#">12</a>
+                    <a href="#">13</a>
+                    <a href="#">14</a>
+                    <a href="#">15</a>
+                    <a href="#">16</a>
+                    <a href="#">17</a>
+                    <a href="#">18</a>
+                    <a href="#">19</a>
+                    <a href="#">20</a>
+                    <a href="#">21</a>
+                    <a href="#">21</a>
+                    <a href="#">23</a>
+                    <a href="#">24</a>
+                    <a href="#">25</a>
+                    <a href="#">26</a>
+                    <a href="#">27</a>
+                    <a href="#">28</a>
+                    <a href="#">29</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="radio-checked-calendar">
+            <input type="radio" id="exact-date-1" name="radio-box-date-check" class="radio-box" value="exact-date" checked="">
+            <label for="exact-date-1"><span><span></span></span>Точная дата</label>
+
+            <input type="radio" id="approximate-date-1" name="radio-box-date-check" class="radio-box" value="approximate-date">
+            <label for="approximate-date-1"><span><span></span></span>+/- 3 дня</label>
+        </div>
+    </div>
+</div>
+<div class="form-group train-return">
+    <label for="arrival-date-train-">Обратно:</label>
+    <input type="text" class="form-control date-fly calendar2month hasDatepicker" name="arrival-date" id="arrival-date-train-" placeholder="Дата" readonly="readonly">
+    <a href="#" class="input-arrow"></a>
+    <div class="autocomplete-wrap autocomplete-calendar" id="open-calendar-three-day-train">
+        <div class="calendar-month clearfix">
+            <div class="pull-left">
+                <a href="#" class="navigation-arrow-left"></a><span>Ноябрь</span>
+            </div>
+            <div class="pull-right">
+                <span>Декабрь</span><a href="#" class="navigation-arrow-right"></a>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-sm-6">
+                <div class="weekdays">
+                    <span>Пн</span>
+                    <span>Вт</span>
+                    <span>Ср</span>
+                    <span>Чт</span>
+                    <span>Пт</span>
+                    <span>Сб</span>
+                    <span>Нд</span>
+                </div>
+                <div class="day">
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#" class="day-check">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">7</a>
+                    <a href="#">8</a>
+                    <a href="#">9</a>
+                    <a href="#">10</a>
+                    <a href="#">12</a>
+                    <a href="#">13</a>
+                    <a href="#">14</a>
+                    <a href="#">15</a>
+                    <a href="#">16</a>
+                    <a href="#">17</a>
+                    <a href="#">18</a>
+                    <a href="#">19</a>
+                    <a href="#">20</a>
+                    <a href="#">21</a>
+                    <a href="#">21</a>
+                    <a href="#" class="day-check">23</a>
+                    <a href="#">24</a>
+                    <a href="#">25</a>
+                    <a href="#">26</a>
+                    <a href="#">27</a>
+                    <a href="#" class="day-check">28</a>
+                    <a href="#">29</a>
+                    <a href="#">30</a>
+                    <a href="#">31</a>
+
+                </div>
+
+            </div>
+            <div class="col-sm-6">
+                <div class="weekdays">
+                    <span>Пн</span>
+                    <span>Вт</span>
+                    <span>Ср</span>
+                    <span>Чт</span>
+                    <span>Пт</span>
+                    <span>Сб</span>
+                    <span>Нд</span>
+                </div>
+                <div class="day">
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#" class="day-check">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">7</a>
+                    <a href="#">8</a>
+                    <a href="#">9</a>
+                    <a href="#">10</a>
+                    <a href="#">12</a>
+                    <a href="#">13</a>
+                    <a href="#">14</a>
+                    <a href="#">15</a>
+                    <a href="#">16</a>
+                    <a href="#">17</a>
+                    <a href="#">18</a>
+                    <a href="#">19</a>
+                    <a href="#">20</a>
+                    <a href="#">21</a>
+                    <a href="#">21</a>
+                    <a href="#" class="day-check">23</a>
+                    <a href="#">24</a>
+                    <a href="#">25</a>
+                    <a href="#">26</a>
+                    <a href="#">27</a>
+                    <a href="#" class="day-check">28</a>
+                    <a href="#">29</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="radio-checked-calendar">
+            <input type="radio" id="exact-date-3" name="radio-box-date-check" class="radio-box" value="exact-date-3" checked="">
+            <label for="exact-date"><span><span></span></span>Точная дата</label>
+
+            <input type="radio" id="approximate-date-3" name="radio-box-date-check" class="radio-box" value="approximate-date-3">
+            <label for="approximate-date"><span><span></span></span>+/- 3 дня</label>
+        </div>
+    </div>
+
+</div>
+<div class="form-group">
+    <label for="from-to-train-">Откуда:</label>
+    <input type="text" class="form-control to-fly place-train" id="from-to-train-" placeholder="Cтанция отправления" name="from-to-train" data-block="open-autocomplete-from-where-train">
+    <a href="#" class="input-arrow"></a>
+    <div class="autocomplete-wrap autocomplete-from-where-train" id="open-autocomplete-from-where-train">
+
+        <ul class="list-all-aeroport list-unstyled">
+            <li>
+                <div class="list-all-link active-link"><span class="all-aeroport-link"><span class="aqua-letters">Оде</span>сса</span></div>
+            </li>
+            <li>
+                <div class="list-all-link"><span class="all-aeroport-link"><span class="aqua-letters">Оде</span>сса-Главная</span>
+                </div>
+            </li>
+            <li>
+                <div class="list-all-link"><span class="all-aeroport-link"><span class="aqua-letters">Оде</span>сса-Восточная</span>
+                </div>
+            </li>
+            <li>
+                <div class="list-all-link"><span class="all-aeroport-link"><span class="aqua-letters">Оде</span>сса-Сортировочная</span>
+                </div>
+            </li>
+            <li>
+                <div class="list-all-link"><span class="all-aeroport-link"><span class="aqua-letters">Оде</span>сса-Застава1</span>
+                </div>
+            </li>
+            <li>
+
+        </li></ul>
+    </div>
+
+</div>
+<div class="form-group">
+    <label for="where-to-train-">Куда:</label>
+    <input type="text" class="form-control to-fly place-train" id="where-to-train-" placeholder="Станция прибытия" name="where-to-train" data-block="open-autocomplete-where-train">
+    <a href="#" class="input-arrow"></a>
+    <div class="autocomplete-wrap autocomplete-from-where-train" id="open-autocomplete-where-train">
+
+        <ul class="list-all-aeroport list-unstyled">
+            <li>
+                <div class="list-all-link active-link"><span class="all-aeroport-link"><span class="aqua-letters">Оде</span>сса</span></div>
+            </li>
+            <li>
+                <div class="list-all-link"><span class="all-aeroport-link"><span class="aqua-letters">Оде</span>сса-Главная</span>
+                </div>
+            </li>
+            <li>
+                <div class="list-all-link"><span class="all-aeroport-link"><span class="aqua-letters">Оде</span>сса-Восточная</span>
+                </div>
+            </li>
+            <li>
+                <div class="list-all-link"><span class="all-aeroport-link"><span class="aqua-letters">Оде</span>сса-Сортировочная</span>
+                </div>
+            </li>
+            <li>
+                <div class="list-all-link"><span class="all-aeroport-link"><span class="aqua-letters">Оде</span>сса-Застава1</span>
+                </div>
+            </li>
+            <li>
+
+        </li></ul>
+    </div>
+
+</div>
+<div class="form-group">
+    <label>Количество:</label>
+    
+        <div class="quantity">
+            <input type="button" value="—" class="qtyminus minus" field="quantity">
+            <input type="text" name="quantity" value="1" class="qty number">
+            <input type="button" value="+" class="qtyplus plus" field="quantity">
+        </div>
+    
+
+</div>
+<div class="form-group button-center">
+    <button type="submit" class="btn btn-find">Найти</button>
+</div>
+</div></form>
+<div class="text-center аdvanced-searh-content-not-authorized-train">
+    <div class="row">
+        <div class="col-sm-12 text-center text-not-authorized">
+            Если вы хотите воспользоваться еще более удобным поиском, <a href="#form-registration" data-toggle="modal" data-target="#form-registration">
+            зарегистрируйтесь</a>
+        </div>
+    </div>
+</div>
+
+
+</div>
+            <div role="tabpanel" class="tab-pane" id="insurance"><form class="form-inline form-search">
+<div class="form-group-search">
+<div class="form-group">
+    <label for="departure-date-insurance">Дата отъезда:</label>
+    <input type="text" class="form-control date-fly" id="departure-date-insurance" placeholder="Дата" name="departure-date-insurance">
+    <a href="#" class="input-arrow"></a>
+    <div class="autocomplete-wrap autocomplete-calendar" id="open-autocomplete-calendar">
+        <div class="calendar-month clearfix">
+            <div class="pull-left">
+                <a href="#" class="navigation-arrow-left"></a><span>Ноябрь</span>
+            </div>
+            <div class="pull-right">
+                <span>Декабрь</span><a href="#" class="navigation-arrow-right"></a>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-sm-6">
+                <div class="weekdays">
+                    <span>Пн</span>
+                    <span>Вт</span>
+                    <span>Ср</span>
+                    <span>Чт</span>
+                    <span>Пт</span>
+                    <span>Сб</span>
+                    <span>Нд</span>
+                </div>
+                <div class="day">
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#" class="three-day-check round-left">4</a>
+                    <a href="#" class="three-day-check">5</a>
+                    <a href="#" class="three-day-check ">6</a>
+                    <a href="#" class="three-day-check select-date round-right">7</a>
+                    <a href="#" class="three-day-check round-left">8</a>
+                    <a href="#" class="three-day-check">9</a>
+                    <a href="#" class="three-day-check round-right">10</a>
+                    <a href="#">12</a>
+                    <a href="#">13</a>
+                    <a href="#">14</a>
+                    <a href="#">15</a>
+                    <a href="#">16</a>
+                    <a href="#">17</a>
+                    <a href="#">18</a>
+                    <a href="#">19</a>
+                    <a href="#">20</a>
+                    <a href="#">21</a>
+                    <a href="#">21</a>
+                    <a href="#">23</a>
+                    <a href="#">24</a>
+                    <a href="#">25</a>
+                    <a href="#">26</a>
+                    <a href="#">27</a>
+                    <a href="#">28</a>
+                    <a href="#">29</a>
+                    <a href="#">30</a>
+                    <a href="#">31</a>
+
+                </div>
+
+            </div>
+            <div class="col-sm-6">
+                <div class="weekdays">
+                    <span>Пн</span>
+                    <span>Вт</span>
+                    <span>Ср</span>
+                    <span>Чт</span>
+                    <span>Пт</span>
+                    <span>Сб</span>
+                    <span>Нд</span>
+                </div>
+                <div class="day">
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">7</a>
+                    <a href="#">8</a>
+                    <a href="#">9</a>
+                    <a href="#">10</a>
+                    <a href="#">12</a>
+                    <a href="#">13</a>
+                    <a href="#">14</a>
+                    <a href="#">15</a>
+                    <a href="#">16</a>
+                    <a href="#">17</a>
+                    <a href="#">18</a>
+                    <a href="#">19</a>
+                    <a href="#">20</a>
+                    <a href="#">21</a>
+                    <a href="#">21</a>
+                    <a href="#">23</a>
+                    <a href="#">24</a>
+                    <a href="#">25</a>
+                    <a href="#">26</a>
+                    <a href="#">27</a>
+                    <a href="#">28</a>
+                    <a href="#">29</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="radio-checked-calendar">
+            <input type="radio" id="exact-date-4" name="radio-box-date-check" class="radio-box" value="exact-date" checked="">
+            <label for="exact-date-4"><span><span></span></span>Точная дата</label>
+
+            <input type="radio" id="approximate-date-4" name="radio-box-date-check" class="radio-box" value="approximate-date">
+            <label for="approximate-date-4"><span><span></span></span>+/- 3 дня</label>
+        </div>
+    </div>
+</div>
+<div class="form-group">
+    <label for="arrival-date-insurance">Дата возвращения:</label>
+    <input type="text" class="form-control date-fly" name="arrival-date-insurance" id="arrival-date-insurance" placeholder="Дата">
+    <a href="#" class="input-arrow"></a>
+    <div class="autocomplete-wrap autocomplete-calendar" id="open-autocomplete-calendar-insurance">
+        <div class="calendar-month clearfix">
+            <div class="pull-left">
+                <a href="#" class="navigation-arrow-left"></a><span>Ноябрь</span>
+            </div>
+            <div class="pull-right">
+                <span>Декабрь</span><a href="#" class="navigation-arrow-right"></a>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-sm-6">
+                <div class="weekdays">
+                    <span>Пн</span>
+                    <span>Вт</span>
+                    <span>Ср</span>
+                    <span>Чт</span>
+                    <span>Пт</span>
+                    <span>Сб</span>
+                    <span>Нд</span>
+                </div>
+                <div class="day">
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#" class="day-check">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">7</a>
+                    <a href="#">8</a>
+                    <a href="#">9</a>
+                    <a href="#">10</a>
+                    <a href="#">12</a>
+                    <a href="#">13</a>
+                    <a href="#">14</a>
+                    <a href="#">15</a>
+                    <a href="#">16</a>
+                    <a href="#">17</a>
+                    <a href="#">18</a>
+                    <a href="#">19</a>
+                    <a href="#">20</a>
+                    <a href="#">21</a>
+                    <a href="#">21</a>
+                    <a href="#" class="day-check">23</a>
+                    <a href="#">24</a>
+                    <a href="#">25</a>
+                    <a href="#">26</a>
+                    <a href="#">27</a>
+                    <a href="#" class="day-check">28</a>
+                    <a href="#">29</a>
+                    <a href="#">30</a>
+                    <a href="#">31</a>
+
+                </div>
+
+            </div>
+            <div class="col-sm-6">
+                <div class="weekdays">
+                    <span>Пн</span>
+                    <span>Вт</span>
+                    <span>Ср</span>
+                    <span>Чт</span>
+                    <span>Пт</span>
+                    <span>Сб</span>
+                    <span>Нд</span>
+                </div>
+                <div class="day">
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#" class="day-check">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">7</a>
+                    <a href="#">8</a>
+                    <a href="#">9</a>
+                    <a href="#">10</a>
+                    <a href="#">12</a>
+                    <a href="#">13</a>
+                    <a href="#">14</a>
+                    <a href="#">15</a>
+                    <a href="#">16</a>
+                    <a href="#">17</a>
+                    <a href="#">18</a>
+                    <a href="#">19</a>
+                    <a href="#">20</a>
+                    <a href="#">21</a>
+                    <a href="#">21</a>
+                    <a href="#" class="day-check">23</a>
+                    <a href="#">24</a>
+                    <a href="#">25</a>
+                    <a href="#">26</a>
+                    <a href="#">27</a>
+                    <a href="#" class="day-check">28</a>
+                    <a href="#">29</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="radio-checked-calendar">
+            <input type="radio" id="exact-date" name="radio-box-date-check" class="radio-box" value="exact-date" checked="">
+            <label for="exact-date"><span><span></span></span>Точная дата</label>
+
+            <input type="radio" id="approximate-date" name="radio-box-date-check" class="radio-box" value="approximate-date">
+            <label for="approximate-date"><span><span></span></span>+/- 3 дня</label>
+        </div>
+    </div>
+
+</div>
+<div class="form-group">
+    <label for="from-to-insurance">Выберите страну:</label>
+    <input type="text" class="form-control to-country" id="from-to-insurance" value="Страны Северной и Южной Америки (включая Кубу), Австралия" placeholder="Cтрана" name="from-to-insurance">
+    <a href="#" class="input-arrow"></a>
+    <div class="autocomplete-wrap autocomplete-select-country" id="open-autocomplete-select-country">
+        <ul class="list-all-aeroport list-unstyled">
+            <li class="list-all-link active-link">Европа (страны Шенгенской зоны)</li>
+            <li class="list-all-link">Европа (страны, не входящие в Шенгенскую зону)</li>
+            <li class="list-all-link"> Египет, Алжир, Марокко, Тунис, Турция, Израиль, РФ)</li>
+            <li class="list-all-link"> Страны Азии</li>
+            <li class="list-all-link"> Африка, исключая Египет, Алжир, Марокко, Тунис</li>
+            <li class="list-all-link"> Страны Северной и Южной Америки (включая Кубу), Австралия</li>
+        </ul>
+    </div>
+</div>
+<div class="form-group">
+    <label for="where-to-insurance">Страховая сумма:</label>
+    <input type="text" class="form-control sum-insured" id="where-to-insurance" placeholder="Сумма" name="where-to-insurance">
+    <a href="#" class="input-arrow"></a>
+    <div class="autocomplete-wrap autocomplete-insurance" id="open-autocomplete-insurance">
+        <ul class="list-unstyled">
+            <li><a href="#">5 000 USD</a></li>
+            <li><a href="#">10 000 USD</a></li>
+            <li><a href="#">15 000 USD</a></li>
+            <li><a href="#">30 000 USD</a></li>
+        </ul>
+    </div>
+</div>
+<div class="form-group">
+    <label>Количество:</label>
+    
+        <div class="quantity">
+            <input type="button" value="—" class="minus minus-insurance" field="quantity-insurance">
+            <input type="text" name="quantity-insurance" value="1" max="9" class="number number-insurance">
+            <input type="button" value="+" class="plus plus-insurance" field="quantity-insurance">
+        </div>
+    
+
+</div>
+<div class="form-group button-center">
+    <button type="submit" class="btn btn-find">Найти</button>
+</div>
+<div class="text-insurance">Специальные опции страховки:</div>
+<div class="checkbox-wrapper-insurance">
+    <div class="checkbox">
+        <input type="checkbox" value="" id="for-sports" name="for-sports">
+        <label for="for-sports"><span></span>Занятия спортом (кроме горнолыжного)</label>
+    </div>
+    <div class="checkbox">
+        <input type="checkbox" value="" id="skiing" name="skiing">
+        <label for="skiing"><span></span>Горнолыжный спорт</label>
+    </div>
+    <div class="checkbox">
+        <input type="checkbox" value="" id="employment" name="employment">
+        <label for="employment"><span></span>Работа по найму</label>
+    </div>
+</div>
+</div></form>
+
+
+
+</div>
+            <div role="tabpanel" class="tab-pane" id="hotel">text ...
+</div>
+        </div>
+    </div>
+
+    <a href="#proposition" class="arrow-down"><img src="http://mustgo.dev/images/down-page.png" alt="arrow-down"> </a>
+
+
+        </div>
+        <!--- content --->
+        <div class="container interesting-proposition" id="proposition">
+    <div class="row">
+        <div class="col-sm-12 text-center name-section">Интересные предложения</div>
+        <div class="col-lg-4 col-md-6 col-sm-12 col-action-block">
+            <div class="panel panel-default panel-blue">
+                <div class="panel-heading">Акция<img src="http://mustgo.dev/images/icon/plane.png" alt="plane"></div>
+                <div class="panel-body">
+                    <div class="panel-text-bold-action">Киев-Стамбул<span class="price-discont-blue">от 1700 UAH</span>
+                    </div>
+                    <div class="panel-text-light">скидки от Turkish airlines<span class="price-discont-blue">40%</span></div>
+                    <div class="panel-text-bold-action">в январе</div>
+                    <a href="#"><img src="http://mustgo.dev/images/aviacompany/TK.png" alt="logo-company"></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 col-action-block">
+            <div class="panel panel-default panel-green">
+                <div class="panel-heading">Отели<img src="http://mustgo.dev/images/icon/hotel.png" alt="hotel"></div>
+                <div class="panel-body">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="http://mustgo.dev/images/aviacompany/hotel.png" alt="hotel">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <div class="panel-text-bold">Отель в г.Ужгород</div>
+                            <div><span class="price-discont-green">300 UAH/ночь</span></div>
+                            <div class="panel-text-light">скидка<span class="price-discont-green">17%</span></div>
+                            <div class="panel-text-bold">сегодня</div>
+                            <a href="#" class="link-details-hotel">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 col-action-block">
+            <div class="panel panel-default panel-green-light">
+                <div class="panel-heading">Направления<img src="http://mustgo.dev/images/icon/way.png" alt="hotel"></div>
+                <div class="panel-body">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="http://mustgo.dev/images/aviacompany/eg.png" alt="hotel">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <div class="panel-text-bold">Что посмотреть в Египте?</div>
+                            <div class="panel-text-light">Топ-10 лучших нетуристических мест</div>
+
+                            <a href="#" class="link-details-hotel">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 col-action-block">
+            <div class="panel panel-default panel-blue">
+                <div class="panel-heading">Акция<img src="http://mustgo.dev/images/icon/plane.png" alt="plane"></div>
+                <div class="panel-body">
+                    <div class="panel-text-bold-action">Киев-Стамбул<span class="price-discont-blue">от 1700 UAH</span>
+                    </div>
+                    <div class="panel-text-light">скидки от Turkish airlines<span class="price-discont-blue">40%</span></div>
+                    <div class="panel-text-bold-action">в январе</div>
+                    <a href="#"><img src="http://mustgo.dev/images/aviacompany/TK.png" alt="logo-company"></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 col-action-block">
+            <div class="panel panel-default panel-green">
+                <div class="panel-heading">Отели<img src="http://mustgo.dev/images/icon/hotel.png" alt="hotel"></div>
+                <div class="panel-body">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="http://mustgo.dev/images/aviacompany/hotel.png" alt="hotel">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <div class="panel-text-bold">Отель в г.Ужгород</div>
+                            <div><span class="price-discont-green">300 UAH/ночь</span></div>
+                            <div class="panel-text-light">скидка<span class="price-discont-green">17%</span></div>
+                            <div class="panel-text-bold">сегодня</div>
+                            <a href="#" class="link-details-hotel">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 col-action-block">
+            <div class="panel panel-default panel-green">
+                <div class="panel-heading">Отели<img src="http://mustgo.dev/images/icon/hotel.png" alt="hotel"></div>
+                <div class="panel-body">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="http://mustgo.dev/images/aviacompany/hotel2.png" alt="hotel">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <div class="panel-text-bold">Отель в г.Милан
+                            </div>
+                            <div><span class="price-discont-green">80 EUR/ночь</span></div>
+                            <div class="panel-text-light">действительно</div>
+                            <div class="panel-text-bold">с 23.11 по 25.11</div>
+                            <a href="#" class="link-details-hotel">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 text-center link-action"><a href="#">Смотреть все акции</a></div>
+    </div>
+</div>
+<div class="section-information">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 padding-left-q">
+                <div class="info-heading"><h2><img src="http://mustgo.dev/images/aviacompany/th.png">Частые вопросы</h2></div>
+                <div class="panel-group" id="accordion">
+                    <div class="accordion">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                Какие авиабилеты можно купить на MustGo?
+                            </a>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse">
+                            <div class="accordion-body">
+                                На нашем сайте можно приобрести авиабилеты более 800 авиакомпаний с вылетом
+                                практически из любых точек мира. Мы стараемся предложить пользователю
+                                максимальное количество вариантов рейсов на запрашиваемые даты и направления.
+                                Эти варианты отличаются по времени в пути, количеству пересадок, ценам и
+                                условиям возврата.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                Промо-код MustGo
+                            </a>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse">
+                            <div class="accordion-body">
+                                На нашем сайте можно приобрести авиабилеты более 800 авиакомпаний с вылетом
+                                практически из любых точек мира. Мы стараемся предложить пользователю
+                                максимальное количество вариантов рейсов на запрашиваемые даты и направления.
+                                Эти варианты отличаются по времени в пути, количеству пересадок, ценам и
+                                условиям возврата.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                Промо-код MustGo
+                            </a>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse">
+                            <div class="accordion-body">
+                                На нашем сайте можно приобрести авиабилеты более 800 авиакомпаний с вылетом
+                                практически из любых точек мира. Мы стараемся предложить пользователю
+                                максимальное количество вариантов рейсов на запрашиваемые даты и направления.
+                                Эти варианты отличаются по времени в пути, количеству пересадок, ценам и
+                                условиям возврата.
+                            </div>
+                        </div>
+                        <div class="link-details"><a href="#">Смотреть все вопросы</a></div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 padding-left-a">
+                <div class="info-heading heading-for-article"><h2><img src="http://mustgo.dev/images/aviacompany/comp.png">Статьи</h2></div>
+                <div class="article">
+                    <div class="date-article">21.04.15</div>
+                    <a href="#">Аэропорт Борисполь - крупнейшая воздушная гавань Украины</a>
+                </div>
+                <div class="article">
+                    <div class="date-article">16.03.15</div>
+                    <a href="#">Чешские авиалинии - один из старейших европейских авиаперевозчиков</a>
+                </div>
+                <div class="article">
+                    <div class="date-article">4.02.15</div>
+                    <a href="#">Расписание самолетов всех авиакомпаний</a>
+                </div>
+                <div class="article">
+                    <div class="date-article">2.02.15</div>
+                    <a href="#">Расписание самолетов всех авиакомпаний Украины</a>
+                </div>
+                <div class="article">
+                    <div class="date-article">21.04.15</div>
+                    <a href="#">Аэропорт Борисполь - крупнейшая воздушная гавань Украины</a>
+                </div>
+                <div class="link-details"><a href="#">Читать все статьи</a></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="container section-timetables" id="section-timetables-avia">
+    <div class="row">
+        <div class="col-sm-12 text-center name-section">Табло аэропортов</div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <ul class="timetables">
+                <li><a href="#">Расписание рейсов аэропорта<span class="name-city-bold">Борисполь</span></a></li>
+                <li><a href="#">Расписание рейсов аэропорта<span class="name-city-bold">Киев</span></a></li>
+                <li><a href="#">Расписание рейсов аэропорта<span class="name-city-bold">Львов</span></a></li>
+                <li><a href="#">Расписание рейсов аэропорта<span class="name-city-bold">Париж</span></a></li>
+                <li><a href="#">Расписание рейсов аэропорта<span class="name-city-bold">Минск</span></a></li>
+                <li><a href="#">Расписание рейсов аэропорта<span class="name-city-bold">Борисполь</span></a></li>
+                <li><a href="#">Расписание рейсов аэропорта<span class="name-city-bold">Париж</span></a></li>
+                <li><a href="#">Расписание рейсов аэропорта<span class="name-city-bold">Львов</span></a></li>
+            </ul>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <ul class="timetables">
+                <li><a href="#">Расписание рейсов аэропорта<span class="name-city-bold">Борисполь</span></a></li>
+                <li><a href="#">Расписание рейсов аэропорта<span class="name-city-bold">Киев</span></a></li>
+                <li><a href="#">Расписание рейсов аэропорта<span class="name-city-bold">Львов</span></a></li>
+                <li><a href="#">Расписание рейсов аэропорта<span class="name-city-bold">Париж</span></a></li>
+                <li><a href="#">Расписание рейсов аэропорта<span class="name-city-bold">Минск</span></a></li>
+                <li><a href="#">Расписание рейсов аэропорта<span class="name-city-bold">Борисполь</span></a></li>
+                <li><a href="#">Расписание рейсов аэропорта<span class="name-city-bold">Париж</span></a></li>
+                <li><a href="#">Расписание рейсов аэропорта<span class="name-city-bold">Львов</span></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container section-timetables" id="section-timetables-train">
+    <div class="row">
+        <div class="col-sm-12 text-center name-section">Расписание железнодорожных станций</div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <ul class="timetables">
+                <li><a href="#">Железнодорожный вокзал<span class="name-city-bold">Борисполь</span></a></li>
+                <li><a href="#">Железнодорожный вокзал<span class="name-city-bold">Киев</span></a></li>
+                <li><a href="#">Железнодорожный вокзал<span class="name-city-bold">Львов</span></a></li>
+                <li><a href="#">Железнодорожный вокзал<span class="name-city-bold">Париж</span></a></li>
+                <li><a href="#">Железнодорожный вокзал<span class="name-city-bold">Минск</span></a></li>
+                <li><a href="#">Железнодорожный вокзал<span class="name-city-bold">Борисполь</span></a></li>
+                <li><a href="#">Железнодорожный вокзал<span class="name-city-bold">Париж</span></a></li>
+                <li><a href="#">Железнодорожный вокзал<span class="name-city-bold">Львов</span></a></li>
+            </ul>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <ul class="timetables">
+                <li><a href="#">Железнодорожный вокзал<span class="name-city-bold">Борисполь</span></a></li>
+                <li><a href="#">Железнодорожный вокзал<span class="name-city-bold">Киев</span></a></li>
+                <li><a href="#">Железнодорожный вокзал<span class="name-city-bold">Львов</span></a></li>
+                <li><a href="#">Железнодорожный вокзал<span class="name-city-bold">Париж</span></a></li>
+                <li><a href="#">Железнодорожный вокзал<span class="name-city-bold">Минск</span></a></li>
+                <li><a href="#">Железнодорожный вокзал<span class="name-city-bold">Борисполь</span></a></li>
+                <li><a href="#">Железнодорожный вокзал<span class="name-city-bold">Париж</span></a></li>
+                <li><a href="#">Железнодорожный вокзал<span class="name-city-bold">Львов</span></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="section-article">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 "><h2>Заказ авиа билетов на сайте www.mustgo.aero</h2></div>
+            <div class="col-sm-12 ">
+                <p>Бронирование авиабилетов на сайте www.mustgo.aero производится в режиме реального времени
+                    (on-line). Вы
+                    можете дистанционно, находясь у себя в офисе или дома, забронировать авиаперелет, оплатить его
+                    любым
+                    удобным для Вас способом - картой на нашем сайте, наличным или безналичным расчетом , после чего
+                    электронный билет будет отправлен Вам по электронной почте.</p>
+
+                <p>Фактом приобретения электронного билета и осуществления оплаты является маршрутная квитанция
+                    (itinerary receipt)<br>
+                    Маршрутная квитанция является подтверждением оформления Электронного билета и удостоверяет
+                    договор
+                    воздушной перевозки, заключённый между пассажиром и авиакомпанией.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!--- footer --->
+        <footer>
+    <div class="footer-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <ul class="">
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Путешествия</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 hidden-md hidden-sm hidden-xs">
+                    <ul class="">
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">Договор оферты</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <ul class="address">
+                        <li id="phone"><a href="#">+38 044 359·05·69</a></li>
+                        <li><a href="#"> +7 495 739·79·22</a></li>
+                        <li id="mail"><a href="#">mustgoaero@gmail.com</a></li>
+                        <li id="skype"><a href="#">mustgoaero</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 hidden-lg">
+                    <ul class="">
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">Договор оферты</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <img src="http://mustgo.dev/images/logo.png">
+                    <p>Мы в соцсетях:</p>
+                    <ul class="social">
+                        <li><a href="#">
+                            <div id="vk"></div>
+                        </a></li>
+                        <li><a href="#">
+                            <div id="facebook"></div>
+                        </a></li>
+                        <li><a href="#">
+                            <div id="twit"></div>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="support_payments">
+                <img src="http://mustgo.dev/images/payments/yandex.png" title="">
+                <img src="http://mustgo.dev/images/payments/yandex.png" title="">
+                <img src="http://mustgo.dev/images/payments/wmlogo_vector_blue.png" title="">
+                <img src="http://mustgo.dev/images/payments/okpay_logo.png" title="">
+                <img src="http://mustgo.dev/images/payments/Visa_Inc.svg" title="">
+                <img src="http://mustgo.dev/images/payments/logo-mastercard.png" title="">
+                <img src="http://mustgo.dev/images/payments/300px-Libert.svg" title="">
+                <img src="http://mustgo.dev/images/payments/logo-perfect-money.png" title="">
+                <img src="http://mustgo.dev/images/payments/liqpay_logo.png" title="">
+                <img src="http://mustgo.dev/images/payments/privat24.png" title="">
+                <img src="http://mustgo.dev/images/payments/RBKmoney.png" title="">
+                <img src="http://mustgo.dev/images/payments/paypallogo.png" title="">
+        </div>
+    </div>
+</footer>
+
+        <!--- modal block --->
+        <div class="modal fade modalBlock" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-tooltip">
+                <div class="modal-content modal-info form-log-in">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="http://mustgo.dev/images/close.png" alt="close"></button>
+                        <h1></h1>
+                    </div>
+                    <div class="modal-body"></div>
+                </div>
+            </div>
+        </div>
+        <script>
+            lang.login = {
+                'title':"ВХОД НА САЙТ",
+                'error_email':"Неверный email",
+                'you_email':"Ваш е-mail",
+                'error_password': "Неверный пароль",
+                'you_password'  : "Ваш пароль",
+                'enter'  : "Вход",
+                'not_have_account'  : "У вас нет аккаунта",
+                'registration'  : "зарегистрируйтесь",
+                'forgot_pass'  : "Забыли пароль",
+                'enter_soc_facebook'  : "Войти через Facebook"
+            };
+            lang.registration = {
+                'title':"Регистрация",
+                'you_name':"Ваше имя",
+                'checkbox_corporate_entity':"Юридическое лицо",
+                'you_organization':"Название организации",
+                'error_email':"Неверный email",
+                'you_email':"Ваш е-mail",
+                'error_password': "Неверный пароль",
+                'you_password'  : "Ваш пароль",
+                'error_repeat_password': "Пароли не совпадают",
+                'repeat_password'  : "Повторите пароль",
+                'enter'  : "Вход",
+                'enter_soc_facebook'  : "Войти через Facebook"
+            };
+            lang.forgotPass = {
+                'title':"Восстановление пароля",
+                'instruction':"На ваш электронный адрес будет выслана инструкция по восстановлению пароля",
+                'you_email':"Ваш е-mail",
+                'error_email':"Неверный email",
+                'send': "Отправить"
+            };
+        </script>
+        <script src="js/jquery/jquery-1.10.2.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/mustache.min.js"></script>
+        <script src="js/script.js"></script>
+           <script>
+
+       lang.feedbackcall = {
+           'title':"ОСТАВЬТЕ ВАШ НОМЕР ТЕЛЕФОНА, МЫ ВАМ ПЕРЕЗВОНИМ",
+           'error_name':"Невернoe имя",
+           'you_name':"Как вас зовут?",
+           'error_phone': "Неверный телефон",
+           'you_phone'  : "Ваш номер телефона",
+           'send_form'  : "Заказать звонок"
+       };
+   </script>
+
+    <script src="js/jquery/jquery-ui.js"></script>
+    <script src="js/jquery/i18n/datepicker-ru.js"></script>
+    <script src="js/totop/easing.js"></script>
+    <script src="js/avia/index.js"></script><div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all ui-datepicker-multi-2 ui-datepicker-multi ui-datepicker-position-below" style="position: absolute; top: 309px; width: 34em; left: 54px; z-index: 109; display: block;"><div class="ui-datepicker-group ui-datepicker-group-first"><div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-left"><a class="ui-datepicker-prev ui-corner-all ui-state-disabled" title="<Пред"><span class="ui-icon ui-icon-circle-triangle-w">&lt;Пред</span></a><div class="ui-datepicker-title"><span class="ui-datepicker-month">Май</span>&nbsp;<span class="ui-datepicker-year">2016</span></div></div><table class="ui-datepicker-calendar"><thead><tr><th scope="col"><span title="понедельник">Пн</span></th><th scope="col"><span title="вторник">Вт</span></th><th scope="col"><span title="среда">Ср</span></th><th scope="col"><span title="четверг">Чт</span></th><th scope="col"><span title="пятница">Пт</span></th><th scope="col" class="ui-datepicker-week-end"><span title="суббота">Сб</span></th><th scope="col" class="ui-datepicker-week-end"><span title="воскресенье">Вс</span></th></tr></thead><tbody><tr><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">1</span></td></tr><tr><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">2</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">3</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">4</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">5</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">6</span></td><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">7</span></td><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">8</span></td></tr><tr><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">9</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">10</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">11</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">12</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">13</span></td><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">14</span></td><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">15</span></td></tr><tr><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">16</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">17</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">18</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">19</span></td><td class=" ui-datepicker-days-cell-over  ui-datepicker-today" data-handler="selectDay" data-event="click" data-month="4" data-year="2016"><a class="ui-state-default ui-state-highlight ui-state-hover" href="#">20</a></td><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="4" data-year="2016"><a class="ui-state-default" href="#">21</a></td><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="4" data-year="2016"><a class="ui-state-default" href="#">22</a></td></tr><tr><td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2016"><a class="ui-state-default" href="#">23</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2016"><a class="ui-state-default" href="#">24</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2016"><a class="ui-state-default" href="#">25</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2016"><a class="ui-state-default" href="#">26</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2016"><a class="ui-state-default" href="#">27</a></td><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="4" data-year="2016"><a class="ui-state-default" href="#">28</a></td><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="4" data-year="2016"><a class="ui-state-default" href="#">29</a></td></tr><tr><td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2016"><a class="ui-state-default" href="#">30</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2016"><a class="ui-state-default" href="#">31</a></td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td></tr></tbody></table></div><div class="ui-datepicker-group ui-datepicker-group-last"><div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-right"><a class="ui-datepicker-next ui-corner-all" data-handler="next" data-event="click" title="След>"><span class="ui-icon ui-icon-circle-triangle-e">След&gt;</span></a><div class="ui-datepicker-title"><span class="ui-datepicker-month">Июнь</span>&nbsp;<span class="ui-datepicker-year">2016</span></div></div><table class="ui-datepicker-calendar"><thead><tr><th scope="col"><span title="понедельник">Пн</span></th><th scope="col"><span title="вторник">Вт</span></th><th scope="col"><span title="среда">Ср</span></th><th scope="col"><span title="четверг">Чт</span></th><th scope="col"><span title="пятница">Пт</span></th><th scope="col" class="ui-datepicker-week-end"><span title="суббота">Сб</span></th><th scope="col" class="ui-datepicker-week-end"><span title="воскресенье">Вс</span></th></tr></thead><tbody><tr><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="2016"><a class="ui-state-default" href="#">1</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="2016"><a class="ui-state-default" href="#">2</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="2016"><a class="ui-state-default" href="#">3</a></td><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="5" data-year="2016"><a class="ui-state-default" href="#">4</a></td><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="5" data-year="2016"><a class="ui-state-default" href="#">5</a></td></tr><tr><td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="2016"><a class="ui-state-default" href="#">6</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="2016"><a class="ui-state-default" href="#">7</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="2016"><a class="ui-state-default" href="#">8</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="2016"><a class="ui-state-default" href="#">9</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="2016"><a class="ui-state-default" href="#">10</a></td><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="5" data-year="2016"><a class="ui-state-default" href="#">11</a></td><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="5" data-year="2016"><a class="ui-state-default" href="#">12</a></td></tr><tr><td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="2016"><a class="ui-state-default" href="#">13</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="2016"><a class="ui-state-default" href="#">14</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="2016"><a class="ui-state-default" href="#">15</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="2016"><a class="ui-state-default" href="#">16</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="2016"><a class="ui-state-default" href="#">17</a></td><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="5" data-year="2016"><a class="ui-state-default" href="#">18</a></td><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="5" data-year="2016"><a class="ui-state-default" href="#">19</a></td></tr><tr><td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="2016"><a class="ui-state-default" href="#">20</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="2016"><a class="ui-state-default" href="#">21</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="2016"><a class="ui-state-default" href="#">22</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="2016"><a class="ui-state-default" href="#">23</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="2016"><a class="ui-state-default" href="#">24</a></td><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="5" data-year="2016"><a class="ui-state-default" href="#">25</a></td><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="5" data-year="2016"><a class="ui-state-default" href="#">26</a></td></tr><tr><td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="2016"><a class="ui-state-default" href="#">27</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="2016"><a class="ui-state-default" href="#">28</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="2016"><a class="ui-state-default" href="#">29</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="2016"><a class="ui-state-default" href="#">30</a></td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td></tr><tr><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td></tr></tbody></table></div><div class="ui-datepicker-row-break"></div></div>
+
+    
+</body></html>
