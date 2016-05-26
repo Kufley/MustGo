@@ -132,8 +132,8 @@ footer .col-sm-3 {padding-right: 55px;}
 .margin-right-80{margin-right: 80px}
 .margin-right-50{margin-right: 50px}
 
-.support_payments{padding: 30px 0; margin: 0 auto; text-align: center;}
-.support_payments img{margin-right: 20px}
+.support_payments{padding: 30px 0; margin: 0 auto; text-align: center}
+.support_payments img{margin-right: 20px; max-width: 100px;max-height: 50px}
 
 .btn-find{border-radius: 4px;margin-top: 35px;background-color:  #afd820; box-shadow: 0 2px 4px 0 rgba(3, 4, 5, 0.5);text-transform: uppercase;width: 162px;height: 52px;color:  #ffffff;  font-size: 24px;  font-weight: 700;  line-height: 30px;}
 .btn-request{width: 352px;height: 52px;margin-top: 35px; border: 1px solid #257ee1; color: #257ee1; background: transparent; text-transform: uppercase;font-size: 18px;font-weight: 400;  line-height: 35px;}
@@ -553,6 +553,7 @@ a.promo-accordion-toggle{color:#007fe5;font-size: 16px;font-weight: 400;line-hei
 .tab-content-result-search .panel-default .panel-heading{background-color: #fff;border-color:transparent; padding: 10px 10px 10px 20px;}
 .link-return-ticket a {margin-left: 10px; color:#000; font-size: 14px;font-weight: 400;line-height: 30px;text-decoration: underline;}
 .tab-content-result-search .panel-default .panel-body{background-color:  #f2f2f2; padding: 15px 20px; color:  #000;font-size: 16px;  font-weight: 400;  line-height: 20px;}
+.tab-content-result-search .panel-default .panel-heading img{max-width: 150px; max-height: 50px}
 
 .label-list{margin-bottom: 0}
 .label-list li{margin: 0 3px;display: inline-block; font-size: 12px;font-weight: 400; text-transform:uppercase;line-height: 10px;border-radius: 4px;padding: 10px}
@@ -1024,9 +1025,7 @@ blockquote {padding: 30px 20px; margin: 40px 0 50px;  background-color:  #f2f2f2
 .bar-code{margin-top: 45px; margin-bottom: 65px}
 .logo-blank{margin: 0 0 40px}
 .container.container-blank{padding-top: 100px; width: 1800px}
-.bottom-line{background-color:  #c1c1c1;height: 2px; margin: 40px 0}
-.red-text{color:#ff0000}
-.green-text{color: #afd820}
+
 .col-120{width: 120px}
 .container-blank .display-flex{align-items: flex-start}
 

@@ -7,17 +7,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="content-type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500' rel='stylesheet' type='text/css'>
-    <link href="css/nouislider.min.css" rel="stylesheet">
+
+    <style>
+        h1, h2{margin-top: 20px;margin-bottom: 10px}
+        h1{font-size: 30px;font-weight: bold;line-height: 36px;}
+        h2{font-size: 24px;font-weight: bold;line-height: 30px;}
+        .container.container-blank {padding-top: 100px;width: 1800px;  margin-right: auto;  margin-left: auto}
+        .font-blank{color:#000;font-size: 18px; font-weight: 400; line-height: 24px; font-family: Arial, Helvetica, sans-serif}
+        .clearfix:after{clear: both;display: table;content: " "}
+        .pull-left{float: left}
+        .pull-right{float: right}
+        .top-link.pull-right{margin-top:88px}
+        .logo-blank{margin: 0 0 40px}
+        .font-blank.clearfix {margin-bottom: 90px;}
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+        table.ticket-table{
+            width: 100%;
+        }
+        table.ticket-table tr td{
+            vertical-align: middle;
+            padding: 4px;
+            font-size: 12px;
+        }
+        table.ticket-table tr td.text-center{
+            text-align: center;
+        }
+        table.ticket-table tr td b.just{
+            font-weight: bold;
+        }
+        table.ticket-table tr td b.ticket-title{
+            font-weight: bold;
+            font-size: 14px;
+        }
+        table.ticket-table tr td b.uid{
+            font-size: 14px;
+        }
+        table.ticket-table tr td b.doc-label{
+            font-size: 16px;
+        }
+        table.ticket-table tr td span.small-adr{
+            font-size: 10px;
+        }
+        table.ticket-table tr td span.rail-way{
+            margin-left: 24%;
+        }
+        .border{
+            border: 1px solid #000000;
+        }
+        table.ticket-table tr.align-row td{
+            padding: 0;
+            height: 1px;
+            border: none;
+        }
+    </style>
 </head>
 <body>
 
 <div class="container container-blank font-blank">
     <div class="font-blank clearfix">
         <div class="pull-left">
-            <div class="margin-bottom-15">
+            <div style="margin-bottom: 15px">
                 <img src="images/icon/logo-blue.png" class="logo-blank">
                 <div>Киев, бул. Ивана Лепсе, 4, оф. 513</div>
                 <div>+38 044 3590569</div>
@@ -27,12 +80,127 @@
                 <div>+38 067 789 45 45</div>
             </div>
         </div>
-        <div class="top-link pull-right text-right">
-            <div><a href="#">www.mustgo.aero</a></div>
-            <div>e-mail: <a href="#">tickets@mustgo.aero</a></div>
+        <div class="top-link pull-right" style="text-align: right">
+            <div><a href="#" style="color:  #477ee1">www.mustgo.aero</a></div>
+            <div>e-mail: <a href="#" style="color:  #477ee1;">tickets@mustgo.aero</a></div>
         </div>
     </div>
-    <img src="images/document.png">
+    <table class="ticket-table">
+        <tr class="align-row">
+            <td style="width: 5%;"></td>
+            <td style="width: 10%"></td>
+            <td style="width: 15%"></td>
+            <td style="width: 20%"></td>
+            <td style="width: 20%"></td>
+            <td style="width: 15%"></td>
+            <td style="width: 20%"></td>
+        </tr>
+        <tr class="border">
+            <td rowspan="2" class="border">TEРM.№16</td>
+            <td colspan="3" class="border">
+                <b class="ticket-title">ПОСАДОЧНИЙ ДОКУМЕНТ</b>
+            </td>
+            <td colspan="2" class="border">
+                <b class="ticket-title uid">000B3B52-</b>
+            </td>
+            <td rowspan="2">
+                <b class="ticket-title">
+                    ПН:{(string)$ticket.fiscal_info.tin}<br/>
+                    ФН:{(string)$ticket.fiscal_info.rro}<br/>
+                    ЗН:{(string)$ticket.fiscal_info.server}<br/>
+                    ФК:{(string)$ticket.fiscal_info.id}
+                </b>
+            </td>
+        </tr>
+        <tr class="border">
+            <td colspan="3" class="border">
+                <span class="small-adr">ПАТ «УКРЗАЛІЗНИЦЯ» м.Київ, вул.Тверська, буд.5</span>
+            </td>
+            <td colspan="2" class="border">
+                <b class="ticket-title">#{(string)$ordernumber}</b>
+            </td>
+        </tr>
+        <tr class="border">
+            <td class="border">{if isset($ticket.transaction.type)}{(string)$ticket.transaction.type}{/if}</td>
+            <td colspan="5" class="text-center">
+                <b class="ticket-title doc-label">ЦЕЙ ПОСАДОЧНИЙ ДОКУМЕНТ  Є  ПІДСТАВОЮ  ДЛЯ  ПРОЇЗДУ</b>
+            </td>
+            <td class="border">{$paydate}</td>
+        </tr>
+        <tr class="border">
+            <td colspan="3" class="border">Прізвище, ім’я</td>
+            <td colspan="2" class="border">{(string)$ticket.passport.lastname} {(string)$ticket.passport.firstname}</td>
+            <td class="border">Поїзд</td>
+            <td>
+                <b class="just">
+                    {(string)$ticket.detail.train.departure}
+                    {if (string)$ticket.detail.wagon.firm == "True"} ФІРМ{/if}
+                    {if isset($ticket.detail.train.category)}
+                    &nbsp;{(string)$ticket.detail.train.category}
+                    {/if}
+                </b>
+            </td>
+        </tr>
+        <tr class="border">
+            <td colspan="2" class="border">Відправлення</td>
+            <td class="border">{(string)$ticket.detail.station_from_code}</td>
+            <td colspan="2" class="border">
+                <b class="just">{(string)$ticket.detail.station_from}</b>
+            </td>
+            <td class="border">Вагон</td>
+            <td>
+                <b class="just">
+                    {$ticket.detail.wagon.val}
+                    {$ticket.detail.wagon.type}{if $ticket.detail.wagon.class}/{$ticket.detail.wagon.class}{/if}{if (int)$ticket.detail.wagon.class > 0} КЛ{/if}
+                    {$ticket.detail.railway}
+                </b>
+            </td>
+        </tr>
+        <tr class="border">
+            <td colspan="2" class="border">Призначення</td>
+            <td class="border">{(string)$ticket.detail.station_to_code}</td>
+            <td colspan="2" class="border">
+                <b class="just">{(string)$ticket.detail.station_to}</b>
+            </td>
+            <td class="border">Місце</td>
+            <td class="border">
+                <b class="just">{$ticket.detail.places} {if (string)$ticket.detail.kind}{$ticket.detail.kind}{/if}</b>
+            </td>
+        </tr>
+        <tr class="border">
+            <td colspan="3" class="border">Дата/час відпр.</td>
+            <td colspan="2" class="border">
+                <b class="just">{$ticket.detail.departure_date}</b>
+            </td>
+            <td class="border">Сервіс</td>
+            <td class="border">{if isset($ticket.detail.services) &amp;&amp; $ticket.detail.services}{foreach from=$ticket.detail.services key=index item=sitem name=count}{if $smarty.foreach.count.index > 0},{/if}&nbsp;{(string)$sitem.label}{/foreach}{/if}</td>
+        </tr>
+        <tr class="border">
+            <td colspan="3" class="border">Дата/час приб. {if $ticket.detail.train.arrival}<span class="rail-way">{(string)$ticket.detail.train.arrival}</span>{/if}</td>
+            <td colspan="2" class="border">
+                <b class="just">{$ticket.detail.arrival_date}</b>
+            </td>
+            <td colspan="2" class="border"></td>
+        </tr>
+        <tr class="border">
+            <td colspan="7">
+                <b class="just">ВАРТ = {$sums['vart']} ГРН</b> (КВ.{$sums['kv']}+ПЛ.{$sums['pl']}{if $sums['dop_int'] > 0}+ДОП.{$sums['dop']}{/if}{if $sums['sp_int']}+СП.{$sums['sp']}{/if}+СТР.{$sums['ctr']}+ПДВ.{$sums['pdv']}+КЗБ.{$sums['ksb']})<br/>
+                {if $sums['serv_sums']}В Т.Ч. {implode(' ', $sums['serv_sums'])} (З ПДВ)<br/>{/if}
+                {if $sums['discount']}{$ticket.detail.railway} 10% ЗНИЖКА<br/>{/if}
+                {if isset($ticket.privilege)}#ДОКУМЕНТ ПІЛЬГОВИКА: ПІЛЬГ {(string)$ticket.privilege.category} {(string)$ticket.privilege.serial}{(string)$ticket.privilege.number}<br/>{/if}
+                #СТР.ВІД Н/В 6000{if in_array((string)$ticket.detail.railway, array('ЛЬВ', 'П-З', 'ПРИДН'))}НЕОП.МІН{else}Н.М.{/if} {$ticket.insurance_company.name}, {$ticket.insurance_company.address}, T{$ticket.insurance_company.telephone}<br/>
+                <b class="just">ЧАС ВІДПРАВЛЕННЯ КИЇВСЬКИЙ</b>
+            </td>
+        </tr>
+        <tr class="border">
+            <td colspan="3">
+                <img style=" padding-right: 4px; border-right: 1px solid #000000;" src="data:image/jpg;base64,{(string)$ticket.qr_image}">
+            </td>
+            <td colspan="4">
+                <b class="just">Цей Посадочний документ є підставою для проїзду без звернення у касу. Посадочний документ являється розрахунковим документом. Повернення даного Посадочного документа можливе до відправлення поїзда.</b>
+            </td>
+        </tr>
+    </table>
 </div>
 
 
