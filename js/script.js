@@ -23,8 +23,20 @@ $(window).load(function () {
         }
     };
 });
-
-
+window.onload = function () {
+    $('.search-more-accordion-toggle').click(function () {
+        var $this = $(this);
+        if ($this.hasClass('collapsed') && $('.tab-content-result-search .panel-default').children().hasClass('col-flight-price')) {
+            $('.line-gray').hide();
+            $this.parents('.tab-content-result-search .panel-default').css({"padding-bottom": "120px"});
+            $this.text('Свернуть');
+        } else {
+            $this.text('Подробнее');
+            $('.line-gray').show();
+            $this.parents('.tab-content-result-search .panel-default').css({"padding-bottom": "0"});
+        }
+    });
+};
 $(document).ready(function () {
 
     $('#carousel-foto-page').carousel({
@@ -243,17 +255,7 @@ $(document).ready(function () {
 
 
 
-    $('.search-more-accordion-toggle').click(function(){
-        var $this = $(this);
-        if($this.hasClass('collapsed')){
-            $('.line-gray').hide();
 
-            $this.text('Свернуть');
-        } else {
-            $this.text('Подробнее');
-            $('.line-gray').show();
-        }
-    });
     $('.show-table-date').on('shown.bs.collapse', function () {
         $('.table-accordion-toggle span').text('Свернуть');
         $('.table-accordion-toggle').removeClass('more-arrow-table-up').addClass('more-arrow-table-down');
@@ -457,7 +459,7 @@ $(document).ready(function () {
     });
 });
 customScroll = function () {
-    var sEl = document.querySelector("#filter_options > ul"),
+    var sEl = document.querySelector(".filter_options > ul"),
         sBar = document.createElement("b"),
         sThumb = document.createElement("b");
     sEl.parentNode.insertBefore(sBar, sEl);
@@ -472,10 +474,10 @@ customScroll = function () {
             sRatio = sBar.offsetHeight / sEl.scrollHeight;
             var h = sEl.offsetHeight * sRatio;
             if (sRatio > 1.02) {
-                $("#filter_options > b").css({"display": "none"});
+                $(".filter_options > b").css({"display": "none"});
             }
             else {
-                $("#filter_options > b").css({"display": "block"});
+                $(".filter_options > b").css({"display": "block"});
             }
             if (h < sMin) sRatio -= ((sMin - h) / sEl.scrollHeight);
             sThumb.style.height = h + "px";

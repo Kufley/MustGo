@@ -919,28 +919,67 @@
                             </div>
                             <div class="form-group">
                                 <label>Количество:</label>
-                                <form id='form-quantity' method='POST' action='#'>
+                                <div id='form-quantity'>
                                     <div class="quantity">
                                         <input type='button' value='—' class='qtyminus minus' field='quantity'/>
                                         <input type='text' name='quantity' value='1' class='qty number'/>
                                         <input type='button' value='+' class='qtyplus plus' field='quantity'/>
                                     </div>
-                                </form>
+                                </div>
 
                             </div>
                             <div class="form-group button-center">
                                 <button type="submit" class="btn btn-find">Найти</button>
                             </div>
                         </div>
-                        <div class="text-center аdvanced-searh-content-not-authorized-train">
+                        <!--<div class="text-center аdvanced-searh-content-not-authorized-train">-->
+                            <!--<div class="row">-->
+                                <!--<div class="col-sm-12 text-center text-not-authorized">-->
+                                    <!--Если вы хотите воспользоваться еще более удобным поиском, <a href="#form-registration" data-toggle="modal" data-target="#form-registration">-->
+                                    <!--зарегистрируйтесь</a>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <div class="text-center аdvanced-searh"><a href="#" class="open-close search-link-arrow-down"><span>Расширенный поиск</span></a></div>
+                        <div class="аdvanced-searh-content">
                             <div class="row">
-                                <div class="col-sm-12 text-center text-not-authorized">
-                                    Если вы хотите воспользоваться еще более удобным поиском, <a href="#form-registration" data-toggle="modal" data-target="#form-registration">
-                                    зарегистрируйтесь</a>
+                                <div class="col-lg-7">
+                                    <div class="text-insurance margin-bottom-10">Тип вагона:</div>
+                                    <div class="display-flex-space-between">
+                                        <div class="checkbox">
+                                            <input type="checkbox" value="" id="reserved-seat" name="reserved-seat">
+                                            <label for="reserved-seat"><span></span>Плацкарт</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox" value="" id="compartment" name="compartment">
+                                            <label for="compartment"><span></span>Купе</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox" value="" id="luxe" name="luxe">
+                                            <label for="luxe"><span></span>Люкс</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox" value="" id="sedentary-1" name="sedentary-1">
+                                            <label for="sedentary-1"><span></span>Сидячий 1 класс</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox" value="" id="sedentary-2" name="sedentary-2">
+                                            <label for="sedentary-2"><span></span>Сидячий 2 класс</label>
+                                        </div>
+                                    </div>
                                 </div>
+                                    <div class="col-lg-offset-1 col-lg-4">
+                                        <div class="form-group">
+                                            <label for="passengers-train">Пассажиры</label>
+                                            <input type="text" name="passengers" class="form-control passengers"
+                                                   id="passengers-train" placeholder="Выберите пассажиров из списка">
+                                            <a href="#" class="input-arrow"
+                                               id="link-autocomplete-check-passengers-train"></a>
+                                        </div>
+                                    </div>
+
                             </div>
                         </div>
-
                     </form>
                 </div>
                 <div role="tabpanel" class="tab-pane" id="insurance">
@@ -1209,20 +1248,20 @@
                             </div>
                             <div class="form-group">
                                 <label>Количество:</label>
-                                <form id='form-quantity-insurance' method='POST' action='#'>
+                                <div id='form-quantity-insurance'>
                                     <div class="quantity">
                                         <input type='button' value='—' class='minus minus-insurance' field='quantity-insurance'/>
                                         <input type='text' name='quantity-insurance' value='1' max="9"
                                                class='number number-insurance'/>
                                         <input type='button' value='+' class='plus plus-insurance' field='quantity-insurance'/>
                                     </div>
-                                </form>
+                                </div>
 
                             </div>
                             <div class="form-group button-center">
                                 <button type="submit" class="btn btn-find">Найти</button>
                             </div>
-                            <div class="text-insurance">Специальные опции страховки:</div>
+                            <div class="text-insurance margin-top-20">Специальные опции страховки:</div>
                             <div class="checkbox-wrapper-insurance">
                                 <div class="checkbox">
                                     <input type="checkbox" value="" id="for-sports" name="for-sports">

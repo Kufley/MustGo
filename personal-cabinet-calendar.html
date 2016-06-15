@@ -12,7 +12,6 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500' rel='stylesheet' type='text/css'>
     <link href="css/nouislider.min.css" rel="stylesheet">
 </head>
-<body>
 <div class="top-page-personal-cabinet">
     <nav class="navbar">
         <div class="container clearfix">
@@ -70,130 +69,168 @@
     </nav>
 </div>
 
-<div class="container content-result-search margin-bottom-350">
+<div class="container content-result-search">
     <ul class="list-unstyled list-personal-cabinet">
         <li><a href="personal-cabinet-booking.html">Забронированные услуги</a></li>
         <li><a href="personal-cabinet.html">Выкупленные заказы</a></li>
         <li><a href="personal-cabinet-airbill.html">Список пассажиров</a></li>
-        <li><a href="#">Календарь поездок</a></li>
-        <li><a href="#">Платежи и отчетность</a></li>
-        <li><a href="personal-cabinet-settings-list.html" class="active">Настройки аккаунта</a></li>
+        <li><a href="personal-cabinet-calendar.html" class="active">Календарь поездок</a></li>
+        <li><a href="personal-cabinet-payment-services.html" >Платежи и отчетность</a></li>
+        <li><a href="personal-cabinet-settings-list.html">Настройки аккаунта</a></li>
     </ul>
+     <div class="sorting user-edit">
+            <div class="filter-personal-cabinet">
+                <a href="personal-cabinet-payment.html">Все поездки</a>
+                <a href="personal-cabinet-payment-services-debt.html" class="border-dotted">Архив</a>
+            </div>
+     </div>
+<div class="calendar-container center-block" >
 
-    <div class="sorting clearfix">
-        <div class="pull-left add-pass settings-top">
-            <a href="personal-cabinet-settings-account.html"><span class="active">Настройки аккаунта</span></a>
-            <a href="personal-cabinet-settings-list.html"><span>Пользователи</span></a>
-        </div>
-        <div class="pull-right add-pass">
-            <a href="#"><span>Сохранить</span></a>
-        </div>
-    </div>
-    <form class="form-inline form-search form-order">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="form-group label-pass">
-                    <div class="panel-text-bold">Название аккаунта</div>
-                </div>
+        <table class="table table-calendar table-bordered" >
+            <thead>
+            <tr>
+                <td colspan="7" class="table-month">
+                    <div class="travel-calendar-month clearfix">
+                <a href="#" class="nav-arrow-calendar-left pull-left"></a>
+                <a href="#" class="nav-arrow-calendar-right pull-right"></a>
+                <div>Май 2016</div>
+                    </div>
+                 </td>
 
-                <div class="form-group">
-                    <label for="name-account" class="sr-only">Имя:</label>
-                    <input type="text" class="form-control form-control-order text-uppercase"
-                           id="name-account"
-                           name="name-account" value="Tour-Company">
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="form-group label-pass"></div>
-                <div class="form-group">
-                    <a href="#" class="link-facebook"><img src="images/icon/facebook.png" class="margin-right-20">Связать с аккаунтом Facebook</a>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="form-group label-pass">
-                    <div class="panel-text-bold">Адрес</div>
-                </div>
+            </tr>
+            <tr>
+                <th>Понедельник</th>
+                <th>Вторник</th>
+                <th>Среда</th>
+                <th>Четверг</th>
+                <th>Пятница</th>
+                <th>Суббота</th>
+                <th>Воскресенье</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="active">
+                    <span class="active">25</span>
+                    <div class="column-list">
+                        <div class="row-list row-avia">
+                            <div><div class="hide-long-text " title="Авиа Амстердам-Лондон">Авиа Прага-Мадрид</div>1 пассажир</div>
+                        </div>
+                    </div>
+                </td>
+                <td><span class="disable">26</span></td>
+                <td><span class="disable">27</span></td>
+                <td><span class="disable">28</span></td>
+                <td><span class="disable">29</span></td>
+                <td><span class="disable">30</span></td>
+                <td><span>1 мая</span></td>
 
-                <div class="form-group">
-                    <label for="country-account">Страна</label>
-                    <input type="text" class="form-control form-control-order"
-                           id="country-account"
-                           name="country-account" value="Украина">
-                    <a href="#" class="input-arrow"></a>
-
-                </div>
-                <div class="form-group">
-                    <label for="city-account">Город</label>
-                    <input type="text" class="form-control form-control-order"
-                           id="city-account"
-                           name="city-account" value="Odessa">
-                </div>
-                <div class="form-group">
-                    <label for="index-account">Индекс</label>
-                    <input type="text" class="form-control form-control-order"
-                           id="index-account"
-                           name="index-account" value="65000">
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="form-group label-pass">
-                    <div class="panel-text-bold"></div>
-                </div>
-                <div class="form-group">
-                    <label for="street-account">Тип улицы</label>
-                    <input type="text" class="form-control form-control-order"
-                           id="street-account" value="Prospect"
-                           name="street-account">
-                </div>
-                <div class="form-group">
-                    <label for="type-street-account">Улица</label>
-                    <input type="text" class="form-control form-control-order"
-                           id="type-street-account" value="Gagarina"
-                           name="type-street-account">
-                </div>
-                <div class="form-group">
-                    <label for="house-account">Дом</label>
-                    <input type="text" class="form-control form-apartment"
-                           id="house-account" value="87"
-                           name="house-account">
-                </div>
-                <div class="form-group">
-                    <label for="apartment-account">Квартира</label>
-                    <input type="text" class="form-control form-apartment"
-                           id="apartment-account" value="11"
-                           name="apartment-account">
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-            <div class="form-group label-pass">
-                <div class="panel-text-bold"></div>
-            </div>
-            <div class="form-group">
-                <label for="language-account">Язык</label>
-                <input type="text" class="form-control form-control-order"
-                       id="language-account" value="Русский"
-                       name="language-account">
-                <a href="#" class="input-arrow"></a>
-            </div>
-            <div class="form-group">
-                <label for="currency-account">Валюта</label>
-                <input type="text" class="form-control form-control-order"
-                       id="currency-account" value="UAH украинская гривна"
-                       name="currency-account">
-                <a href="#" class="input-arrow"></a>
-            </div>
-           </div>
-        </div>
-    </form>
+            </tr>
+            <tr>
+                <td><span>2</span></td>
+                <td><span>3</span></td>
+                <td class="active">
+                    <span class="active">4</span>
+                    <div class="column-list">
+                        <div class="row-list row-avia">
+                           <div><div class="hide-long-text " title="Авиа Амстердам-Лондон">Авиа Амстердам-Лондон</div>3 пассажира</div>
+                        </div>
+                    </div>
+                    <div class="autocomplete-wrap autocomplete-details-travel">
+                        <div class="margin-bottom-10">Амстердам-Лондон</div>
+                        <div class="text-uppercase margin-bottom-5">
+                            <div>Vetochkin Aleksandr</div>
+                            <div>Dudkin Nickolay</div>
+                            <div>Astashkin Grigoriy</div>
+                        </div>
+                        <div class="next">
+                            <a href="#">Перейти</a>
+                        </div>
+                    </div>
+                </td>
+                <td><span>5</span></td>
+                <td class="active">
+                    <span class="active">6</span>
+                    <div class="column-list">
+                        <div class="row-list row-avia">Авиа</div>
+                        <div class="row-list row-train">Ж/Д</div>
+                        <div class="row-list row-insurance">Страховка</div>
+                        <div class="row-list row-hotel">Отель</div>
+                    </div>
+                </td>
+                <td><span>7</span></td>
+                <td><span>8</span></td>
+            </tr>
+            <tr>
+                <td><span>9</span></td>
+                <td><span>10</span></td>
+                <td><span>11</span></td>
+                <td><span>12</span></td>
+                <td><span>13</span></td>
+                <td><span>14</span></td>
+                <td><span>15</span></td>
+            </tr>
+            <tr>
+                <td><span>16</span></td>
+                <td class="active">
+                    <span class="active">17</span>
+                    <div class="column-list">
+                        <div class="row-list row-train">
+                            <div><div class="hide-long-text " title="Авиа Амстердам-Лондон">Ж/Д Одесса-Ужгород</div>2 пассажира</div>
+                        </div>
+                    </div>
+                </td>
+                <td><span>18</span></td>
+                <td><span>19</span></td>
+                <td><span>20</span></td>
+                <td><span>21</span></td>
+                <td><span>22</span></td>
+            </tr>
+            <tr>
+                <td><span>23</span></td>
+                <td><span>24</span></td>
+                <td><span>25</span></td>
+                <td class="active">
+                    <span class="active">26</span>
+                    <div class="column-list">
+                        <div class="row-list row-insurance">Страховка</div>
+                        <div class="row-list row-hotel">Отель</div>
+                    </div>
+                </td>
+                <td class="active">
+                    <span class="active">27</span>
+                    <div class="column-list">
+                        <div class="row-list row-insurance"></div>
+                        <div class="row-list row-hotel"></div>
+                    </div>
+                </td>
+                <td class="active">
+                    <span class="active">28</span>
+                    <div class="column-list">
+                        <div class="row-list row-insurance"></div>
+                        <div class="row-list row-hotel"></div>
+                    </div>
+                </td>
+                <td class="active">
+                    <span class="active">29</span>
+                    <div class="column-list">
+                        <div class="row-list row-insurance"></div>
+                        <div class="row-list row-hotel"></div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><span>30</span></td>
+                <td><span>31</span></td>
+                <td><span class="disable">1 июня</span></td>
+                <td><span class="disable">2</span></td>
+                <td><span class="disable">3</span></td>
+                <td><span class="disable">4</span></td>
+                <td><span class="disable">5</span></td>
+            </tr>
+            </tbody>
+        </table>
+</div>
 </div>
 
 <footer>
@@ -329,100 +366,7 @@
 <script src="js/script.js"></script>
 <script src="js/nouislider.min.js"></script>
 <script src="js/wNumb.js"></script>
-<script>
-    function getSliderVal(value) {
-        var i = 0,
-                time = [];
-        for (i; i < value.length; i++) {
-            var h = value[i] / 60 ^ 0;
-            if (h) {
-                var m = value[i] % 60;
-                if (m < 10) m = '0' + m;
-                time[i] = h + ':' + m;
-            } else {
-                if (value[i] < 10) {
-                    time[i] = '0:0' + parseInt(value[i]);
-                } else {
-                    time[i] = '0:' + parseInt(value[i]);
-                }
-            }
-        }
-        return time;
-    }
-    var rangeSliderarrival = document.getElementById('slider-range-arrival');
 
-    noUiSlider.create(rangeSliderarrival, {
-        step: 15,
-        margin: 50,
-        connect: true,
-        behaviour: 'tap',
-        start: [0, 1440],
-        tooltips: [wNumb({decimals: 2, mark: ':'}), wNumb({decimals: 2, mark: ':'})],
-        range: {
-            'min': [0],
-            'max': [1440]
-        }
-    });
-
-    var rangeSlider = document.getElementById('slider-range-sortie');
-
-    noUiSlider.create(rangeSlider, {
-        step: 15,
-        margin: 50,
-        connect: true,
-        behaviour: 'tap',
-        start: [0, 1440],
-        tooltips: [wNumb({decimals: 2, mark: ':'}), wNumb({decimals: 2, mark: ':'})],
-        range: {
-            'min': [0],
-            'max': [1440]
-        }
-    });
-
-    rangeSlider.noUiSlider.on('change', function () {
-        var value = rangeSlider.noUiSlider.get(),
-                time = getSliderVal(value);
-        $('#slider-range-sortie .noUi-handle-lower .noUi-tooltip').text(time[0]);
-        $('#slider-range-sortie .noUi-handle-upper .noUi-tooltip').text(time[1]);
-    });
-
-    rangeSlider.noUiSlider.on('start', function () {
-        var value = rangeSlider.noUiSlider.get(),
-                time = getSliderVal(value);
-        $('#slider-range-sortie .noUi-handle-lower .noUi-tooltip').text(time[0]);
-        $('#slider-range-sortie .noUi-handle-upper .noUi-tooltip').text(time[1]);
-    });
-
-    rangeSlider.noUiSlider.on('update', function () {
-        var value = rangeSlider.noUiSlider.get(),
-                time = getSliderVal(value);
-        $('#slider-range-sortie .noUi-handle-lower .noUi-tooltip').text(time[0]);
-        $('#slider-range-sortie .noUi-handle-upper .noUi-tooltip').text(time[1]);
-    });
-
-    rangeSliderarrival.noUiSlider.on('change', function () {
-        var value = rangeSliderarrival.noUiSlider.get(),
-                time = getSliderVal(value);
-        $('#slider-range-arrival .noUi-handle-lower .noUi-tooltip').text(time[0]);
-        $('#slider-range-arrival .noUi-handle-upper .noUi-tooltip').text(time[1]);
-    });
-
-    rangeSliderarrival.noUiSlider.on('start', function () {
-        var value = rangeSliderarrival.noUiSlider.get(),
-                time = getSliderVal(value);
-        $('#slider-range-arrival .noUi-handle-lower .noUi-tooltip').text(time[0]);
-        $('#slider-range-arrival .noUi-handle-upper .noUi-tooltip').text(time[1]);
-    });
-
-    rangeSliderarrival.noUiSlider.on('update', function () {
-        var value = rangeSliderarrival.noUiSlider.get(),
-                time = getSliderVal(value);
-        $('#slider-range-arrival .noUi-handle-lower .noUi-tooltip').text(time[0]);
-        $('#slider-range-arrival .noUi-handle-upper .noUi-tooltip').text(time[1]);
-    });
-
-
-</script>
 
 </body>
 </html>

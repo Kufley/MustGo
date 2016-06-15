@@ -9,6 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="build/css/countrySelect.css">
+
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500' rel='stylesheet' type='text/css'>
 </head>
 
@@ -585,7 +587,7 @@
         <div class="col-sm-5">
 
             <div class="autocomplete-wrap autocomplete-priority-company ">
-                <div class="scroll-owerflow" id="filter_options">
+                <div class="scroll-owerflow filter_options">
                 <ul class="autocomplete-checkbox list-unstyled" >
                     <li><input type="checkbox" value=""  name="" id="id-company-1"><label for="id-company-1"><span></span>UMAir</label></li>
                     <li><input type="checkbox" value=""  name="" id="id-company-2"><label for="id-company-2"><span></span>Windrose Airlines</label></li>
@@ -662,9 +664,11 @@
             <p><a href="#form-forgot-pass" data-toggle="modal" data-target="#form-forgot-pass">Восстановление пароля</a></p>
             <p><a href="#modal-instruction" data-toggle="modal" data-target="#modal-instruction">Инструкция по восстановлению пароля</a></p>
             <p><a href="#modal-select-wagon" data-toggle="modal" data-target="#modal-select-wagon">Выберите место в вагоне</a></p>
+            <p> <a href="#follow-price" class="text-decoration" data-toggle="modal">Создать новое оповещение о ценах</a></p>
+            <p> <a href="#request" class="text-decoration" data-toggle="modal">Заявка на возврат билета</a></p>
         </div>
-        <div class="col-lg-9">
-            <div class="cancel-reservation clearfix ">
+        <div class="col-lg-3">
+            <div class="cancel-reservation width-360px clearfix ">
                 <p>У вас уже заполнены данные для места 11, вагон 7, купе, поезда Киев-Одесса “Черноморец”</p>
                 <p>Отменить бронь на данное место?</p>
                 <div class="pull-right link-reservation">
@@ -673,8 +677,43 @@
                 </div>
             </div>
         </div>
+        <div class="col-lg-3">
+            <div class="cancel-reservation width-320px clearfix">
+                <p>Документ ещё не готов, менеджерам отправлен запрос на формирование документа</p>
+                <div class="link-reservation text-center">
+                    <a href="#">oк</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <form>
+                <div class="form-item">
+                    <input id="country_selector" class="phone-input" type="text">
+                    <label for="country_selector" style="display:none;">Select a country here...</label>
+                </div>
+                <div class="form-item" style="display:none;">
+                    <input type="text" id="country_selector_code" class="form-control" name="country_selector_code" data-countrycodeinput="1" readonly="readonly" placeholder="Selected country code will appear here" />
+                    <label for="country_selector_code">...and the selected country code will be updated here</label>
+                </div>
+                <button type="submit" style="display:none;">Submit</button>
+            </form>
+        </div>
     </div>
-
+<div class="row">
+    <div class="col-lg-3">
+        <div class="autocomplete-wrap autocomplete-details-travel">
+            <div class="margin-bottom-10 ">Амстердам-Лондон</div>
+            <div class="text-uppercase margin-bottom-5">
+                <div>Vetochkin Aleksandr</div>
+                <div>Dudkin Nickolay</div>
+                <div>Astashkin Grigoriy</div>
+            </div>
+            <div class="next">
+                 <a href="#">Перейти</a>
+            </div>
+       </div>
+    </div>
+</div>
 </div>
 <div class="modal fade " id="modal-select-wagon" tabindex="-1" role="dialog"  aria-hidden="true">
     <div class="modal-dialog ">
@@ -691,7 +730,6 @@
         </div>
     </div>
 </div>
-
 <div class="modal fade " id="modal-instruction" tabindex="-1" role="dialog"  aria-hidden="true">
     <div class="modal-dialog ">
         <div class="modal-content modal-info info-pass">
@@ -848,12 +886,115 @@
         </div>
     </div>
 </div>
+<div class="modal fade" id="follow-price" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-follow-price" role="document">
+        <div class="modal-content ">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="images/close.png" alt="close"></button>
+
+            </div>
+            <div class="modal-body">
+                <div class="panel-text-light text-uppercase text-center">Создать новое оповещение о ценах</div>
+                <div class="delete-pass  text-center">Мы будем регулярно проверять цены и вышлем вам уведомление, если они изменятся</div>
+                <div class="info-aeroport delete-pass text-center">
+                    <div>Из аэропорта<span class="bold-text margin-left-5">Киев (Жуляны)</span> (IEV) в аэропорт <span class="bold-text">Стамбул (IST)</span></div>
+                    <div class="bold-text">5 мая-13 мая</div>
+                    <div>Эконом-класс</div>
+                </div>
+                <form class="form-inline form-search form-follow-price form-order">
+
+                    <div class="form-group label-follow-price buyer">
+                        Высылать уведомления, когда
+                        цена опустится ниже, чем
+                    </div>
+                    <div class="form-group">
+                        <label for="price" class="sr-only"></label>
+                        <input type="text" class="form-control text-center number-passport-order" id="price" name="price" value="15 000">
+                    </div>
+                    <div class="form-group">
+                        <label for="currency" class="sr-only"></label>
+                        <input type="text" class="form-control text-center number-passport-order"
+                               id="currency"
+                               name="currency" value="UAH">
+                        <a href="#" class="input-arrow"></a>
+                    </div>
+                    <div class="text-center">
+                        <label for="email-follow-price">Ваш e-mail</label>
+                        <input type="text" class="form-control width-100"
+                               id="email-follow-price"
+                               name="email-follow-price">
+                    </div>
+                    <div class="margin-top-25">
+                        <input type="checkbox" value="confirmation-email"  name="confirmation-email" id="confirmation-email">
+                        <label for="confirmation-email" class="confirmation-email"><span></span>Высылать на электронную почту последние новости, туристические
+                            подсказки и предложения от Skyscanner</label>
+                    </div>
+                    <button type="submit" class="btn btn-notification width-100">Создать оповещение</button>
+
+                    <div class="text-center modal-notification">Регистрируясь,
+                        вы принимаете <span class="confirmation-email">Условия предоставления услуг</span>
+                        и <span class="confirmation-email">Политику конфиденциальности</span> компании Skyscanner</div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="request" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-request" role="document">
+        <div class="modal-content ">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="images/close.png" alt="close"></button>
+
+            </div>
+            <div class="modal-body delete-pass">
+                <div class="panel-text-light text-uppercase text-center">Заявка на возврат билета</div>
+                <div class="delete-pass margin-bottom-10">Прошу оформить возврат по заказу:<span class="bold"> Заказ№ 3648, Одесса-Стамбул, 23.03.2016, 12:00</span></div>
+                <div>Пассажиры:</div>
+                <div class="display-flex-space-between">
+                    <div>
+                        <div>Grishko Anatoliy Aleksandrovich</div>
+                        <div>Antonov Nickolay Mihaylovich</div>
+                        <div>Antonova Anna Nickolaevna</div>
+                    </div>
+                    <div>
+                        <div>+380638929320</div>
+                        <div>+380674567520</div>
+                        <div>+380674567520</div>
+                    </div>
+                    <div>
+                        <div>12.08.1971</div>
+                        <div>30.11.1984</div>
+                        <div>05.04.2015</div>
+                    </div>
+
+                </div>
+                <form class="form-inline form-search form-follow-price form-order">
+                    <div class="text-center">
+                        <label for="note" class="sr-only">Ваш e-mail</label>
+                        <textarea name="send" id="note" class="form-control width-100" placeholder="Примечание"></textarea>
+                    </div>
+                    <div class="margin-top-25">
+                        <input type="checkbox" value=""  name="send" id="send">
+                        <label for="send" class="confirmation-email"><span></span>Я прочитал и согласен с правилами обмена/возврата авиабилетов</label>
+                    </div>
+                    <button type="submit" class="btn btn-notification center-block">Отправить</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
 
 <script src="js/jquery-1.10.2.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/bootstrap-typeahead.js"></script>
-<script src="js/script.js"></script>
 <script src="js/validator.js"></script>
+<script src="build/js/countrySelect.js"></script>
+<script>
+$("#country_selector").countrySelect({});
+</script>
+<script src="js/script.js"></script>
 
 
 </body>

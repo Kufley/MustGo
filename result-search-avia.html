@@ -774,14 +774,12 @@
                                         </div>
                                             </div>
                                     </div>
-
-
-                                    <div class="pull-right col-flight-price">
-                                        <div class="flight-price">3 799<span>UAH</span></div>
-                                        <a class="btn btn-buy">Купить</a>
-                                    </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="pull-right col-flight-price">
+                            <div class="flight-price">133 799<span>UAH</span></div>
+                            <a class="btn btn-buy">Купить</a>
                         </div>
                     </div>
                     <div class="panel panel-default">
@@ -873,12 +871,12 @@
                                     </div>
 
 
-                                    <div class="pull-right col-flight-price">
-                                        <div class="flight-price">3 599<span>UAH</span></div>
-                                        <a class="btn btn-buy">Купить</a>
-                                    </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="pull-right col-flight-price">
+                            <div class="flight-price">3 599<span>UAH</span></div>
+                            <a class="btn btn-buy">Купить</a>
                         </div>
                     </div>
                     <div class="panel panel-default">
@@ -999,12 +997,12 @@
                                     </div>
 
 
-                                    <div class="pull-right col-flight-price">
-                                        <div class="flight-price">6 599<span>UAH</span></div>
-                                        <a class="btn btn-buy">Купить</a>
-                                    </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="pull-right col-flight-price">
+                            <div class="flight-price">6 599<span>UAH</span></div>
+                            <a class="btn btn-buy">Купить</a>
                         </div>
                     </div>
                     <div class="panel panel-default">
@@ -1162,12 +1160,12 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="pull-right col-flight-price">
-                                        <div class="flight-price">1 028<span>UAH</span></div>
-                                        <a class="btn btn-buy">Купить</a>
-                                    </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="pull-right col-flight-price">
+                            <div class="flight-price">1 028<span>UAH</span></div>
+                            <a class="btn btn-buy">Купить</a>
                         </div>
                     </div>
                     <div class="panel panel-default">
@@ -1320,12 +1318,12 @@
                                     </div>
 
 
-                                    <div class="pull-right col-flight-price">
-                                        <div class="flight-price">16 531<span>UAH</span></div>
-                                        <a class="btn btn-buy">Купить</a>
-                                    </div>
-                                </div>
                             </div>
+                        </div>
+                        </div>
+                        <div class="pull-right col-flight-price">
+                            <div class="flight-price">16 531<span>UAH</span></div>
+                            <a class="btn btn-buy">Купить</a>
                         </div>
                     </div>
                     <div class="panel panel-default">
@@ -1486,12 +1484,12 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="pull-right col-flight-price">
-                                        <div class="flight-price">1 028<span>UAH</span></div>
-                                        <a class="btn btn-buy">Купить</a>
-                                    </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="pull-right col-flight-price">
+                            <div class="flight-price">1 028<span>UAH</span></div>
+                            <a class="btn btn-buy">Купить</a>
                         </div>
                     </div>
                     <div class="panel panel-default">
@@ -1725,15 +1723,14 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="pull-right col-flight-price">
-                                        <div class="flight-price">11 247<span>UAH</span></div>
-                                        <a class="btn btn-buy">Купить</a>
-                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="pull-right col-flight-price">
+                            <div class="flight-price">11 247<span>UAH</span></div>
+                            <a class="btn btn-buy">Купить</a>
+                        </div>
                     </div>
-
 
                 </div>
                 <div class="tab-pane" id="search-there">...</div>
@@ -1838,6 +1835,8 @@
     }
     var rangeSliderarrival = document.getElementById('slider-range-arrival');
 
+
+
     noUiSlider.create(rangeSliderarrival, {
         step: 15,
         margin: 50,
@@ -1849,6 +1848,8 @@
             'min': [0],
             'max': [1440]
         }
+
+
     });
 
     var rangeSlider = document.getElementById('slider-range-sortie');
@@ -1865,12 +1866,20 @@
             'max': [1440]
         }
     });
+        $('#slider-range-sortie .noUi-handle-upper').append('<input type="hidden" id="noUi-tooltipSortieUpper">');
+        $('#slider-range-sortie .noUi-handle-lower').append('<input type="hidden" id="noUi-tooltipSortieLower">');
+        $('#slider-range-arrival .noUi-handle-upper').append('<input type="hidden" id="noUi-tooltipArrivalUpper">');
+        $('#slider-range-arrival .noUi-handle-lower').append('<input type="hidden" id="noUi-tooltipArrivalLower">');
+//        $('#slider-range-sortie .noUi-handle-lower').append('<input type="hidden" id="noUi-tooltip1" value="' + time[0] + '">');
 
     rangeSlider.noUiSlider.on('change', function () {
         var value = rangeSlider.noUiSlider.get(),
                 time = getSliderVal(value);
         $('#slider-range-sortie .noUi-handle-lower .noUi-tooltip').text(time[0]);
         $('#slider-range-sortie .noUi-handle-upper .noUi-tooltip').text(time[1]);
+        $('#noUi-tooltipSortieUpper').val(time[0]);
+        $('#noUi-tooltipSortieLower').val(time[1]);
+
     });
 
     rangeSlider.noUiSlider.on('start', function () {
@@ -1878,6 +1887,8 @@
                 time = getSliderVal(value);
         $('#slider-range-sortie .noUi-handle-lower .noUi-tooltip').text(time[0]);
         $('#slider-range-sortie .noUi-handle-upper .noUi-tooltip').text(time[1]);
+        $('#noUi-tooltipSortieUpper').val(time[0]);
+        $('#noUi-tooltipSortieLower').val(time[1]);
     });
 
     rangeSlider.noUiSlider.on('update', function () {
@@ -1885,6 +1896,8 @@
                 time = getSliderVal(value);
         $('#slider-range-sortie .noUi-handle-lower .noUi-tooltip').text(time[0]);
         $('#slider-range-sortie .noUi-handle-upper .noUi-tooltip').text(time[1]);
+        $('#noUi-tooltipSortieUpper').val(time[0]);
+        $('#noUi-tooltipSortieLower').val(time[1]);
     });
 
     rangeSliderarrival.noUiSlider.on('change', function () {
@@ -1892,6 +1905,8 @@
                 time = getSliderVal(value);
         $('#slider-range-arrival .noUi-handle-lower .noUi-tooltip').text(time[0]);
         $('#slider-range-arrival .noUi-handle-upper .noUi-tooltip').text(time[1]);
+        $('#noUi-tooltipArrivalUpper').val(time[0]);
+        $('#noUi-tooltipArrivalLower').val(time[1]);
     });
 
     rangeSliderarrival.noUiSlider.on('start', function () {
@@ -1899,6 +1914,8 @@
                 time = getSliderVal(value);
         $('#slider-range-arrival .noUi-handle-lower .noUi-tooltip').text(time[0]);
         $('#slider-range-arrival .noUi-handle-upper .noUi-tooltip').text(time[1]);
+        $('#noUi-tooltipArrivalUpper').val(time[0]);
+        $('#noUi-tooltipArrivalLower').val(time[1]);
     });
 
     rangeSliderarrival.noUiSlider.on('update', function () {
@@ -1906,6 +1923,8 @@
                 time = getSliderVal(value);
         $('#slider-range-arrival .noUi-handle-lower .noUi-tooltip').text(time[0]);
         $('#slider-range-arrival .noUi-handle-upper .noUi-tooltip').text(time[1]);
+        $('#noUi-tooltipArrivalUpper').val(time[0]);
+        $('#noUi-tooltipArrivalLower').val(time[1]);
     });
 
 
